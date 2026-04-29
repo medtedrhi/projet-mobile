@@ -1,0 +1,80 @@
+[
+  {
+    "evidence_item_id": "b32f9264-3af6-461f-96d4-cabdf6f07346",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [],
+    "status": "unmapped",
+    "notes": "Mapped from evidence type 'apk'."
+  },
+  {
+    "evidence_item_id": "0047fe5c-ca5f-41e3-b991-df3ba3ea65bf",
+    "masvs": [
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [],
+    "mastg": [
+      "MASTG-KNOW-0011"
+    ],
+    "status": "mapped",
+    "notes": "Mapped from evidence type 'apk_hash'."
+  },
+  {
+    "evidence_item_id": "5d75969d-9e12-447f-9b40-3181f114d0b5",
+    "masvs": [
+      "MASVS-PLATFORM-1"
+    ],
+    "maswe": [
+      "MASWE-0058"
+    ],
+    "mastg": [
+      "MASTG-TEST-0026"
+    ],
+    "status": "mapped",
+    "notes": "Mapped from evidence type 'manifest_summary'."
+  },
+  {
+    "evidence_item_id": "44b8defd-4fb9-487c-ac8d-548500caca73",
+    "masvs": [
+      "MASVS-PLATFORM-1",
+      "MASVS-PRIVACY-1"
+    ],
+    "maswe": [
+      "MASWE-0001"
+    ],
+    "mastg": [
+      "MASTG-TEST-0027"
+    ],
+    "status": "mapped",
+    "notes": "Mapped from evidence type 'permissions'."
+  },
+  {
+    "evidence_item_id": "1f8c9980-ffdc-41f3-85aa-69015fef9683",
+    "masvs": [
+      "MASVS-PLATFORM-2"
+    ],
+    "maswe": [
+      "MASWE-0064"
+    ],
+    "mastg": [
+      "MASTG-TEST-0028"
+    ],
+    "status": "mapped",
+    "notes": "Mapped from evidence type 'components'."
+  },
+  {
+    "evidence_item_id": "f94dd185-b974-4ced-b858-69cebc11f5f7",
+    "masvs": [
+      "MASVS-CODE-1",
+      "MASVS-RESILIENCE-2"
+    ],
+    "maswe": [
+      "MASWE-0093"
+    ],
+    "mastg": [
+      "MASTG-KNOW-0073"
+    ],
+    "status": "mapped",
+    "notes": "Mapped from evidence type 'sbom'."
+  }
+]

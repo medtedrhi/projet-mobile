@@ -1,0 +1,22 @@
+{
+  "exported_components": [
+    "jakhar.aseem.diva.APICreds2Activity",
+    "jakhar.aseem.diva.APICredsActivity",
+    "jakhar.aseem.diva.AccessControl1Activity",
+    "jakhar.aseem.diva.AccessControl2Activity",
+    "jakhar.aseem.diva.AccessControl3Activity",
+    "jakhar.aseem.diva.AccessControl3NotesActivity",
+    "jakhar.aseem.diva.Hardcode2Activity",
+    "jakhar.aseem.diva.HardcodeActivity",
+    "jakhar.aseem.diva.InputValidation2URISchemeActivity",
+    "jakhar.aseem.diva.InputValidation3Activity",
+    "jakhar.aseem.diva.InsecureDataStorage1Activity",
+    "jakhar.aseem.diva.InsecureDataStorage2Activity",
+    "jakhar.aseem.diva.InsecureDataStorage3Activity",
+    "jakhar.aseem.diva.InsecureDataStorage4Activity",
+    "jakhar.aseem.diva.LogActivity",
+    "jakhar.aseem.diva.MainActivity",
+    "jakhar.aseem.diva.NotesProvider",
+    "jakhar.aseem.diva.SQLInjectionActivity"
+  ]
+}

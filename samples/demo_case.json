@@ -1,0 +1,10 @@
+{
+  "app_name": "Demo Finance App",
+  "package_name": "com.example.finance",
+  "version_name": "2.4.1",
+  "version_code": "241",
+  "auditor": "Security Lab",
+  "audit_date": "2026-04-06",
+  "scope": "MASVS baseline and evidence-pack dry run",
+  "notes": "Sample seed metadata for local demonstration."
+}

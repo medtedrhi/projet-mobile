@@ -1,0 +1,43 @@
+{
+  "case": "<app.db.models.audit_case.AuditCase object at 0x000001D29C07FA10>",
+  "summary": {
+    "total_artifacts": 1,
+    "total_evidence_items": 6,
+    "total_mappings": 6,
+    "total_missing_issues": 2,
+    "completeness_score": 75.0,
+    "collection_summary": "6 evidence items were collected, but 2 collection gaps still affect compliance readiness.",
+    "coverage": {
+      "domain_counts": {
+        "MASVS": 7
+      }
+    },
+    "missing_narratives": [
+      "No screenshots were collected. Recommended next step: Upload representative screenshots for authentication, consent, and security-sensitive screens.",
+      "No sanitized runtime logs were collected. Recommended next step: Upload sanitized runtime logs or capture anonymized telemetry artifacts."
+    ]
+  },
+  "artifacts": [
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001D29AE297E0>"
+  ],
+  "evidence_items": [
+    "<app.db.models.evidence.EvidenceItem object at 0x000001D29ADF4500>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001D29ADF7E30>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001D29ADF5310>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001D29ADF4AA0>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001D29ADF74D0>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001D29ADF5C70>"
+  ],
+  "mapping_references": [
+    "<app.db.models.mapping.MappingReference object at 0x000001D29AE3C940>",
+    "<app.db.models.mapping.MappingReference object at 0x000001D29AE3C9F0>",
+    "<app.db.models.mapping.MappingReference object at 0x000001D29AE3CAA0>",
+    "<app.db.models.mapping.MappingReference object at 0x000001D29AE3CB50>",
+    "<app.db.models.mapping.MappingReference object at 0x000001D29AE3CC00>",
+    "<app.db.models.mapping.MappingReference object at 0x000001D29AE3CCB0>"
+  ],
+  "missing_issues": [
+    "<app.db.models.issue.MissingEvidenceIssue object at 0x000001D29AC4B540>",
+    "<app.db.models.issue.MissingEvidenceIssue object at 0x000001D29AC4B120>"
+  ]
+}

@@ -1,0 +1,30 @@
+App: med
+Package: med
+Evidence items: 16
+Completeness score: 100.0%
+
+AI evidence summary:
+16 evidence items were collected for med, covering apk, apk_hash, components, config_app_config_summary, config_build_config, config_config_status, config_network_security_config, config_strings, log, manifest_summary, manifest_xml, permissions, sbom, screenshot. Core audit inputs appear complete for the current evidence pack.
+
+Collected evidence types:
+- apk: 1
+- apk_hash: 1
+- components: 1
+- config_app_config_summary: 1
+- config_build_config: 1
+- config_config_status: 1
+- config_network_security_config: 1
+- config_strings: 1
+- log: 2
+- manifest_summary: 1
+- manifest_xml: 1
+- permissions: 1
+- sbom: 1
+- screenshot: 2
+
+Manifest summary:
+- minSdk: 24
+- targetSdk: 36
+- summary: Package com.example.getudiant targets SDK 36 and declares 2 permissions.
+
+Missing evidence:

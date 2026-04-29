@@ -1,0 +1,6 @@
+{
+  "status": "partial",
+  "generator": "mock-sbom-service",
+  "components": [],
+  "note": "No discoverable libraries were extracted from the APK. External SBOM tooling can be integrated later."
+}

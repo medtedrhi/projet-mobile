@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>test - Evidence Collector Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2937; }
+    h1, h2 { color: #0f172a; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+    th, td { border: 1px solid #cbd5e1; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #e2e8f0; }
+    .meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 24px; }
+    .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 16px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Evidence Collector & Compliance Pack</h1>
+  <div class="card">
+    <h2>Overview</h2>
+    <p>6 evidence items were collected, but 2 collection gaps still affect compliance readiness.</p>
+    <div class="meta">
+      <div><strong>App:</strong> test</div>
+      <div><strong>Package:</strong> test</div>
+      <div><strong>Auditor:</strong> tedrhi</div>
+      <div><strong>Date:</strong> 2026-04-06</div>
+      <div><strong>Scope:</strong> MASVS baseline evidence collection</div>
+      <div><strong>Completeness:</strong> 75.0%</div>
+    </div>
+  </div>
+
+  <h2>Collected Evidence Summary</h2>
+  <table>
+    <thead><tr><th>Evidence ID</th><th>Type</th><th>Source</th><th>Path</th><th>Status</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td>b32f9264-3af6-461f-96d4-cabdf6f07346</td><td>apk</td><td>ui-upload</td><td>D:\Desktop\projet mobile\backend\data\uploads\6cb1492e-c804-456c-bf43-bc98ba69e8bf\UnCrackable-Level2.apk</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>0047fe5c-ca5f-41e3-b991-df3ba3ea65bf</td><td>apk_hash</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\6cb1492e-c804-456c-bf43-bc98ba69e8bf\apk_hash.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>5d75969d-9e12-447f-9b40-3181f114d0b5</td><td>manifest_summary</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\6cb1492e-c804-456c-bf43-bc98ba69e8bf\manifest_summary.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>44b8defd-4fb9-487c-ac8d-548500caca73</td><td>permissions</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\6cb1492e-c804-456c-bf43-bc98ba69e8bf\permissions.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>1f8c9980-ffdc-41f3-85aa-69015fef9683</td><td>components</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\6cb1492e-c804-456c-bf43-bc98ba69e8bf\components.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>f94dd185-b974-4ced-b858-69cebc11f5f7</td><td>sbom</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\6cb1492e-c804-456c-bf43-bc98ba69e8bf\sbom.json</td><td>collected</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <h2>Artifact Integrity and Hashes</h2>
+  <table>
+    <thead><tr><th>Artifact</th><th>SHA-256</th><th>Size</th></tr></thead>
+    <tbody>
+      
+      <tr><td>UnCrackable-Level2.apk</td><td>4c7980ef1f6cc29508f38417c2a5b5b7721eeb4a3d7f00a0c1a08f5192fa6ddd</td><td>901022</td></tr>
+      
+    </tbody>
+  </table>
+
+  <h2>Traceability Matrix</h2>
+  <table>
+    <thead><tr><th>Evidence</th><th>MASVS</th><th>MASWE</th><th>MASTG</th><th>Status</th><th>Notes</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td>b32f9264-3af6-461f-96d4-cabdf6f07346</td><td></td><td></td><td></td><td>unmapped</td><td>Mapped from evidence type &#39;apk&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>0047fe5c-ca5f-41e3-b991-df3ba3ea65bf</td><td>MASVS-RESILIENCE-1</td><td></td><td>MASTG-KNOW-0011</td><td>mapped</td><td>Mapped from evidence type &#39;apk_hash&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>5d75969d-9e12-447f-9b40-3181f114d0b5</td><td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Mapped from evidence type &#39;manifest_summary&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>44b8defd-4fb9-487c-ac8d-548500caca73</td><td>MASVS-PLATFORM-1,MASVS-PRIVACY-1</td><td>MASWE-0001</td><td>MASTG-TEST-0027</td><td>mapped</td><td>Mapped from evidence type &#39;permissions&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>1f8c9980-ffdc-41f3-85aa-69015fef9683</td><td>MASVS-PLATFORM-2</td><td>MASWE-0064</td><td>MASTG-TEST-0028</td><td>mapped</td><td>Mapped from evidence type &#39;components&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>f94dd185-b974-4ced-b858-69cebc11f5f7</td><td>MASVS-CODE-1,MASVS-RESILIENCE-2</td><td>MASWE-0093</td><td>MASTG-KNOW-0073</td><td>mapped</td><td>Mapped from evidence type &#39;sbom&#39;.</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <h2>Missing Evidence and Collection Gaps</h2>
+  <table>
+    <thead><tr><th>Severity</th><th>Title</th><th>Why It Matters</th><th>Recommendation</th></tr></thead>
+    <tbody>
+      
+      <tr><td>low</td><td>No screenshots were collected</td><td>UI evidence helps validate visible security controls and reporting context.</td><td>Upload representative screenshots for authentication, consent, and security-sensitive screens.</td></tr>
+      
+      <tr><td>medium</td><td>No sanitized runtime logs were collected</td><td>Dynamic evidence improves coverage for runtime behavior and control validation.</td><td>Upload sanitized runtime logs or capture anonymized telemetry artifacts.</td></tr>
+      
+    </tbody>
+  </table>
+</body>
+</html>

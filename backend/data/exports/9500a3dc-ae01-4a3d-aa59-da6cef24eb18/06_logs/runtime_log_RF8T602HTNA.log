@@ -1,0 +1,457 @@
+﻿--------- beginning of main
+04-28 [REDACTED_IP].579  1888  3626 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-28 [REDACTED_IP].579  1888  3626 V Navbar.Store: ----apply(0) StartHintVI
+04-28 [REDACTED_IP].579  2312  2312 W [REDACTED_TOKEN]: delegateMotionEvent, action = 0
+04-28 [REDACTED_IP].583  2312  2312 W [REDACTED_TOKEN]: onDragStart
+04-28 [REDACTED_IP].583  2312  2312 W [REDACTED_TOKEN]: hintAnimationStarted
+04-28 [REDACTED_IP].585  2312  2312 W SGestureVibrationEffect: vibrate, keyCode = 4, type = 50047
+04-28 [REDACTED_IP].595  2312  2312 W DeviceState: isNoEffectEventRegion - The event region is the same as the start
+04-28 [REDACTED_IP].595  2312  2312 W [REDACTED_TOKEN]: setActive, action = 2
+04-28 [REDACTED_IP].598  2312  2312 I [REDACTED_TOKEN]: isSGestureActivated, activated = true
+04-28 [REDACTED_IP].601  2312  2312 I [REDACTED_TOKEN]: finishTouchTracking, action : 3, mPassedWindowMoveSlop = false, mInteractionHandler = null, mIsSGestureActivated : true
+04-28 [REDACTED_IP].601  1208  3909 D InputDispatcher: Cancel for '3275bd ': input channel stole pointer stream, m=1
+04-28 [REDACTED_IP].601  2312  2312 I [REDACTED_TOKEN]: [REDACTED_TOKEN]
+04-28 [REDACTED_IP].601  2312  2312 I [REDACTED_TOKEN]: [REDACTED_TOKEN]
+04-28 [REDACTED_IP].601  2312  2312 I [REDACTED_TOKEN]: removeListener
+04-28 [REDACTED_IP].601  1208  3909 I InputDispatcher: Delivering touch to (1888): action: 0x3, f=0x0, d=0, '3275bd ', t=1 +(0,-1516)
+04-28 [REDACTED_IP].601  1208  3909 D InputDispatcher: Cancel for '[Gestur': input channel stole pointer stream, m=1
+04-28 [REDACTED_IP].601  1208  3909 I InputDispatcher: Channel [Gesture Monitor] swipe-up (server) is stealing touch from [3275bd NavigationBar0 (server), [Gesture Monitor] PalmMotion (server)]
+04-28 [REDACTED_IP].602  2312  2312 I [REDACTED_TOKEN]: reset
+04-28 [REDACTED_IP].604  2312  2312 I HsTaskBooster: tick TASK_BOOST: 2312/800
+04-28 [REDACTED_IP].671  1208  1387 D InputReader: Btn_touch(4): value=0 when=15658.169916
+04-28 [REDACTED_IP].671  1208  1387 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=15658.169916
+04-28 [REDACTED_IP].672  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x1, time=15658169916000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+--------- beginning of system
+04-28 [REDACTED_IP].674  1208  1208 D SGM:GameManager: identifyGamePackage. com.example.getudiant, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+04-28 [REDACTED_IP].675  1208  1208 D SGM:PkgDataHelper: getGamePkgData(). com.example.getudiant
+04-28 [REDACTED_IP].675  1208  1208 I SemDvfsHyPerManager: acquire hyper - GESTURE_DETECTED_HRR/1208@21, type = -999
+04-28 [REDACTED_IP].675   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 755856  [1208 / 21]    HINT : GESTURE_DETECTED_HRR    list : [TIMEOUT / 1328] 
+04-28 [REDACTED_IP].676  2312  2312 W [REDACTED_TOKEN]: onDragEnd
+04-28 [REDACTED_IP].676  1208  1208 D SGM:GameManager: identifyGamePackage. com.example.getudiant, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+04-28 [REDACTED_IP].676  1888  3626 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](noArguments=true) [Module] 
+04-28 [REDACTED_IP].676  1208  1208 D SGM:PkgDataHelper: getGamePkgData(). com.example.getudiant
+04-28 [REDACTED_IP].676  1888  3626 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-28 [REDACTED_IP].676  1208  1208 I SemDvfsHyPerManager: acquire hyper - GESTURE_DETECTED_HRR/1208@21, type = -999
+04-28 [REDACTED_IP].676  1888  3626 V Navbar.Store: ----apply(0) ResetHintVI
+04-28 [REDACTED_IP].677   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 755856  [1208 / 21]    HINT : GESTURE_DETECTED_HRR    list : [TIMEOUT / 1328] 
+04-28 [REDACTED_IP].678  2312  2312 W [REDACTED_TOKEN]: injectKey, 4
+04-28 [REDACTED_IP].679  1208  1208 D SGM:GameManager: identifyGamePackage. com.example.getudiant, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.fgapps.GameAppUtils.isGame(GameAppUtils.java:84)
+04-28 [REDACTED_IP].679  1208  1208 D SGM:PkgDataHelper: getGamePkgData(). com.example.getudiant
+04-28 [REDACTED_IP].679  1208  1208 I SemDvfsHyPerManager: acquire hyper - GESTURE_DETECTED_HRR/1208@21, type = -999
+04-28 [REDACTED_IP].679   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 755856  [1208 / 21]    HINT : GESTURE_DETECTED_HRR    list : [TIMEOUT / 1328] 
+04-28 [REDACTED_IP].679  1208  1208 I SemDvfsHyPerManager: acquire hyper - SMOOTH_SCROLL/1208@19, type = -999
+04-28 [REDACTED_IP].680   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 753397  [1208 / 19]    HINT : SMOOTH_SCROLL    list : 
+04-28 [REDACTED_IP].681   845   907 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 753397
+04-28 [REDACTED_IP].688  1208  3909 D InputDispatcher: Inject key (2312/10109): action=0, f=0x48, d=0, time=15658177000000
+04-28 [REDACTED_IP].689  1208  3909 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002
+04-28 [REDACTED_IP].693  1208  3909 D PhoneWindowManagerExt: interceptKeyTq code=4 down=true repeatCount=0 displayId=0 interactive=true
+04-28 [REDACTED_IP].693  1208  3909 D WindowManager: interceptKeyTq interceptKeyResult=4
+04-28 [REDACTED_IP].695  1208  1230 D InputDispatcher: Inject key (2312/10109): action=1, f=0x48, d=0, time=15658193000000
+04-28 [REDACTED_IP].695  1208  1230 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002
+04-28 [REDACTED_IP].695  1208  1230 D PhoneWindowManagerExt: interceptKeyTq code=4 down=false repeatCount=0 displayId=0 interactive=true
+04-28 [REDACTED_IP].695  1208  1230 D WindowManager: interceptKeyTq interceptKeyResult=4
+04-28 [REDACTED_IP].697  1208  1386 D WindowManager: interceptKeyTi keyCode=4 down=true repeatCount=0 keyguardOn=false canceled=false
+04-28 [REDACTED_IP].697  1208  1386 D PhoneWindowManagerExt: interceptKeyTi code=4 down=true repeatCount=0 displayId=0 interactive=true
+04-28 [REDACTED_IP].697  2312  2312 W [REDACTED_TOKEN]: resetState
+04-28 [REDACTED_IP].697  2312  2312 W [REDACTED_TOKEN]: delegateMotionEvent, action = 1
+04-28 [REDACTED_IP].697  2312  2312 I TouchInteractionService: reset
+04-28 [REDACTED_IP].699  1888  5866 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](noArguments=true) [Module] 
+04-28 [REDACTED_IP].699  1888  5866 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-28 [REDACTED_IP].699  1888  5866 V Navbar.Store: ----apply(0) ResetHintVI
+04-28 [REDACTED_IP].700  1208  1386 I InputDispatcher: Delivering key to (7900): B action: 0x0 (0), f=0x48, m=0x0, d=0, '516a832'
+04-28 [REDACTED_IP].700  1208  1386 D WindowManager: interceptKeyTi keyCode=4 down=false repeatCount=0 keyguardOn=false canceled=false
+04-28 [REDACTED_IP].700  1208  1386 D PhoneWindowManagerExt: interceptKeyTi code=4 down=false repeatCount=0 displayId=0 interactive=true
+04-28 [REDACTED_IP].709  4119  4119 I HBD     : b skip onKeyDown as physical keyboard not connected 
+04-28 [REDACTED_IP].713  4119  4119 I HBD     : HoneyBoardService onKeyDown r:b27f4315 consumed:false 5 
+04-28 [REDACTED_IP].714  7900  7900 I ViewRootImpl@e88b703[AddEtudiant]: The input has been finished in ImeInputStage.
+04-28 [REDACTED_IP].715  1208  1386 I InputDispatcher: Delivering key to (7900): B action: 0x1 (0), f=0x48, m=0x0, d=0, '516a832'
+04-28 [REDACTED_IP].717  4119  4119 I HBD     : HoneyBoardService onKeyUp r:d550d8cb consumed:false 0 
+04-28 [REDACTED_IP].723  1208  1230 I [REDACTED_TOKEN]: hideMySoftInput: flags=0
+04-28 [REDACTED_IP].723  1208  1230 I [REDACTED_TOKEN]: Calling [REDACTED_EMAIL](0, android.os.Binder@a8777bd, null) for reason: HIDE_MY_SOFT_INPUT
+04-28 [REDACTED_IP].737  1208  1230 I [REDACTED_TOKEN]: [REDACTED_TOKEN]: mVisibleBound=true, mHasConnection=true, caller = com.android.server.inputmethod.[REDACTED_TOKEN].hideCurrentInputLocked:4356 com.android.server.inputmethod.[REDACTED_TOKEN].hideMySoftInput:5544 com.android.server.inputmethod.[REDACTED_TOKEN].-$$Nest$mhideMySoftInput:0 com.android.server.inputmethod.[REDACTED_TOKEN]$[REDACTED_TOKEN].hideMySoftInput:7436 com.android.internal.inputmethod.[REDACTED_TOKEN]$Stub.onTransact:257 android.os.Binder.execTransactInternal:1321 android.os.Binder.execTransact:1280 <bottom of call stack> <bottom of call stack> <bottom of call stack> 
+04-28 [REDACTED_IP].738  1208  1230 D [REDACTED_TOKEN]: unbindVisibleConnection mVisibleConnection : com.android.server.inputmethod.[REDACTED_TOKEN]$1@46a7314
+04-28 [REDACTED_IP].742  1208  1230 I ActivityManager: Changes in 10168 5 to 7, 15 to 0
+04-28 [REDACTED_IP].746  7900  7900 I ViewRootImpl@e88b703[AddEtudiant]: The input has been finished in ImeInputStage.
+04-28 [REDACTED_IP].749  4119  4119 I InputMethod: hideSoftInput(), flags : 0
+04-28 [REDACTED_IP].752  4119  4119 I HBD     : HoneyBoardService onFinishInputView finishingInput= false
+04-28 [REDACTED_IP].756  1208  1230 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : false
+04-28 [REDACTED_IP].760  4119  4119 I DecorView: [REDACTED_TOKEN]: keepScreenOn=false
+04-28 [REDACTED_IP].764  1888  1996 D MobileStatusTracker(1/1): [REDACTED_TOKEN] level=2, vendorLevel=3
+04-28 [REDACTED_IP].767  1888  1996 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=UMTS (3G), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+04-28 [REDACTED_IP].768  1888  1996 D NetworkController: SignalStrength from intent slotId=1
+04-28 [REDACTED_IP].770  1208  1230 I [REDACTED_TOKEN]: setImeWindowStatus: vis=0, backDisposition=0
+04-28 [REDACTED_IP].770  1208  1230 I [REDACTED_TOKEN]: applyImeVisibility: setVisible=false, IsClientNull=false
+04-28 [REDACTED_IP].774  7900  7900 D InsetsController: [REDACTED_TOKEN]: Added types=8 animType=1 host=com.example.getudiant/com.example.getudiant.AddEtudiant from=android.view.InsetsController.applyAnimation:1576 android.view.InsetsController.applyAnimation:1557 android.view.InsetsController.hide:1093 
+04-28 [REDACTED_IP].776  7900  7900 D InsetsSourceConsumer: setRequestedVisible: visible=false, type=19, host=com.example.getudiant/com.example.getudiant.AddEtudiant, from=android.view.InsetsSourceConsumer.hide:257 android.view.ImeInsetsSourceConsumer.hide:88 android.view.ImeInsetsSourceConsumer.hide:94 android.view.InsetsController.hideDirectly:1593 android.view.InsetsController.[REDACTED_TOKEN]:1234 android.view.InsetsController.applyAnimation:1576 android.view.InsetsController.applyAnimation:1557 android.view.InsetsController.hide:1093 android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6765 android.view.ViewRootImpl$ViewRootHandler.handleMessage:6697 
+04-28 [REDACTED_IP].776  4119  4119 I HBD     : a [UpdatePolicy] [post] a: 3 cl: 65537 kit: [0/0] vt: 0 ir: 1 
+04-28 [REDACTED_IP].790  1208  3909 D InsetsSourceProvider: updateVisibility: serverVisible=true, clientVisible=false, source=InsetsSource: {mType=ITYPE_IME, mFrame=[0,938][720,1600], mVisibleFrame=[0,938][720,1600], mVisible=false, [REDACTED_TOKEN]=false}, controlTarget=Window{516a832 u0 com.example.getudiant/com.example.getudiant.AddEtudiant}, from=com.android.server.wm.ImeInsetsSourceProvider.updateVisibility:98 com.android.server.wm.InsetsSourceProvider.setClientVisible:536 com.android.server.wm.InsetsSourceProvider.updateClientVisibility:518 com.android.server.wm.ImeInsetsSourceProvider.updateClientVisibility:114 com.android.server.wm.InsetsStateController.onInsetsModified:250 com.android.server.wm.InsetsPolicy.onInsetsModified:556 com.android.server.wm.Session.[REDACTED_TOKEN]:780 android.view.IWindowSession$Stub.onTransact:1184 com.android.server.wm.Session.onTransact:188 android.os.Binder.execTransactInternal:1321 
+04-28 [REDACTED_IP].792  1208  3909 I WindowManager: Reparenting to leash, surface=Surface(name=3275bd NavigationBar0)/@0xd271870, leashParent=Surface(name=[REDACTED_NAME]{e099914 type=2019 android.os.BinderProxy@cdcff26})/@0x9b7b7e9
+04-28 [REDACTED_IP].792   871  1435 I SurfaceFlinger: id=4493 createSurf flag=24000, Surface(name=3275bd NavigationBar0)/@0xd271870 - animation-leash of insets_animation#4493
+04-28 [REDACTED_IP].793  1208  3909 D WindowManager: makeSurface duration=1 leash=Surface(name=[REDACTED_NAME](name=3275bd NavigationBar0)/@0xd271870 - animation-leash of insets_animation)/@0xb57c1b2
+04-28 [REDACTED_IP].795  1208  3909 D WindowManager: [REDACTED_TOKEN]: displayId=0, win=Window{516a832 u0 com.example.getudiant/com.example.getudiant.AddEtudiant}, navColorWin=Window{516a832 u0 com.example.getudiant/com.example.getudiant.AddEtudiant}, focusedCanBeNavColorWin=false, behavior=1, appearance=0, [REDACTED_TOKEN]=[AppearanceRegion{ bounds=[0,0][720,1600]}], requestedVisibilities=ITYPE_IME: invisible, from=com.android.server.wm.InsetsStateController.onInsetsModified:256 com.android.server.wm.InsetsPolicy.onInsetsModified:556 com.android.server.wm.Session.[REDACTED_TOKEN]:780 
+04-28 [REDACTED_IP].797  4119  4119 I HBD     : c processFinishInputView 
+04-28 [REDACTED_IP].797  2312  2350 I TouchInteractionService: [REDACTED_TOKEN], region : SkRegion()
+04-28 [REDACTED_IP].802  5185 17701 I ViewRootImpl@915daaf[CocktailBarService]: Resizing android.view.ViewRootImpl@a6feaa8: frame = [653,378][720,646] reportDraw = false forceLayout = false syncSeqId = 3
+04-28 [REDACTED_IP].802  7900  8368 I ViewRootImpl@e88b703[AddEtudiant]: Resizing android.view.ViewRootImpl@19a0aac: frame = [0,0][720,1600] reportDraw = false forceLayout = false syncSeqId = 0
+04-28 [REDACTED_IP].803  1888  3626 I ViewRootImpl@614fc7b[NavigationBar0]: Resizing android.view.ViewRootImpl@a085844: frame = [0,1516][720,1600] reportDraw = false forceLayout = false syncSeqId = 4
+04-28 [REDACTED_IP].803  1888  5866 I ViewRootImpl@7a762b4[StatusBar]: Resizing android.view.ViewRootImpl@ab1f620: frame = [0,0][720,45] reportDraw = false forceLayout = false syncSeqId = 4
+04-28 [REDACTED_IP].803  2544 11142 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]: Resizing android.view.ViewRootImpl@43db1c2: frame = [667,141][720,239] reportDraw = false forceLayout = false syncSeqId = 3
+04-28 [REDACTED_IP].803  7900  7900 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 720, 1600), mDisplayCutout=DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}  mRoundedCornerFrame=Rect(0, 0 - 720, 1600), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(643, 0 - 720, 45) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,1574][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[720,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,66], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,1544][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][-100000,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[100000,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,100000][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][0,0], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,938][720,1600], mVisibleFrame=[0,938][720,1600], mVisible=false, [REDACTED_TOKEN]=false} } host=com.example.getudiant/com.example.getudiant.AddEtudiant from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6740
+04-28 [REDACTED_IP].805  5185  5185 I ViewRootImpl@915daaf[CocktailBarService]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[653,378][720,646] display=[0,0][720,1574] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=true configChanged=false displayChanged=false
+04-28 [REDACTED_IP].805  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[667,141][720,239] display=[0,45][720,1574] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=true configChanged=false displayChanged=false
+04-28 [REDACTED_IP].805  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]: handleResized mSyncSeqId = 3
+04-28 [REDACTED_IP].805  7900  7900 I ViewRootImpl@e88b703[AddEtudiant]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][720,1600] display=[0,0][720,1600] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].805  2312  2350 I ViewRootImpl@936821f[SGestureOverlayWindow]: Resizing android.view.ViewRootImpl@ebf5058: frame = [461,1574][720,1600] reportDraw = false forceLayout = false syncSeqId = 4
+04-28 [REDACTED_IP].805  5185  5185 I ViewRootImpl@915daaf[CocktailBarService]: handleResized mSyncSeqId = 3
+04-28 [REDACTED_IP].808  2312  2312 I ViewRootImpl@936821f[SGestureOverlayWindow]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[461,1574][720,1600] display=[0,45][720,1600] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].816  4119  4119 I HBD     : d1 stopRunningTimers 
+04-28 [REDACTED_IP].819  4119  4119 I HBD     : l0 EBD reset pbc:0 pdc:0 
+04-28 [REDACTED_IP].823  1888  1888 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](displayId=0, recentVisible=true, homeVisible=true, backVisible=true) [Module] [REDACTED_TOKEN]
+04-28 [REDACTED_IP].823  1888  1888 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-28 [REDACTED_IP].823  1888  1888 V Navbar.Store: --[Band] (afterAction) [REDACTED_TOKEN]
+04-28 [REDACTED_IP].823  4119 10637 I HBD     : d1 requestCursorUpdates(0),  4
+04-28 [REDACTED_IP].824  1888  1888 V Navbar.Store: ----apply(0) [REDACTED_TOKEN]
+04-28 [REDACTED_IP].824  1888  1888 V Navbar.Store: ----NavBarStates canShowGestureHint: true
+04-28 [REDACTED_IP].825  1208  3909 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : false
+04-28 [REDACTED_IP].828  1888  1888 V PanelView: Keyboard Button is shownig? : false
+04-28 [REDACTED_IP].830  1888  1888 V Navbar.Store: handleEvent(0) OnUpdateSysUiStateFlag(noArguments=true) [Module] [REDACTED_TOKEN]
+04-28 [REDACTED_IP].830  1888  1888 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-28 [REDACTED_IP].830  1888  1888 V Navbar.Store: --[Band] (afterAction) [REDACTED_TOKEN]
+04-28 [REDACTED_IP].830  1888  1888 V Navbar.Store: --NavBarStates isGameMode: false
+04-28 [REDACTED_IP].831  1888  1888 V Navbar.Store: ----apply(0) UpdateSysUiFlags
+04-28 [REDACTED_IP].831  1888  1888 V Navbar.Store: ----set 1073741824 : false
+04-28 [REDACTED_IP].831  1888  1888 V Navbar.Store: ----set 67108864 : false
+04-28 [REDACTED_IP].831  1888  1888 V Navbar.Store: handleEvent(0) OnNavBarIconHintChanged(iconHint=0) [Module] NavigationBar
+04-28 [REDACTED_IP].831  1888  1888 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-28 [REDACTED_IP].831  1888  1888 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-28 [REDACTED_IP].831  1888  1888 V Navbar.Store: ----apply(0) ReevaluateNavBar
+04-28 [REDACTED_IP].833  2312  2350 I TouchInteractionService: onSystemUiStateChanged, stateFlags : 131072 |allow_gesture|
+04-28 [REDACTED_IP].834  2312  2312 I [REDACTED_TOKEN]: setSystemUiFlags, stateFlags : 131072
+04-28 [REDACTED_IP].834  2312  2312 W SGestureOverlayWindow: [REDACTED_TOKEN], visibility = 0
+04-28 [REDACTED_IP].836  4119  4119 I HBD     : e unbindCurrentHoneyBoard : text_board 
+04-28 [REDACTED_IP].836  4119  4119 I HBD     : a onUnbind 
+04-28 [REDACTED_IP].836  1888  1888 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 720, 1600), mDisplayCutout=DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(643, 0 - 720, 45) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[720,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,66], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,1544][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][-100000,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[100000,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,100000][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][0,0], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,938][720,1600], mVisibleFrame=[0,938][720,1600], mVisible=false, [REDACTED_TOKEN]=false} } host=NavigationBar0 from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6727
+04-28 [REDACTED_IP].837  1888  1888 I ViewRootImpl@614fc7b[NavigationBar0]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,1516][720,1600] display=[0,0][720,1600] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].837  1888  1888 I ViewRootImpl@7a762b4[StatusBar]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][720,45] display=[0,0][720,1600] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].839  4119  4119 I HBD     : a SmartCandidate visibility : false 
+04-28 [REDACTED_IP].840  2312  2312 I TouchInteractionService: onSystemUiFlagsChanged, lastSysUIFlags : 1441792
+04-28 [REDACTED_IP].847  4119  4119 I HBD     : e expression state[false], searchState[0] 
+04-28 [REDACTED_IP].847   391   391 D io_stats: !@ 179,0 r 8175728 112350087 w 986644 12142132 d 298943 13447704 f 0 0 iot 2098412 0 th 0 0 0 pt 0 inp 0 0 15658.345
+04-28 [REDACTED_IP].849  4119  4119 I HBD     : a clear BaseLanguageRepo 
+04-28 [REDACTED_IP].854  4119  4119 I HBD     : HoneyBoardService [PF_CL][onFinishInputView]  102 ms 
+04-28 [REDACTED_IP].854  4119  4119 I HBD     : HoneyBoardService onWindowHidden 
+04-28 [REDACTED_IP].857  4119  4119 I HBD     : HoneyBoardService [PF_CL][onWindowHidden]  3 ms 
+04-28 [REDACTED_IP].859  4119  4119 I DecorView: [REDACTED_TOKEN]: keepScreenOn=false
+04-28 [REDACTED_IP].864  5185  5185 I CocktailBarUiHandler: onReceive: action = ResponseAxT9Info sipVisibility = 0
+04-28 [REDACTED_IP].869  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: performTraversals params={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=pan} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-28 [REDACTED_IP].869  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fl=81800108
+04-28 [REDACTED_IP].869  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   pfl=12000000
+04-28 [REDACTED_IP].869  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   bhv=DEFAULT
+04-28 [REDACTED_IP].869  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-28 [REDACTED_IP].869  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitSides=LEFT TOP RIGHT
+04-28 [REDACTED_IP].869  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-28 [REDACTED_IP].871  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false [REDACTED_TOKEN]=false params={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=pan} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-28 [REDACTED_IP].871  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fl=81800108
+04-28 [REDACTED_IP].871  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   pfl=12000000
+04-28 [REDACTED_IP].871  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   bhv=DEFAULT
+04-28 [REDACTED_IP].871  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-28 [REDACTED_IP].871  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitSides=LEFT TOP RIGHT
+04-28 [REDACTED_IP].871  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-28 [REDACTED_IP].872  1208  3909 V WindowManager: Relayout Window{b45b263 u0 InputMethod}: viewVisibility=0 req=720x1555 d0
+04-28 [REDACTED_IP].879  1208  3909 V WindowManager: Relayout hash=b45b263, pid=4119, syncId=-1: mAttrs={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=pan} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-28 [REDACTED_IP].879  1208  3909 V WindowManager:   fl=81800108
+04-28 [REDACTED_IP].879  1208  3909 V WindowManager:   pfl=12000000
+04-28 [REDACTED_IP].879  1208  3909 V WindowManager:   bhv=DEFAULT
+04-28 [REDACTED_IP].879  1208  3909 V WindowManager:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-28 [REDACTED_IP].879  1208  3909 V WindowManager:   fitSides=LEFT TOP RIGHT
+04-28 [REDACTED_IP].879  1208  3909 V WindowManager:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-28 [REDACTED_IP].882  7900  7900 D InsetsController: cancelAnimation of types: 8, animType: 1, host: com.example.getudiant/com.example.getudiant.AddEtudiant, from:android.view.InsetsController.notifyFinished:1375 android.view.[REDACTED_TOKEN]$1.lambda$notifyFinished$0$[REDACTED_TOKEN]$1:84 android.view.[REDACTED_TOKEN]$1$$[REDACTED_TOKEN].run:4 
+04-28 [REDACTED_IP].882  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: [REDACTED_TOKEN] mBlastBufferQueue=0xb40000772823a300 isSameSurfaceControl=true
+04-28 [REDACTED_IP].883  7900  7900 I IMM_LC  : notifyImeHidden: mService.hideSoftInput
+04-28 [REDACTED_IP].884  4119  4119 I BLASTBufferQueue: update, w= 720 h= 1555 mName = ViewRootImpl@34c98c0[InputMethod] mNativeObject= 0xb40000772823a300 sc.mNativeObject= 0xb40000770b477240 format= -2 caller= android.view.ViewRootImpl.[REDACTED_TOKEN]:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+04-28 [REDACTED_IP].884  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: Relayout returned: old=(0,45,720,1600) new=(0,45,720,1600) req=(720,1555)0 dur=11 res=0x1 s={true 0xb4000077a4bf5000} ch=false seqId=0
+04-28 [REDACTED_IP].885  1208  3909 D [REDACTED_TOKEN]: hideSoftInput
+04-28 [REDACTED_IP].885  1208  3909 V [REDACTED_TOKEN]: Client requesting input be hidden
+04-28 [REDACTED_IP].885  1208  3909 V [REDACTED_TOKEN]: hideCurrentInputLocked : canceled, shouldHideSoftInput=false, mInputShown=false, mImeWindowVis=0
+04-28 [REDACTED_IP].886  1208  3909 I [REDACTED_TOKEN]: [REDACTED_TOKEN]: mVisibleBound=false, mHasConnection=true, caller = com.android.server.inputmethod.[REDACTED_TOKEN].hideCurrentInputLocked:4356 com.android.server.inputmethod.[REDACTED_TOKEN].hideSoftInput:4294 com.android.internal.view.IInputMethodManager$Stub.onTransact:488 com.android.server.inputmethod.[REDACTED_TOKEN].onTransact:2302 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> 
+04-28 [REDACTED_IP].891  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 
+04-28 [REDACTED_IP].891  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: Setup new sync id=68
+04-28 [REDACTED_IP].891  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: Setting syncFrameCallback
+04-28 [REDACTED_IP].891  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: [REDACTED_TOKEN] syncBuffer=false
+04-28 [REDACTED_IP].898  4119 18662 I ViewRootImpl@34c98c0[InputMethod]: Received frameDrawingCallback syncResult=0 frameNum=11.
+04-28 [REDACTED_IP].898  4119 18662 I ViewRootImpl@34c98c0[InputMethod]: Setting up sync and frameCommitCallback
+04-28 [REDACTED_IP].905   871   871 D SurfaceFlinger: Display 0 HWC layers:
+04-28 [REDACTED_IP].905   871   871 D SurfaceFlinger:      DEVICE | 0xb400007005a2ce80 | 0102 | RGBA_8888    |    0.0    0.0  720.0 1600.0 |    0    0  720 1600 | com.example.getudiant/com.example.getudiant.AddEtudiant$_7900#4464
+04-28 [REDACTED_IP].905   871   871 D SurfaceFlinger:      DEVICE | 0xb400007005a2b800 | 0100 | RGBA_8888    |    0.0    0.0  720.0   45.0 |    0    0  720   45 | StatusBar$_1888#96
+04-28 [REDACTED_IP].905   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fdd24cd80 | 0100 | RGBA_8888    |    0.0    0.0   67.0  268.0 |  653  378  720  646 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_5185#4491
+04-28 [REDACTED_IP].905   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fdd7c6b80 | 0100 | RGBA_8888    |    0.0    0.0  259.0   26.0 |  461 1574  720 1600 | SGestureOverlayWindow$_2312#4169
+04-28 [REDACTED_IP].905   871   871 D SurfaceFlinger:      CLIENT | 0xb40000700762a580 | 0100 | RGBA_8888    |    0.0    0.0  720.0   84.0 |    0 1516  720 1600 | NavigationBar0$_1888#93
+04-28 [REDACTED_IP].905   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fedc04100 | 0100 | RGBA_8888    |    0.0    0.0   53.0   98.0 |  667  141  720  239 | [REDACTED_TOKEN]$_2544#104
+04-28 [REDACTED_IP].905   871   871 D SurfaceFlinger: 
+04-28 [REDACTED_IP].908  4119  6242 I ViewRootImpl@34c98c0[InputMethod]: Received frameCommittedCallback [REDACTED_TOKEN]=11 didProduceBuffer=true
+04-28 [REDACTED_IP].908  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: onSyncComplete
+04-28 [REDACTED_IP].909  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: setupSync seqId=0 mSyncId=68 fn=11 caller=android.view.ViewRootImpl$$[REDACTED_TOKEN].accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$[REDACTED_TOKEN]:128 android.window.SurfaceSyncer$$[REDACTED_TOKEN].accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+04-28 [REDACTED_IP].910  4119  4119 I HBD     : HoneyBoardService onTrimMemory 20
+04-28 [REDACTED_IP].911  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: reportDrawFinished seqId=0 mSyncId=-1 fn=11 [REDACTED_TOKEN]=0xb4000077280e2000
+04-28 [REDACTED_IP].911  1208  3928 D WindowManager: finishDrawingWindow: Window{b45b263 u0 InputMethod} mDrawState=HAS_DRAWN seqId=0
+04-28 [REDACTED_IP].912  4119  4119 I HBD     : o Init expand button state by global layout listener 
+04-28 [REDACTED_IP].914  4119  4119 I InputMethodService: removeImeSurface
+04-28 [REDACTED_IP].920  4119  4119 I MSHandlerLifeCycle: check: return. pkg=com.samsung.android.honeyboard isActivity=false callers=com.android.internal.policy.DecorView.setVisibility:4412 android.app.Dialog.hide:767 android.inputmethodservice.InputMethodService.removeImeSurface:1290 android.inputmethodservice.InputMethodService.[REDACTED_TOKEN]:1279 android.inputmethodservice.InputMethodService.-$$Nest$[REDACTED_TOKEN]:0 
+04-28 [REDACTED_IP].920  4119  4119 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@e374137[InputMethod]
+04-28 [REDACTED_IP].930  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true [REDACTED_TOKEN]=false params=null
+04-28 [REDACTED_IP].930  1208  3928 V WindowManager: Relayout Window{b45b263 u0 InputMethod}: viewVisibility=8 req=720x1555 d0
+04-28 [REDACTED_IP].931  1208  3928 E WindowManager: win=Window{b45b263 u0 InputMethod} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.WindowManagerService.[REDACTED_TOKEN]:3016 com.android.server.wm.WindowManagerService.relayoutWindow:2727 com.android.server.wm.Session.relayout:274 android.view.IWindowSession$Stub.onTransact:779 com.android.server.wm.Session.onTransact:188 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 
+04-28 [REDACTED_IP].931  1208  3928 I WindowManager: Destroying surface Surface(name=[REDACTED_NAME]$_4119)/@0x30de503 called by com.android.server.wm.WindowStateAnimator.destroySurface:942 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:536 com.android.server.wm.WindowState.destroySurfaceUnchecked:4309 com.android.server.wm.WindowState.destroySurface:4283 com.android.server.wm.WindowManagerService.[REDACTED_TOKEN]:3016 com.android.server.wm.WindowManagerService.relayoutWindow:2727 com.android.server.wm.Session.relayout:274 android.view.IWindowSession$Stub.onTransact:779 
+04-28 [REDACTED_IP].933   871   871 I Layer   : id=4469 removeFromCurrentState InputMethod$_4119#4469 (112)
+04-28 [REDACTED_IP].935   871   916 I SurfaceFlinger: HRR : 0
+04-28 [REDACTED_IP].937  1888  2834 I ViewRootImpl@7a762b4[StatusBar]: Resizing android.view.ViewRootImpl@ab1f620: frame = [0,0][720,45] reportDraw = false forceLayout = false syncSeqId = 4
+04-28 [REDACTED_IP].937  5185 17701 I ViewRootImpl@915daaf[CocktailBarService]: Resizing android.view.ViewRootImpl@a6feaa8: frame = [653,378][720,646] reportDraw = false forceLayout = false syncSeqId = 3
+04-28 [REDACTED_IP].937  7900  8920 I ViewRootImpl@e88b703[AddEtudiant]: Resizing android.view.ViewRootImpl@19a0aac: frame = [0,0][720,1600] reportDraw = false forceLayout = false syncSeqId = 0
+04-28 [REDACTED_IP].938  2312  2350 I ViewRootImpl@936821f[SGestureOverlayWindow]: Resizing android.view.ViewRootImpl@ebf5058: frame = [461,1574][720,1600] reportDraw = false forceLayout = false syncSeqId = 4
+04-28 [REDACTED_IP].938  1888  5866 I ViewRootImpl@614fc7b[NavigationBar0]: Resizing android.view.ViewRootImpl@a085844: frame = [0,1516][720,1600] reportDraw = false forceLayout = false syncSeqId = 4
+04-28 [REDACTED_IP].938  2312  2312 I ViewRootImpl@936821f[SGestureOverlayWindow]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[461,1574][720,1600] display=[0,45][720,1600] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].938  5185  5185 I ViewRootImpl@915daaf[CocktailBarService]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[653,378][720,646] display=[0,0][720,1574] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].939  7900  7900 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 720, 1600), mDisplayCutout=DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}  mRoundedCornerFrame=Rect(0, 0 - 720, 1600), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(643, 0 - 720, 45) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,1574][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[720,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,66], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,1544][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][-100000,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[100000,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,100000][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][0,0], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,938][720,1600], mVisible=false, [REDACTED_TOKEN]=false} } host=com.example.getudiant/com.example.getudiant.AddEtudiant from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6727
+04-28 [REDACTED_IP].939  2544  2575 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]: Resizing android.view.ViewRootImpl@43db1c2: frame = [667,141][720,239] reportDraw = false forceLayout = false syncSeqId = 3
+04-28 [REDACTED_IP].939  7900  7900 I ViewRootImpl@e88b703[AddEtudiant]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][720,1600] display=[0,0][720,1600] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].939  1888  1888 I ViewRootImpl@7a762b4[StatusBar]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,0][720,45] display=[0,0][720,1600] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].940  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[667,141][720,239] display=[0,45][720,1574] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].940  1888  1888 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 720, 1600), mDisplayCutout=DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(643, 0 - 720, 45) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[720,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,66], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,1544][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][-100000,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[100000,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,100000][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][0,0], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,938][720,1600], mVisible=false, [REDACTED_TOKEN]=false} } host=NavigationBar0 from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6727
+04-28 [REDACTED_IP].940  1888  1888 I ViewRootImpl@614fc7b[NavigationBar0]: handleResized, msg = 4 frames=ClientWindowFrames{frame=[0,1516][720,1600] display=[0,0][720,1600] parentFrame=[0,0][0,0] [REDACTED_TOKEN]=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+04-28 [REDACTED_IP].941  1208  3928 V WindowManager: Relayout hash=b45b263, pid=4119, syncId=-1: mAttrs={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=pan} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-28 [REDACTED_IP].941  1208  3928 V WindowManager:   fl=81800108
+04-28 [REDACTED_IP].941  1208  3928 V WindowManager:   pfl=12000000
+04-28 [REDACTED_IP].941  1208  3928 V WindowManager:   bhv=DEFAULT
+04-28 [REDACTED_IP].941  1208  3928 V WindowManager:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-28 [REDACTED_IP].941  1208  3928 V WindowManager:   fitSides=LEFT TOP RIGHT
+04-28 [REDACTED_IP].941  1208  3928 V WindowManager:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-28 [REDACTED_IP].945  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: Relayout returned: old=(0,45,720,1600) new=(0,45,720,1600) req=(720,1555)8 dur=13 res=0x2 s={false 0x0} ch=true seqId=0
+04-28 [REDACTED_IP].955   871   871 I SurfaceFlinger: id=4469 Removed InputMethod$_4119#4469 (112)
+04-28 [REDACTED_IP].956   871   871 I Layer   : id=4469 Destroyed InputMethod$_4119#4469
+04-28 [REDACTED_IP].006  2544  2544 I [REDACTED_TOKEN]: iconDisplayableBound : [0,0][720,1471]
+04-28 [REDACTED_IP].007  2544  2544 I [REDACTED_TOKEN]: iconDisplayableBound : [0,0][720,1555]
+04-28 [REDACTED_IP].014  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]: performTraversals params={(667,96)(53x98) gr=TOP LEFT CENTER sim={adjust=pan} ty=2281 fmt=TRANSLUCENT receive insets ignoring z-order
+04-28 [REDACTED_IP].014  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   fl=1000028
+04-28 [REDACTED_IP].014  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   pfl=12000000
+04-28 [REDACTED_IP].014  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   bhv=DEFAULT
+04-28 [REDACTED_IP].014  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR IME naviIconColor=0
+04-28 [REDACTED_IP].014  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   sfl=20000}
+04-28 [REDACTED_IP].015  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false [REDACTED_TOKEN]=false params={(667,96)(53x98) gr=TOP LEFT CENTER sim={adjust=pan} ty=2281 fmt=TRANSLUCENT receive insets ignoring z-order
+04-28 [REDACTED_IP].015  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   fl=1000028
+04-28 [REDACTED_IP].015  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   pfl=12000000
+04-28 [REDACTED_IP].015  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   bhv=DEFAULT
+04-28 [REDACTED_IP].015  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR IME naviIconColor=0
+04-28 [REDACTED_IP].015  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]:   sfl=20000}
+04-28 [REDACTED_IP].016  1208  3909 V WindowManager: Relayout Window{8be38ca u0 [REDACTED_TOKEN]}: viewVisibility=0 req=53x98 d0
+04-28 [REDACTED_IP].022  1208  3909 V WindowManager: Relayout hash=8be38ca, pid=2544, syncId=-1: mAttrs={(667,96)(53x98) gr=TOP LEFT CENTER sim={adjust=pan} ty=2281 fmt=TRANSLUCENT receive insets ignoring z-order
+04-28 [REDACTED_IP].022  1208  3909 V WindowManager:   fl=1000028
+04-28 [REDACTED_IP].022  1208  3909 V WindowManager:   pfl=12000000
+04-28 [REDACTED_IP].022  1208  3909 V WindowManager:   bhv=DEFAULT
+04-28 [REDACTED_IP].022  1208  3909 V WindowManager:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR IME naviIconColor=0
+04-28 [REDACTED_IP].022  1208  3909 V WindowManager:   sfl=20000}
+04-28 [REDACTED_IP].023  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]: [REDACTED_TOKEN] mBlastBufferQueue=0xb40000787f07fb00 isSameSurfaceControl=true
+04-28 [REDACTED_IP].024  2544  2544 I BLASTBufferQueue: update, w= 53 h= 98 mName = ViewRootImpl@1233cf8[[REDACTED_TOKEN]] mNativeObject= 0xb40000787f07fb00 sc.mNativeObject= 0xb4000077b3b33f80 format= -3 caller= android.view.ViewRootImpl.[REDACTED_TOKEN]:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+04-28 [REDACTED_IP].024  2544  2544 I ViewRootImpl@1233cf8[[REDACTED_TOKEN]]: Relayout returned: old=(667,141,720,239) new=(667,141,720,239) req=(53,98)0 dur=8 res=0x0 s={true 0xb4000077a01bb000} ch=false seqId=3
+04-28 [REDACTED_IP].070  4119  4140 W roid.honeyboard: Reducing the number of considered missed Gc histogram windows from 187 to 100
+04-28 [REDACTED_IP].153  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3562, isSameBssidAndFreq true
+04-28 [REDACTED_IP].155  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-28 [REDACTED_IP].155  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.123 ms / 65.000 Mbps (65 / 0.000 / 1.000)
+04-28 [REDACTED_IP].165  5185  5185 I Utils   : isCurrentUser current = 0, ownerId = 0
+04-28 [REDACTED_IP].166  5185  5185 I [REDACTED_TOKEN]: getComputedTrayVisible : keyguardState = 1
+04-28 [REDACTED_IP].166  5185  5185 I [REDACTED_TOKEN]: updateTrayVisible: State=1 visible=1 mCurrentVisible=1 specificMode=0
+04-28 [REDACTED_IP].166  5185  5185 I TrayStateController: onNotifyUpdateTray: state=0
+04-28 [REDACTED_IP].272  1208 10641 D TspStateManager: wrote command: cmd=0, type=5
+04-28 [REDACTED_IP].317   853   853 I sysinput:Touch: writeInformation:248, OK
+04-28 [REDACTED_IP].318  1208  1399 D SysinputHAL_V1_3(V1_2): runTspCmdNoRead(1): set_sip_mode,0(0)
+04-28 [REDACTED_IP].011   845 10629 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 755856
+04-28 [REDACTED_IP].161   845 10627 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1752256
+04-28 [REDACTED_IP].174   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].175   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].175   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].848   391   391 D io_stats: !@ 179,0 r 8175988 112352203 w 986646 12142140 d 298943 13447704 f 0 0 iot 2098460 0 th 0 0 0 pt 0 inp 0 0 15660.346
+04-28 [REDACTED_IP].365  3802  3802 I SDHMS:LOAD: type: LoadsFreqs, value: [REDACTED_IP]835119:2002000:546000:835119:2002000:546000:[REDACTED_IP]
+04-28 [REDACTED_IP].629  1208  1273 D PowerManagerService: [REDACTED_TOKEN]: 0
+04-28 [REDACTED_IP].680   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].682   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].682   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].164   871   871 I SurfaceFlinger: SFWD update time=15661663129875
+04-28 [REDACTED_IP].165   871   871 I DisplayDevice: [Display 0 (internal, primary, "Primary display")] ActiveConfigToHWC, ID : 1
+04-28 [REDACTED_IP].166   871   871 I LayerHistory: com.example.getudiant/com.example.getudiant.AddEtudiant$_7900#4464 is infrequent
+04-28 [REDACTED_IP].166   871   871 I SurfaceFlinger: all layers Min - choose 60.00 Hz
+04-28 [REDACTED_IP].171  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3563, isSameBssidAndFreq true
+04-28 [REDACTED_IP].174  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-28 [REDACTED_IP].180  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.123 ms / 65.000 Mbps (65 / 0.000 / 1.000)
+04-28 [REDACTED_IP].190   871   871 I Scheduler: DisplayModeChanged : 1
+04-28 [REDACTED_IP].191  1208  1236 D LocalDisplayAdapter: updateActiveModeLocked for d=0, mActiveModeId=2, mActiveSfDisplayMode=DisplayMode{id=1, width=720, height=1600, xDpi=268.941, yDpi=269.139, refreshRate=60.000004, appVsyncOffsetNanos=0, [REDACTED_TOKEN]=17666666, group=0}
+04-28 [REDACTED_IP].193  1208  1236 I DisplayDeviceRepository: Display device changed: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 720 x 1600, modeId 2, defaultModeId 1, supportedModes [{id=1, width=720, height=1600, fps=90.0, alternativeRefreshRates=[60.000004]}, {id=2, width=720, height=1600, fps=60.000004, alternativeRefreshRates=[90.0]}], colorMode 0, supportedColorModes [0], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, [REDACTED_TOKEN] false, density 300, 268.941 x 269.139 dpi, appVsyncOff 0, presDeadline 17666666, cutout DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, touch INTERNAL, rotation 0, type INTERNAL, address {port=0}, deviceProductInfo null, state ON, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.5019608, roundedCorners RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}, [REDACTED_TOKEN], [REDACTED_TOKEN], FLAG_SECURE, [REDACTED_TOKEN], installOrientation 0}
+04-28 [REDACTED_IP].197  1208  2765 D LiftUpHandler: [LTW] Stopped already.
+04-28 [REDACTED_IP].198  1208  1208 D SGM:GameManager: onDisplayChanged. displyId: 0, state: 2
+04-28 [REDACTED_IP].198  1208  1208 D AODManagerService: requestReCalToTSP IsSingleTouchMode = false / previousDisplayState = ON
+04-28 [REDACTED_IP].200  1888  1888 D DisplayLifecycle: updateDisplay id = 0
+04-28 [REDACTED_IP].201  1208  1403 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_LCD_ON
+04-28 [REDACTED_IP].210   871  1028 I VSyncReactor: Current= 90, TransitioningTo= 60, Distance= 60
+04-28 [REDACTED_IP].217  1208  1236 D DisplayModeDirector: [REDACTED_TOKEN], brightness=103, lux=-1.0
+04-28 [REDACTED_IP].217  1208  1236 D DisplayModeDirector: setPassiveMode=false, brightness=103, lux=-1.0, mRequestedPassive=false
+04-28 [REDACTED_IP].525  3802  4557 I SDHMS:D : SIOP:: AP:333 BAT:297 USB:0 CHG:336 PA:333 BLK:0 SUBBAT:0 SKIN:302 SKINF:302 SKINB:300 LRP:302 LRF:302 LRB:300 
+04-28 [REDACTED_IP].571  2927 10643 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+04-28 [REDACTED_IP].571  2927 10643 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+04-28 [REDACTED_IP].190   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].191   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].191   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].195   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].215   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].186   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].188   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].188   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].192  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3564, isSameBssidAndFreq true
+04-28 [REDACTED_IP].195  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.123 ms / 65.000 Mbps (65 / 0.000 / 1.000)
+04-28 [REDACTED_IP].218   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].205   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].496  1208 10645 D WifiConnectivityMonitor.DnsThread:  [|209] []
+04-28 [REDACTED_IP].497  1208  1793 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 209
+04-28 [REDACTED_IP].498  1208  1788 D OpenNetworkQos[4.00]: [REDACTED_TOKEN] - result: 0
+04-28 [REDACTED_IP].498  1208  1788 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+04-28 [REDACTED_IP].498  1208  1788 D OpenNetworkQos[4.00]: [REDACTED_TOKEN]: false
+04-28 [REDACTED_IP].498  1208  1788 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 26 0 
+04-28 [REDACTED_IP].499  1208  1788 D SettingsProvider: isChangeAllowed() : name = [REDACTED_TOKEN]
+04-28 [REDACTED_IP].688   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].690   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].690   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].002   850   850 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-28 [REDACTED_IP].225   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].553  1828  1828 I wpa_supplicant: Heartbeat 1528
+04-28 [REDACTED_IP].196   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].197   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].197   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].204  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3565, isSameBssidAndFreq true
+04-28 [REDACTED_IP].205  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.368 ms / 21.750 Mbps (58 / 0.000 / 2.667)
+04-28 [REDACTED_IP].205  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-28 [REDACTED_IP].228   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].231   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].698   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].700   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].702   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].234   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 59
+04-28 [REDACTED_IP].744  1208  1255 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-28 [REDACTED_IP].750 10312 10312 I [WEATHER][REDACTED_TOKEN]: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].793 10312 10342 I [WEATHER]AppWidgetUIManager: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].798 10312 10342 I [WEATHER][REDACTED_TOKEN]: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].798 10312 10312 I [WEATHER]AppWidgetUIManager: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].798  1208  3919 I AppWidgetServiceImpl: getAppWidgetInfo() 30, from 0
+04-28 [REDACTED_IP].799  1208  3919 I AppWidgetServiceImpl: getAppWidgetInfo() 30, from 0
+04-28 [REDACTED_IP].800  1208  3928 I AppWidgetServiceImpl: getAppWidgetInfo() 30, from 0
+04-28 [REDACTED_IP].800 10312 10342 I [WEATHER][REDACTED_TOKEN]: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].801 10312 10342 I [WEATHER][REDACTED_TOKEN]: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].805  1208  3928 W JobScheduler: Job didn't exist in JobStore: 57740d4 #u0a153/1004 com.sec.android.daemonapp/.service.[REDACTED_TOKEN]
+04-28 [REDACTED_IP].818  1208  3928 I AppWidgetServiceImpl: getAppWidgetInfo() 30, from 0
+04-28 [REDACTED_IP].852   391   391 D io_stats: !@ 179,0 r 8176127 112352811 w 986675 12142320 d 298943 13447704 f 0 0 iot 2098500 0 th 0 0 0 pt 0 inp 0 0 15670.351
+04-28 [REDACTED_IP].867 10312 10361 I [WEATHER]GetNewsViewMode: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].871 10312 10312 I [WEATHER][REDACTED_TOKEN]: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].873  1208  3928 I AppWidgetServiceImpl: getAppWidgetInfo() 30, from 0
+04-28 [REDACTED_IP].876 10312 10312 I [WEATHER][REDACTED_TOKEN]: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].876 10312 10312 I [WEATHER][REDACTED_TOKEN]: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].876 10312 10312 I [WEATHER][REDACTED_TOKEN]: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].000 10312 10312 I [WEATHER]WidgetModelFactoryImpl: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].000 10312 10312 I [WEATHER]AbsWidgetModel: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].008 10312 10312 I [WEATHER]WidgetViewDecorator: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].018 10312 10312 I [WEATHER]WidgetViewDecorator: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].020 10312 10312 I [WEATHER]AppWidgetUIManager: {[[REDACTED_TOKEN]]}
+04-28 [REDACTED_IP].020 10312 10312 I AppWidgetManager: updateAppWidget() appWidgetIds = [30]
+04-28 [REDACTED_IP].201   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].203   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].205   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].212  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3566, isSameBssidAndFreq true
+04-28 [REDACTED_IP].213  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.564 ms / 14.182 Mbps (39 / 0.000 / 2.750)
+04-28 [REDACTED_IP].220   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].464  3802  3802 I SDHMS:LOAD: type: LoadsFreqs, value: [REDACTED_IP]546000:546000:546000:546000:546000:546000:[REDACTED_IP]
+04-28 [REDACTED_IP].520  1997  2485 D IpClient/wlan0: [REDACTED_TOKEN]: ifindex 12 up
+04-28 [REDACTED_IP].995  1208  1241 E Watchdog: !@Sync: 516 heap: 134 / 139 FD: 1071 [2026-04-28 [REDACTED_IP].994]
+04-28 [REDACTED_IP].240   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].453  1208  1770 I SemWifiServiceDetector: Traff. tracking started
+04-28 [REDACTED_IP].573  2927 10205 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+04-28 [REDACTED_IP].573  2927 10205 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+04-28 [REDACTED_IP].708   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].709   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].709   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].955  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.04415229]
+04-28 [REDACTED_IP].956  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.10864212]
+04-28 [REDACTED_IP].956  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.915227]
+04-28 [REDACTED_IP].956  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 1.061923 msecs
+04-28 [REDACTED_IP].958  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 2.124692 msecs
+04-28 [REDACTED_IP].960  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.518423 msecs
+04-28 [REDACTED_IP].244   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 59
+04-28 [REDACTED_IP].461  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.029250076]
+04-28 [REDACTED_IP].462  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.081150286]
+04-28 [REDACTED_IP].462  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.9267034]
+04-28 [REDACTED_IP].462  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 1.189539 msecs
+04-28 [REDACTED_IP].465  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.930039 msecs
+04-28 [REDACTED_IP].466  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.591115 msecs
+04-28 [REDACTED_IP].968  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.04336829]
+04-28 [REDACTED_IP].969  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.05381342]
+04-28 [REDACTED_IP].969  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.9168714]
+04-28 [REDACTED_IP].969  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 1.543846 msecs
+04-28 [REDACTED_IP].971  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.929962 msecs
+04-28 [REDACTED_IP].973  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.691346 msecs
+04-28 [REDACTED_IP].213   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].213   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].214   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].220  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3567, isSameBssidAndFreq true
+04-28 [REDACTED_IP].222  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.342 ms / 23.400 Mbps (39 / 0.000 / 1.667)
+04-28 [REDACTED_IP].247   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 59
+04-28 [REDACTED_IP].475  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.035336226]
+04-28 [REDACTED_IP].475  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.043729022]
+04-28 [REDACTED_IP].475  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.8711892]
+04-28 [REDACTED_IP].476  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 1.093461 msecs
+04-28 [REDACTED_IP].478  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.989923 msecs
+04-28 [REDACTED_IP].479  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.408384 msecs
+04-28 [REDACTED_IP].845  3090  4364 I [REDACTED_TOKEN]: cp_s: [CONTACT con(229) dat(2290) acc({phone(1)=1, google(2)=223, com.whatsapp(12)=171, com.google.android.apps.tachyon(656)=33, google(545)=5, core(26)=9}) calls([logtype:100 cnt:474, logtype:300 cnt:500, logtype:1000 cnt:1204]) Iso(MA) uId(0) ]
+
+04-28 [REDACTED_IP].845  3090  4364 I [REDACTED_TOKEN]: cp_s: [ agr({[12 ,545 ,656]=1, [2 ,12 ,656]=27, [1]=1, [2]=54, [2 ,12 ,26]=6, [12 ,545]=1, [2 ,656]=2, [545 ,12]=1, [2 ,12 ,12]=1, [2 ,12 ,656 ,26]=1, [12 ,2]=1, [2 ,12]=129, [545]=2, [2 ,12 ,26 ,656]=2}) ]
+
+04-28 [REDACTED_IP].845  3090  4364 I [REDACTED_TOKEN]: cp_s: [ cnt({acore(3090)=1}) ]
+
+04-28 [REDACTED_IP].845  3090  4364 I [REDACTED_TOKEN]: cp_s: [PROFILE ] [SAPROFILE con(1) dat(1) acc({phone(1)=1}) ]
+
+04-28 [REDACTED_IP].845  3090  4364 I [REDACTED_TOKEN]: cp_s: [STATE R(F) ]
+04-28 [REDACTED_IP].939   804   804 E audit   : type=1400 audit(1777401584.933:17359): avc:  denied  { write } for  pid=3080 comm="ThreadPoolForeg" name="traced_producer" dev="tmpfs" ino=9946 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-M127F_13_0001 audit_filtered
+04-28 [REDACTED_IP].939   804   804 E audit   : type=1300 audit(1777401584.933:17359): arch=c00000b7 syscall=203 success=no exit=-13 a0=104 a1=b400007703662ca0 a2=1e a3=ffffffff960f3e49 items=1 ppid=821 pid=3080 auid=4294967295 uid=10198 gid=10198 euid=10198 suid=10198 fsuid=10198 egid=10198 sgid=10198 fsgid=10198 tty=(none) ses=4294967295 comm="ThreadPoolForeg" exe="/system/bin/app_process64" subj=u:r:gmscore_app:s0:c512,c768 key=(null)
+04-28 [REDACTED_IP].939   804   804 E audit   : type=1306 audit(1777401584.933:17359): saddr=[REDACTED_TOKEN]
+04-28 [REDACTED_IP].939   804   804 E audit   : type=1302 audit(1777401584.933:17359): item=0 name="/dev/socket/traced_producer" inode=9946 dev=00:10 mode=0140666 ouid=0 ogid=0 rdev=00:00 obj=u:object_r:traced_producer_socket:s0 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+04-28 [REDACTED_IP].939   804   804 E audit   : type=1327 audit(1777401584.933:17359): proctitle="com.google.android.gms"
+04-28 [REDACTED_IP].980  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.03149193]
+04-28 [REDACTED_IP].981  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.063203976]
+04-28 [REDACTED_IP].981  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.9094564]
+04-28 [REDACTED_IP].981  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 0.655307 msecs
+04-28 [REDACTED_IP].982  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.979462 msecs
+04-28 [REDACTED_IP].983  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.745693 msecs
+04-28 [REDACTED_IP].233   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].234  1208  1743 D UsbStatsMonitor: 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+04-28 [REDACTED_IP].396  1888  1996 D MobileStatusTracker(1/1): [REDACTED_TOKEN] level=2, vendorLevel=3
+04-28 [REDACTED_IP].398  1888  1996 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=UMTS (3G), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+04-28 [REDACTED_IP].398  1888  1996 D NetworkController: SignalStrength from intent slotId=1
+04-28 [REDACTED_IP].440  1208  3919 I EDMNativeHelperService: isScreenCaptureEnabled
+04-28 [REDACTED_IP].440  1208  3919 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+04-28 [REDACTED_IP].441 10650 10650 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+04-28 [REDACTED_IP].441  1208  1770 I SemWifiServiceDetector: Traff. tracking stopped
+04-28 [REDACTED_IP].479   354   425 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+04-28 [REDACTED_IP].719   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].719   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].719   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].738   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].854   391   391 D io_stats: !@ 179,0 r 8176494 112358207 w 986678 12142332 d 298943 13447704 f 0 0 iot 2098572 0 th 0 0 0 pt 0 inp 0 0 15676.353
+04-28 [REDACTED_IP].048   850   850 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-28 [REDACTED_IP].230  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3568, isSameBssidAndFreq true
+04-28 [REDACTED_IP].232  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.308 ms / 26.000 Mbps (52 / 0.000 / 2.000)
+04-28 [REDACTED_IP].561  1828  1828 I wpa_supplicant: Heartbeat 1529
+04-28 [REDACTED_IP].720   845 10642 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1752256
+04-28 [REDACTED_IP].722   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].723   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IP].724   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].741   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IP].370  1208  1729 W [REDACTED_TOKEN]: updateBroadcasts(/data) oldLevel:0, newLevel:0, seq:1
+04-28 [REDACTED_IP].372  1208  1729 D [REDACTED_TOKEN]: Available File Node Number is [13045941]
+04-28 [REDACTED_IP].372  1208  1729 W [REDACTED_TOKEN]: [REDACTED_TOKEN](/data) fn_oldLevel:0, fn_newLevel:0, seq:1
+04-28 [REDACTED_IP].230   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IP].231   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IP].231   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+

@@ -1,0 +1,405 @@
+﻿{
+  "case": "<app.db.models.audit_case.AuditCase object at 0x000002A961321850>",
+  "summary": {
+    "total_artifacts": 3,
+    "total_evidence_items": 9,
+    "total_mappings": 9,
+    "total_missing_issues": 0,
+    "completeness_score": 100.0,
+    "artifact_type_counts": {
+      "apk": 1,
+      "apk_hash": 1,
+      "components": 1,
+      "log": 1,
+      "manifest_summary": 1,
+      "manifest_xml": 1,
+      "permissions": 1,
+      "sbom": 1,
+      "screenshot": 1
+    },
+    "deduplication": {
+      "total_artifacts": 3,
+      "unique_artifacts": 3,
+      "duplicate_hashes": {}
+    },
+    "coverage": {
+      "domain_counts": {
+        "MASVS-RESILIENCE": 3,
+        "MASVS-PLATFORM": 4,
+        "MASVS-CODE": 1,
+        "MASVS-PRIVACY": 1
+      }
+    },
+    "collection_summary": "9 evidence items were collected for med, covering apk, apk_hash, components, log, manifest_summary, manifest_xml, permissions, sbom, screenshot. Core audit inputs appear complete for the current evidence pack.",
+    "missing_narratives": []
+  },
+  "artifacts": [
+    "<app.db.models.artifact.UploadedArtifact object at 0x000002A961320890>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000002A9613219D0>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000002A961320350>"
+  ],
+  "evidence_items": [
+    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D8E60>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D9310>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612DBE30>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612DB7A0>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D86E0>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612DA6C0>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D9F40>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D8230>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D9E50>"
+  ],
+  "mapping_references": [
+    "<app.db.models.mapping.MappingReference object at 0x000002A961212A40>",
+    "<app.db.models.mapping.MappingReference object at 0x000002A961213540>",
+    "<app.db.models.mapping.MappingReference object at 0x000002A9612107E0>",
+    "<app.db.models.mapping.MappingReference object at 0x000002A961211D30>",
+    "<app.db.models.mapping.MappingReference object at 0x000002A961213490>",
+    "<app.db.models.mapping.MappingReference object at 0x000002A961211DE0>",
+    "<app.db.models.mapping.MappingReference object at 0x000002A961211B20>",
+    "<app.db.models.mapping.MappingReference object at 0x000002A961212FC0>",
+    "<app.db.models.mapping.MappingReference object at 0x000002A961212200>"
+  ],
+  "missing_issues": [],
+  "details": {
+    "hashes": [
+      {
+        "sha256": "ab26a0ff556f5d5f4e757c86323b3e8c24011932b31ab4b9df8a403b032fe6e9",
+        "sha1": "c6028bfdc818dcf42119bba2dd06a9b9821a107f",
+        "md5": "187f2d97534e021336e9cfba74d1b2d9"
+      }
+    ],
+    "manifests": [
+      {
+        "package_name": "com.example.getudiant",
+        "version_name": "1.0",
+        "version_code": "1",
+        "min_sdk": "24",
+        "target_sdk": "36",
+        "summary": "Package com.example.getudiant targets SDK 36 and declares 2 permissions."
+      }
+    ],
+    "permissions": [
+      {
+        "permissions": [
+          "android.permission.INTERNET",
+          "com.example.getudiant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        ],
+        "sensitive_permissions": []
+      }
+    ],
+    "components": [
+      {
+        "exported_components": [
+          "androidx.profileinstaller.ProfileInstallReceiver",
+          "androidx.startup.InitializationProvider",
+          "com.example.getudiant.AddEtudiant",
+          "com.example.getudiant.ListEtudiantActivity"
+        ],
+        "embedded_domains": [],
+        "network_security_config": null,
+        "cleartext_traffic_allowed": null
+      }
+    ],
+    "sboms": [
+      {
+        "status": "generated",
+        "generator": "local-apk-sbom",
+        "format": "local-apk-sbom-v1",
+        "subject": {
+          "name": "com.example.getudiant",
+          "version": "1.0",
+          "type": "application"
+        },
+        "source_artifact": {
+          "filename": "app-debug.apk",
+          "size": 6718839,
+          "sha256": "ab26a0ff556f5d5f4e757c86323b3e8c24011932b31ab4b9df8a403b032fe6e9"
+        },
+        "components": [
+          {
+            "bom_ref": "application:com.example.getudiant",
+            "type": "application",
+            "name": "com.example.getudiant",
+            "version": "1.0",
+            "properties": {
+              "package_name": "com.example.getudiant",
+              "version_code": "1",
+              "min_sdk": "24",
+              "target_sdk": "36"
+            }
+          },
+          {
+            "bom_ref": "dex-unit:classes3",
+            "type": "file",
+            "name": "classes3.dex",
+            "version": null,
+            "evidence_source": "apk-archive",
+            "properties": {
+              "path": "classes3.dex",
+              "role": "dex-unit",
+              "size": 14088
+            }
+          },
+          {
+            "bom_ref": "manifest:AndroidManifest.xml",
+            "type": "file",
+            "name": "AndroidManifest.xml",
+            "version": null,
+            "evidence_source": "apk-archive",
+            "properties": {
+              "path": "AndroidManifest.xml",
+              "role": "manifest",
+              "size": 5676
+            }
+          },
+          {
+            "bom_ref": "dex-unit:classes4",
+            "type": "file",
+            "name": "classes4.dex",
+            "version": null,
+            "evidence_source": "apk-archive",
+            "properties": {
+              "path": "classes4.dex",
+              "role": "dex-unit",
+              "size": 1064620
+            }
+          },
+          {
+            "bom_ref": "dex-unit:classes2",
+            "type": "file",
+            "name": "classes2.dex",
+            "version": null,
+            "evidence_source": "apk-archive",
+            "properties": {
+              "path": "classes2.dex",
+              "role": "dex-unit",
+              "size": 479704
+            }
+          },
+          {
+            "bom_ref": "dex-unit:classes1",
+            "type": "file",
+            "name": "classes.dex",
+            "version": null,
+            "evidence_source": "apk-archive",
+            "properties": {
+              "path": "classes.dex",
+              "role": "dex-unit",
+              "size": 11108984
+            }
+          }
+        ],
+        "relationships": [
+          {
+            "from": "application:com.example.getudiant",
+            "to": "dex-unit:classes3",
+            "type": "contains"
+          },
+          {
+            "from": "application:com.example.getudiant",
+            "to": "manifest:AndroidManifest.xml",
+            "type": "contains"
+          },
+          {
+            "from": "application:com.example.getudiant",
+            "to": "dex-unit:classes4",
+            "type": "contains"
+          },
+          {
+            "from": "application:com.example.getudiant",
+            "to": "dex-unit:classes2",
+            "type": "contains"
+          },
+          {
+            "from": "application:com.example.getudiant",
+            "to": "dex-unit:classes1",
+            "type": "contains"
+          }
+        ],
+        "statistics": {
+          "declared_library_count": 0,
+          "native_library_count": 0,
+          "dex_unit_count": 4,
+          "top_level_directory_count": 10,
+          "file_count": 913,
+          "component_count": 6,
+          "relationship_count": 5
+        },
+        "note": "SBOM inventory generated from APK metadata and archive contents."
+      }
+    ],
+    "logs": [
+      {
+        "filename": "runtime_log_RF8T602HTNA.log",
+        "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA.log",
+        "excerpt": "--------- beginning of main\n04-28 [REDACTED_IP].579  1888  3626 V Navbar.Store: --[Band][REDACTED_TOKEN]\n04-28 [REDACTED_IP].579  1888  3626 V Navbar.Store: ----apply(0) StartHintVI\n04-28 [REDACTED_IP].579  2312  2312 W [REDACTED_TOKEN]: delegateMotionEvent, action = 0\n04-28 [REDACTED_IP].583  2312  2312 W [REDACTED_TOKEN]: onDragStart\n04-28 [REDACTED_IP].583  2312  2312 W [REDACTED_TOKEN]: hintAnimationStarted\n04-28 [REDACTED_IP].585  2312  2312 W SGestureVibrationEffect: vibrate, keyCode = 4, type = 50047\n04-28 [REDACTED_IP].595  2312  2312 W DeviceState: isNoEffectEventRegion - The event region is the same as the start\n04-28 [REDACTED_IP].595  2312  2312 W [REDACTED_TOKEN]: setActive, action = 2\n04-28 [REDACTED_IP].598  2312  2312 I [REDACTED_TOKEN]: isSGestureActivated, activated = true\n04-28 [REDACTED_IP].601  2312  2312 I [REDACTED_TOKEN]: finishTouchTracking, action : 3, mPassedWindowMoveSlop = false, mInteractionHandler = null, mIsSGestureActivated : true\n04"
+      }
+    ],
+    "screenshots": [
+      {
+        "filename": "auto_screenshot_RF8T602HTNA.png",
+        "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\auto_screenshot_RF8T602HTNA.png"
+      }
+    ],
+    "imports": [],
+    "latest_manifest": {
+      "package_name": "com.example.getudiant",
+      "version_name": "1.0",
+      "version_code": "1",
+      "min_sdk": "24",
+      "target_sdk": "36",
+      "summary": "Package com.example.getudiant targets SDK 36 and declares 2 permissions."
+    },
+    "latest_permissions": {
+      "permissions": [
+        "android.permission.INTERNET",
+        "com.example.getudiant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      ],
+      "sensitive_permissions": []
+    },
+    "latest_components": {
+      "exported_components": [
+        "androidx.profileinstaller.ProfileInstallReceiver",
+        "androidx.startup.InitializationProvider",
+        "com.example.getudiant.AddEtudiant",
+        "com.example.getudiant.ListEtudiantActivity"
+      ],
+      "embedded_domains": [],
+      "network_security_config": null,
+      "cleartext_traffic_allowed": null
+    },
+    "latest_sbom": {
+      "status": "generated",
+      "generator": "local-apk-sbom",
+      "format": "local-apk-sbom-v1",
+      "subject": {
+        "name": "com.example.getudiant",
+        "version": "1.0",
+        "type": "application"
+      },
+      "source_artifact": {
+        "filename": "app-debug.apk",
+        "size": 6718839,
+        "sha256": "ab26a0ff556f5d5f4e757c86323b3e8c24011932b31ab4b9df8a403b032fe6e9"
+      },
+      "components": [
+        {
+          "bom_ref": "application:com.example.getudiant",
+          "type": "application",
+          "name": "com.example.getudiant",
+          "version": "1.0",
+          "properties": {
+            "package_name": "com.example.getudiant",
+            "version_code": "1",
+            "min_sdk": "24",
+            "target_sdk": "36"
+          }
+        },
+        {
+          "bom_ref": "dex-unit:classes3",
+          "type": "file",
+          "name": "classes3.dex",
+          "version": null,
+          "evidence_source": "apk-archive",
+          "properties": {
+            "path": "classes3.dex",
+            "role": "dex-unit",
+            "size": 14088
+          }
+        },
+        {
+          "bom_ref": "manifest:AndroidManifest.xml",
+          "type": "file",
+          "name": "AndroidManifest.xml",
+          "version": null,
+          "evidence_source": "apk-archive",
+          "properties": {
+            "path": "AndroidManifest.xml",
+            "role": "manifest",
+            "size": 5676
+          }
+        },
+        {
+          "bom_ref": "dex-unit:classes4",
+          "type": "file",
+          "name": "classes4.dex",
+          "version": null,
+          "evidence_source": "apk-archive",
+          "properties": {
+            "path": "classes4.dex",
+            "role": "dex-unit",
+            "size": 1064620
+          }
+        },
+        {
+          "bom_ref": "dex-unit:classes2",
+          "type": "file",
+          "name": "classes2.dex",
+          "version": null,
+          "evidence_source": "apk-archive",
+          "properties": {
+            "path": "classes2.dex",
+            "role": "dex-unit",
+            "size": 479704
+          }
+        },
+        {
+          "bom_ref": "dex-unit:classes1",
+          "type": "file",
+          "name": "classes.dex",
+          "version": null,
+          "evidence_source": "apk-archive",
+          "properties": {
+            "path": "classes.dex",
+            "role": "dex-unit",
+            "size": 11108984
+          }
+        }
+      ],
+      "relationships": [
+        {
+          "from": "application:com.example.getudiant",
+          "to": "dex-unit:classes3",
+          "type": "contains"
+        },
+        {
+          "from": "application:com.example.getudiant",
+          "to": "manifest:AndroidManifest.xml",
+          "type": "contains"
+        },
+        {
+          "from": "application:com.example.getudiant",
+          "to": "dex-unit:classes4",
+          "type": "contains"
+        },
+        {
+          "from": "application:com.example.getudiant",
+          "to": "dex-unit:classes2",
+          "type": "contains"
+        },
+        {
+          "from": "application:com.example.getudiant",
+          "to": "dex-unit:classes1",
+          "type": "contains"
+        }
+      ],
+      "statistics": {
+        "declared_library_count": 0,
+        "native_library_count": 0,
+        "dex_unit_count": 4,
+        "top_level_directory_count": 10,
+        "file_count": 913,
+        "component_count": 6,
+        "relationship_count": 5
+      },
+      "note": "SBOM inventory generated from APK metadata and archive contents."
+    },
+    "latest_hashes": {
+      "sha256": "ab26a0ff556f5d5f4e757c86323b3e8c24011932b31ab4b9df8a403b032fe6e9",
+      "sha1": "c6028bfdc818dcf42119bba2dd06a9b9821a107f",
+      "md5": "187f2d97534e021336e9cfba74d1b2d9"
+    },
+    "raw_manifest_xml": "<Element manifest at 0x2a9611a5900>"
+  }
+}

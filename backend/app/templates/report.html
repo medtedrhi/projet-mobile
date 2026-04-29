@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ case.app_name }} - Evidence Collector Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2937; }
+    h1, h2 { color: #0f172a; }
+    h3 { color: #1e293b; margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+    th, td { border: 1px solid #cbd5e1; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #e2e8f0; }
+    .meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 24px; }
+    .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 16px; margin-bottom: 20px; }
+    .grid-two { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px; }
+    ul { margin-top: 8px; }
+    code { background: #e2e8f0; padding: 1px 4px; border-radius: 4px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 12px; border-radius: 10px; white-space: pre-wrap; word-break: break-word; }
+  </style>
+</head>
+<body>
+  <h1>Evidence Collector & Compliance Pack</h1>
+  <div class="card">
+    <h2>Overview</h2>
+    <p>{{ summary.collection_summary }}</p>
+    <div class="meta">
+      <div><strong>App:</strong> {{ case.app_name }}</div>
+      <div><strong>Package:</strong> {{ case.package_name or "Unknown" }}</div>
+      <div><strong>Auditor:</strong> {{ case.auditor }}</div>
+      <div><strong>Date:</strong> {{ case.audit_date }}</div>
+      <div><strong>Scope:</strong> {{ case.scope }}</div>
+      <div><strong>Completeness:</strong> {{ summary.completeness_score }}%</div>
+    </div>
+  </div>
+
+  <div class="grid-two">
+    <div class="card">
+      <h3>Audit Inputs</h3>
+      <p><strong>Total uploaded artifacts:</strong> {{ summary.total_artifacts }}</p>
+      <p><strong>Unique artifact hashes:</strong> {{ summary.deduplication.unique_artifacts }}</p>
+      {% if summary.deduplication.duplicate_hashes %}
+      <p><strong>Duplicate uploads detected:</strong></p>
+      <ul>
+        {% for hash_value, filenames in summary.deduplication.duplicate_hashes.items() %}
+        <li><code>{{ hash_value }}</code> appears {{ filenames|length }} times</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No duplicate artifact hashes were detected.</p>
+      {% endif %}
+    </div>
+    <div class="card">
+      <h3>Evidence Distribution</h3>
+      <ul>
+        {% for evidence_type, count in summary.artifact_type_counts.items() %}
+        <li><strong>{{ evidence_type }}</strong>: {{ count }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <h2>Collected Evidence Summary</h2>
+  <table>
+    <thead><tr><th>Evidence ID</th><th>Type</th><th>Source</th><th>Path</th><th>Status</th></tr></thead>
+    <tbody>
+      {% for item in evidence_items %}
+      <tr>
+        <td>{{ item.id }}</td><td>{{ item.evidence_type }}</td><td>{{ item.source }}</td><td>{{ item.normalized_path }}</td><td>{{ item.status }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>Manifest and Permissions Overview</h2>
+  <div class="grid-two">
+    <div class="card">
+      <h3>Manifest Summary</h3>
+      {% if details.latest_manifest %}
+      <p><strong>Package:</strong> {{ details.latest_manifest.package_name or "Unknown" }}</p>
+      <p><strong>Version Name:</strong> {{ details.latest_manifest.version_name or "Unknown" }}</p>
+      <p><strong>Version Code:</strong> {{ details.latest_manifest.version_code or "Unknown" }}</p>
+      <p><strong>minSdk:</strong> {{ details.latest_manifest.min_sdk or "Unknown" }}</p>
+      <p><strong>targetSdk:</strong> {{ details.latest_manifest.target_sdk or "Unknown" }}</p>
+      <p><strong>Summary:</strong> {{ details.latest_manifest.summary }}</p>
+      {% else %}
+      <p>No manifest summary is available.</p>
+      {% endif %}
+      {% if details.raw_manifest_xml %}
+      <p><strong>Raw manifest extract:</strong> included in the evidence pack as <code>AndroidManifest.xml</code>.</p>
+      {% endif %}
+    </div>
+    <div class="card">
+      <h3>Permissions</h3>
+      {% if details.latest_permissions.permissions %}
+      <p><strong>Total permissions:</strong> {{ details.latest_permissions.permissions|length }}</p>
+      <ul>
+        {% for permission in details.latest_permissions.permissions %}
+        <li>{{ permission }}</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No permission inventory is available.</p>
+      {% endif %}
+      {% if details.latest_permissions.sensitive_permissions %}
+      <p><strong>Sensitive permissions highlighted:</strong></p>
+      <ul>
+        {% for permission in details.latest_permissions.sensitive_permissions %}
+        <li>{{ permission }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+
+  <h2>Components and Dependency Overview</h2>
+  <div class="grid-two">
+    <div class="card">
+      <h3>Exported Components</h3>
+      {% if details.latest_components.exported_components %}
+      <p><strong>Total components:</strong> {{ details.latest_components.exported_components|length }}</p>
+      <ul>
+        {% for component in details.latest_components.exported_components %}
+        <li>{{ component }}</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No exported component summary is available.</p>
+      {% endif %}
+      {% if details.latest_components.embedded_domains %}
+      <p><strong>Embedded domains/endpoints hints:</strong></p>
+      <ul>
+        {% for domain in details.latest_components.embedded_domains %}
+        <li>{{ domain }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <p><strong>Network security config:</strong> {{ details.latest_components.network_security_config or "Not declared" }}</p>
+      <p><strong>Cleartext traffic:</strong> {{ details.latest_components.cleartext_traffic_allowed or "Not declared" }}</p>
+    </div>
+    <div class="card">
+      <h3>SBOM Status</h3>
+      {% if details.latest_sbom %}
+      <p><strong>Status:</strong> {{ details.latest_sbom.status }}</p>
+      <p><strong>Generator:</strong> {{ details.latest_sbom.generator }}</p>
+      <p><strong>Note:</strong> {{ details.latest_sbom.note }}</p>
+      {% if details.latest_sbom.components %}
+      <p><strong>Components discovered:</strong></p>
+      <ul>
+        {% for component in details.latest_sbom.components %}
+        <li>{{ component.name }}{% if component.type %} ({{ component.type }}){% endif %}</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No software components were enumerated in the current SBOM output.</p>
+      {% endif %}
+      {% else %}
+      <p>No SBOM details are available.</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <h2>Artifact Integrity and Hashes</h2>
+  <table>
+    <thead><tr><th>Artifact</th><th>SHA-256</th><th>Size</th><th>MIME Type</th></tr></thead>
+    <tbody>
+      {% for artifact in artifacts %}
+      <tr><td>{{ artifact.original_filename }}</td><td><code>{{ artifact.file_hash_sha256 }}</code></td><td>{{ artifact.file_size }}</td><td>{{ artifact.mime_type or "Unknown" }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% if details.latest_hashes %}
+  <div class="card">
+    <h3>Latest Extracted Hash Record</h3>
+    <p><strong>SHA-256:</strong> <code>{{ details.latest_hashes.sha256 }}</code></p>
+    <p><strong>SHA-1:</strong> <code>{{ details.latest_hashes.sha1 }}</code></p>
+    <p><strong>MD5:</strong> <code>{{ details.latest_hashes.md5 }}</code></p>
+  </div>
+  {% endif %}
+
+  <h2>Traceability Matrix</h2>
+  <table>
+    <thead><tr><th>Evidence</th><th>Proof</th><th>MASVS</th><th>MASWE</th><th>MASTG</th><th>Status</th><th>Notes</th></tr></thead>
+    <tbody>
+      {% for item in mapping_references %}
+      <tr>
+        <td>{{ item.evidence_item_id }}</td>
+        <td>
+          {% if item.evidence_item %}
+          <strong>{{ item.evidence_item.evidence_type }}</strong><br />
+          {{ item.evidence_item.original_filename or item.evidence_item.normalized_path }}
+          {% else %}
+          Unknown evidence
+          {% endif %}
+        </td>
+        <td>{{ item.masvs_refs }}</td><td>{{ item.maswe_refs }}</td><td>{{ item.mastg_refs }}</td><td>{{ item.status }}</td><td>{{ item.notes }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% if details.logs %}
+  <h2>Runtime Log Excerpts</h2>
+  {% for log in details.logs %}
+  <div class="card">
+    <h3>{{ log.filename or "Sanitized Log" }}</h3>
+    <p><strong>Stored Path:</strong> {{ log.path }}</p>
+    <pre>{{ log.excerpt }}</pre>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+  <h2>Missing Evidence and Collection Gaps</h2>
+  <table>
+    <thead><tr><th>Severity</th><th>Title</th><th>Why It Matters</th><th>Recommendation</th></tr></thead>
+    <tbody>
+      {% for issue in missing_issues %}
+      <tr><td>{{ issue.severity }}</td><td>{{ issue.title }}</td><td>{{ issue.rationale }}</td><td>{{ issue.recommendation }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% if summary.missing_narratives %}
+  <div class="card">
+    <h3>AI Gap Narratives</h3>
+    <ul>
+      {% for narrative in summary.missing_narratives %}
+      <li>{{ narrative }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <div class="card">
+    <h3>Compliance Readiness Summary</h3>
+    <p>This evidence pack documents baseline APK assessment artifacts and their traceability to OWASP MASVS, MASWE, and MASTG references. It supports integrity verification, manifest and permission review, component visibility, and dependency awareness. It does not by itself prove the absence of vulnerabilities; dynamic evidence, screenshots, and analyst findings should be added for deeper review.</p>
+  </div>
+</body>
+</html>

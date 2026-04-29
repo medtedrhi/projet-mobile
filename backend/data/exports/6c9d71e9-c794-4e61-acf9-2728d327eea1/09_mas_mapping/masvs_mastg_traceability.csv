@@ -1,0 +1,17 @@
+Evidence ID,File,Description,MASVS,MASTG,Status
+EVD-001,01_apk/app-debug.apk,Uploaded APK artifact,,,UNMAPPED
+EVD-002,11_hashes/apk_hash.json,APK hash proof,MASVS-RESILIENCE-1,MASTG-KNOW-0011,OK
+EVD-003,02_manifest/manifest_summary.json,Manifest metadata summary,MASVS-PLATFORM-1,MASTG-TEST-0026,OK
+EVD-004,02_manifest/AndroidManifest.xml,Manifest extraction,MASVS-NETWORK-1; MASVS-PLATFORM-1,MASTG-TEST-0026; MASTG-TEST-0286,OK
+EVD-005,03_permissions/permissions.json,Permissions analysis,MASVS-PLATFORM-1,MASTG-TEST-0027,OK
+EVD-006,04_components/components.json,Component exposure analysis,MASVS-NETWORK-1; MASVS-PLATFORM-2,MASTG-TEST-0028; MASTG-TEST-0286,OK
+EVD-007,05_sbom/sbom.json,SBOM dependencies,MASVS-CODE-1; MASVS-RESILIENCE-2,MASTG-KNOW-0073,OK
+EVD-008,network_security_config.xml,network_security_config.xml,,,UNMAPPED
+EVD-009,strings.xml,strings.xml,,,UNMAPPED
+EVD-010,build_config.json,build_config.json,,,UNMAPPED
+EVD-011,app_config_summary.json,app_config_summary.json,,,UNMAPPED
+EVD-012,config_status.json,config_status.json,,,UNMAPPED
+EVD-013,07_screenshots/auto_screenshot_RF8T602HTNA.png,Screenshot evidence,,MASTG-KNOW-0019,OK
+EVD-014,07_screenshots/auto_screenshot_RF8T602HTNA.png,Screenshot evidence,,MASTG-KNOW-0019,OK
+EVD-015,06_logs/runtime_log_RF8T602HTNA.log,Anonymized runtime logs,MASVS-PRIVACY-1; MASVS-RESILIENCE-1,MASTG-TEST-0001,OK
+EVD-016,06_logs/runtime_log_RF8T602HTNA.log,Anonymized runtime logs,MASVS-PRIVACY-1; MASVS-RESILIENCE-1,MASTG-TEST-0001,OK

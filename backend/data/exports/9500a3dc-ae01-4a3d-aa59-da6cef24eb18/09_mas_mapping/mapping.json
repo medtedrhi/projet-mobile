@@ -1,0 +1,136 @@
+﻿[
+  {
+    "evidence_item_id": "192fec8d-fb2c-41dc-a96f-d7efde3b3176",
+    "evidence_type": "apk",
+    "original_filename": "app-debug.apk",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [],
+    "status": "unmapped",
+    "notes": "No MASVS, MASWE, or MASTG references could be justified from 'app-debug.apk'."
+  },
+  {
+    "evidence_item_id": "638c0edd-96a8-4046-a6df-8d281d90fc14",
+    "evidence_type": "apk_hash",
+    "original_filename": "apk_hash.json",
+    "masvs": [
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [],
+    "mastg": [
+      "MASTG-KNOW-0011"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'apk_hash.json' mapped with signals [sha256-present]. Hash evidence includes SHA-256 ab26a0ff556f..., which ties the audit pack to a specific APK binary and supports integrity verification."
+  },
+  {
+    "evidence_item_id": "7d09717a-4826-4bfc-8a16-3f181bb5a940",
+    "evidence_type": "manifest_summary",
+    "original_filename": "manifest_summary.json",
+    "masvs": [
+      "MASVS-PLATFORM-1"
+    ],
+    "maswe": [
+      "MASWE-0058"
+    ],
+    "mastg": [
+      "MASTG-TEST-0026"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'manifest_summary.json' mapped with signals [manifest-summary-sdk-metadata, manifest-summary-text]. Manifest summary identifies com.example.getudiant with minSdk=24 and targetSdk=36, providing concrete platform-configuration proof for manifest review. Manifest summary text captures declared app configuration: Package com.example.getudiant targets SDK 36 and declares 2 permissions.."
+  },
+  {
+    "evidence_item_id": "518ee724-7863-42d0-af76-166f0570bf0e",
+    "evidence_type": "manifest_xml",
+    "original_filename": "AndroidManifest.xml",
+    "masvs": [
+      "MASVS-PLATFORM-1"
+    ],
+    "maswe": [
+      "MASWE-0058"
+    ],
+    "mastg": [
+      "MASTG-TEST-0026"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'AndroidManifest.xml' mapped with signals [manifest-xml-present]. Raw AndroidManifest.xml was extracted, enabling direct verification of declared platform configuration."
+  },
+  {
+    "evidence_item_id": "1f3d09ab-661a-485d-a1b3-644b152a2fdb",
+    "evidence_type": "permissions",
+    "original_filename": "permissions.json",
+    "masvs": [
+      "MASVS-PLATFORM-1"
+    ],
+    "maswe": [
+      "MASWE-0001"
+    ],
+    "mastg": [
+      "MASTG-TEST-0027"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'permissions.json' mapped with signals [permission-inventory]. Permission inventory lists 2 declared permissions for direct manifest and platform review."
+  },
+  {
+    "evidence_item_id": "8c2cd006-139c-446b-86fa-9c32bd5f11bb",
+    "evidence_type": "components",
+    "original_filename": "components.json",
+    "masvs": [
+      "MASVS-PLATFORM-2"
+    ],
+    "maswe": [
+      "MASWE-0064"
+    ],
+    "mastg": [
+      "MASTG-TEST-0028"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'components.json' mapped with signals [exported-components-present]. Component evidence enumerates 4 exported component(s), which directly supports review of externally reachable app surfaces."
+  },
+  {
+    "evidence_item_id": "6fffc89a-9a30-4ab7-b5a1-bad0ac1455a8",
+    "evidence_type": "sbom",
+    "original_filename": "sbom.json",
+    "masvs": [
+      "MASVS-CODE-1",
+      "MASVS-RESILIENCE-2"
+    ],
+    "maswe": [
+      "MASWE-0093"
+    ],
+    "mastg": [
+      "MASTG-KNOW-0073"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'sbom.json' mapped with signals [sbom-archive-details, sbom-components-enumerated]. SBOM enumerates 6 component(s), providing concrete dependency and software inventory evidence. SBOM statistics include archive-derived implementation details (native libraries=0, dex units=4), supporting resilience and inventory traceability."
+  },
+  {
+    "evidence_item_id": "5701089f-1733-4ff6-9a5c-44553e719f0a",
+    "evidence_type": "screenshot",
+    "original_filename": "auto_screenshot_RF8T602HTNA.png",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [
+      "MASTG-KNOW-0019"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'auto_screenshot_RF8T602HTNA.png' mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit."
+  },
+  {
+    "evidence_item_id": "0d11a0f3-b946-4ff2-bfa9-4767e4fd1e77",
+    "evidence_type": "log",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "masvs": [
+      "MASVS-PRIVACY-1",
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [
+      "MASWE-0007"
+    ],
+    "mastg": [
+      "MASTG-TEST-0001"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'runtime_log_RF8T602HTNA.log' mapped with signals [log-anonymized, runtime-log-excerpt]. Sanitized runtime log content is available for runtime-observation and troubleshooting review. The runtime log was anonymized before storage, which makes this proof directly relevant to privacy-preserving evidence handling."
+  }
+]

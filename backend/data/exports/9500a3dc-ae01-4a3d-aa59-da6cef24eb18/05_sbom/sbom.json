@@ -1,0 +1,126 @@
+﻿{
+  "status": "generated",
+  "generator": "local-apk-sbom",
+  "format": "local-apk-sbom-v1",
+  "subject": {
+    "name": "com.example.getudiant",
+    "version": "1.0",
+    "type": "application"
+  },
+  "source_artifact": {
+    "filename": "app-debug.apk",
+    "size": 6718839,
+    "sha256": "ab26a0ff556f5d5f4e757c86323b3e8c24011932b31ab4b9df8a403b032fe6e9"
+  },
+  "components": [
+    {
+      "bom_ref": "application:com.example.getudiant",
+      "type": "application",
+      "name": "com.example.getudiant",
+      "version": "1.0",
+      "properties": {
+        "package_name": "com.example.getudiant",
+        "version_code": "1",
+        "min_sdk": "24",
+        "target_sdk": "36"
+      }
+    },
+    {
+      "bom_ref": "dex-unit:classes3",
+      "type": "file",
+      "name": "classes3.dex",
+      "version": null,
+      "evidence_source": "apk-archive",
+      "properties": {
+        "path": "classes3.dex",
+        "role": "dex-unit",
+        "size": 14088
+      }
+    },
+    {
+      "bom_ref": "manifest:AndroidManifest.xml",
+      "type": "file",
+      "name": "AndroidManifest.xml",
+      "version": null,
+      "evidence_source": "apk-archive",
+      "properties": {
+        "path": "AndroidManifest.xml",
+        "role": "manifest",
+        "size": 5676
+      }
+    },
+    {
+      "bom_ref": "dex-unit:classes4",
+      "type": "file",
+      "name": "classes4.dex",
+      "version": null,
+      "evidence_source": "apk-archive",
+      "properties": {
+        "path": "classes4.dex",
+        "role": "dex-unit",
+        "size": 1064620
+      }
+    },
+    {
+      "bom_ref": "dex-unit:classes2",
+      "type": "file",
+      "name": "classes2.dex",
+      "version": null,
+      "evidence_source": "apk-archive",
+      "properties": {
+        "path": "classes2.dex",
+        "role": "dex-unit",
+        "size": 479704
+      }
+    },
+    {
+      "bom_ref": "dex-unit:classes1",
+      "type": "file",
+      "name": "classes.dex",
+      "version": null,
+      "evidence_source": "apk-archive",
+      "properties": {
+        "path": "classes.dex",
+        "role": "dex-unit",
+        "size": 11108984
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "application:com.example.getudiant",
+      "to": "dex-unit:classes3",
+      "type": "contains"
+    },
+    {
+      "from": "application:com.example.getudiant",
+      "to": "manifest:AndroidManifest.xml",
+      "type": "contains"
+    },
+    {
+      "from": "application:com.example.getudiant",
+      "to": "dex-unit:classes4",
+      "type": "contains"
+    },
+    {
+      "from": "application:com.example.getudiant",
+      "to": "dex-unit:classes2",
+      "type": "contains"
+    },
+    {
+      "from": "application:com.example.getudiant",
+      "to": "dex-unit:classes1",
+      "type": "contains"
+    }
+  ],
+  "statistics": {
+    "declared_library_count": 0,
+    "native_library_count": 0,
+    "dex_unit_count": 4,
+    "top_level_directory_count": 10,
+    "file_count": 913,
+    "component_count": 6,
+    "relationship_count": 5
+  },
+  "note": "SBOM inventory generated from APK metadata and archive contents."
+}

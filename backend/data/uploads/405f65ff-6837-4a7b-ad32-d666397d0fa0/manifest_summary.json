@@ -1,0 +1,8 @@
+{
+  "package_name": "jakhar.aseem.diva",
+  "version_name": "1.0",
+  "version_code": "1",
+  "min_sdk": "15",
+  "target_sdk": "23",
+  "summary": "Package jakhar.aseem.diva targets SDK 23"
+}

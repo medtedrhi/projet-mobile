@@ -1,0 +1,7 @@
+{
+  "permissions": [
+    "android.permission.INTERNET",
+    "com.example.getudiant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "sensitive_permissions": []
+}

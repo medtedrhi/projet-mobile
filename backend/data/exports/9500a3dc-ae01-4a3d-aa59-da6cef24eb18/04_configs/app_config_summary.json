@@ -1,0 +1,18 @@
+﻿{
+  "package": "com.example.getudiant",
+  "version_name": "1.0",
+  "version_code": "1",
+  "min_sdk": "24",
+  "target_sdk": "36",
+  "network_security_config": "@7F130006",
+  "cleartext_traffic_allowed": "true",
+  "exported_components_count": 2,
+  "status": {
+    "network_security_config": "extracted:res/xml/network_security_config.xml",
+    "strings": "extracted",
+    "build_config": "extracted",
+    "firebase_config": "not_found",
+    "hardcoded_secrets": "not_detected",
+    "cleartext_traffic": "checked"
+  }
+}

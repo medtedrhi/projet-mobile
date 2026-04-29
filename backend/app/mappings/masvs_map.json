@@ -1,0 +1,12 @@
+{
+  "apk_hash": ["MASVS-RESILIENCE-1"],
+  "manifest_summary": ["MASVS-PLATFORM-1"],
+  "manifest_xml": ["MASVS-PLATFORM-1", "MASVS-NETWORK-1"],
+  "permissions": ["MASVS-PLATFORM-1", "MASVS-PRIVACY-1"],
+  "components": ["MASVS-PLATFORM-2", "MASVS-NETWORK-1"],
+  "sbom": ["MASVS-CODE-1", "MASVS-RESILIENCE-2"],
+  "log": ["MASVS-PRIVACY-1", "MASVS-RESILIENCE-1"],
+  "screenshot": ["MASVS-AUTH-1", "MASVS-PRIVACY-1"],
+  "mobsf": ["MASVS-CODE-1", "MASVS-CRYPTO-1"],
+  "jadx": ["MASVS-CODE-1"]
+}

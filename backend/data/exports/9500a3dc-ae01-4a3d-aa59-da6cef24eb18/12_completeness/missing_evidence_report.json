@@ -1,0 +1,19 @@
+{
+  "required_evidence": {
+    "apk_hash": "present",
+    "manifest_extract": "present",
+    "permissions_list": "present",
+    "sbom": "present",
+    "screenshots": "present",
+    "logs_anonymized": "present",
+    "tool_versions": "present",
+    "metrics": "present",
+    "masvs_mapping": "present"
+  },
+  "missing": [],
+  "warnings": [
+    "Only one screenshot found",
+    "Manifest XML validated"
+  ],
+  "completeness_percent": 100
+}

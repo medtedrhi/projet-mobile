@@ -1,0 +1,477 @@
+--------- beginning of main
+04-29 [REDACTED_IP].604  4119  4119 I HBD     : HoneyBoardService onWindowShown 
+04-29 [REDACTED_IP].604  4119  4119 I HBD     : HoneyBoardService [PF_OP][onWindowShown]  0 ms 
+04-29 [REDACTED_IP].604  4119  4119 I MSHandlerLifeCycle: check: return. pkg=com.samsung.android.honeyboard isActivity=false callers=com.android.internal.policy.DecorView.setVisibility:4412 android.app.Dialog.show:454 android.inputmethodservice.SoftInputWindow.show:208 android.inputmethodservice.InputMethodService.showWindow:3071 android.inputmethodservice.InputMethodService$InputMethodImpl.showSoftInput:1035 
+04-29 [REDACTED_IP].604  4119  4119 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@e374137[InputMethod]
+04-29 [REDACTED_IP].605  4119  4119 I Choreographer: Skipped 107 frames!  The application may be doing too much work on its main thread.
+04-29 [REDACTED_IP].606  5185  5185 I CocktailBarUiHandler: onReceive: action = ResponseAxT9Info sipVisibility = 1
+04-29 [REDACTED_IP].608  1208  3924 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : false
+--------- beginning of system
+04-29 [REDACTED_IP].608  1208  3924 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : checking vis : 3
+04-29 [REDACTED_IP].610  1208  3924 I [REDACTED_TOKEN]: setImeWindowStatus: vis=3, backDisposition=0
+04-29 [REDACTED_IP].611  1208  3924 D [REDACTED_TOKEN]: notifyUserActivity: canceled, displayId=0
+04-29 [REDACTED_IP].614 13714 13714 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+04-29 [REDACTED_IP].614 13714 13714 W OnBackInvokedCallback: Set 'android:[REDACTED_TOKEN]="true"' in the application manifest.
+04-29 [REDACTED_IP].615 13714 13714 D InsetsController: show(ime(), fromIme=true)
+04-29 [REDACTED_IP].625 13714 13714 D InsetsController: show(ime(), fromIme=true)
+04-29 [REDACTED_IP].627  1208  3924 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : false
+04-29 [REDACTED_IP].628  1208  3924 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : checking vis : 3
+04-29 [REDACTED_IP].629   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-29 [REDACTED_IP].631  1208  3924 I [REDACTED_TOKEN]: setImeWindowStatus: vis=3, backDisposition=0
+04-29 [REDACTED_IP].632   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-29 [REDACTED_IP].632   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-29 [REDACTED_IP].634  1208  1208 I GestureDetector: handleMessage TAP
+04-29 [REDACTED_IP].639  1208  1387 D InputReader: Btn_touch(4): value=1 when=27555.631412
+04-29 [REDACTED_IP].639  1208  1387 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.4310 ] when=27555.631412
+04-29 [REDACTED_IP].640  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 707492288 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEventInternal:199 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEvent:119 
+04-29 [REDACTED_IP].640  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 0 id: 707492288
+04-29 [REDACTED_IP].641  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 707492288 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].-$$Nest$mhandleEventWith:0 com.android.server.accessibility.magnification.[REDACTED_TOKEN]$DetectingState.sendDelayedMotionEvents:892 
+04-29 [REDACTED_IP].641  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x0, time=27555631412000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-29 [REDACTED_IP].641  1208  1386 I InputDispatcher: Delivering touch to (1888): action: 0x4, f=0x0, d=0, '3275bd ', t=1 
+04-29 [REDACTED_IP].641  1208  1386 I InputDispatcher: Delivering touch to (4119): action: 0x0, f=0x0, d=0, 'b45b263', t=1 +(0,-45)
+04-29 [REDACTED_IP].642  2312  2312 I TouchInteractionService: onInputEvent, inputConsumer = com.android.quickstep.l2@2834120
+04-29 [REDACTED_IP].642  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 707492288 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-29 [REDACTED_IP].642  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 707492288 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-29 [REDACTED_IP].683   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-29 [REDACTED_IP].692  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: performTraversals params={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=resize} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-29 [REDACTED_IP].692  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fl=81800108
+04-29 [REDACTED_IP].692  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   pfl=12000000
+04-29 [REDACTED_IP].692  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   bhv=DEFAULT
+04-29 [REDACTED_IP].692  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-29 [REDACTED_IP].692  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitSides=LEFT TOP RIGHT
+04-29 [REDACTED_IP].692  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-29 [REDACTED_IP].693  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false [REDACTED_TOKEN]=false params={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=resize} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-29 [REDACTED_IP].693  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fl=81800108
+04-29 [REDACTED_IP].693  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   pfl=12000000
+04-29 [REDACTED_IP].693  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   bhv=DEFAULT
+04-29 [REDACTED_IP].693  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-29 [REDACTED_IP].693  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitSides=LEFT TOP RIGHT
+04-29 [REDACTED_IP].693  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-29 [REDACTED_IP].694  1208  3924 V WindowManager: Relayout Window{b45b263 u0 InputMethod}: viewVisibility=0 req=720x1555 d0
+04-29 [REDACTED_IP].701  1208  3924 V WindowManager: Relayout hash=b45b263, pid=4119, syncId=-1: mAttrs={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=resize} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-29 [REDACTED_IP].701  1208  3924 V WindowManager:   fl=81800108
+04-29 [REDACTED_IP].701  1208  3924 V WindowManager:   pfl=12000000
+04-29 [REDACTED_IP].701  1208  3924 V WindowManager:   bhv=DEFAULT
+04-29 [REDACTED_IP].701  1208  3924 V WindowManager:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-29 [REDACTED_IP].701  1208  3924 V WindowManager:   fitSides=LEFT TOP RIGHT
+04-29 [REDACTED_IP].701  1208  3924 V WindowManager:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-29 [REDACTED_IP].702  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: [REDACTED_TOKEN] mBlastBufferQueue=0xb400007720424000 isSameSurfaceControl=true
+04-29 [REDACTED_IP].702  4119  4119 I BLASTBufferQueue: update, w= 720 h= 1555 mName = ViewRootImpl@34c98c0[InputMethod] mNativeObject= 0xb400007720424000 sc.mNativeObject= 0xb40000770bb20c40 format= -2 caller= android.view.ViewRootImpl.[REDACTED_TOKEN]:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+04-29 [REDACTED_IP].703  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: Relayout returned: old=(0,45,720,1600) new=(0,45,720,1600) req=(720,1555)0 dur=9 res=0x0 s={true 0xb4000077a4bf5000} ch=false seqId=0
+04-29 [REDACTED_IP].725  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: ViewPostIme pointer 0
+04-29 [REDACTED_IP].726  4119  4119 I GestureDetector: obtain mCurrentDownEvent. id: 707492288 caller: com.samsung.android.honeyboard.textboard.f0.z.c.a.onTouch:2 com.samsung.android.honeyboard.textboard.f0.z.f.d.n:3 com.samsung.android.honeyboard.textboard.f0.z.f.a.i:15 
+04-29 [REDACTED_IP].727  4119  4119 I HBD     : c ATL SoundAndVibrationKeyA
+04-29 [REDACTED_IP].727  4119  4119 I HBD     : a sound is off 
+04-29 [REDACTED_IP].727  4119  4119 I HBD     : b vib is off 
+04-29 [REDACTED_IP].729  4119  4119 I HBD     : a [PF_KL] OTE none 0 87 90 3594000 (1, NONE) 
+04-29 [REDACTED_IP].730  4119  4119 I HBD     : o Init expand button state by global layout listener 
+04-29 [REDACTED_IP].730  4119  4119 I HBD     : f container vis= false
+04-29 [REDACTED_IP].754  4119  4119 I HBD     : l0 EBD si t 0 
+04-29 [REDACTED_IP].756  1208  1387 D InputReader: Btn_touch(4): value=0 when=27555.748590
+04-29 [REDACTED_IP].756  4119  4119 I HBD     : b [REDACTED_TOKEN]:  [ComposingItem] true* / 
+04-29 [REDACTED_IP].756  1208  1387 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=27555.748590
+04-29 [REDACTED_IP].757  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: 938750458
+04-29 [REDACTED_IP].757  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x1, time=27555748590000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-29 [REDACTED_IP].760  1208  1386 I InputDispatcher: Delivering touch to (4119): action: 0x1, f=0x0, d=0, 'b45b263', t=1 +(0,-45)
+04-29 [REDACTED_IP].760  2312  2312 I TouchInteractionService: reset
+04-29 [REDACTED_IP].761  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: 938750458
+04-29 [REDACTED_IP].761  1888  5866 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](noArguments=true) [Module] 
+04-29 [REDACTED_IP].761  1888  5866 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-29 [REDACTED_IP].761  1888  5866 V Navbar.Store: ----apply(0) ResetHintVI
+04-29 [REDACTED_IP].762  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: 938750458
+04-29 [REDACTED_IP].763  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: ViewPostIme pointer 1
+04-29 [REDACTED_IP].763  4119 26846 I OpenGLRenderer: Davey! duration=1324ms; Flags=0, FrameTimelineVsyncId=5896371, IntendedVsync=27554405487259, Vsync=27555597647982, InputEventId=675053149, HandleInputStart=27555597949098, AnimationStart=27555597951021, PerformTraversalsStart=27555682974098, DrawStart=27555697015598, FrameDeadline=27554416598370, FrameInterval=27555597895060, FrameStartTime=11141689, SyncQueued=27555715245098, SyncStart=27555715391444, IssueDrawCommandsStart=27555717394752, SwapBuffers=27555727580368, FrameCompleted=27555730522791, DequeueBufferDuration=48539, QueueBufferDuration=508000, GpuCompleted=27555730522791, SwapBuffersCompleted=27555728964752, DisplayPresentTime=22863343117378, [REDACTED_TOKEN]=27555727580368, 
+04-29 [REDACTED_IP].763  4119  4119 I GestureDetector: obtain mCurrentMotionEventRaw. action: 1 id: 938750458
+04-29 [REDACTED_IP].764  4119  4119 I HBD     : c ATL CharacterKeyA
+04-29 [REDACTED_IP].769  4119  4119 I HBD     : c IIFO[r:dc85ff1fd2] 
+04-29 [REDACTED_IP].770  4119  4119 I HBD     : l0 EBD key t 0 
+04-29 [REDACTED_IP].771  4119  4119 I HBD     : a [PF_KL] OTE none 1 7 15 7792000 (1, NONE) 
+04-29 [REDACTED_IP].771  4119  4119 I HBD     : d1 ous -  0 ,  0 ,  1 ,  1 ,  0 ,  1
+04-29 [REDACTED_IP].772  4119  4119 I HBD     : l0 EBD cm s 0 
+04-29 [REDACTED_IP].797  4119  4119 I HBD     : d1 ous -  1 ,  1 ,  2 ,  2 ,  0 ,  2
+04-29 [REDACTED_IP].798  4119  4119 I HBD     : l0 EBD cm s 0 
+04-29 [REDACTED_IP].803  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false [REDACTED_TOKEN]=false params={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=pan} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-29 [REDACTED_IP].803  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fl=81800108
+04-29 [REDACTED_IP].803  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   pfl=12000000
+04-29 [REDACTED_IP].803  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   bhv=DEFAULT
+04-29 [REDACTED_IP].803  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-29 [REDACTED_IP].803  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitSides=LEFT TOP RIGHT
+04-29 [REDACTED_IP].803  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-29 [REDACTED_IP].804  1208  3924 V WindowManager: Relayout Window{b45b263 u0 InputMethod}: viewVisibility=0 req=720x1555 d0
+04-29 [REDACTED_IP].805  4119  6262 I HBD     : b [SKE_KPM] load kpm : /data/user/0/com.samsung.android.honeyboard/app_KeyPressModel/model_0_0_868166338.im
+04-29 [REDACTED_IP].810  1208  3924 V WindowManager: Relayout hash=b45b263, pid=4119, syncId=-1: mAttrs={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=pan} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-29 [REDACTED_IP].810  1208  3924 V WindowManager:   fl=81800108
+04-29 [REDACTED_IP].810  1208  3924 V WindowManager:   pfl=12000000
+04-29 [REDACTED_IP].810  1208  3924 V WindowManager:   bhv=DEFAULT
+04-29 [REDACTED_IP].810  1208  3924 V WindowManager:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-29 [REDACTED_IP].810  1208  3924 V WindowManager:   fitSides=LEFT TOP RIGHT
+04-29 [REDACTED_IP].810  1208  3924 V WindowManager:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-29 [REDACTED_IP].812  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: [REDACTED_TOKEN] mBlastBufferQueue=0xb400007720424000 isSameSurfaceControl=true
+04-29 [REDACTED_IP].812  4119  4119 I BLASTBufferQueue: update, w= 720 h= 1555 mName = ViewRootImpl@34c98c0[InputMethod] mNativeObject= 0xb400007720424000 sc.mNativeObject= 0xb40000770a50e080 format= -2 caller= android.view.ViewRootImpl.[REDACTED_TOKEN]:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+04-29 [REDACTED_IP].813  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: Relayout returned: old=(0,45,720,1600) new=(0,45,720,1600) req=(720,1555)0 dur=9 res=0x0 s={true 0xb4000077a4bf5000} ch=false seqId=0
+04-29 [REDACTED_IP].814  4119  4119 I HBD     : o Init expand button state by global layout listener 
+04-29 [REDACTED_IP].829  4119  4119 I HBD     : d1 ous -  2 ,  2 ,  3 ,  3 ,  0 ,  3
+04-29 [REDACTED_IP].830  4119  4119 I HBD     : l0 EBD cm s 0 
+04-29 [REDACTED_IP].834   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-29 [REDACTED_IP].838  4119  4119 I HBD     : f container vis= true
+04-29 [REDACTED_IP].865  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false [REDACTED_TOKEN]=false params={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=resize} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-29 [REDACTED_IP].865  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fl=81800108
+04-29 [REDACTED_IP].865  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   pfl=12000000
+04-29 [REDACTED_IP].865  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   bhv=DEFAULT
+04-29 [REDACTED_IP].865  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-29 [REDACTED_IP].865  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitSides=LEFT TOP RIGHT
+04-29 [REDACTED_IP].865  4119  4119 I ViewRootImpl@34c98c0[InputMethod]:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-29 [REDACTED_IP].866  1208  3924 V WindowManager: Relayout Window{b45b263 u0 InputMethod}: viewVisibility=0 req=720x1555 d0
+04-29 [REDACTED_IP].873  1208  3924 V WindowManager: Relayout hash=b45b263, pid=4119, syncId=-1: mAttrs={(0,0)(fillxfill) gr=BOTTOM CENTER_VERTICAL sim={adjust=resize} ty=INPUT_METHOD fmt=TRANSPARENT wanim=0x7f1301aa [REDACTED_TOKEN]=60.0 receive insets ignoring z-order
+04-29 [REDACTED_IP].873  1208  3924 V WindowManager:   fl=81800108
+04-29 [REDACTED_IP].873  1208  3924 V WindowManager:   pfl=12000000
+04-29 [REDACTED_IP].873  1208  3924 V WindowManager:   bhv=DEFAULT
+04-29 [REDACTED_IP].873  1208  3924 V WindowManager:   fitTypes=STATUS_BARS NAVIGATION_BARS
+04-29 [REDACTED_IP].873  1208  3924 V WindowManager:   fitSides=LEFT TOP RIGHT
+04-29 [REDACTED_IP].873  1208  3924 V WindowManager:   fitIgnoreVis dimDuration=150 naviIconColor=0}
+04-29 [REDACTED_IP].875  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: [REDACTED_TOKEN] mBlastBufferQueue=0xb400007720424000 isSameSurfaceControl=true
+04-29 [REDACTED_IP].875  4119  4119 I BLASTBufferQueue: update, w= 720 h= 1555 mName = ViewRootImpl@34c98c0[InputMethod] mNativeObject= 0xb400007720424000 sc.mNativeObject= 0xb40000770a520320 format= -2 caller= android.view.ViewRootImpl.[REDACTED_TOKEN]:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+04-29 [REDACTED_IP].875  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: Relayout returned: old=(0,45,720,1600) new=(0,45,720,1600) req=(720,1555)0 dur=9 res=0x0 s={true 0xb4000077a4bf5000} ch=false seqId=0
+04-29 [REDACTED_IP].924  1208  1387 D InputReader: Btn_touch(4): value=1 when=27555.915713
+04-29 [REDACTED_IP].924  1208  1387 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.4311 ] when=27555.915713
+04-29 [REDACTED_IP].926  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 771674743 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEventInternal:199 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEvent:119 
+04-29 [REDACTED_IP].927  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 0 id: 771674743
+04-29 [REDACTED_IP].927  4119  4119 I HBD     : l0 EBD ex 
+04-29 [REDACTED_IP].927  4119 18700 I HBD     : l0 EBD tb start :1 
+04-29 [REDACTED_IP].928  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 771674743 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].-$$Nest$mhandleEventWith:0 com.android.server.accessibility.magnification.[REDACTED_TOKEN]$DetectingState.sendDelayedMotionEvents:892 
+04-29 [REDACTED_IP].928  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x0, time=27555915713000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-29 [REDACTED_IP].928  1208  1386 I InputDispatcher: Delivering touch to (1888): action: 0x4, f=0x0, d=0, '3275bd ', t=1 
+04-29 [REDACTED_IP].929  1208  1386 I InputDispatcher: Delivering touch to (4119): action: 0x0, f=0x0, d=0, 'b45b263', t=1 +(0,-45)
+04-29 [REDACTED_IP].929  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: ViewPostIme pointer 0
+04-29 [REDACTED_IP].930  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 771674743 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-29 [REDACTED_IP].930  2312  2312 I TouchInteractionService: onInputEvent, inputConsumer = com.android.quickstep.l2@2834120
+04-29 [REDACTED_IP].931  4119  4119 I GestureDetector: obtain mCurrentDownEvent. id: 771674743 caller: com.samsung.android.honeyboard.textboard.f0.z.c.a.onTouch:2 com.samsung.android.honeyboard.textboard.f0.z.f.d.n:3 com.samsung.android.honeyboard.textboard.f0.z.f.a.i:15 
+04-29 [REDACTED_IP].931  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 771674743 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-29 [REDACTED_IP].932  4119  4119 I HBD     : c ATL SoundAndVibrationKeyA
+04-29 [REDACTED_IP].932  4119  4119 I HBD     : a sound is off 
+04-29 [REDACTED_IP].932  4119  4119 I HBD     : b vib is off 
+04-29 [REDACTED_IP].934  4119  4119 I HBD     : a [PF_KL] OTE none 0 7 11 3895384 (1, NONE) 
+04-29 [REDACTED_IP].941  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 551415735
+04-29 [REDACTED_IP].944  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 551415735
+04-29 [REDACTED_IP].945  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 551415735
+04-29 [REDACTED_IP].952  4119  4119 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 551415735
+04-29 [REDACTED_IP].968   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-29 [REDACTED_IP].969  4119 18700 I HBD     : a [PF_EN] updateSelectList() t, 41 
+04-29 [REDACTED_IP].969  4119 18700 I HBD     : l0 EBD tb end :1 
+04-29 [REDACTED_IP].981  4119  4119 I HBD     : e1 [SCV] (9) 3 6 6 7 5 6 7 9 7 
+04-29 [REDACTED_IP].029  1208  1757 I [REDACTED_TOKEN]: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
+04-29 [REDACTED_IP].031  1208  1757 I [REDACTED_TOKEN]: available memory: 1064688, free memory target: 645120, quit chimera
+04-29 [REDACTED_IP].040  1208  1387 D InputReader: Btn_touch(4): value=0 when=27556.032561
+04-29 [REDACTED_IP].040  1208  1387 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=27556.032561
+04-29 [REDACTED_IP].041  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x1, time=27556032561000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-29 [REDACTED_IP].041  1208  1386 I InputDispatcher: Delivering touch to (4119): action: 0x1, f=0x0, d=0, 'b45b263', t=1 +(0,-45)
+04-29 [REDACTED_IP].042  2312  2312 I TouchInteractionService: reset
+04-29 [REDACTED_IP].042  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: ViewPostIme pointer 1
+04-29 [REDACTED_IP].043  1888  5866 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](noArguments=true) [Module] 
+04-29 [REDACTED_IP].043  1888  5866 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-29 [REDACTED_IP].043  1888  5866 V Navbar.Store: ----apply(0) ResetHintVI
+04-29 [REDACTED_IP].044  4119  4119 I HBD     : c ATL CharacterKeyA
+04-29 [REDACTED_IP].047  4119  4119 I HBD     : c IIFO[r:5c32cfc951] 
+04-29 [REDACTED_IP].048  4119  4119 I HBD     : l0 EBD key t 0 
+04-29 [REDACTED_IP].049  4119  4119 I HBD     : a [PF_KL] OTE none 1 3 9 6734038 (1, NONE) 
+04-29 [REDACTED_IP].057  1208  1387 D InputReader: Btn_touch(4): value=1 when=27556.049405
+04-29 [REDACTED_IP].057  1208  1387 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.4312 ] when=27556.049405
+04-29 [REDACTED_IP].058  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 1010623802 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEventInternal:199 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEvent:119 
+04-29 [REDACTED_IP].058  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 0 id: 1010623802
+04-29 [REDACTED_IP].059  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 1010623802 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].-$$Nest$mhandleEventWith:0 com.android.server.accessibility.magnification.[REDACTED_TOKEN]$DetectingState.sendDelayedMotionEvents:892 
+04-29 [REDACTED_IP].059  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x0, time=27556049405000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-29 [REDACTED_IP].060  1208  1386 I InputDispatcher: Delivering touch to (1888): action: 0x4, f=0x0, d=0, '3275bd ', t=1 
+04-29 [REDACTED_IP].060  1208  1386 I InputDispatcher: Delivering touch to (4119): action: 0x0, f=0x0, d=0, 'b45b263', t=1 +(0,-45)
+04-29 [REDACTED_IP].061  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: ViewPostIme pointer 0
+04-29 [REDACTED_IP].061  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 1010623802 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-29 [REDACTED_IP].061  2312  2312 I TouchInteractionService: onInputEvent, inputConsumer = com.android.quickstep.l2@2834120
+04-29 [REDACTED_IP].061  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 1010623802 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-29 [REDACTED_IP].062  4119  4119 I GestureDetector: obtain mCurrentDownEvent. id: 1010623802 caller: com.samsung.android.honeyboard.textboard.f0.z.c.a.onTouch:2 com.samsung.android.honeyboard.textboard.f0.z.f.d.n:3 com.samsung.android.honeyboard.textboard.f0.z.f.a.i:15 
+04-29 [REDACTED_IP].062  4119  4119 I HBD     : c ATL SoundAndVibrationKeyA
+04-29 [REDACTED_IP].063  4119  4119 I HBD     : a sound is off 
+04-29 [REDACTED_IP].063  4119  4119 I HBD     : b vib is off 
+04-29 [REDACTED_IP].064  4119  4119 I HBD     : a [PF_KL] OTE none 0 4 7 2674308 (1, NONE) 
+04-29 [REDACTED_IP].064  4119  4119 I HBD     : d1 ous -  3 ,  3 ,  4 ,  4 ,  0 ,  4
+04-29 [REDACTED_IP].065  4119  4119 I HBD     : l0 EBD cm s 0 
+04-29 [REDACTED_IP].074  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 563068127
+04-29 [REDACTED_IP].077  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 563068127
+04-29 [REDACTED_IP].077  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 563068127
+04-29 [REDACTED_IP].085  4119  4119 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 563068127
+04-29 [REDACTED_IP].101   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-29 [REDACTED_IP].140  1208  1387 D InputReader: Btn_touch(4): value=0 when=27556.132839
+04-29 [REDACTED_IP].140  1208  1387 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=27556.132839
+04-29 [REDACTED_IP].142  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x1, time=27556132839000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-29 [REDACTED_IP].143  1208  1386 I InputDispatcher: Delivering touch to (4119): action: 0x1, f=0x0, d=0, 'b45b263', t=1 +(0,-45)
+04-29 [REDACTED_IP].143  2312  2312 I TouchInteractionService: reset
+04-29 [REDACTED_IP].144  1888  5866 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](noArguments=true) [Module] 
+04-29 [REDACTED_IP].144  1888  5866 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-29 [REDACTED_IP].144  1888  5866 V Navbar.Store: ----apply(0) ResetHintVI
+04-29 [REDACTED_IP].149  4119  4119 I ViewRootImpl@34c98c0[InputMethod]: ViewPostIme pointer 1
+04-29 [REDACTED_IP].151  4119  4119 I HBD     : c ATL CharacterKeyA
+04-29 [REDACTED_IP].155  4119  4119 I HBD     : c IIFO[r:28030259d7] 
+04-29 [REDACTED_IP].156  4119  4119 I HBD     : l0 EBD key t 0 
+04-29 [REDACTED_IP].157  4119  4119 I HBD     : a [PF_KL] OTE none 1 10 17 7444039 (1, NONE) 
+04-29 [REDACTED_IP].169  4119  4119 I HBD     : d1 ous -  4 ,  4 ,  5 ,  5 ,  0 ,  5
+04-29 [REDACTED_IP].169  4119  4119 I HBD     : l0 EBD cm s 0 
+04-29 [REDACTED_IP].235   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-29 [REDACTED_IP].307  4119  4119 I HBD     : l0 EBD ex 
+04-29 [REDACTED_IP].307  4119 18700 I HBD     : l0 EBD tb start :1 
+04-29 [REDACTED_IP].319  4119 18700 I HBD     : l0 EBD tb end :1 
+04-29 [REDACTED_IP].324  4119  4119 I HBD     : e1 [SCV] (2) 6 4 
+04-29 [REDACTED_IP].325  2927 18960 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+04-29 [REDACTED_IP].325  2927 18960 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+04-29 [REDACTED_IP].344  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 5984, isSameBssidAndFreq true
+04-29 [REDACTED_IP].346  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.345 ms / 23.200 Mbps (58 / 0.000 / 2.500)
+04-29 [REDACTED_IP].359  1208  1208 I GestureDetector: handleMessage TAP
+04-29 [REDACTED_IP].361  1208  1234 I GestureDetector: handleMessage TAP
+04-29 [REDACTED_IP].361  1208  1208 I GestureDetector: handleMessage TAP
+04-29 [REDACTED_IP].399  1208  1794 D WifiConnectivityMonitor: start WCM Poll.
+04-29 [REDACTED_IP].436   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-29 [REDACTED_IP].553   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-29 [REDACTED_IP].611   391   391 D io_stats: !@ 179,0 r 12626760 172775187 w 1665251 18437304 d 501010 17486532 f 0 0 iot 3337428 0 th 0 0 0 pt 0 inp 0 0 27556.603
+04-29 [REDACTED_IP].624  1997  2485 D IpClient/wlan0: [REDACTED_TOKEN]: ifindex 12 up
+04-29 [REDACTED_IP].720   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 59
+04-29 [REDACTED_IP].202   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-29 [REDACTED_IP].203   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-29 [REDACTED_IP].203   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-29 [REDACTED_IP].221  1208  1241 E Watchdog: !@Sync: 912 heap: 112 / 132 FD: 982 [2026-04-29 [REDACTED_IP].220]
+04-29 [REDACTED_IP].328  1208  1387 D InputReader: Btn_touch(4): value=1 when=27557.320270
+04-29 [REDACTED_IP].328  1208  1387 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.4313 ] when=27557.320270
+04-29 [REDACTED_IP].329  1208  1208 D PowerManagerService: [api] userActivity : event: 0 flags: 0 (uid: 1000 pid: 1208) <- handleMotionEvent() in com.android.server.accessibility.[REDACTED_TOKEN]:481 eventTime = 27557320 displayId = 0
+04-29 [REDACTED_IP].330  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 5029710 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEventInternal:199 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEvent:119 
+04-29 [REDACTED_IP].330  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 0 id: 5029710
+04-29 [REDACTED_IP].331  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 5029710 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].-$$Nest$mhandleEventWith:0 com.android.server.accessibility.magnification.[REDACTED_TOKEN]$DetectingState.sendDelayedMotionEvents:892 
+04-29 [REDACTED_IP].331  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x0, time=27557320270000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-29 [REDACTED_IP].331  1208  1386 I InputDispatcher: Delivering touch to (1888): action: 0x4, f=0x0, d=0, '3275bd ', t=1 
+04-29 [REDACTED_IP].332  1208  1386 I InputDispatcher: Delivering touch to (13714): action: 0x0, f=0x0, d=0, '8f06f12', t=1 
+04-29 [REDACTED_IP].332  1208  1386 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 27557320
+04-29 [REDACTED_IP].332 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: ViewPostIme pointer 0
+04-29 [REDACTED_IP].332  2312  2312 I TouchInteractionService: onInputEvent, inputConsumer = com.android.quickstep.l2@2834120
+04-29 [REDACTED_IP].333  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 5029710 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-29 [REDACTED_IP].334  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 5029710 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-29 [REDACTED_IP].343   871   871 I DisplayDevice: [Display 0 (internal, primary, "Primary display")] ActiveConfigToHWC, ID : 0
+04-29 [REDACTED_IP].343   837   837 I display : Use default fps instead of 90 for setting capacity
+04-29 [REDACTED_IP].343   871   871 I LayerHistory: InputMethod$_4119#6894 Max (can't resolve refresh rate)
+04-29 [REDACTED_IP].343   871   871 I LayerHistory: com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880 Max (can't resolve refresh rate)
+04-29 [REDACTED_IP].343   871   871 I SurfaceFlinger: Touch - choose 90.00 Hz
+04-29 [REDACTED_IP].345  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 826335099
+04-29 [REDACTED_IP].346  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 826335099
+04-29 [REDACTED_IP].346  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 826335099
+04-29 [REDACTED_IP].355   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 90, Distance= 60
+04-29 [REDACTED_IP].366   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 90, Distance= 90
+04-29 [REDACTED_IP].378   871   871 I Scheduler: DisplayModeChanged : 0
+04-29 [REDACTED_IP].378  1208  1236 D LocalDisplayAdapter: updateActiveModeLocked for d=0, mActiveModeId=1, mActiveSfDisplayMode=DisplayMode{id=0, width=720, height=1600, xDpi=268.941, yDpi=269.139, refreshRate=90.0, appVsyncOffsetNanos=0, [REDACTED_TOKEN]=12111111, group=0}
+04-29 [REDACTED_IP].379  1208  1236 I DisplayDeviceRepository: Display device changed: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 720 x 1600, modeId 1, defaultModeId 1, supportedModes [{id=1, width=720, height=1600, fps=90.0, alternativeRefreshRates=[60.000004]}, {id=2, width=720, height=1600, fps=60.000004, alternativeRefreshRates=[90.0]}], colorMode 0, supportedColorModes [0], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, [REDACTED_TOKEN] false, density 300, 268.941 x 269.139 dpi, appVsyncOff 0, presDeadline 12111111, cutout DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, touch INTERNAL, rotation 0, type INTERNAL, address {port=0}, deviceProductInfo null, state ON, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.5019608, roundedCorners RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}, [REDACTED_TOKEN], [REDACTED_TOKEN], FLAG_SECURE, [REDACTED_TOKEN], installOrientation 0}
+04-29 [REDACTED_IP].395  1888  1888 D DisplayLifecycle: updateDisplay id = 0
+04-29 [REDACTED_IP].396  1208  2765 D LiftUpHandler: [LTW] Stopped already.
+04-29 [REDACTED_IP].396  1208  1208 D SGM:GameManager: onDisplayChanged. displyId: 0, state: 2
+04-29 [REDACTED_IP].396  1208  1403 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_LCD_ON
+04-29 [REDACTED_IP].396  1208  1208 D AODManagerService: requestReCalToTSP IsSingleTouchMode = false / previousDisplayState = ON
+04-29 [REDACTED_IP].399  1208  1794 D WifiConnectivityMonitor: called startWcmPoll but already Ongoing
+04-29 [REDACTED_IP].399  1208  1794 D SemWifiRssiBasePoller: RSSI_BASE_STOP
+04-29 [REDACTED_IP].416  1208  1387 D InputReader: Btn_touch(4): value=0 when=27557.409041
+04-29 [REDACTED_IP].417  1208  1387 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=27557.409041
+04-29 [REDACTED_IP].418  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x1, time=27557409041000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-29 [REDACTED_IP].418  1208  1386 I InputDispatcher: Delivering touch to (13714): action: 0x1, f=0x0, d=0, '8f06f12', t=1 
+04-29 [REDACTED_IP].419 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: ViewPostIme pointer 1
+04-29 [REDACTED_IP].419  2312  2312 I TouchInteractionService: reset
+04-29 [REDACTED_IP].420  1888  1906 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](noArguments=true) [Module] 
+04-29 [REDACTED_IP].420  1888  1906 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-29 [REDACTED_IP].420  1888  1906 V Navbar.Store: ----apply(0) ResetHintVI
+04-29 [REDACTED_IP].422   850   850 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-29 [REDACTED_IP].424   871  1028 I VSyncReactor: Current= 90, TransitioningTo= 0, Distance= 90
+04-29 [REDACTED_IP].631  1208  1208 I GestureDetector: handleMessage TAP
+04-29 [REDACTED_IP].633  1208  1208 I GestureDetector: handleMessage TAP
+04-29 [REDACTED_IP].633  1208  1234 I GestureDetector: handleMessage TAP
+04-29 [REDACTED_IP].895 13714 13714 D RESPONSE: [{"id":1,"nom":"Lachgar","prenom":"Mohamed","ville":"Rabat","sexe":"homme"},{"id":2,"nom":"Kafi","prenom":"Amina","ville":"Marrakech","sexe":"femme"},{"id":5,"nom":"Tedrhi","prenom":"Mohamed ","ville":"Marrakech","sexe":"homme"},{"id":6,"nom":"ted","prenom":"med","ville":"Marrakech","sexe":"homme"},{"id":7,"nom":"mohamed ","prenom":"tedrh","ville":"Marrakech","sexe":"homme"}]
+04-29 [REDACTED_IP].896 13714 13714 D [REDACTED_TOKEN]: Compat change id reported: 147798919; UID 10612; state: ENABLED
+04-29 [REDACTED_IP].908  1208  2413 I GenerationRegistry: mBackingStore.isClosed() : false
+04-29 [REDACTED_IP].912 13714 13714 V Toast   : show: caller = com.example.getudiant.AddEtudiant$1.onResponse:73 
+04-29 [REDACTED_IP].933  1208  2413 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1252 com.android.server.notification.sec.DisplayToast.[REDACTED_TOKEN]:156 com.android.server.notification.sec.DisplayToast.outFile:106 com.android.server.notification.sec.DisplayToast.out:62 com.android.server.notification.[REDACTED_TOKEN]$12.enqueueToastForDex:3989 
+04-29 [REDACTED_IP].939   871  1435 I SurfaceFlinger: id=6895 createSurf flag=80004, WindowToken{76d06e2 type=2005 android.os.Binder@51ed3ad}#6895
+04-29 [REDACTED_IP].971 13714 13714 D ETUDIANT: Etudiant{id=1, nom='Lachgar', prenom='Mohamed', ville='Rabat', sexe='homme'}
+04-29 [REDACTED_IP].972 13714 13714 D ETUDIANT: Etudiant{id=2, nom='Kafi', prenom='Amina', ville='Marrakech', sexe='femme'}
+04-29 [REDACTED_IP].972 13714 13714 D ETUDIANT: Etudiant{id=5, nom='Tedrhi', prenom='Mohamed ', ville='Marrakech', sexe='homme'}
+04-29 [REDACTED_IP].972 13714 13714 D ETUDIANT: Etudiant{id=6, nom='ted', prenom='med', ville='Marrakech', sexe='homme'}
+04-29 [REDACTED_IP].972 13714 13714 D ETUDIANT: Etudiant{id=7, nom='mohamed ', prenom='tedrh', ville='Marrakech', sexe='homme'}
+04-29 [REDACTED_IP].984  1888  1888 E ndroid.systemui: Invalid ID 0x00000000.
+04-29 [REDACTED_IP].028  1888  1888 I AppIconSolution: return adaptive icon for com.example.getudiant, isNight = true
+04-29 [REDACTED_IP].055   839   874 I SensorsHub: DeviceOrientation(0): event = 1, time = 48398331993688
+04-29 [REDACTED_IP].055  1888  1888 V ToastPresenter: sipHeight = 636
+04-29 [REDACTED_IP].055  1888  1888 V ToastPresenter: yOffset = 748
+04-29 [REDACTED_IP].056  1888  1888 V ToastPresenter: Text: ÃŠtud in android.widget.ToastPresenter@19de44d
+04-29 [REDACTED_IP].056  1208  1234 I [REDACTED_TOKEN]: OrientationSensorJudge.onSensorChanged, Rotation: 1
+04-29 [REDACTED_IP].060  1888  1959 D [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::[REDACTED_TOKEN]()
+04-29 [REDACTED_IP].077  1208  2413 D InputTransport: Input channel constructed: '4bbdd30', fd=340
+04-29 [REDACTED_IP].077  1208  2413 D InputTransport: Input channel constructed: '4bbdd30', fd=350
+04-29 [REDACTED_IP].077  1208  2413 D InputTransport: Input channel constructed: '4bbdd30', fd=667
+04-29 [REDACTED_IP].080   871  1435 I SurfaceFlinger: id=6896 createSurf flag=80004, 4bbdd30 Toast#6896
+04-29 [REDACTED_IP].084  1208  2413 D InputTransport: Input channel destroyed: '4bbdd30', fd=667
+04-29 [REDACTED_IP].096  1888  1888 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 720, 1600), mDisplayCutout=DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(643, 0 - 720, 45) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,1516][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[720,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,66], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,1544][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][-100000,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][720,45], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[100000,0][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,100000][720,1600], mVisible=true, [REDACTED_TOKEN]=false}, InsetsSource: {mType=[REDACTED_TOKEN], mFrame=[0,0][0,0], mVisible=true, [REDACTED_TOKEN]=false} } host=Toast from=android.view.ViewRootImpl.setView:1732
+04-29 [REDACTED_IP].099  1208  2413 D CoreBackPreview: Window{4bbdd30 u0 Toast}: Setting back callback [REDACTED_TOKEN]{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@58af2e, mPriority=0}
+04-29 [REDACTED_IP].105  1888  1888 I ViewRootImpl@c57db02[Toast]: setView = android.widget.LinearLayout@beca54e TM=true
+04-29 [REDACTED_IP].110  1888  1888 D AppController: [REDACTED_TOKEN].onSensorChanged, Rotation: 1
+04-29 [REDACTED_IP].110  1888  1888 V NavigationBar: onRotationProposal proposedRotation=ROTATION_90, isValid=true, mNavBarWindowState=WINDOW_STATE_SHOWING, [REDACTED_TOKEN]=false, isRotateButtonVisible=false
+04-29 [REDACTED_IP].126  1888  1888 I ViewRootImpl@c57db02[Toast]: performTraversals params={(0,748)(wrapxwrap) gr=BOTTOM CENTER sim={adjust=pan} ty=TOAST fmt=TRANSLUCENT wanim=0x1030004
+04-29 [REDACTED_IP].126  1888  1888 I ViewRootImpl@c57db02[Toast]:   fl=1000098
+04-29 [REDACTED_IP].126  1888  1888 I ViewRootImpl@c57db02[Toast]:   pfl=32000000
+04-29 [REDACTED_IP].126  1888  1888 I ViewRootImpl@c57db02[Toast]:   bhv=DEFAULT
+04-29 [REDACTED_IP].126  1888  1888 I ViewRootImpl@c57db02[Toast]:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR
+04-29 [REDACTED_IP].126  1888  1888 I ViewRootImpl@c57db02[Toast]:   fitIgnoreVis naviIconColor=0}
+04-29 [REDACTED_IP].128  1888  1888 I ViewRootImpl@c57db02[Toast]: performTraversals mFirst=true windowShouldResize=false viewVisibilityChanged=false [REDACTED_TOKEN]=false params={(0,748)(wrapxwrap) gr=BOTTOM CENTER sim={adjust=pan} ty=TOAST fmt=TRANSLUCENT wanim=0x1030004
+04-29 [REDACTED_IP].128  1888  1888 I ViewRootImpl@c57db02[Toast]:   fl=1000098
+04-29 [REDACTED_IP].128  1888  1888 I ViewRootImpl@c57db02[Toast]:   pfl=32000000
+04-29 [REDACTED_IP].128  1888  1888 I ViewRootImpl@c57db02[Toast]:   bhv=DEFAULT
+04-29 [REDACTED_IP].128  1888  1888 I ViewRootImpl@c57db02[Toast]:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR
+04-29 [REDACTED_IP].128  1888  1888 I ViewRootImpl@c57db02[Toast]:   fitIgnoreVis naviIconColor=0}
+04-29 [REDACTED_IP].129  1208  1917 V WindowManager: Relayout Window{4bbdd30 u0 Toast}: viewVisibility=0 req=326x77 d0
+04-29 [REDACTED_IP].129  1208  1917 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+04-29 [REDACTED_IP].130   871  1435 I SurfaceFlinger: id=6897 createSurf flag=40004, Toast$_1888#6897
+04-29 [REDACTED_IP].130  1208  1917 D WindowManager: makeSurface duration=2 name=[REDACTED_NAME]$_1888
+04-29 [REDACTED_IP].137  1208  1917 V WindowManager: Relayout hash=4bbdd30, pid=1888, syncId=-1: mAttrs={(0,748)(wrapxwrap) gr=BOTTOM CENTER sim={adjust=pan} ty=TOAST fmt=TRANSLUCENT wanim=0x1030004
+04-29 [REDACTED_IP].137  1208  1917 V WindowManager:   fl=1000098
+04-29 [REDACTED_IP].137  1208  1917 V WindowManager:   pfl=32000000
+04-29 [REDACTED_IP].137  1208  1917 V WindowManager:   bhv=DEFAULT
+04-29 [REDACTED_IP].137  1208  1917 V WindowManager:   fitTypes=STATUS_BARS NAVIGATION_BARS CAPTION_BAR
+04-29 [REDACTED_IP].137  1208  1917 V WindowManager:   fitIgnoreVis naviIconColor=0}
+04-29 [REDACTED_IP].139  1888  1888 I ViewRootImpl@c57db02[Toast]: [REDACTED_TOKEN] mBlastBufferQueue=null isSameSurfaceControl=false
+04-29 [REDACTED_IP].140  1888  1888 I BLASTBufferQueue: new BLASTBufferQueue, mName= ViewRootImpl@c57db02[Toast] mNativeObject= 0xb4000076d0eded00 sc.mNativeObject= 0xb4000076937fe5a0 caller= android.view.ViewRootImpl.[REDACTED_TOKEN]:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$[REDACTED_TOKEN].run:1283 
+04-29 [REDACTED_IP].141  1888  1888 I BLASTBufferQueue: update, w= 326 h= 77 mName = ViewRootImpl@c57db02[Toast] mNativeObject= 0xb4000076d0eded00 sc.mNativeObject= 0xb4000076937fe5a0 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.[REDACTED_TOKEN]:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 
+04-29 [REDACTED_IP].142  1888  1888 I ViewRootImpl@c57db02[Toast]: Relayout returned: old=(0,45,720,1516) new=(197,691,523,768) req=(326,77)0 dur=11 res=0x3 s={true 0xb4000076d118b800} ch=true seqId=0
+04-29 [REDACTED_IP].144  1888  1888 I ViewRootImpl@c57db02[Toast]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb4000076d118b800} hwInitialized=true
+04-29 [REDACTED_IP].144  1888  1959 D OpenGLRenderer: eglCreateWindowSurface
+04-29 [REDACTED_IP].146  1888  1888 I ViewRootImpl@c57db02[Toast]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 
+04-29 [REDACTED_IP].146  1888  1888 I ViewRootImpl@c57db02[Toast]: Setup new sync id=0
+04-29 [REDACTED_IP].146  1888  1888 I ViewRootImpl@c57db02[Toast]: Setting syncFrameCallback
+04-29 [REDACTED_IP].146  1888  1888 I ViewRootImpl@c57db02[Toast]: [REDACTED_TOKEN] syncBuffer=false
+04-29 [REDACTED_IP].159  1888  1987 I ViewRootImpl@c57db02[Toast]: Received frameDrawingCallback syncResult=0 frameNum=1.
+04-29 [REDACTED_IP].159  1888  1987 I ViewRootImpl@c57db02[Toast]: Setting up sync and frameCommitCallback
+04-29 [REDACTED_IP].169  1888  1959 I BLASTBufferQueue: [ViewRootImpl@c57db02[Toast]#212](f:0,a:0) onFrameAvailable the first frame is available
+04-29 [REDACTED_IP].171  1888  1959 I ViewRootImpl@c57db02[Toast]: Received frameCommittedCallback [REDACTED_TOKEN]=1 didProduceBuffer=true
+04-29 [REDACTED_IP].172  1888  1959 D OpenGLRenderer: CFMS:: SetUp Pid : 1888    Tid : 1959
+04-29 [REDACTED_IP].183  1888  1888 I ViewRootImpl@c57db02[Toast]: onSyncComplete
+04-29 [REDACTED_IP].184  1888  1888 I ViewRootImpl@c57db02[Toast]: setupSync seqId=0 mSyncId=0 fn=1 caller=android.view.ViewRootImpl$$[REDACTED_TOKEN].accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$[REDACTED_TOKEN]:128 android.window.SurfaceSyncer$$[REDACTED_TOKEN].accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+04-29 [REDACTED_IP].184  1888  1888 I ViewRootImpl@c57db02[Toast]: reportDrawFinished seqId=0 mSyncId=-1 fn=1 [REDACTED_TOKEN]=0xb400007706035b00
+04-29 [REDACTED_IP].185  1208  2413 D WindowManager: finishDrawingWindow: Window{4bbdd30 u0 Toast} mDrawState=DRAW_PENDING seqId=0
+04-29 [REDACTED_IP].192  1208  1237 I WindowManager: Reparenting to leash, surface=Surface(name=4bbdd30 Toast)/@0x9ff44eb, leashParent=Surface(name=[REDACTED_NAME]{76d06e2 type=2005 android.os.Binder@51ed3ad})/@0x1722248
+04-29 [REDACTED_IP].193   871  1435 I SurfaceFlinger: id=6898 createSurf flag=24004, Surface(name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation#6898
+04-29 [REDACTED_IP].194  1208  1237 D WindowManager: makeSurface duration=1 leash=Surface(name=[REDACTED_NAME](name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation)/@0xfbab8e1
+04-29 [REDACTED_IP].195  1208  1237 V WindowManager: performShowLocked: mDrawState=HAS_DRAWN in Window{4bbdd30 u0 Toast}
+04-29 [REDACTED_IP].200  1208  1237 D PowerManagerService: [api] acquire WakeLock SCREEN_BRIGHT_WAKE_LOCK        'WindowManager' ON_AFTER_RELEASE (uid=1000 pid=1208 ws=WorkSource{10105} displayId=-1 lock=b0f0bda)
+04-29 [REDACTED_IP].202   871   871 I Layer   : Layer [Toast$_1888#6897] hidden!! flag(0)
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger: Display 0 HWC layers:
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fedc04400 | 0102 | RGBA_8888    |    0.0    0.0  720.0 1600.0 |    0    0  720 1600 | com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fedc03380 | 0100 | RGBA_8888    |    0.0    0.0  720.0 1555.0 |    0   45  720 1600 | InputMethod$_4119#6894
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger:      CLIENT | 0xb400007005a2b800 | 0100 | RGBA_8888    |    0.0    0.0  720.0   45.0 |    0    0  720   45 | StatusBar$_1888#96
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc03080 | 0100 | RGBA_8888    |    0.0    0.0   67.0  268.0 |  653  378  720  646 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_5185#6879
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger:      CLIENT | 0xb400007005a2b680 | 0100 | RGBA_8888    |    0.0    0.0  326.0   77.0 |  197  691  523  768 | Toast$_1888#6897
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc04700 | 0100 | RGBA_8888    |    0.0    0.0  259.0   26.0 |  461 1574  720 1600 | SGestureOverlayWindow$_2312#6871
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc03980 | 0100 | RGBA_8888    |    0.0    0.0  720.0   84.0 |    0 1516  720 1600 | 
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger: NavigationBar0$_1888#93
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger:      DEVICE | 0xb40000700762a100 | 0100 | RGBA_8888    |    0.0    0.0   53.0   98.0 |  667  141  720  239 | [REDACTED_TOKEN]$_2544#104
+04-29 [REDACTED_IP].256   871   871 D SurfaceFlinger: 
+04-29 [REDACTED_IP].459  1208  1237 I WindowManager: Reparenting to original parent: Surface(name=[REDACTED_NAME]{76d06e2 type=2005 android.os.Binder@51ed3ad})/@0x1722248, destroy=true, surface=Surface(name=4bbdd30 Toast)/@0x9ff44eb
+04-29 [REDACTED_IP].478   871   871 I Layer   : id=6898 removeFromCurrentState Surface(name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation#6898 (108)
+04-29 [REDACTED_IP].478   871   871 I SurfaceFlinger: id=6898 Removed Surface(name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation#6898 (108)
+04-29 [REDACTED_IP].478   871   871 I Layer   : id=6898 Destroyed Surface(name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation#6898
+04-29 [REDACTED_IP].612   391   391 D io_stats: !@ 179,0 r 12627145 172779395 w 1665251 18437304 d 501010 17486532 f 0 0 iot 3337560 0 th 0 0 0 pt 0 inp 0 0 27558.604
+04-29 [REDACTED_IP].678   839   874 I SensorsHub: DeviceOrientation(0): event = 255, time = 48398954937867
+04-29 [REDACTED_IP].678  1888  1888 D AppController: [REDACTED_TOKEN].onSensorChanged, Rotation: -1
+04-29 [REDACTED_IP].678  1208  1234 I [REDACTED_TOKEN]: OrientationSensorJudge.onSensorChanged, Rotation: -1
+04-29 [REDACTED_IP].679  1888  1888 V NavigationBar: onRotationProposal proposedRotation=-1, isValid=false, mNavBarWindowState=WINDOW_STATE_SHOWING, [REDACTED_TOKEN]=false, isRotateButtonVisible=false
+04-29 [REDACTED_IP].716   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-29 [REDACTED_IP].717   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-29 [REDACTED_IP].717   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-29 [REDACTED_IP].362  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 5985, isSameBssidAndFreq true
+04-29 [REDACTED_IP].363  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.315 ms / 25.435 Mbps (65 / 0.000 / 2.556)
+04-29 [REDACTED_IP].705   871   871 I SurfaceFlinger: SFWD update time=27559697680172
+04-29 [REDACTED_IP].285  1208  1208 I WindowManager: Reparenting to leash, surface=Surface(name=4bbdd30 Toast)/@0x9ff44eb, leashParent=Surface(name=[REDACTED_NAME]{76d06e2 type=2005 android.os.Binder@51ed3ad})/@0x1722248
+04-29 [REDACTED_IP].286   871  1068 I SurfaceFlinger: id=6899 createSurf flag=24000, Surface(name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation#6899
+04-29 [REDACTED_IP].288  1208  1208 D WindowManager: makeSurface duration=2 leash=Surface(name=[REDACTED_NAME](name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation)/@0x8d8f260
+04-29 [REDACTED_IP].294  1208  1917 D CoreBackPreview: Window{4bbdd30 u0 Toast}: Setting back callback null
+04-29 [REDACTED_IP].304  1888  1959 D OpenGLRenderer: setSurface called with nullptr
+04-29 [REDACTED_IP].304  1888  1959 D OpenGLRenderer: setSurface() destroyed EGLSurface
+04-29 [REDACTED_IP].305  1888  1959 D OpenGLRenderer: destroyEglSurface
+04-29 [REDACTED_IP].306  1888  1888 I ViewRootImpl@c57db02[Toast]: [REDACTED_TOKEN]
+04-29 [REDACTED_IP].307  1208  2413 D InputTransport: Input channel destroyed: '4bbdd30', fd=340
+04-29 [REDACTED_IP].308  1208  2413 W InputManager-JNI: Input channel object '4bbdd30 Toast (client)' was disposed without first being removed with the input manager!
+04-29 [REDACTED_IP].308  1208  2413 D InputTransport: Input channel destroyed: '4bbdd30', fd=350
+04-29 [REDACTED_IP].309  1208  2413 V WindowManager: Remove Window{4bbdd30 u0 Toast}: mSurfaceController=Surface(name=[REDACTED_NAME]$_1888)/@0x7653fde mAnimatingExit=false mRemoveOnExit=false mHasSurface=true surfaceShowing=true animating=true app-animation=false mWillReplaceWindow=false mDisplayFrozen=false callers=com.android.server.wm.WindowState.removeIfPossible:3041 com.android.server.wm.WindowManagerService.removeWindow:2289 com.android.server.wm.Session.remove:236 android.view.IWindowSession$Stub.onTransact:743 com.android.server.wm.Session.onTransact:188 android.os.Binder.execTransactInternal:1321 
+04-29 [REDACTED_IP].309  1208  2413 V WindowManager: removeIfPossible 2, Window{4bbdd30 u0 Toast}: mAnimatingExit=true caller=com.android.server.wm.WindowState.removeIfPossible:3041 com.android.server.wm.WindowManagerService.removeWindow:2289 com.android.server.wm.Session.remove:236 android.view.IWindowSession$Stub.onTransact:743 com.android.server.wm.Session.onTransact:188 
+04-29 [REDACTED_IP].315  1888  1888 D InputTransport: Input channel destroyed: '4bbdd30', fd=323
+04-29 [REDACTED_IP].317   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-29 [REDACTED_IP].317   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-29 [REDACTED_IP].317   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-29 [REDACTED_IP].319  1208  2413 W NotificationService: Toast already killed. pkg=com.example.getudiant token=android.os.BinderProxy@b4ad48c
+04-29 [REDACTED_IP].335  1208  1273 D PowerManagerService: [REDACTED_TOKEN]: 0
+04-29 [REDACTED_IP].554  1208  1237 I WindowManager: Reparenting to original parent: Surface(name=[REDACTED_NAME]{76d06e2 type=2005 android.os.Binder@51ed3ad})/@0x1722248, destroy=true, surface=Surface(name=4bbdd30 Toast)/@0x9ff44eb
+04-29 [REDACTED_IP].575  1208  1237 I WindowManager: Destroying surface Surface(name=[REDACTED_NAME]$_1888)/@0x7653fde called by com.android.server.wm.WindowStateAnimator.destroySurface:942 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:536 com.android.server.wm.WindowState.removeImmediately:2969 com.android.server.wm.WindowState.[REDACTED_TOKEN]:6016 com.android.server.wm.WindowContainer.[REDACTED_TOKEN]:1377 com.android.server.wm.WindowContainer.[REDACTED_TOKEN]:1377 com.android.server.wm.WindowContainer.[REDACTED_TOKEN]:1377 com.android.server.wm.WindowContainer.[REDACTED_TOKEN]:1377 
+04-29 [REDACTED_IP].585  1208  1237 D PowerManagerService: [api] release WakeLock SCREEN_BRIGHT_WAKE_LOCK        'WindowManager' ON_AFTER_RELEASE ACQ=-2s383ms (uid=1000 pid=1208 ws=WorkSource{10105} displayId=-1 lock=b0f0bda)
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger: Display 0 HWC layers:
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fedc04400 | 0102 | RGBA_8888    |    0.0    0.0  720.0 1600.0 |    0    0  720 1600 | com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fedc03380 | 0100 | RGBA_8888    |    0.0    0.0  720.0 1555.0 |    0   45  720 1600 | InputMethod$_4119#6894
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger:      CLIENT | 0xb400007005a2b800 | 0100 | RGBA_8888    |    0.0    0.0  720.0   45.0 |    0    0  720   45 | StatusBar$_1888#96
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc03080 | 0100 | RGBA_8888    |    0.0    0.0   67.0  268.0 |  653  378  720  646 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_5185#6879
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc04700 | 0100 | RGBA_8888    |    0.0    0.0  259.0   26.0 |  461 1574  720 1600 | SGestureOverlayWindow$_2312#6871
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc03980 | 0100 | RGBA_8888    |    0.0    0.0  720.0   84.0 |    0 1516  720 1600 | NavigationBar0$_1888#93
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger:      DEVICE | 0xb40000700762a100 | 0100 | RGBA_8888    |    0.0    0.0   53.0   98.0 |  667  141  720 
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger:  239 | [REDACTED_TOKEN]$_2544#104
+04-29 [REDACTED_IP].586   871   871 D SurfaceFlinger: 
+04-29 [REDACTED_IP].587  1208  1237 D EdgeLightingManager: hideForWakeLock packageName=android
+04-29 [REDACTED_IP].587  1208  1237 D EdgeLightingManager: hideForWakeLock is no more used
+04-29 [REDACTED_IP].587  1208  1237 D PowerManagerService: [api] [REDACTED_TOKEN] : [REDACTED_TOKEN] is called : SCREEN_BRIGHT_WAKE_LOCK        'WindowManager' ON_AFTER_RELEASE DISABLED (uid=1000 pid=1208 ws=WorkSource{10105} displayId=-1 lock=b0f0bda)
+04-29 [REDACTED_IP].598   871   871 I Layer   : id=6896 removeFromCurrentState 4bbdd30 Toast#6896 (108)
+04-29 [REDACTED_IP].598   871   871 I Layer   : id=6897 removeFromCurrentState Toast$_1888#6897 (108)
+04-29 [REDACTED_IP].598   871   871 I Layer   : id=6899 removeFromCurrentState Surface(name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation#6899 (108)
+04-29 [REDACTED_IP].598   871   871 I Layer   : Layer [Toast$_1888#6897] hidden!! flag(1)
+04-29 [REDACTED_IP].598   871   871 I Layer   : id=6897 removeFromCurrentState Toast$_1888#6897 (108)
+04-29 [REDACTED_IP].598   871   871 I Layer   : id=6895 removeFromCurrentState WindowToken{76d06e2 type=2005 android.os.Binder@51ed3ad}#6895 (108)
+04-29 [REDACTED_IP].598   871   871 I SurfaceFlinger: id=6896 Removed 4bbdd30 Toast#6896 (108)
+04-29 [REDACTED_IP].598   871   871 I SurfaceFlinger: id=6899 Removed Surface(name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation#6899 (108)
+04-29 [REDACTED_IP].598   871   871 I SurfaceFlinger: id=6897 Removed Toast$_1888#6897 (108)
+04-29 [REDACTED_IP].598   871   871 I SurfaceFlinger: id=6895 Removed WindowToken{76d06e2 type=2005 android.os.Binder@51ed3ad}#6895 (108)
+04-29 [REDACTED_IP].599   871   871 I Layer   : id=6895 Destroyed WindowToken{76d06e2 type=2005 android.os.Binder@51ed3ad}#6895
+04-29 [REDACTED_IP].599   871   871 I Layer   : id=6899 Destroyed Surface(name=4bbdd30 Toast)/@0x9ff44eb - animation-leash of window_animation#6899
+04-29 [REDACTED_IP].599   871   871 I Layer   : id=6896 Destroyed 4bbdd30 Toast#6896
+04-29 [REDACTED_IP].599   871   871 I Layer   : id=6897 Destroyed Toast$_1888#6897
+04-29 [REDACTED_IP].600  2927  2927 I SndPersonalSafety: (REDACTED) Peak of %f at %d, running m%d
+04-29 [REDACTED_IP].613   391   391 D io_stats: !@ 179,0 r 12627200 172779743 w 1665333 18437576 d 501059 17488320 f 0 0 iot 3337628 0 th 0 0 0 pt 0 inp 0 0 27560.605
+04-29 [REDACTED_IP].718  1888  1996 D MobileStatusTracker(1/1): [REDACTED_TOKEN] level=4, vendorLevel=4
+04-29 [REDACTED_IP].720  1888  1996 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=GSM (Unknown), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=4, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+04-29 [REDACTED_IP].720  1888  1996 D NetworkController: SignalStrength from intent slotId=1
+04-29 [REDACTED_IP].080  1208  1236 W WindowManager: Unable to start animation, surface is null or no children.
+04-29 [REDACTED_IP].129  1888  1996 D MobileStatusTracker(1/1): [REDACTED_TOKEN] level=4, vendorLevel=4
+04-29 [REDACTED_IP].131  1888  1996 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=GSM (Unknown), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=4, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+04-29 [REDACTED_IP].132  1888  1996 D NetworkController: SignalStrength from intent slotId=1
+04-29 [REDACTED_IP].228   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-29 [REDACTED_IP].229   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-29 [REDACTED_IP].229   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-29 [REDACTED_IP].258   871  1028 I VSyncReactor: Current= 90, TransitioningTo= 0, Distance= 90
+04-29 [REDACTED_IP].376  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 5986, isSameBssidAndFreq true
+04-29 [REDACTED_IP].379  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-29 [REDACTED_IP].381  1888  1996 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-29 [REDACTED_IP].381  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.315 ms / 25.435 Mbps (65 / 0.000 / 2.556)
+04-29 [REDACTED_IP].614   391   391 D io_stats: !@ 179,0 r 12627221 172779847 w 1665340 18437628 d 501059 17488320 f 0 0 iot 3337632 0 th 0 0 0 pt 0 inp 0 0 27562.606
+04-29 [REDACTED_IP].602  1828  1828 I wpa_supplicant: Heartbeat 2708
+04-29 [REDACTED_IP].718   871   871 I DisplayDevice: [Display 0 (internal, primary, "Primary display")] ActiveConfigToHWC, ID : 1
+04-29 [REDACTED_IP].719   871   871 I LayerHistory: com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880 is infrequent
+04-29 [REDACTED_IP].719   871   871 I SurfaceFlinger: all layers Min - choose 60.00 Hz
+04-29 [REDACTED_IP].735   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-29 [REDACTED_IP].736   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-29 [REDACTED_IP].736   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-29 [REDACTED_IP].742   871   871 I Scheduler: DisplayModeChanged : 1
+04-29 [REDACTED_IP].743  1208  1236 D LocalDisplayAdapter: updateActiveModeLocked for d=0, mActiveModeId=2, mActiveSfDisplayMode=DisplayMode{id=1, width=720, height=1600, xDpi=268.941, yDpi=269.139, refreshRate=60.000004, appVsyncOffsetNanos=0, [REDACTED_TOKEN]=17666666, group=0}
+04-29 [REDACTED_IP].745  1208  1236 I DisplayDeviceRepository: Display device changed: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 720 x 1600, modeId 2, defaultModeId 1, supportedModes [{id=1, width=720, height=1600, fps=90.0, alternativeRefreshRates=[60.000004]}, {id=2, width=720, height=1600, fps=60.000004, alternativeRefreshRates=[90.0]}], colorMode 0, supportedColorModes [0], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, [REDACTED_TOKEN] false, density 300, 268.941 x 269.139 dpi, appVsyncOff 0, presDeadline 17666666, cutout DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, touch INTERNAL, rotation 0, type INTERNAL, address {port=0}, deviceProductInfo null, state ON, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.5019608, roundedCorners RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}, [REDACTED_TOKEN], [REDACTED_TOKEN], FLAG_SECURE, [REDACTED_TOKEN], installOrientation 0}
+04-29 [REDACTED_IP].755  1888  1888 D DisplayLifecycle: updateDisplay id = 0
+04-29 [REDACTED_IP].761  1208  2765 D LiftUpHandler: [LTW] Stopped already.
+04-29 [REDACTED_IP].761  1208  1208 D SGM:GameManager: onDisplayChanged. displyId: 0, state: 2
+04-29 [REDACTED_IP].762   871  1028 I VSyncReactor: Current= 90, TransitioningTo= 60, Distance= 60
+04-29 [REDACTED_IP].762  1208  1403 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_LCD_ON
+04-29 [REDACTED_IP].764  1208  1208 D AODManagerService: requestReCalToTSP IsSingleTouchMode = false / previousDisplayState = ON
+04-29 [REDACTED_IP].046  3802  3802 I SDHMS:LOAD: type: LoadsFreqs, value: [REDACTED_IP]813540:2002000:546000:813540:2002000:546000:[REDACTED_IP]
+04-29 [REDACTED_IP].229   804   804 E audit   : type=1400 audit(1777425319.225:23336): avc:  denied  { write } for  pid=3080 comm="ThreadPoolForeg" name="traced_producer" dev="tmpfs" ino=9946 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-M127F_13_0001 audit_filtered
+04-29 [REDACTED_IP].229   804   804 E audit   : type=1300 audit(1777425319.225:23336): arch=c00000b7 syscall=203 success=no exit=-13 a0=10b a1=b40000771d9ff9e0 a2=1e a3=ffffffff960f1004 items=1 ppid=821 pid=3080 auid=4294967295 uid=10198 gid=10198 euid=10198 suid=10198 fsuid=10198 egid=10198 sgid=10198 fsgid=10198 tty=(none) ses=4294967295 comm="ThreadPoolForeg" exe="/system/bin/app_process64" subj=u:r:gmscore_app:s0:c512,c768 key=(null)
+04-29 [REDACTED_IP].229   804   804 E audit   : type=1306 audit(1777425319.225:23336): saddr=[REDACTED_TOKEN]
+04-29 [REDACTED_IP].229   804   804 E audit   : type=1302 audit(1777425319.225:23336): item=0 name="/dev/socket/traced_producer" inode=9946 dev=00:10 mode=0140666 ouid=0 ogid=0 rdev=00:00 obj=u:object_r:traced_producer_socket:s0 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+04-29 [REDACTED_IP].229   804   804 E audit   : type=1327 audit(1777425319.225:23336): proctitle="com.google.android.gms"
+04-29 [REDACTED_IP].614   391   391 D io_stats: !@ 179,0 r 12627230 172780011 w 1665340 18437628 d 501059 17488320 f 0 0 iot 3337636 0 th 0 0 0 pt 0 inp 0 0 27564.607

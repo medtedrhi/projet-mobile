@@ -1,0 +1,74 @@
+[
+  {
+    "id": "b32f9264-3af6-461f-96d4-cabdf6f07346",
+    "evidence_type": "apk",
+    "source": "ui-upload",
+    "original_filename": "UnCrackable-Level2.apk",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\6cb1492e-c804-456c-bf43-bc98ba69e8bf\\UnCrackable-Level2.apk",
+    "hash_sha256": "4c7980ef1f6cc29508f38417c2a5b5b7721eeb4a3d7f00a0c1a08f5192fa6ddd",
+    "mime_type": "application/vnd.android.package-archive",
+    "size": 901022,
+    "sensitivity_level": "internal",
+    "status": "collected"
+  },
+  {
+    "id": "0047fe5c-ca5f-41e3-b991-df3ba3ea65bf",
+    "evidence_type": "apk_hash",
+    "source": "generated",
+    "original_filename": "apk_hash.json",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\6cb1492e-c804-456c-bf43-bc98ba69e8bf\\apk_hash.json",
+    "hash_sha256": "68526e3f003ef951e20659098c9cd64244f10d59b3456fcb16a743bc5dfdb93d",
+    "mime_type": "application/json",
+    "size": 185,
+    "sensitivity_level": "internal",
+    "status": "collected"
+  },
+  {
+    "id": "5d75969d-9e12-447f-9b40-3181f114d0b5",
+    "evidence_type": "manifest_summary",
+    "source": "generated",
+    "original_filename": "manifest_summary.json",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\6cb1492e-c804-456c-bf43-bc98ba69e8bf\\manifest_summary.json",
+    "hash_sha256": "60fe8be7034fec989ca9a5b1d2d8158a384ee67a4eb7c1fba74fd81cb1f33096",
+    "mime_type": "application/json",
+    "size": 206,
+    "sensitivity_level": "internal",
+    "status": "collected"
+  },
+  {
+    "id": "44b8defd-4fb9-487c-ac8d-548500caca73",
+    "evidence_type": "permissions",
+    "source": "generated",
+    "original_filename": "permissions.json",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\6cb1492e-c804-456c-bf43-bc98ba69e8bf\\permissions.json",
+    "hash_sha256": "ea91f471aea72ed65f6ac534b0fa21189a2bad0c74ecb1e94fc526f9cc0f32ef",
+    "mime_type": "application/json",
+    "size": 57,
+    "sensitivity_level": "internal",
+    "status": "collected"
+  },
+  {
+    "id": "1f8c9980-ffdc-41f3-85aa-69015fef9683",
+    "evidence_type": "components",
+    "source": "generated",
+    "original_filename": "components.json",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\6cb1492e-c804-456c-bf43-bc98ba69e8bf\\components.json",
+    "hash_sha256": "3b2439f71ac2e706a86ef7e7f70bb07d1b20180af28242e4d0c5c2b9e8c12254",
+    "mime_type": "application/json",
+    "size": 86,
+    "sensitivity_level": "internal",
+    "status": "collected"
+  },
+  {
+    "id": "f94dd185-b974-4ced-b858-69cebc11f5f7",
+    "evidence_type": "sbom",
+    "source": "generated",
+    "original_filename": "sbom.json",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\6cb1492e-c804-456c-bf43-bc98ba69e8bf\\sbom.json",
+    "hash_sha256": "4160c213ddb5bc8a4af60f401644281fb2f332ba12b168379d016432c3d57d4c",
+    "mime_type": "application/json",
+    "size": 201,
+    "sensitivity_level": "internal",
+    "status": "collected"
+  }
+]

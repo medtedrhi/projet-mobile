@@ -1,0 +1,221 @@
+[
+  {
+    "evidence_item_id": "88dba187-9dcf-4219-a7a6-97c838d6b5ef",
+    "evidence_type": "apk",
+    "original_filename": "app-debug.apk",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [],
+    "status": "unmapped",
+    "notes": "No MASVS, MASWE, or MASTG references could be justified from 'app-debug.apk'."
+  },
+  {
+    "evidence_item_id": "88ab50b1-ebcb-444b-9c52-4bd8e36464c6",
+    "evidence_type": "apk_hash",
+    "original_filename": "apk_hash.json",
+    "masvs": [
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [],
+    "mastg": [
+      "MASTG-KNOW-0011"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'apk_hash.json' mapped with signals [sha256-present]. Hash evidence includes SHA-256 d728018dbe1f..., which ties the audit pack to a specific APK binary and supports integrity verification."
+  },
+  {
+    "evidence_item_id": "3029220b-2c7d-42f6-86e3-80cba92d765d",
+    "evidence_type": "manifest_summary",
+    "original_filename": "manifest_summary.json",
+    "masvs": [
+      "MASVS-PLATFORM-1"
+    ],
+    "maswe": [
+      "MASWE-0058"
+    ],
+    "mastg": [
+      "MASTG-TEST-0026"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'manifest_summary.json' mapped with signals [manifest-summary-sdk-metadata, manifest-summary-text]. Manifest summary identifies com.example.getudiant with minSdk=24 and targetSdk=36, providing concrete platform-configuration proof for manifest review. Manifest summary text captures declared app configuration: Package com.example.getudiant targets SDK 36 and declares 2 permissions.."
+  },
+  {
+    "evidence_item_id": "4dcac222-807d-4057-b4cc-300bea7e37c5",
+    "evidence_type": "manifest_xml",
+    "original_filename": "AndroidManifest.xml",
+    "masvs": [
+      "MASVS-NETWORK-1",
+      "MASVS-PLATFORM-1"
+    ],
+    "maswe": [
+      "MASWE-0050",
+      "MASWE-0058"
+    ],
+    "mastg": [
+      "MASTG-TEST-0026",
+      "MASTG-TEST-0286"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'AndroidManifest.xml' mapped with signals [manifest-network-markers, manifest-xml-present]. Raw AndroidManifest.xml was extracted, enabling direct verification of declared platform configuration. Manifest XML includes network-exposure markers: cleartext traffic enabled, networkSecurityConfig declared, exported components declared."
+  },
+  {
+    "evidence_item_id": "1f16b536-a362-48cb-9a9a-e4c0d26e4060",
+    "evidence_type": "permissions",
+    "original_filename": "permissions.json",
+    "masvs": [
+      "MASVS-PLATFORM-1"
+    ],
+    "maswe": [
+      "MASWE-0001"
+    ],
+    "mastg": [
+      "MASTG-TEST-0027"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'permissions.json' mapped with signals [permission-inventory]. Permission inventory lists 2 declared permissions for direct manifest and platform review."
+  },
+  {
+    "evidence_item_id": "72feb2b2-d261-4f58-b9df-2d4b7b141aed",
+    "evidence_type": "components",
+    "original_filename": "components.json",
+    "masvs": [
+      "MASVS-NETWORK-1",
+      "MASVS-PLATFORM-2"
+    ],
+    "maswe": [
+      "MASWE-0050",
+      "MASWE-0064"
+    ],
+    "mastg": [
+      "MASTG-TEST-0028",
+      "MASTG-TEST-0286"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'components.json' mapped with signals [exported-components-present, network-exposure-component-signals]. Component evidence enumerates 2 exported component(s), which directly supports review of externally reachable app surfaces. Component evidence captures 21 embedded domain/end-point hint(s), networkSecurityConfig=@7F130006, cleartextTraffic=true."
+  },
+  {
+    "evidence_item_id": "78f1495c-b505-4c7f-8002-a3960397c9c8",
+    "evidence_type": "sbom",
+    "original_filename": "sbom.json",
+    "masvs": [
+      "MASVS-CODE-1",
+      "MASVS-RESILIENCE-2"
+    ],
+    "maswe": [
+      "MASWE-0093"
+    ],
+    "mastg": [
+      "MASTG-KNOW-0073"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'sbom.json' mapped with signals [sbom-archive-details, sbom-components-enumerated]. SBOM enumerates 6 component(s), providing concrete dependency and software inventory evidence. SBOM statistics include archive-derived implementation details (native libraries=0, dex units=4), supporting resilience and inventory traceability."
+  },
+  {
+    "evidence_item_id": "d6f2c3f3-cc25-412c-8d2a-205a8c43693f",
+    "evidence_type": "config_network_security_config",
+    "original_filename": "network_security_config.xml",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [],
+    "status": "unmapped",
+    "notes": "No MASVS, MASWE, or MASTG references could be justified from 'network_security_config.xml'."
+  },
+  {
+    "evidence_item_id": "70eea904-7f18-4997-8bb0-c52024e4eb6b",
+    "evidence_type": "config_strings",
+    "original_filename": "strings.xml",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [],
+    "status": "unmapped",
+    "notes": "No MASVS, MASWE, or MASTG references could be justified from 'strings.xml'."
+  },
+  {
+    "evidence_item_id": "73d312ea-3d85-4e5c-b0d2-00ff036ad2da",
+    "evidence_type": "config_build_config",
+    "original_filename": "build_config.json",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [],
+    "status": "unmapped",
+    "notes": "No MASVS, MASWE, or MASTG references could be justified from 'build_config.json'."
+  },
+  {
+    "evidence_item_id": "9dee5442-d765-42b7-b89b-2423a10bca2c",
+    "evidence_type": "config_app_config_summary",
+    "original_filename": "app_config_summary.json",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [],
+    "status": "unmapped",
+    "notes": "No MASVS, MASWE, or MASTG references could be justified from 'app_config_summary.json'."
+  },
+  {
+    "evidence_item_id": "4b7a35fd-40bf-4985-ab2d-0d701bd8189c",
+    "evidence_type": "config_config_status",
+    "original_filename": "config_status.json",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [],
+    "status": "unmapped",
+    "notes": "No MASVS, MASWE, or MASTG references could be justified from 'config_status.json'."
+  },
+  {
+    "evidence_item_id": "bb8816e9-7692-4afb-a55f-fa039e7a82a5",
+    "evidence_type": "screenshot",
+    "original_filename": "auto_screenshot_RF8T602HTNA.png",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [
+      "MASTG-KNOW-0019"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'auto_screenshot_RF8T602HTNA.png' mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit."
+  },
+  {
+    "evidence_item_id": "5361ba82-5635-4f4f-855a-c377ec285b0a",
+    "evidence_type": "screenshot",
+    "original_filename": "auto_screenshot_RF8T602HTNA.png",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [
+      "MASTG-KNOW-0019"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'auto_screenshot_RF8T602HTNA.png' mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit."
+  },
+  {
+    "evidence_item_id": "9423a843-5a01-4c0c-a690-8d392049d215",
+    "evidence_type": "log",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "masvs": [
+      "MASVS-PRIVACY-1",
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [
+      "MASWE-0007"
+    ],
+    "mastg": [
+      "MASTG-TEST-0001"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'runtime_log_RF8T602HTNA.log' mapped with signals [log-anonymized, runtime-log-excerpt]. Sanitized runtime log content is available for runtime-observation and troubleshooting review. The runtime log was anonymized before storage, which makes this proof directly relevant to privacy-preserving evidence handling."
+  },
+  {
+    "evidence_item_id": "bbaba425-a82c-4d4a-b4ef-08dc8e7bd60e",
+    "evidence_type": "log",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "masvs": [
+      "MASVS-PRIVACY-1",
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [
+      "MASWE-0007"
+    ],
+    "mastg": [
+      "MASTG-TEST-0001"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'runtime_log_RF8T602HTNA.log' mapped with signals [log-anonymized, runtime-log-excerpt]. Sanitized runtime log content is available for runtime-observation and troubleshooting review. The runtime log was anonymized before storage, which makes this proof directly relevant to privacy-preserving evidence handling."
+  }
+]

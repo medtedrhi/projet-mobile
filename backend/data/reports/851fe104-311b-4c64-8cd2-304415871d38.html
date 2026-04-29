@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>test1 - Evidence Collector Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2937; }
+    h1, h2 { color: #0f172a; }
+    h3 { color: #1e293b; margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 24px; }
+    th, td { border: 1px solid #cbd5e1; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #e2e8f0; }
+    .meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 24px; }
+    .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 16px; margin-bottom: 20px; }
+    .grid-two { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px; }
+    ul { margin-top: 8px; }
+    code { background: #e2e8f0; padding: 1px 4px; border-radius: 4px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 12px; border-radius: 10px; white-space: pre-wrap; word-break: break-word; }
+  </style>
+</head>
+<body>
+  <h1>Evidence Collector & Compliance Pack</h1>
+  <div class="card">
+    <h2>Overview</h2>
+    <p>47 evidence items were collected for test1, covering apk, apk_hash, components, manifest_summary, manifest_xml, permissions, sbom, screenshot, but 1 collection gaps still affect compliance readiness.</p>
+    <div class="meta">
+      <div><strong>App:</strong> test1</div>
+      <div><strong>Package:</strong> test1</div>
+      <div><strong>Auditor:</strong> med</div>
+      <div><strong>Date:</strong> 2026-04-06</div>
+      <div><strong>Scope:</strong> MASVS baseline evidence collection</div>
+      <div><strong>Completeness:</strong> 87.5%</div>
+    </div>
+  </div>
+
+  <div class="grid-two">
+    <div class="card">
+      <h3>Audit Inputs</h3>
+      <p><strong>Total uploaded artifacts:</strong> 12</p>
+      <p><strong>Unique artifact hashes:</strong> 7</p>
+      
+      <p><strong>Duplicate uploads detected:</strong></p>
+      <ul>
+        
+        <li><code>78ae499cf412e1ca05de9121b9a1e42ab31dc27f02ca0b3021efd7a772057b10</code> appears 2 times</li>
+        
+        <li><code>94f791c77d45073968ce2d72f6fbb49596550393f90cf081a826d1b41fc5b686</code> appears 5 times</li>
+        
+      </ul>
+      
+    </div>
+    <div class="card">
+      <h3>Evidence Distribution</h3>
+      <ul>
+        
+        <li><strong>apk</strong>: 6</li>
+        
+        <li><strong>apk_hash</strong>: 6</li>
+        
+        <li><strong>components</strong>: 6</li>
+        
+        <li><strong>manifest_summary</strong>: 6</li>
+        
+        <li><strong>manifest_xml</strong>: 5</li>
+        
+        <li><strong>permissions</strong>: 6</li>
+        
+        <li><strong>sbom</strong>: 6</li>
+        
+        <li><strong>screenshot</strong>: 6</li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <h2>Collected Evidence Summary</h2>
+  <table>
+    <thead><tr><th>Evidence ID</th><th>Type</th><th>Source</th><th>Path</th><th>Status</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td>5c5d2cb4-fba8-4a3a-9877-4d4641aa9850</td><td>apk</td><td>ui-upload</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\UnCrackable-Level3.apk</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>8a7791c1-1de0-4bee-8caa-0283a46ba65e</td><td>apk_hash</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\apk_hash.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>5d74d016-20d6-4c96-919a-0ccd0eac5852</td><td>manifest_summary</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\manifest_summary.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>73f65c53-b2e8-487b-81d5-90e7ec7134b3</td><td>permissions</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\permissions.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>d86d8441-1cdd-4966-884f-41ceea1656ba</td><td>components</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\components.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>fa3bcea6-9299-4684-a82f-e985ff4e89a3</td><td>sbom</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\sbom.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>0581858f-ade5-4c62-b3f3-5c12d96865b8</td><td>screenshot</td><td>adb-capture</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\auto_screenshot_emulator-5554.png</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>ffd2b196-902f-4f87-9d1a-a5e9263d0287</td><td>screenshot</td><td>adb-capture</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\auto_screenshot_emulator-5554_1.png</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>64de69df-af8e-4a33-9858-17746c5373ec</td><td>screenshot</td><td>adb-capture</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\auto_screenshot_emulator-5554_2.png</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>09d96b6a-29a4-418e-8d66-824bdf007d61</td><td>apk</td><td>ui-upload</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\app-debug.apk</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>e7e36661-d4c8-4450-9937-79d4e40e0c73</td><td>apk_hash</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\apk_hash.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>5acc1359-fa78-4cb9-a242-eb38547a047f</td><td>manifest_summary</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\manifest_summary.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>a49f52a3-9d61-415f-88a9-fd3f365b89e1</td><td>manifest_xml</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\AndroidManifest.xml</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>20846eab-0311-4156-b827-94be722ac327</td><td>permissions</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\permissions.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>ffce673a-0437-450a-8df2-a1311ac864db</td><td>components</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\components.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>a8c97163-fd95-4dc3-8545-d011f175fa96</td><td>sbom</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\sbom.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>892ef8bb-08ea-4989-8c11-76a5d0af5bf2</td><td>screenshot</td><td>adb-capture</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\auto_screenshot_emulator-5554_3.png</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>c697e758-2ca9-440f-8cc0-4c5ac8bf9beb</td><td>apk</td><td>ui-upload</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\app-debug_1.apk</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>3b9b44d7-bfc5-4191-b03a-fb6397335eb1</td><td>apk_hash</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\apk_hash.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>9d603926-f51d-400d-94fd-259922ce6142</td><td>manifest_summary</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\manifest_summary.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>2c478bc7-bfac-4af3-afa7-247381dfc682</td><td>manifest_xml</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\AndroidManifest.xml</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>7e910708-a8b6-4ec5-b81a-ef0e48e619da</td><td>permissions</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\permissions.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>74b000ca-02b6-48e1-9f1e-dd6aced35495</td><td>components</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\components.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>95dd0c65-efac-45fc-a5ee-5b35d49c8ab8</td><td>sbom</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\sbom.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>58248dda-c733-42a8-9e73-dd04b3526c26</td><td>screenshot</td><td>adb-capture</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\auto_screenshot_emulator-5554_4.png</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>5f1c1077-3a25-40cc-8c3f-22296a328237</td><td>screenshot</td><td>adb-capture</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\auto_screenshot_emulator-5554_5.png</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>466b3f1a-2bfa-47cd-87cf-8c3972335459</td><td>apk</td><td>ui-upload</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\app-debug_2.apk</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>1d3297f2-35a5-48f3-8979-98a7c5139dbd</td><td>apk_hash</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\apk_hash.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>0c7ae7f7-c54e-4a76-96f2-1938348b34b1</td><td>manifest_summary</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\manifest_summary.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>35f97b5d-4304-49eb-9d62-df599cb330f6</td><td>manifest_xml</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\AndroidManifest.xml</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>d841ec1c-f428-4465-a925-e95ed8f470f4</td><td>permissions</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\permissions.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>42c51a06-953b-4abc-9321-3dfc21debd87</td><td>components</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\components.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>d94bc23b-532e-4d86-97ed-0de4bec690c3</td><td>sbom</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\sbom.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>8d15f09e-3707-4baf-b009-d905e0b8c31f</td><td>apk</td><td>ui-upload</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\app-debug_3.apk</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>6930b2e2-a063-4921-88f5-f0d33139a851</td><td>apk_hash</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\apk_hash.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>c7237fe8-f8c6-4001-95db-c1034528dea7</td><td>manifest_summary</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\manifest_summary.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>b51bc5ec-8d04-4d05-9e03-42a9b103e96d</td><td>manifest_xml</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\AndroidManifest.xml</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>4b715db9-7ece-443d-af72-3e179e775484</td><td>permissions</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\permissions.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>d62caa76-c547-448a-8a2f-94730b74a1df</td><td>components</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\components.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>6a28f8c2-125b-47b0-82f9-131a7c8b2fbd</td><td>sbom</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\sbom.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>339ce145-5b99-48f4-945d-e7d3a7a90c7e</td><td>apk</td><td>ui-upload</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\app-debug_4.apk</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>c52c638e-613e-444e-ad23-1213171b9211</td><td>apk_hash</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\apk_hash.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>f626bc36-c501-4b2d-a12b-be49bd393f48</td><td>manifest_summary</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\manifest_summary.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>abb6982c-7b62-4c3d-9522-22b41cc0f1cb</td><td>manifest_xml</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\AndroidManifest.xml</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>c4acd620-27cb-479d-b6b1-fc402d302e76</td><td>permissions</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\permissions.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>7cfb0dc0-f386-4836-85a4-c134f715f5cf</td><td>components</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\components.json</td><td>collected</td>
+      </tr>
+      
+      <tr>
+        <td>639a5bda-df6e-4022-b756-ec50568b5870</td><td>sbom</td><td>generated</td><td>D:\Desktop\projet mobile\backend\data\uploads\851fe104-311b-4c64-8cd2-304415871d38\sbom.json</td><td>collected</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <h2>Manifest and Permissions Overview</h2>
+  <div class="grid-two">
+    <div class="card">
+      <h3>Manifest Summary</h3>
+      
+      <p><strong>Package:</strong> com.example.getudiant</p>
+      <p><strong>Version Name:</strong> 1.0</p>
+      <p><strong>Version Code:</strong> 1</p>
+      <p><strong>minSdk:</strong> 24</p>
+      <p><strong>targetSdk:</strong> 36</p>
+      <p><strong>Summary:</strong> Package com.example.getudiant targets SDK 36 and declares 2 permissions.</p>
+      
+      
+      <p><strong>Raw manifest extract:</strong> included in the evidence pack as <code>AndroidManifest.xml</code>.</p>
+      
+    </div>
+    <div class="card">
+      <h3>Permissions</h3>
+      
+      <p><strong>Total permissions:</strong> 2</p>
+      <ul>
+        
+        <li>android.permission.INTERNET</li>
+        
+        <li>com.example.getudiant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</li>
+        
+      </ul>
+      
+      
+    </div>
+  </div>
+
+  <h2>Components and Dependency Overview</h2>
+  <div class="grid-two">
+    <div class="card">
+      <h3>Exported Components</h3>
+      
+      <p><strong>Total components:</strong> 4</p>
+      <ul>
+        
+        <li>androidx.profileinstaller.ProfileInstallReceiver</li>
+        
+        <li>androidx.startup.InitializationProvider</li>
+        
+        <li>com.example.getudiant.AddEtudiant</li>
+        
+        <li>com.example.getudiant.ListEtudiantActivity</li>
+        
+      </ul>
+      
+      
+      <p><strong>Network security config:</strong> Not declared</p>
+      <p><strong>Cleartext traffic:</strong> Not declared</p>
+    </div>
+    <div class="card">
+      <h3>SBOM Status</h3>
+      
+      <p><strong>Status:</strong> generated</p>
+      <p><strong>Generator:</strong> local-apk-sbom</p>
+      <p><strong>Note:</strong> SBOM inventory generated from APK metadata and archive contents.</p>
+      
+      <p><strong>Components discovered:</strong></p>
+      <ul>
+        
+        <li>com.example.getudiant (application)</li>
+        
+        <li>classes.dex (file)</li>
+        
+        <li>classes2.dex (file)</li>
+        
+        <li>classes3.dex (file)</li>
+        
+        <li>classes4.dex (file)</li>
+        
+        <li>AndroidManifest.xml (file)</li>
+        
+      </ul>
+      
+      
+    </div>
+  </div>
+
+  <h2>Artifact Integrity and Hashes</h2>
+  <table>
+    <thead><tr><th>Artifact</th><th>SHA-256</th><th>Size</th><th>MIME Type</th></tr></thead>
+    <tbody>
+      
+      <tr><td>UnCrackable-Level3.apk</td><td><code>6827f776b7d2844342711be6f13695ae8d1a5f209fc0072dbaf8b85e2fcff4b7</code></td><td>1460555</td><td>application/vnd.android.package-archive</td></tr>
+      
+      <tr><td>auto_screenshot_emulator-5554.png</td><td><code>18f54b5cc46318a3732e94e6178b57e166741825ca4a1fe7dd1dcab08beeeba1</code></td><td>304635</td><td>image/png</td></tr>
+      
+      <tr><td>auto_screenshot_emulator-5554.png</td><td><code>78ae499cf412e1ca05de9121b9a1e42ab31dc27f02ca0b3021efd7a772057b10</code></td><td>54210</td><td>image/png</td></tr>
+      
+      <tr><td>auto_screenshot_emulator-5554.png</td><td><code>78ae499cf412e1ca05de9121b9a1e42ab31dc27f02ca0b3021efd7a772057b10</code></td><td>54210</td><td>image/png</td></tr>
+      
+      <tr><td>app-debug.apk</td><td><code>94f791c77d45073968ce2d72f6fbb49596550393f90cf081a826d1b41fc5b686</code></td><td>6718842</td><td>application/vnd.android.package-archive</td></tr>
+      
+      <tr><td>auto_screenshot_emulator-5554.png</td><td><code>1bfeb68a09e5ee8441d925008fcef6060fb1beb6b102f901a9237ab99489d0ac</code></td><td>54298</td><td>image/png</td></tr>
+      
+      <tr><td>app-debug.apk</td><td><code>94f791c77d45073968ce2d72f6fbb49596550393f90cf081a826d1b41fc5b686</code></td><td>6718842</td><td>application/vnd.android.package-archive</td></tr>
+      
+      <tr><td>auto_screenshot_emulator-5554.png</td><td><code>9a8346b061a570b897cc4167ed230771c592f6c9f92f45767b6adca9af05a695</code></td><td>54121</td><td>image/png</td></tr>
+      
+      <tr><td>auto_screenshot_emulator-5554.png</td><td><code>dbc386e26f16c4fbca6e998040aeeea2768d0a8bf7eae33b49ddd512359ff817</code></td><td>54425</td><td>image/png</td></tr>
+      
+      <tr><td>app-debug.apk</td><td><code>94f791c77d45073968ce2d72f6fbb49596550393f90cf081a826d1b41fc5b686</code></td><td>6718842</td><td>application/vnd.android.package-archive</td></tr>
+      
+      <tr><td>app-debug.apk</td><td><code>94f791c77d45073968ce2d72f6fbb49596550393f90cf081a826d1b41fc5b686</code></td><td>6718842</td><td>application/vnd.android.package-archive</td></tr>
+      
+      <tr><td>app-debug.apk</td><td><code>94f791c77d45073968ce2d72f6fbb49596550393f90cf081a826d1b41fc5b686</code></td><td>6718842</td><td>application/vnd.android.package-archive</td></tr>
+      
+    </tbody>
+  </table>
+
+  
+  <div class="card">
+    <h3>Latest Extracted Hash Record</h3>
+    <p><strong>SHA-256:</strong> <code>94f791c77d45073968ce2d72f6fbb49596550393f90cf081a826d1b41fc5b686</code></p>
+    <p><strong>SHA-1:</strong> <code>c68716b7af4780318d268428f9c675d35a8e7ea5</code></p>
+    <p><strong>MD5:</strong> <code>372365a761e02fe6739f589b12c4156a</code></p>
+  </div>
+  
+
+  <h2>Traceability Matrix</h2>
+  <table>
+    <thead><tr><th>Evidence</th><th>Proof</th><th>MASVS</th><th>MASWE</th><th>MASTG</th><th>Status</th><th>Notes</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td>5c5d2cb4-fba8-4a3a-9877-4d4641aa9850</td>
+        <td>
+          
+          <strong>apk</strong><br />
+          UnCrackable-Level3.apk
+          
+        </td>
+        <td></td><td></td><td></td><td>unmapped</td><td>No MASVS, MASWE, or MASTG references could be justified from &#39;UnCrackable-Level3.apk&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>8a7791c1-1de0-4bee-8caa-0283a46ba65e</td>
+        <td>
+          
+          <strong>apk_hash</strong><br />
+          apk_hash.json
+          
+        </td>
+        <td>MASVS-RESILIENCE-1</td><td></td><td>MASTG-KNOW-0011</td><td>mapped</td><td>Concrete proof &#39;apk_hash.json&#39; mapped with signals [sha256-present]. Hash evidence includes SHA-256 94f791c77d45..., which ties the audit pack to a specific APK binary and supports integrity verification.</td>
+      </tr>
+      
+      <tr>
+        <td>5d74d016-20d6-4c96-919a-0ccd0eac5852</td>
+        <td>
+          
+          <strong>manifest_summary</strong><br />
+          manifest_summary.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;manifest_summary.json&#39; mapped with signals [manifest-summary-sdk-metadata, manifest-summary-text]. Manifest summary identifies com.example.getudiant with minSdk=24 and targetSdk=36, providing concrete platform-configuration proof for manifest review. Manifest summary text captures declared app configuration: Package com.example.getudiant targets SDK 36 and declares 2 permissions..</td>
+      </tr>
+      
+      <tr>
+        <td>73f65c53-b2e8-487b-81d5-90e7ec7134b3</td>
+        <td>
+          
+          <strong>permissions</strong><br />
+          permissions.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0001</td><td>MASTG-TEST-0027</td><td>mapped</td><td>Concrete proof &#39;permissions.json&#39; mapped with signals [permission-inventory]. Permission inventory lists 2 declared permissions for direct manifest and platform review.</td>
+      </tr>
+      
+      <tr>
+        <td>d86d8441-1cdd-4966-884f-41ceea1656ba</td>
+        <td>
+          
+          <strong>components</strong><br />
+          components.json
+          
+        </td>
+        <td>MASVS-PLATFORM-2</td><td>MASWE-0064</td><td>MASTG-TEST-0028</td><td>mapped</td><td>Concrete proof &#39;components.json&#39; mapped with signals [exported-components-present]. Component evidence enumerates 4 exported component(s), which directly supports review of externally reachable app surfaces.</td>
+      </tr>
+      
+      <tr>
+        <td>fa3bcea6-9299-4684-a82f-e985ff4e89a3</td>
+        <td>
+          
+          <strong>sbom</strong><br />
+          sbom.json
+          
+        </td>
+        <td>MASVS-CODE-1,MASVS-RESILIENCE-2</td><td>MASWE-0093</td><td>MASTG-KNOW-0073</td><td>mapped</td><td>Concrete proof &#39;sbom.json&#39; mapped with signals [sbom-archive-details, sbom-components-enumerated]. SBOM enumerates 6 component(s), providing concrete dependency and software inventory evidence. SBOM statistics include archive-derived implementation details (native libraries=0, dex units=4), supporting resilience and inventory traceability.</td>
+      </tr>
+      
+      <tr>
+        <td>0581858f-ade5-4c62-b3f3-5c12d96865b8</td>
+        <td>
+          
+          <strong>screenshot</strong><br />
+          auto_screenshot_emulator-5554.png
+          
+        </td>
+        <td></td><td></td><td>MASTG-KNOW-0019</td><td>mapped</td><td>Concrete proof &#39;auto_screenshot_emulator-5554.png&#39; mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit.</td>
+      </tr>
+      
+      <tr>
+        <td>ffd2b196-902f-4f87-9d1a-a5e9263d0287</td>
+        <td>
+          
+          <strong>screenshot</strong><br />
+          auto_screenshot_emulator-5554.png
+          
+        </td>
+        <td></td><td></td><td>MASTG-KNOW-0019</td><td>mapped</td><td>Concrete proof &#39;auto_screenshot_emulator-5554.png&#39; mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit.</td>
+      </tr>
+      
+      <tr>
+        <td>64de69df-af8e-4a33-9858-17746c5373ec</td>
+        <td>
+          
+          <strong>screenshot</strong><br />
+          auto_screenshot_emulator-5554.png
+          
+        </td>
+        <td></td><td></td><td>MASTG-KNOW-0019</td><td>mapped</td><td>Concrete proof &#39;auto_screenshot_emulator-5554.png&#39; mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit.</td>
+      </tr>
+      
+      <tr>
+        <td>09d96b6a-29a4-418e-8d66-824bdf007d61</td>
+        <td>
+          
+          <strong>apk</strong><br />
+          app-debug.apk
+          
+        </td>
+        <td></td><td></td><td></td><td>unmapped</td><td>No MASVS, MASWE, or MASTG references could be justified from &#39;app-debug.apk&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>e7e36661-d4c8-4450-9937-79d4e40e0c73</td>
+        <td>
+          
+          <strong>apk_hash</strong><br />
+          apk_hash.json
+          
+        </td>
+        <td>MASVS-RESILIENCE-1</td><td></td><td>MASTG-KNOW-0011</td><td>mapped</td><td>Concrete proof &#39;apk_hash.json&#39; mapped with signals [sha256-present]. Hash evidence includes SHA-256 94f791c77d45..., which ties the audit pack to a specific APK binary and supports integrity verification.</td>
+      </tr>
+      
+      <tr>
+        <td>5acc1359-fa78-4cb9-a242-eb38547a047f</td>
+        <td>
+          
+          <strong>manifest_summary</strong><br />
+          manifest_summary.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;manifest_summary.json&#39; mapped with signals [manifest-summary-sdk-metadata, manifest-summary-text]. Manifest summary identifies com.example.getudiant with minSdk=24 and targetSdk=36, providing concrete platform-configuration proof for manifest review. Manifest summary text captures declared app configuration: Package com.example.getudiant targets SDK 36 and declares 2 permissions..</td>
+      </tr>
+      
+      <tr>
+        <td>a49f52a3-9d61-415f-88a9-fd3f365b89e1</td>
+        <td>
+          
+          <strong>manifest_xml</strong><br />
+          AndroidManifest.xml
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;AndroidManifest.xml&#39; mapped with signals [manifest-xml-present]. Raw AndroidManifest.xml was extracted, enabling direct verification of declared platform configuration.</td>
+      </tr>
+      
+      <tr>
+        <td>20846eab-0311-4156-b827-94be722ac327</td>
+        <td>
+          
+          <strong>permissions</strong><br />
+          permissions.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0001</td><td>MASTG-TEST-0027</td><td>mapped</td><td>Concrete proof &#39;permissions.json&#39; mapped with signals [permission-inventory]. Permission inventory lists 2 declared permissions for direct manifest and platform review.</td>
+      </tr>
+      
+      <tr>
+        <td>ffce673a-0437-450a-8df2-a1311ac864db</td>
+        <td>
+          
+          <strong>components</strong><br />
+          components.json
+          
+        </td>
+        <td>MASVS-PLATFORM-2</td><td>MASWE-0064</td><td>MASTG-TEST-0028</td><td>mapped</td><td>Concrete proof &#39;components.json&#39; mapped with signals [exported-components-present]. Component evidence enumerates 4 exported component(s), which directly supports review of externally reachable app surfaces.</td>
+      </tr>
+      
+      <tr>
+        <td>a8c97163-fd95-4dc3-8545-d011f175fa96</td>
+        <td>
+          
+          <strong>sbom</strong><br />
+          sbom.json
+          
+        </td>
+        <td>MASVS-CODE-1,MASVS-RESILIENCE-2</td><td>MASWE-0093</td><td>MASTG-KNOW-0073</td><td>mapped</td><td>Concrete proof &#39;sbom.json&#39; mapped with signals [sbom-archive-details, sbom-components-enumerated]. SBOM enumerates 6 component(s), providing concrete dependency and software inventory evidence. SBOM statistics include archive-derived implementation details (native libraries=0, dex units=4), supporting resilience and inventory traceability.</td>
+      </tr>
+      
+      <tr>
+        <td>892ef8bb-08ea-4989-8c11-76a5d0af5bf2</td>
+        <td>
+          
+          <strong>screenshot</strong><br />
+          auto_screenshot_emulator-5554.png
+          
+        </td>
+        <td></td><td></td><td>MASTG-KNOW-0019</td><td>mapped</td><td>Concrete proof &#39;auto_screenshot_emulator-5554.png&#39; mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit.</td>
+      </tr>
+      
+      <tr>
+        <td>c697e758-2ca9-440f-8cc0-4c5ac8bf9beb</td>
+        <td>
+          
+          <strong>apk</strong><br />
+          app-debug.apk
+          
+        </td>
+        <td></td><td></td><td></td><td>unmapped</td><td>No MASVS, MASWE, or MASTG references could be justified from &#39;app-debug.apk&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>3b9b44d7-bfc5-4191-b03a-fb6397335eb1</td>
+        <td>
+          
+          <strong>apk_hash</strong><br />
+          apk_hash.json
+          
+        </td>
+        <td>MASVS-RESILIENCE-1</td><td></td><td>MASTG-KNOW-0011</td><td>mapped</td><td>Concrete proof &#39;apk_hash.json&#39; mapped with signals [sha256-present]. Hash evidence includes SHA-256 94f791c77d45..., which ties the audit pack to a specific APK binary and supports integrity verification.</td>
+      </tr>
+      
+      <tr>
+        <td>9d603926-f51d-400d-94fd-259922ce6142</td>
+        <td>
+          
+          <strong>manifest_summary</strong><br />
+          manifest_summary.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;manifest_summary.json&#39; mapped with signals [manifest-summary-sdk-metadata, manifest-summary-text]. Manifest summary identifies com.example.getudiant with minSdk=24 and targetSdk=36, providing concrete platform-configuration proof for manifest review. Manifest summary text captures declared app configuration: Package com.example.getudiant targets SDK 36 and declares 2 permissions..</td>
+      </tr>
+      
+      <tr>
+        <td>2c478bc7-bfac-4af3-afa7-247381dfc682</td>
+        <td>
+          
+          <strong>manifest_xml</strong><br />
+          AndroidManifest.xml
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;AndroidManifest.xml&#39; mapped with signals [manifest-xml-present]. Raw AndroidManifest.xml was extracted, enabling direct verification of declared platform configuration.</td>
+      </tr>
+      
+      <tr>
+        <td>7e910708-a8b6-4ec5-b81a-ef0e48e619da</td>
+        <td>
+          
+          <strong>permissions</strong><br />
+          permissions.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0001</td><td>MASTG-TEST-0027</td><td>mapped</td><td>Concrete proof &#39;permissions.json&#39; mapped with signals [permission-inventory]. Permission inventory lists 2 declared permissions for direct manifest and platform review.</td>
+      </tr>
+      
+      <tr>
+        <td>74b000ca-02b6-48e1-9f1e-dd6aced35495</td>
+        <td>
+          
+          <strong>components</strong><br />
+          components.json
+          
+        </td>
+        <td>MASVS-PLATFORM-2</td><td>MASWE-0064</td><td>MASTG-TEST-0028</td><td>mapped</td><td>Concrete proof &#39;components.json&#39; mapped with signals [exported-components-present]. Component evidence enumerates 4 exported component(s), which directly supports review of externally reachable app surfaces.</td>
+      </tr>
+      
+      <tr>
+        <td>95dd0c65-efac-45fc-a5ee-5b35d49c8ab8</td>
+        <td>
+          
+          <strong>sbom</strong><br />
+          sbom.json
+          
+        </td>
+        <td>MASVS-CODE-1,MASVS-RESILIENCE-2</td><td>MASWE-0093</td><td>MASTG-KNOW-0073</td><td>mapped</td><td>Concrete proof &#39;sbom.json&#39; mapped with signals [sbom-archive-details, sbom-components-enumerated]. SBOM enumerates 6 component(s), providing concrete dependency and software inventory evidence. SBOM statistics include archive-derived implementation details (native libraries=0, dex units=4), supporting resilience and inventory traceability.</td>
+      </tr>
+      
+      <tr>
+        <td>58248dda-c733-42a8-9e73-dd04b3526c26</td>
+        <td>
+          
+          <strong>screenshot</strong><br />
+          auto_screenshot_emulator-5554.png
+          
+        </td>
+        <td></td><td></td><td>MASTG-KNOW-0019</td><td>mapped</td><td>Concrete proof &#39;auto_screenshot_emulator-5554.png&#39; mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit.</td>
+      </tr>
+      
+      <tr>
+        <td>5f1c1077-3a25-40cc-8c3f-22296a328237</td>
+        <td>
+          
+          <strong>screenshot</strong><br />
+          auto_screenshot_emulator-5554.png
+          
+        </td>
+        <td></td><td></td><td>MASTG-KNOW-0019</td><td>mapped</td><td>Concrete proof &#39;auto_screenshot_emulator-5554.png&#39; mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit.</td>
+      </tr>
+      
+      <tr>
+        <td>466b3f1a-2bfa-47cd-87cf-8c3972335459</td>
+        <td>
+          
+          <strong>apk</strong><br />
+          app-debug.apk
+          
+        </td>
+        <td></td><td></td><td></td><td>unmapped</td><td>No MASVS, MASWE, or MASTG references could be justified from &#39;app-debug.apk&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>1d3297f2-35a5-48f3-8979-98a7c5139dbd</td>
+        <td>
+          
+          <strong>apk_hash</strong><br />
+          apk_hash.json
+          
+        </td>
+        <td>MASVS-RESILIENCE-1</td><td></td><td>MASTG-KNOW-0011</td><td>mapped</td><td>Concrete proof &#39;apk_hash.json&#39; mapped with signals [sha256-present]. Hash evidence includes SHA-256 94f791c77d45..., which ties the audit pack to a specific APK binary and supports integrity verification.</td>
+      </tr>
+      
+      <tr>
+        <td>0c7ae7f7-c54e-4a76-96f2-1938348b34b1</td>
+        <td>
+          
+          <strong>manifest_summary</strong><br />
+          manifest_summary.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;manifest_summary.json&#39; mapped with signals [manifest-summary-sdk-metadata, manifest-summary-text]. Manifest summary identifies com.example.getudiant with minSdk=24 and targetSdk=36, providing concrete platform-configuration proof for manifest review. Manifest summary text captures declared app configuration: Package com.example.getudiant targets SDK 36 and declares 2 permissions..</td>
+      </tr>
+      
+      <tr>
+        <td>35f97b5d-4304-49eb-9d62-df599cb330f6</td>
+        <td>
+          
+          <strong>manifest_xml</strong><br />
+          AndroidManifest.xml
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;AndroidManifest.xml&#39; mapped with signals [manifest-xml-present]. Raw AndroidManifest.xml was extracted, enabling direct verification of declared platform configuration.</td>
+      </tr>
+      
+      <tr>
+        <td>d841ec1c-f428-4465-a925-e95ed8f470f4</td>
+        <td>
+          
+          <strong>permissions</strong><br />
+          permissions.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0001</td><td>MASTG-TEST-0027</td><td>mapped</td><td>Concrete proof &#39;permissions.json&#39; mapped with signals [permission-inventory]. Permission inventory lists 2 declared permissions for direct manifest and platform review.</td>
+      </tr>
+      
+      <tr>
+        <td>42c51a06-953b-4abc-9321-3dfc21debd87</td>
+        <td>
+          
+          <strong>components</strong><br />
+          components.json
+          
+        </td>
+        <td>MASVS-PLATFORM-2</td><td>MASWE-0064</td><td>MASTG-TEST-0028</td><td>mapped</td><td>Concrete proof &#39;components.json&#39; mapped with signals [exported-components-present]. Component evidence enumerates 4 exported component(s), which directly supports review of externally reachable app surfaces.</td>
+      </tr>
+      
+      <tr>
+        <td>d94bc23b-532e-4d86-97ed-0de4bec690c3</td>
+        <td>
+          
+          <strong>sbom</strong><br />
+          sbom.json
+          
+        </td>
+        <td>MASVS-CODE-1,MASVS-RESILIENCE-2</td><td>MASWE-0093</td><td>MASTG-KNOW-0073</td><td>mapped</td><td>Concrete proof &#39;sbom.json&#39; mapped with signals [sbom-archive-details, sbom-components-enumerated]. SBOM enumerates 6 component(s), providing concrete dependency and software inventory evidence. SBOM statistics include archive-derived implementation details (native libraries=0, dex units=4), supporting resilience and inventory traceability.</td>
+      </tr>
+      
+      <tr>
+        <td>8d15f09e-3707-4baf-b009-d905e0b8c31f</td>
+        <td>
+          
+          <strong>apk</strong><br />
+          app-debug.apk
+          
+        </td>
+        <td></td><td></td><td></td><td>unmapped</td><td>No MASVS, MASWE, or MASTG references could be justified from &#39;app-debug.apk&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>6930b2e2-a063-4921-88f5-f0d33139a851</td>
+        <td>
+          
+          <strong>apk_hash</strong><br />
+          apk_hash.json
+          
+        </td>
+        <td>MASVS-RESILIENCE-1</td><td></td><td>MASTG-KNOW-0011</td><td>mapped</td><td>Concrete proof &#39;apk_hash.json&#39; mapped with signals [sha256-present]. Hash evidence includes SHA-256 94f791c77d45..., which ties the audit pack to a specific APK binary and supports integrity verification.</td>
+      </tr>
+      
+      <tr>
+        <td>c7237fe8-f8c6-4001-95db-c1034528dea7</td>
+        <td>
+          
+          <strong>manifest_summary</strong><br />
+          manifest_summary.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;manifest_summary.json&#39; mapped with signals [manifest-summary-sdk-metadata, manifest-summary-text]. Manifest summary identifies com.example.getudiant with minSdk=24 and targetSdk=36, providing concrete platform-configuration proof for manifest review. Manifest summary text captures declared app configuration: Package com.example.getudiant targets SDK 36 and declares 2 permissions..</td>
+      </tr>
+      
+      <tr>
+        <td>b51bc5ec-8d04-4d05-9e03-42a9b103e96d</td>
+        <td>
+          
+          <strong>manifest_xml</strong><br />
+          AndroidManifest.xml
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;AndroidManifest.xml&#39; mapped with signals [manifest-xml-present]. Raw AndroidManifest.xml was extracted, enabling direct verification of declared platform configuration.</td>
+      </tr>
+      
+      <tr>
+        <td>4b715db9-7ece-443d-af72-3e179e775484</td>
+        <td>
+          
+          <strong>permissions</strong><br />
+          permissions.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0001</td><td>MASTG-TEST-0027</td><td>mapped</td><td>Concrete proof &#39;permissions.json&#39; mapped with signals [permission-inventory]. Permission inventory lists 2 declared permissions for direct manifest and platform review.</td>
+      </tr>
+      
+      <tr>
+        <td>d62caa76-c547-448a-8a2f-94730b74a1df</td>
+        <td>
+          
+          <strong>components</strong><br />
+          components.json
+          
+        </td>
+        <td>MASVS-PLATFORM-2</td><td>MASWE-0064</td><td>MASTG-TEST-0028</td><td>mapped</td><td>Concrete proof &#39;components.json&#39; mapped with signals [exported-components-present]. Component evidence enumerates 4 exported component(s), which directly supports review of externally reachable app surfaces.</td>
+      </tr>
+      
+      <tr>
+        <td>6a28f8c2-125b-47b0-82f9-131a7c8b2fbd</td>
+        <td>
+          
+          <strong>sbom</strong><br />
+          sbom.json
+          
+        </td>
+        <td>MASVS-CODE-1,MASVS-RESILIENCE-2</td><td>MASWE-0093</td><td>MASTG-KNOW-0073</td><td>mapped</td><td>Concrete proof &#39;sbom.json&#39; mapped with signals [sbom-archive-details, sbom-components-enumerated]. SBOM enumerates 6 component(s), providing concrete dependency and software inventory evidence. SBOM statistics include archive-derived implementation details (native libraries=0, dex units=4), supporting resilience and inventory traceability.</td>
+      </tr>
+      
+      <tr>
+        <td>339ce145-5b99-48f4-945d-e7d3a7a90c7e</td>
+        <td>
+          
+          <strong>apk</strong><br />
+          app-debug.apk
+          
+        </td>
+        <td></td><td></td><td></td><td>unmapped</td><td>No MASVS, MASWE, or MASTG references could be justified from &#39;app-debug.apk&#39;.</td>
+      </tr>
+      
+      <tr>
+        <td>c52c638e-613e-444e-ad23-1213171b9211</td>
+        <td>
+          
+          <strong>apk_hash</strong><br />
+          apk_hash.json
+          
+        </td>
+        <td>MASVS-RESILIENCE-1</td><td></td><td>MASTG-KNOW-0011</td><td>mapped</td><td>Concrete proof &#39;apk_hash.json&#39; mapped with signals [sha256-present]. Hash evidence includes SHA-256 94f791c77d45..., which ties the audit pack to a specific APK binary and supports integrity verification.</td>
+      </tr>
+      
+      <tr>
+        <td>f626bc36-c501-4b2d-a12b-be49bd393f48</td>
+        <td>
+          
+          <strong>manifest_summary</strong><br />
+          manifest_summary.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;manifest_summary.json&#39; mapped with signals [manifest-summary-sdk-metadata, manifest-summary-text]. Manifest summary identifies com.example.getudiant with minSdk=24 and targetSdk=36, providing concrete platform-configuration proof for manifest review. Manifest summary text captures declared app configuration: Package com.example.getudiant targets SDK 36 and declares 2 permissions..</td>
+      </tr>
+      
+      <tr>
+        <td>abb6982c-7b62-4c3d-9522-22b41cc0f1cb</td>
+        <td>
+          
+          <strong>manifest_xml</strong><br />
+          AndroidManifest.xml
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0058</td><td>MASTG-TEST-0026</td><td>mapped</td><td>Concrete proof &#39;AndroidManifest.xml&#39; mapped with signals [manifest-xml-present]. Raw AndroidManifest.xml was extracted, enabling direct verification of declared platform configuration.</td>
+      </tr>
+      
+      <tr>
+        <td>c4acd620-27cb-479d-b6b1-fc402d302e76</td>
+        <td>
+          
+          <strong>permissions</strong><br />
+          permissions.json
+          
+        </td>
+        <td>MASVS-PLATFORM-1</td><td>MASWE-0001</td><td>MASTG-TEST-0027</td><td>mapped</td><td>Concrete proof &#39;permissions.json&#39; mapped with signals [permission-inventory]. Permission inventory lists 2 declared permissions for direct manifest and platform review.</td>
+      </tr>
+      
+      <tr>
+        <td>7cfb0dc0-f386-4836-85a4-c134f715f5cf</td>
+        <td>
+          
+          <strong>components</strong><br />
+          components.json
+          
+        </td>
+        <td>MASVS-PLATFORM-2</td><td>MASWE-0064</td><td>MASTG-TEST-0028</td><td>mapped</td><td>Concrete proof &#39;components.json&#39; mapped with signals [exported-components-present]. Component evidence enumerates 4 exported component(s), which directly supports review of externally reachable app surfaces.</td>
+      </tr>
+      
+      <tr>
+        <td>639a5bda-df6e-4022-b756-ec50568b5870</td>
+        <td>
+          
+          <strong>sbom</strong><br />
+          sbom.json
+          
+        </td>
+        <td>MASVS-CODE-1,MASVS-RESILIENCE-2</td><td>MASWE-0093</td><td>MASTG-KNOW-0073</td><td>mapped</td><td>Concrete proof &#39;sbom.json&#39; mapped with signals [sbom-archive-details, sbom-components-enumerated]. SBOM enumerates 6 component(s), providing concrete dependency and software inventory evidence. SBOM statistics include archive-derived implementation details (native libraries=0, dex units=4), supporting resilience and inventory traceability.</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  
+
+  <h2>Missing Evidence and Collection Gaps</h2>
+  <table>
+    <thead><tr><th>Severity</th><th>Title</th><th>Why It Matters</th><th>Recommendation</th></tr></thead>
+    <tbody>
+      
+      <tr><td>medium</td><td>No sanitized runtime logs were collected</td><td>Dynamic evidence improves coverage for runtime behavior and control validation.</td><td>Upload sanitized runtime logs or capture anonymized telemetry artifacts.</td></tr>
+      
+    </tbody>
+  </table>
+
+  
+  <div class="card">
+    <h3>AI Gap Narratives</h3>
+    <ul>
+      
+      <li>No sanitized runtime logs were collected. Recommended next step: Upload sanitized runtime logs or capture anonymized telemetry artifacts.</li>
+      
+    </ul>
+  </div>
+  
+
+  <div class="card">
+    <h3>Compliance Readiness Summary</h3>
+    <p>This evidence pack documents baseline APK assessment artifacts and their traceability to OWASP MASVS, MASWE, and MASTG references. It supports integrity verification, manifest and permission review, component visibility, and dependency awareness. It does not by itself prove the absence of vulnerabilities; dynamic evidence, screenshots, and analyst findings should be added for deeper review.</p>
+  </div>
+</body>
+</html>

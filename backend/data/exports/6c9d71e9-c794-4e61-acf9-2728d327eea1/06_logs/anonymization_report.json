@@ -1,0 +1,8 @@
+{
+  "emails_redacted": true,
+  "ip_addresses_redacted": true,
+  "tokens_redacted": true,
+  "phone_numbers_redacted": true,
+  "names_redacted": true,
+  "status": "passed"
+}

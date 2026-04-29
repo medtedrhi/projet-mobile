@@ -1,0 +1,446 @@
+--------- beginning of main
+04-29 [REDACTED_IP].926  2312  2312 W [REDACTED_TOKEN]: onDragStart
+04-29 [REDACTED_IP].926  2312  2312 W [REDACTED_TOKEN]: hintAnimationStarted
+04-29 [REDACTED_IP].927  2312  2312 W SGestureVibrationEffect: vibrate, keyCode = 4, type = 50047
+04-29 [REDACTED_IP].932  2312  2312 W [REDACTED_TOKEN]: setActive, action = 2
+04-29 [REDACTED_IP].932  2312  2312 I [REDACTED_TOKEN]: isSGestureActivated, activated = true
+04-29 [REDACTED_IP].934  2312  2312 I [REDACTED_TOKEN]: finishTouchTracking, action : 3, mPassedWindowMoveSlop = false, mInteractionHandler = null, mIsSGestureActivated : true
+04-29 [REDACTED_IP].934  2312  2312 I [REDACTED_TOKEN]: [REDACTED_TOKEN]
+04-29 [REDACTED_IP].934  2312  2312 I [REDACTED_TOKEN]: [REDACTED_TOKEN]
+04-29 [REDACTED_IP].934  2312  2312 I [REDACTED_TOKEN]: removeListener
+04-29 [REDACTED_IP].935  2312  2312 I [REDACTED_TOKEN]: reset
+04-29 [REDACTED_IP].936  1208  3909 D InputDispatcher: Cancel for 'f8ec9dd': input channel stole pointer stream, m=1
+04-29 [REDACTED_IP].936  1208  3909 I InputDispatcher: Delivering touch to (2312): action: 0x3, f=0x0, d=0, 'f8ec9dd', t=1 +(-461,-1574)
+04-29 [REDACTED_IP].936  1208  3909 D InputDispatcher: Cancel for '[Gestur': input channel stole pointer stream, m=1
+04-29 [REDACTED_IP].936  1208  3909 I InputDispatcher: Channel [Gesture Monitor] swipe-up (server) is stealing touch from [f8ec9dd SGestureOverlayWindow (server), [Gesture Monitor] PalmMotion (server)]
+04-29 [REDACTED_IP].937  2312  2312 I HsTaskBooster: tick TASK_BOOST: 2312/800
+04-29 [REDACTED_IP].938  2312  2312 W [REDACTED_TOKEN]: canStartSystemGesture, return true by !isHomeDisabled
+04-29 [REDACTED_IP].938  2312  2312 W DeviceState: isSGestureActivated, canStartSystemGesture
+04-29 [REDACTED_IP].938  2312  2312 W [REDACTED_TOKEN]: canStartSystemGesture, return true by !isHomeDisabled
+04-29 [REDACTED_IP].938  2312  2312 W DeviceState: isSGestureActivated, canStartSystemGesture
+04-29 [REDACTED_IP].938  2312  2312 W SGestureOverlayWindow: clearRestoreTouchEvent
+04-29 [REDACTED_IP].039  1208  1387 D InputReader: Btn_touch(4): value=0 when=27537.031604
+04-29 [REDACTED_IP].039  1208  1387 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=27537.031604
+04-29 [REDACTED_IP].040  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x1, time=27537031604000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-29 [REDACTED_IP].041  2312  2312 W [REDACTED_TOKEN]: onDragEnd
+04-29 [REDACTED_IP].042  1888  1906 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](noArguments=true) [Module] 
+04-29 [REDACTED_IP].042  1888  1906 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-29 [REDACTED_IP].043  1888  1906 V Navbar.Store: ----apply(0) ResetHintVI
+04-29 [REDACTED_IP].043  2312  2312 W [REDACTED_TOKEN]: injectKey, 4
+04-29 [REDACTED_IP].052  1208  3909 D InputDispatcher: Inject key (2312/10109): action=0, f=0x48, d=0, time=27537036000000
+04-29 [REDACTED_IP].054  1208  3909 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002
+04-29 [REDACTED_IP].058  1208  3909 D PhoneWindowManagerExt: interceptKeyTq code=4 down=true repeatCount=0 displayId=0 interactive=true
+04-29 [REDACTED_IP].059  1208  3909 D WindowManager: interceptKeyTq interceptKeyResult=4
+04-29 [REDACTED_IP].060  1208  3909 D InputDispatcher: Inject key (2312/10109): action=1, f=0x48, d=0, time=27537051000000
+04-29 [REDACTED_IP].060  1208  3909 D WindowManager: interceptKeyTq keycode=4 interactive=true keyguardActive=false policyFlags=2b000002
+04-29 [REDACTED_IP].060  1208  3909 D PhoneWindowManagerExt: interceptKeyTq code=4 down=false repeatCount=0 displayId=0 interactive=true
+04-29 [REDACTED_IP].060  1208  3909 D WindowManager: interceptKeyTq interceptKeyResult=4
+04-29 [REDACTED_IP].062  1208  1386 D WindowManager: interceptKeyTi keyCode=4 down=true repeatCount=0 keyguardOn=false canceled=false
+04-29 [REDACTED_IP].062  2312  2312 W [REDACTED_TOKEN]: resetState
+04-29 [REDACTED_IP].062  2312  2312 W [REDACTED_TOKEN]: delegateMotionEvent, action = 1
+04-29 [REDACTED_IP].062  2312  2312 I TouchInteractionService: reset
+04-29 [REDACTED_IP].063  1888  1906 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](noArguments=true) [Module] 
+04-29 [REDACTED_IP].063  1888  1906 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-29 [REDACTED_IP].063  1208  1386 D PhoneWindowManagerExt: interceptKeyTi code=4 down=true repeatCount=0 displayId=0 interactive=true
+04-29 [REDACTED_IP].063  1888  1906 V Navbar.Store: ----apply(0) ResetHintVI
+04-29 [REDACTED_IP].066  1208  1386 I InputDispatcher: Delivering key to (13714): B action: 0x0 (0), f=0x48, m=0x0, d=0, '545f52a'
+04-29 [REDACTED_IP].067  1208  1386 D WindowManager: interceptKeyTi keyCode=4 down=false repeatCount=0 keyguardOn=false canceled=false
+04-29 [REDACTED_IP].067  1208  1386 D PhoneWindowManagerExt: interceptKeyTi code=4 down=false repeatCount=0 displayId=0 interactive=true
+04-29 [REDACTED_IP].091  4119  4119 I HBD     : b skip onKeyDown as physical keyboard not connected 
+04-29 [REDACTED_IP].098  4119  4119 I HBD     : HoneyBoardService onKeyDown r:4d9836da consumed:false 7 
+04-29 [REDACTED_IP].117 13714 13714 I ViewRootImpl@8c82755[ListEtudiantActivity]: ViewPostIme key 0
+04-29 [REDACTED_IP].118  1208  1386 D InputDispatcher: Waiting to send key to 545f52a com.example.getudiant/com.example.getudiant.ListEtudiantActivity because there are unprocessed events that may cause focus to change
+--------- beginning of system
+04-29 [REDACTED_IP].143 13714 13714 D Activity: onKeyDown(KEYCODE_BACK)
+04-29 [REDACTED_IP].145  1208  1386 I InputDispatcher: Delivering key to (13714): B action: 0x1 (0), f=0x48, m=0x0, d=0, '545f52a'
+04-29 [REDACTED_IP].149  4119  4119 I HBD     : HoneyBoardService onKeyUp r:e480c6f1 consumed:false 3 
+04-29 [REDACTED_IP].150 13714 13714 I ViewRootImpl@8c82755[ListEtudiantActivity]: ViewPostIme key 1
+04-29 [REDACTED_IP].151 13714 13714 D Activity: onKeyUp(KEYCODE_BACK) isTracking()=true isCanceled()=false hasCallback=false
+04-29 [REDACTED_IP].168 13714 13714 D Activity: onBackPressed
+04-29 [REDACTED_IP].199  1208  3909 W WindowManager: Prepare app transition: [REDACTED_TOKEN]=[TRANSIT_CLOSE], mNextAppTransitionFlags=, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.prepareAppTransition:6484 com.android.server.wm.ActivityRecord.finishIfPossible:4151 com.android.server.wm.[REDACTED_TOKEN].finishActivity:533 android.app.[REDACTED_TOKEN]$Stub.onTransact:711 
+04-29 [REDACTED_IP].226  1208  3909 D ActivityTaskManager: [REDACTED_TOKEN], onTop=false r=ActivityRecord{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54 f}} caller=com.android.server.wm.ActivityTaskSupervisor.[REDACTED_TOKEN]:2510 com.android.server.wm.TaskFragment.setResumedActivity:493 com.android.server.wm.TaskFragment.onActivityStateChanged:790 com.android.server.wm.ActivityRecord.setState:6406 com.android.server.wm.TaskFragment.startPausing:1880 com.android.server.wm.ActivityRecord.finishIfPossible:4191 
+04-29 [REDACTED_IP].253  1208  1236 D SGM:FgCheckThread: notePauseComponent(), received pkgName: com.example.getudiant, userId: 0
+04-29 [REDACTED_IP].256  1208  3909 D MARsPolicyManager: onPackageResumedFG pkgName = com.example.getudiant, userId = 0
+04-29 [REDACTED_IP].260  1208  1208 I [REDACTED_TOKEN]: handleMessage: entry what = 6
+04-29 [REDACTED_IP].261  1208  3909 I SemDvfsHyPerManager: acquire hyper - AMS_ACT_RESUME/1208@29, type = -999
+04-29 [REDACTED_IP].261  1208  2494 D InputDispatcher: Focus left window (0): 545f52a com.example.getudiant/com.example.getudiant.ListEtudiantActivity
+04-29 [REDACTED_IP].262  1208  3909 D [REDACTED_TOKEN]: AMP_acquire() ACT_RESUME
+04-29 [REDACTED_IP].262   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 765732  [1208 / 29]    HINT : AMS_ACT_RESUME    list : 
+04-29 [REDACTED_IP].272  1208  3909 W WindowManager: Prepare app transition: [REDACTED_TOKEN]=[TRANSIT_CLOSE, TRANSIT_CLOSE], mNextAppTransitionFlags=, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.prepareAppTransition:6484 com.android.server.wm.TaskFragment.resumeTopActivity:1562 com.android.server.wm.TaskFragment.resumeTopActivity:1307 com.android.server.wm.Task.[REDACTED_TOKEN]:6451 
+04-29 [REDACTED_IP].279  1208  3909 V WindowManager: Setting visibility of Window{8f06f12 u0 com.example.getudiant/com.example.getudiant.AddEtudiant}: true, caller=com.android.server.wm.WindowContainer.[REDACTED_TOKEN]:1246 com.android.server.wm.WindowToken.setClientVisible:431 com.android.server.wm.ActivityRecord.setClientVisible:7691 com.android.server.wm.ActivityRecord.setVisibility:6091 com.android.server.wm.ActivityRecord.setVisibility:5984 
+04-29 [REDACTED_IP].280  1208  3909 D ActivityTaskManager: [REDACTED_TOKEN], onTop=true r=ActivityRecord{6305a7f u0 com.example.getudiant/.AddEtudiant} t54} caller=com.android.server.wm.ActivityTaskSupervisor.[REDACTED_TOKEN]:2535 com.android.server.wm.ActivityTaskSupervisor.[REDACTED_TOKEN]:2527 com.android.server.wm.TaskFragment.setResumedActivity:493 com.android.server.wm.TaskFragment.onActivityStateChanged:805 com.android.server.wm.ActivityRecord.setState:6406 com.android.server.wm.TaskFragment.resumeTopActivity:1629 
+04-29 [REDACTED_IP].282  1208  3909 D InputDispatcher: Focused application(0): ActivityRecord{6305a7f u0 com.example.getudiant/.AddEtudiant} t54}
+04-29 [REDACTED_IP].289  1208  3909 V WindowManager: Changing focus from Window{545f52a u0 com.example.getudiant/com.example.getudiant.ListEtudiantActivity} to null displayId=0 Callers=com.android.server.wm.RootWindowContainer.[REDACTED_TOKEN]:595 com.android.server.wm.WindowManagerService.[REDACTED_TOKEN]:6810 com.android.server.wm.[REDACTED_TOKEN].[REDACTED_TOKEN]:5766 com.android.server.wm.TaskFragment.onActivityStateChanged:807 
+04-29 [REDACTED_IP].290  1208  3909 D StatusBarManagerService: [REDACTED_TOKEN] recent=false home=false
+04-29 [REDACTED_IP].296  1208  3909 D WindowManagerServiceExt: [REDACTED_TOKEN]: cn=ComponentInfo{com.example.getudiant/com.example.getudiant.AddEtudiant} occludesParent=true inMultiWindow=false styleFloating=false caller=com.android.server.wm.WindowManagerServiceExt.[REDACTED_TOKEN]:1402 com.android.server.wm.DisplayContent.ensureActivitiesVisible:7532 com.android.server.wm.RootWindowContainer.ensureActivitiesVisible:2248 com.android.server.wm.RootWindowContainer.[REDACTED_TOKEN]:2126 com.android.server.wm.TaskFragment.resumeTopActivity:1652 
+04-29 [REDACTED_IP].297  1208  3909 V WindowManager: rotationForOrientation(orient=[REDACTED_TOKEN] (-1), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+04-29 [REDACTED_IP].297  1208  3909 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{6305a7f u0 com.example.getudiant/.AddEtudiant} t54}
+04-29 [REDACTED_IP].297  1208  3909 V WindowManager: rotationForOrientation(orient=[REDACTED_TOKEN] (-1), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+04-29 [REDACTED_IP].297  1208  3909 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{6305a7f u0 com.example.getudiant/.AddEtudiant} t54}
+04-29 [REDACTED_IP].299  1208  3909 V WindowManager: Computed rotation=ROTATION_0 (0) for display id=0 based on lastOrientation=[REDACTED_TOKEN] (-1) and oldRotation=ROTATION_0 (0), caller=com.android.server.wm.DisplayRotation.updateOrientation:414 com.android.server.wm.DisplayContent.updateOrientation:1990 com.android.server.wm.DisplayContent.updateOrientation:1891 com.android.server.wm.RootWindowContainer.[REDACTED_TOKEN]:2139 com.android.server.wm.TaskFragment.resumeTopActivity:1652 com.android.server.wm.TaskFragment.resumeTopActivity:1307 
+04-29 [REDACTED_IP].304  1208  3909 D TspStateManager: updateCustomValue customSetting=
+04-29 [REDACTED_IP].305  1208  3909 V WindowManager: rotationForOrientation(orient=[REDACTED_TOKEN] (-1), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+04-29 [REDACTED_IP].305  1208  3909 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{6305a7f u0 com.example.getudiant/.AddEtudiant} t54}
+04-29 [REDACTED_IP].306  1208  3909 D TspStateManager: updateCustomValue customSetting=
+04-29 [REDACTED_IP].315  1208  3909 W WindowManager: Execute app transition: [REDACTED_TOKEN]=[TRANSIT_CLOSE, TRANSIT_CLOSE], mNextAppTransitionFlags=, displayId: 0 Callers=com.android.server.wm.RootWindowContainer.[REDACTED_TOKEN]:2580 com.android.server.wm.ActivityTaskSupervisor.[REDACTED_TOKEN]:2287 com.android.server.wm.ActivityRecord.completeResumeLocked:6987 com.android.server.wm.TaskFragment.resumeTopActivity:1743 com.android.server.wm.TaskFragment.resumeTopActivity:1307 
+04-29 [REDACTED_IP].321 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: handleAppVisibility mAppVisible = false visible = true
+04-29 [REDACTED_IP].322 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: stopped(false) old = true
+04-29 [REDACTED_IP].322 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: WindowStopped on com.example.getudiant/com.example.getudiant.AddEtudiant set to false
+04-29 [REDACTED_IP].323   871   871 I SurfaceFlinger: [545f52a com.example.getudiant/com.example.getudiant.ListEtudiantActivity#6844] FrameRatePriority: -1
+04-29 [REDACTED_IP].330  1208  1236 D SGM:FgCheckThread: noteResumeComponent(), received pkgName: com.example.getudiant, userId: 0
+04-29 [REDACTED_IP].330  1208  1403 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_APP_RESUME, pkgName: com.example.getudiant, userid: 0
+04-29 [REDACTED_IP].330  1208  1403 D SGM:FgCheckThread: handleResume().
+04-29 [REDACTED_IP].331 13714 13714 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@3ed8eb8[AddEtudiant]
+04-29 [REDACTED_IP].331 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: stopped(false) old = false
+04-29 [REDACTED_IP].332  1208  1403 D SGM:FgCheckThread: [REDACTED_TOKEN]() - mPrevNotiPkg: (unknown), userId: 0
+04-29 [REDACTED_IP].332  1208  1403 D SGM:FgCheckThread:   handleResume(). pkgName: com.example.getudiant, userId: 0, isTunableApp: null
+04-29 [REDACTED_IP].332  1208  1403 D SGM:FgCheckThread: notifyFocusInOut(). of pkg: com.example.getudiant, type: 4, isTunableApp: false, userId: 0
+04-29 [REDACTED_IP].332  1208  1403 D SGM:FgCheckThread:   notifyFocusInOut(). unexpected mPrevNotiType: -1
+04-29 [REDACTED_IP].332  1208  1403 D SGM:SystemHelper: callReleaseBlock needReleaseBlock:false
+04-29 [REDACTED_IP].332  1208  1236 I GameSDK@LifeCycle: noteResumeComponent(): package name=[REDACTED_NAME]
+04-29 [REDACTED_IP].332  1208  1208 I [REDACTED_TOKEN]: handleMessage: entry what = 5
+04-29 [REDACTED_IP].333  1208  2772 I MediaSessionMonitor: Media session stopped : controllerList empty
+04-29 [REDACTED_IP].335 13714 13714 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@3ed8eb8[AddEtudiant]
+04-29 [REDACTED_IP].336 13714 13714 I ViewRootImpl@8c82755[ListEtudiantActivity]: [REDACTED_TOKEN] 0 0
+04-29 [REDACTED_IP].337  5185  5185 I ActivityUtils: HomePackage : com.sec.android.app.launcher, resumePackageName : com.example.getudiant
+04-29 [REDACTED_IP].350 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true [REDACTED_TOKEN]=false params=null
+04-29 [REDACTED_IP].352  1208  1383 V WindowManager: Relayout Window{8f06f12 u0 com.example.getudiant/com.example.getudiant.AddEtudiant}: viewVisibility=0 req=720x1600 d0
+04-29 [REDACTED_IP].353  1208  1383 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+04-29 [REDACTED_IP].355   871  1435 I SurfaceFlinger: id=6880 createSurf flag=40004, com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880
+04-29 [REDACTED_IP].357  1208  1383 D WindowManager: makeSurface duration=1 name=[REDACTED_NAME]/com.example.getudiant.AddEtudiant$_13714
+04-29 [REDACTED_IP].366  1208  1383 V WindowManager: Changing focus from null to Window{8f06f12 u0 com.example.getudiant/com.example.getudiant.AddEtudiant} displayId=0 Callers=com.android.server.wm.RootWindowContainer.[REDACTED_TOKEN]:595 com.android.server.wm.WindowManagerService.[REDACTED_TOKEN]:6810 com.android.server.wm.WindowManagerService.relayoutWindow:2820 com.android.server.wm.Session.relayout:274 
+04-29 [REDACTED_IP].368  1208  1383 I WindowManager: Cancelling animation restarting=true, leash=Surface(name=[REDACTED_NAME](name=651b632 StatusBar)/@0xbc1bcb4 - animation-leash of insets_animation)/@0x3049ae8
+04-29 [REDACTED_IP].369  1208  1383 I WindowManager: Reparenting to original parent: Surface(name=[REDACTED_NAME]{3166e3d type=2000 android.os.BinderProxy@61a8be7})/@0x3460dd, destroy=false, surface=Surface(name=651b632 StatusBar)/@0xbc1bcb4
+04-29 [REDACTED_IP].370  1208  1383 I WindowManager: Reparenting to leash, surface=Surface(name=651b632 StatusBar)/@0xbc1bcb4, leashParent=Surface(name=[REDACTED_NAME]{3166e3d type=2000 android.os.BinderProxy@61a8be7})/@0x3460dd
+04-29 [REDACTED_IP].370   871  1435 I SurfaceFlinger: id=6881 createSurf flag=24000, Surface(name=651b632 StatusBar)/@0xbc1bcb4 - animation-leash of insets_animation#6881
+04-29 [REDACTED_IP].371  1208  1383 D WindowManager: makeSurface duration=1 leash=Surface(name=[REDACTED_NAME](name=651b632 StatusBar)/@0xbc1bcb4 - animation-leash of insets_animation)/@0x404bbd5
+04-29 [REDACTED_IP].372  1208  1383 I WindowManager: Cancelling animation restarting=true, leash=Surface(name=[REDACTED_NAME](name=3275bd NavigationBar0)/@0xd271870 - animation-leash of insets_animation)/@0xcbf2fa6
+04-29 [REDACTED_IP].372  1208  1383 I WindowManager: Reparenting to original parent: Surface(name=[REDACTED_NAME]{e099914 type=2019 android.os.BinderProxy@cdcff26})/@0x9b7b7e9, destroy=false, surface=Surface(name=3275bd NavigationBar0)/@0xd271870
+04-29 [REDACTED_IP].372  1208  1383 I WindowManager: Reparenting to leash, surface=Surface(name=3275bd NavigationBar0)/@0xd271870, leashParent=Surface(name=[REDACTED_NAME]{e099914 type=2019 android.os.BinderProxy@cdcff26})/@0x9b7b7e9
+04-29 [REDACTED_IP].373   871  1435 I SurfaceFlinger: id=6882 createSurf flag=24000, Surface(name=3275bd NavigationBar0)/@0xd271870 - animation-leash of insets_animation#6882
+04-29 [REDACTED_IP].373  1208  1383 D WindowManager: makeSurface duration=1 leash=Surface(name=[REDACTED_NAME](name=3275bd NavigationBar0)/@0xd271870 - animation-leash of insets_animation)/@0x99542db
+04-29 [REDACTED_IP].374  1208  1383 D StatusBarManagerService: [REDACTED_TOKEN] recent=false home=false
+04-29 [REDACTED_IP].378  1208  1383 V WindowManager: Relayout hash=8f06f12, pid=13714, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION wanim=0x1030309
+04-29 [REDACTED_IP].378  1208  1383 V WindowManager:   fl=81810100
+04-29 [REDACTED_IP].378  1208  1383 V WindowManager:   pfl=12020040
+04-29 [REDACTED_IP].378  1208  1383 V WindowManager:   bhv=DEFAULT
+04-29 [REDACTED_IP].378  1208  1383 V WindowManager:   fitSides= naviIconColor=0}
+04-29 [REDACTED_IP].381 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: [REDACTED_TOKEN] mBlastBufferQueue=null isSameSurfaceControl=false
+04-29 [REDACTED_IP].383 13714 13714 I BLASTBufferQueue: new BLASTBufferQueue, mName= ViewRootImpl@adf2375[AddEtudiant] mNativeObject= 0xb4000077982ddc00 sc.mNativeObject= 0xb4000077b3b35420 caller= android.view.ViewRootImpl.[REDACTED_TOKEN]:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$[REDACTED_TOKEN].run:1283 
+04-29 [REDACTED_IP].384 13714 13714 I BLASTBufferQueue: update, w= 720 h= 1600 mName = ViewRootImpl@adf2375[AddEtudiant] mNativeObject= 0xb4000077982ddc00 sc.mNativeObject= 0xb4000077b3b35420 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.[REDACTED_TOKEN]:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 
+04-29 [REDACTED_IP].385 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: Relayout returned: old=(0,0,720,1600) new=(0,0,720,1600) req=(720,1600)0 dur=31 res=0x3 s={true 0xb4000077982e6000} ch=true seqId=0
+04-29 [REDACTED_IP].386 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb4000077982e6000} hwInitialized=true
+04-29 [REDACTED_IP].387 13714 13735 D OpenGLRenderer: eglCreateWindowSurface
+04-29 [REDACTED_IP].387 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 
+04-29 [REDACTED_IP].388 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: Setup new sync id=1
+04-29 [REDACTED_IP].388 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: Setting syncFrameCallback
+04-29 [REDACTED_IP].388 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: [REDACTED_TOKEN] syncBuffer=false
+04-29 [REDACTED_IP].390   871   871 I SurfaceFlinger: [8f06f12 com.example.getudiant/com.example.getudiant.AddEtudiant#6837] FrameRatePriority: 1
+04-29 [REDACTED_IP].391   871   871 I Layer   : id=6877 removeFromCurrentState Surface(name=651b632 StatusBar)/@0xbc1bcb4 - animation-leash of insets_animation#6877 (110)
+04-29 [REDACTED_IP].392   871   871 I Layer   : id=6878 removeFromCurrentState Surface(name=3275bd NavigationBar0)/@0xd271870 - animation-leash of insets_animation#6878 (110)
+04-29 [REDACTED_IP].392   871   871 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+04-29 [REDACTED_IP].393   871  1045 D SurfaceFlinger: [input] setFocusedWindow: 8f06f12 com.example.getudiant/com.example.getudiant.AddEtudiant
+04-29 [REDACTED_IP].394  1208  2494 D InputDispatcher: Focus request (0): 8f06f12 com.example.getudiant/com.example.getudiant.AddEtudiant but waiting because NOT_VISIBLE
+04-29 [REDACTED_IP].416 13714 13754 I ViewRootImpl@adf2375[AddEtudiant]: Received frameDrawingCallback syncResult=0 frameNum=1.
+04-29 [REDACTED_IP].416 13714 13754 I ViewRootImpl@adf2375[AddEtudiant]: Setting up sync and frameCommitCallback
+04-29 [REDACTED_IP].418  2312 19489 I RecentModel: [REDACTED_TOKEN]
+04-29 [REDACTED_IP].428 13714 13735 I BLASTBufferQueue: [ViewRootImpl@adf2375[AddEtudiant]#3](f:0,a:0) onFrameAvailable the first frame is available
+04-29 [REDACTED_IP].429 13714 13735 I ViewRootImpl@adf2375[AddEtudiant]: Received frameCommittedCallback [REDACTED_TOKEN]=1 didProduceBuffer=true
+04-29 [REDACTED_IP].430 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: onSyncComplete
+04-29 [REDACTED_IP].432 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: setupSync seqId=0 mSyncId=1 fn=1 caller=android.view.ViewRootImpl$$[REDACTED_TOKEN].accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$[REDACTED_TOKEN]:128 android.window.SurfaceSyncer$$[REDACTED_TOKEN].accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+04-29 [REDACTED_IP].432 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: reportDrawFinished seqId=0 mSyncId=-1 fn=1 [REDACTED_TOKEN]=0xb4000077b3a03200
+04-29 [REDACTED_IP].434  1208  1383 D WindowManager: finishDrawingWindow: Window{8f06f12 u0 com.example.getudiant/com.example.getudiant.AddEtudiant} mDrawState=DRAW_PENDING seqId=0
+04-29 [REDACTED_IP].434   871  1434 I SurfaceFlinger: id=6878 Removed Surface(name=3275bd NavigationBar0)/@0xd271870 - animation-leash of insets_animation#6878 (110)
+04-29 [REDACTED_IP].434   871  1435 I SurfaceFlinger: id=6877 Removed Surface(name=651b632 StatusBar)/@0xbc1bcb4 - animation-leash of insets_animation#6877 (110)
+04-29 [REDACTED_IP].435   871   871 I Layer   : id=6878 Destroyed Surface(name=3275bd NavigationBar0)/@0xd271870 - animation-leash of insets_animation#6878
+04-29 [REDACTED_IP].435   871   871 I Layer   : id=6877 Destroyed Surface(name=651b632 StatusBar)/@0xbc1bcb4 - animation-leash of insets_animation#6877
+04-29 [REDACTED_IP].441  1208  1237 D WindowManager: Loading animation for app transition. transit=[REDACTED_TOKEN] enter=false frame=Rect(0, 0 - 720, 1600) insets=Rect(0, 45 - 0, 26) surfaceInsets=Rect(0, 0 - 0, 0)
+04-29 [REDACTED_IP].447  1208  1237 I WindowManager: Reparenting to leash, surface=Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc, leashParent=Surface(name=[REDACTED_NAME]=54)/@0x8088668
+04-29 [REDACTED_IP].447   871  1435 I SurfaceFlinger: id=6883 createSurf flag=24000, Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc - animation-leash of app_transition#6883
+04-29 [REDACTED_IP].448  1208  1237 D WindowManager: makeSurface duration=1 leash=Surface(name=[REDACTED_NAME](name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc - animation-leash of app_transition)/@0xf9440b6
+04-29 [REDACTED_IP].449   871  1435 I SurfaceFlinger: id=6884 createSurf flag=80004, Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc - animation-bounds#6884
+04-29 [REDACTED_IP].451  1208  1237 D WindowManager: Loading animation for app transition. transit=[REDACTED_TOKEN] enter=true frame=Rect(0, 0 - 720, 1600) insets=Rect(0, 45 - 0, 26) surfaceInsets=Rect(0, 0 - 0, 0)
+04-29 [REDACTED_IP].452  1208  1237 I WindowManager: Reparenting to leash, surface=Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d, leashParent=Surface(name=[REDACTED_NAME]=54)/@0x8088668
+04-29 [REDACTED_IP].452   871  1435 I SurfaceFlinger: id=6885 createSurf flag=24004, Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d - animation-leash of app_transition#6885
+04-29 [REDACTED_IP].453  1208  1237 D WindowManager: makeSurface duration=1 leash=Surface(name=[REDACTED_NAME](name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d - animation-leash of app_transition)/@0x5c41d24
+04-29 [REDACTED_IP].453   871  1435 I SurfaceFlinger: id=6886 createSurf flag=80004, Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d - animation-bounds#6886
+04-29 [REDACTED_IP].457  1208  1237 D ActivityTaskManager: mStartingWindow and mStartingData is null for token=ActivityRecord{6305a7f u0 com.example.getudiant/.AddEtudiant} t54}
+04-29 [REDACTED_IP].457  1208  1237 V WindowManager: performShowLocked: mDrawState=HAS_DRAWN in Window{8f06f12 u0 com.example.getudiant/com.example.getudiant.AddEtudiant}
+04-29 [REDACTED_IP].468   871   871 I Layer   : Layer [com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880] hidden!! flag(0)
+04-29 [REDACTED_IP].468  1208  1237 D ActivityTaskManager: mStartingWindow and mStartingData is null for token=ActivityRecord{6305a7f u0 com.example.getudiant/.AddEtudiant} t54}
+04-29 [REDACTED_IP].481   871   871 I Layer   : id=6887 Destroyed Screenshot Parent#6887
+04-29 [REDACTED_IP].484   871  1435 I SurfaceFlinger: id=6888 createSurf flag=40404, Bottom Edge Extension#6888
+04-29 [REDACTED_IP].486   871  1435 I SurfaceFlinger: id=6889 createSurf flag=400, bbq-wrapper#6889
+04-29 [REDACTED_IP].488  1208 14875 I BLASTBufferQueue: [bbq-adapter#262](f:0,a:0) onFrameAvailable the first frame is available
+04-29 [REDACTED_IP].495   871   871 I Layer   : id=6890 Destroyed Screenshot Parent#6890
+04-29 [REDACTED_IP].498   871  1435 I SurfaceFlinger: id=6891 createSurf flag=40404, Top Edge Extension#6891
+04-29 [REDACTED_IP].499   871  1434 I SurfaceFlinger: id=6892 createSurf flag=400, bbq-wrapper#6892
+04-29 [REDACTED_IP].501  1208 14874 I BLASTBufferQueue: [bbq-adapter#263](f:0,a:0) onFrameAvailable the first frame is available
+04-29 [REDACTED_IP].525  1208  1383 D InputDispatcher: Focus entered window (0): 8f06f12 com.example.getudiant/com.example.getudiant.AddEtudiant
+04-29 [REDACTED_IP].526 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: [REDACTED_TOKEN] 1 0
+04-29 [REDACTED_IP].526 13714 13714 I ViewRootImpl@adf2375[AddEtudiant]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb4000077982e6000}
+04-29 [REDACTED_IP].536 13714 13714 D InputMethodManager: startInputInner - Id : 0
+04-29 [REDACTED_IP].536 13714 13714 I InputMethodManager: startInputInner - mService.[REDACTED_TOKEN]
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger: Display 0 HWC layers:
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc03680 | 0102 | RGBA_8888    |    0.0    0.0  720.0    1.0 |    0 1551  720 1600 | bbq-wrapper#6889
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger:      CLIENT | 0xb400007005a2b500 | 0102 | RGBA_8888    |    0.0   49.0  720.0 1600.0 |    0    0  720 1551 | com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fdd24e580 | 0100 | RGBA_8888    |    0.0    0.0  720.0   45.0 |    0    0  720   45 | StatusBar$_1888#96
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc03080 | 0100 | RGBA_8888    |    0.0    0.0   67.0  268.0 |  653  378  720  646 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_5185#6879
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger:      DEVICE | 0xb400007005a9d180 | 0100 | RGBA_8888    |    0.0    0.0  259.0   26.0 |  461 1574  720 1600 | SGestureOverlayWindow$_2312#6871
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger:      DEVICE | 0xb400007005a9d300 | 0100 | RGBA_8888    |    0.0    0.0  720.0   84.0 |    0 1516  720 1600 | NavigationBar0$_1888#93
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger:      DEVICE | 0xb40000700762a100 | 0100 | RGBA_8888    |    0.0    0.0   53.0   98.0 |  667  141  720  239 |
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger:  [REDACTED_TOKEN]$_2544#104
+04-29 [REDACTED_IP].544   871   871 D SurfaceFlinger: 
+04-29 [REDACTED_IP].545  1208  1383 V [REDACTED_TOKEN]: Unspecified window will hide input
+04-29 [REDACTED_IP].545  1208  1383 V [REDACTED_TOKEN]: hideCurrentInputLocked : canceled, shouldHideSoftInput=false, mInputShown=false, mImeWindowVis=0
+04-29 [REDACTED_IP].553  1208  1383 I [REDACTED_TOKEN]: [REDACTED_TOKEN]: mVisibleBound=false, mHasConnection=true, caller = com.android.server.inputmethod.[REDACTED_TOKEN].hideCurrentInputLocked:4356 com.android.server.inputmethod.[REDACTED_TOKEN].[REDACTED_TOKEN]:4662 com.android.server.inputmethod.[REDACTED_TOKEN].[REDACTED_TOKEN]:4440 com.android.server.inputmethod.[REDACTED_TOKEN].[REDACTED_TOKEN]:4379 com.android.internal.view.IInputMethodManager$Stub.onTransact:518 com.android.server.inputmethod.[REDACTED_TOKEN].onTransact:2302 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 <bottom of call stack> <bottom of call stack> 
+04-29 [REDACTED_IP].553  1208  1383 D [REDACTED_TOKEN]: mDesktopModeManager null!
+04-29 [REDACTED_IP].553  1208  1383 V [REDACTED_TOKEN]: [REDACTED_TOKEN]: displayId=0
+04-29 [REDACTED_IP].557  1208  1383 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : false
+04-29 [REDACTED_IP].557  1208  1383 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : checking vis : 3
+04-29 [REDACTED_IP].562  1208  1383 D [REDACTED_TOKEN]: [REDACTED_TOKEN]: displayId=0, mFocusedDisplayId=0
+04-29 [REDACTED_IP].563  1208  1383 D InputTransport: Input channel constructed: 'ClientS', fd=706
+04-29 [REDACTED_IP].563  4119  4119 I HBD     : HoneyBoardService onFinishInput 
+04-29 [REDACTED_IP].564  1208  1383 D InputTransport: Input channel destroyed: 'ClientS', fd=706
+04-29 [REDACTED_IP].564  1208  2494 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+04-29 [REDACTED_IP].565  4119  4119 I HBD     : a IC have been unbinding,  RemoteInputConnection{idHash=#3da604b}
+04-29 [REDACTED_IP].565  1208  2494 I WindowManager: Cancelling animation restarting=true, leash=Surface(name=[REDACTED_NAME](name=b45b263 InputMethod)/@0xd4d0f90 - animation-leash of insets_animation)/@0xa107439
+04-29 [REDACTED_IP].565  1208  2494 I WindowManager: Reparenting to original parent: Surface(name=[REDACTED_NAME]{6933c32 type=2011 android.os.Binder@8f24c3d})/@0xdedb089, destroy=false, surface=Surface(name=b45b263 InputMethod)/@0xd4d0f90
+04-29 [REDACTED_IP].565  1208  2494 I WindowManager: Reparenting to leash, surface=Surface(name=b45b263 InputMethod)/@0xd4d0f90, leashParent=Surface(name=[REDACTED_NAME]{6933c32 type=2011 android.os.Binder@8f24c3d})/@0xdedb089
+04-29 [REDACTED_IP].565  4119  4119 I HBD     : HoneyBoardService [PF_CL][onFinishInput]  2 ms 
+04-29 [REDACTED_IP].566   871  1434 I SurfaceFlinger: id=6893 createSurf flag=24004, Surface(name=b45b263 InputMethod)/@0xd4d0f90 - animation-leash of insets_animation#6893
+04-29 [REDACTED_IP].567  4119  4119 I HBD     : HoneyBoardService [IMI] onStartInput - caller pid : 13714 , caller uid : 10612 
+04-29 [REDACTED_IP].567  1208  2494 D WindowManager: makeSurface duration=1 leash=Surface(name=[REDACTED_NAME](name=b45b263 InputMethod)/@0xd4d0f90 - animation-leash of insets_animation)/@0x92d4445
+04-29 [REDACTED_IP].568  4119  4119 I HBD     : j updateConfigs 
+04-29 [REDACTED_IP].568  4119  4119 I HBD     : j isEnabledNightMode : true 
+04-29 [REDACTED_IP].570  4119  4119 I HBD     : a IC have been binding, RemoteInputConnection{idHash=#3da604b} 
+04-29 [REDACTED_IP].572  4119  4119 I HBD     : h [EditorInputType][REDACTED_TOKEN] privateImeOptions ( null )
+04-29 [REDACTED_IP].573  4119  4119 I HBD     : b incognitoMode : false 
+04-29 [REDACTED_IP].577  4119  4119 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true 
+04-29 [REDACTED_IP].579  1208  3909 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : false
+04-29 [REDACTED_IP].584  4119  4119 I HBD     : h getDefaultInputRange : UNKNOWN 
+04-29 [REDACTED_IP].584  4119  4119 I HBD     : h getDefaultInputRange : UNKNOWN 
+04-29 [REDACTED_IP].584  4119  4119 I HBD     : h getDefaultInputRange : UNKNOWN 
+04-29 [REDACTED_IP].585   871   871 I Layer   : id=6860 removeFromCurrentState Surface(name=b45b263 InputMethod)/@0xd4d0f90 - animation-leash of insets_animation#6860 (117)
+04-29 [REDACTED_IP].586   871   871 I SurfaceFlinger: id=6860 Removed Surface(name=b45b263 InputMethod)/@0xd4d0f90 - animation-leash of insets_animation#6860 (117)
+04-29 [REDACTED_IP].586   871   871 I Layer   : id=6860 Destroyed Surface(name=b45b263 InputMethod)/@0xd4d0f90 - animation-leash of insets_animation#6860
+04-29 [REDACTED_IP].588  4119  4119 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true 
+04-29 [REDACTED_IP].589  4119  4119 I HBD     : b update cached prediction status : false 
+04-29 [REDACTED_IP].591  4119  4119 I HBD     : h getDefaultInputRange : UNKNOWN 
+04-29 [REDACTED_IP].591  4119  4119 I HBD     : a currentState : 0 
+04-29 [REDACTED_IP].595  4119  4119 I HBD     : a [UpdatePolicy] [post] a: 0 cl: 65537 kit: [0/0] vt: 0 ir: 1 
+04-29 [REDACTED_IP].596  4119  4119 I HBD     : a [NRIC] resetNoResponseState 
+04-29 [REDACTED_IP].596  4119  4119 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true 
+04-29 [REDACTED_IP].596  4119  4119 I HBD     : b update cached prediction status : false 
+04-29 [REDACTED_IP].603  4119  4119 I HBD     : HoneyBoardService [PF_OP][onStartInput]  37 ms 
+04-29 [REDACTED_IP].603  4119  4119 I InputMethodService: removeImeSurface
+04-29 [REDACTED_IP].608  4119  4119 I MSHandlerLifeCycle: check: return. pkg=com.samsung.android.honeyboard isActivity=false callers=com.android.internal.policy.DecorView.setVisibility:4412 android.app.Dialog.hide:767 android.inputmethodservice.InputMethodService.removeImeSurface:1290 android.inputmethodservice.InputMethodService.[REDACTED_TOKEN]:1279 android.inputmethodservice.InputMethodService.-$$Nest$[REDACTED_TOKEN]:0 
+04-29 [REDACTED_IP].610  4119  4119 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@e374137[InputMethod]
+04-29 [REDACTED_IP].639  5185  5185 I Utils   : isCurrentUser current = 0, ownerId = 0
+04-29 [REDACTED_IP].644  5185  5185 I [REDACTED_TOKEN]: getComputedTrayVisible : keyguardState = 1
+04-29 [REDACTED_IP].644  5185  5185 I [REDACTED_TOKEN]: updateTrayVisible: State=1 visible=1 mCurrentVisible=1 specificMode=0
+04-29 [REDACTED_IP].644  5185  5185 I TrayStateController: onNotifyUpdateTray: state=0
+04-29 [REDACTED_IP].658  1208  1237 I WindowManager: Reparenting to original parent: Surface(name=[REDACTED_NAME]=54)/@0x8088668, destroy=true, surface=Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d
+04-29 [REDACTED_IP].661  1208  1237 D [REDACTED_TOKEN]: AMP_release() ACT_RESUME
+04-29 [REDACTED_IP].662   845   907 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 765732
+04-29 [REDACTED_IP].662  1208  1237 I WindowManager: Reparenting to original parent: Surface(name=[REDACTED_NAME]=54)/@0x8088668, destroy=true, surface=Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc
+04-29 [REDACTED_IP].667   871   871 D SurfaceFlinger: Display 0 HWC layers:
+04-29 [REDACTED_IP].667   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fdd7c4d80 | 0102 | RGBA_8888    |    0.0    0.0  720.0 1600.0 |    0    0  720 1600 | com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880
+04-29 [REDACTED_IP].667   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fdd24e580 | 0100 | RGBA_8888    |    0.0    0.0  720.0   45.0 |    0    0  720   45 | StatusBar$_1888#96
+04-29 [REDACTED_IP].667   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc03080 | 0100 | RGBA_8888    |    0.0    0.0   67.0  268.0 |  653  378  720  646 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_5185#6879
+04-29 [REDACTED_IP].667   871   871 D SurfaceFlinger:      CLIENT | 0xb400007005a9d180 | 0100 | RGBA_8888    |    0.0    0.0  259.0   26.0 |  461 1574  720 1600 | SGestureOverlayWindow$_2312#6871
+04-29 [REDACTED_IP].667   871   871 D SurfaceFlinger:      CLIENT | 0xb400007005a9d300 | 0100 | RGBA_8888    |    0.0    0.0  720.0   84.0 |    0 1516  720 1600 | NavigationBar0$_1888#93
+04-29 [REDACTED_IP].667   871   871 D SurfaceFlinger:      DEVICE | 0xb40000700762a100 | 0100 | RGBA_8888    |    0.0    0.0   53.0   98.0 |  667  141  720  239 | [REDACTED_TOKEN]$_2544#104
+04-29 [REDACTED_IP].667   871   871 D SurfaceFlinger: 
+04-29 [REDACTED_IP].672  1208  1237 V WindowManager: Setting visibility of Window{545f52a u0 com.example.getudiant/com.example.getudiant.ListEtudiantActivity}: false, caller=com.android.server.wm.WindowContainer.[REDACTED_TOKEN]:1246 com.android.server.wm.WindowToken.setClientVisible:431 com.android.server.wm.ActivityRecord.setClientVisible:7691 com.android.server.wm.ActivityRecord.onAnimationFinished:8590 com.android.server.wm.WindowContainer$$[REDACTED_TOKEN].onAnimationFinished:2 
+04-29 [REDACTED_IP].672 13714 13714 I ViewRootImpl@8c82755[ListEtudiantActivity]: handleAppVisibility mAppVisible = true visible = false
+04-29 [REDACTED_IP].681   871   871 D SurfaceFlinger: Display 0 HWC layers:
+04-29 [REDACTED_IP].681   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fdd7c4d80 | 0102 | RGBA_8888    |    0.0    0.0  720.0 1600.0 |    0    0  720 1600 | com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880
+04-29 [REDACTED_IP].681   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fdd24e580 | 0100 | RGBA_8888    |    0.0    0.0  720.0   45.0 |    0    0  720   45 | StatusBar$_1888#96
+04-29 [REDACTED_IP].681   871   871 D SurfaceFlinger:      CLIENT | 0xb400006fedc03080 | 0100 | RGBA_8888    |    0.0    0.0   67.0  268.0 |  653  378  720  646 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_5185#6879
+04-29 [REDACTED_IP].681   871   871 D SurfaceFlinger:      CLIENT | 0xb400007005a9d180 | 0100 | RGBA_8888    |    0.0    0.0  259.0   26.0 |  461 1574  720 1600 | SGestureOverlayWindow$_2312#6871
+04-29 [REDACTED_IP].681   871   871 D SurfaceFlinger:      CLIENT | 0xb400007005a9d300 | 0100 | RGBA_8888    |    0.0    0.0  720.0   84.0 |    0 1516  720 1600 | NavigationBar0$_1888#93
+04-29 [REDACTED_IP].681   871   871 D SurfaceFlinger:      DEVICE | 0xb40000700762a100 | 0100 | RGBA_8888    |    0.0    0.0   53.0   98.0 |  667  141  720  239 | [REDACTED_TOKEN]$_2544#104
+04-29 [REDACTED_IP].681   871   871 D SurfaceFlinger: 
+04-29 [REDACTED_IP].681 13714 13735 D OpenGLRenderer: setSurface called with nullptr
+04-29 [REDACTED_IP].681 13714 13735 D OpenGLRenderer: setSurface() destroyed EGLSurface
+04-29 [REDACTED_IP].681 13714 13735 D OpenGLRenderer: destroyEglSurface
+04-29 [REDACTED_IP].684 13714 13714 I ViewRootImpl@8c82755[ListEtudiantActivity]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true [REDACTED_TOKEN]=false params=null
+04-29 [REDACTED_IP].690  1208  2494 V WindowManager: Relayout Window{545f52a u0 com.example.getudiant/com.example.getudiant.ListEtudiantActivity}: viewVisibility=8 req=720x1600 d0
+04-29 [REDACTED_IP].691   871   871 D SurfaceFlinger: Display 0 HWC layers:
+04-29 [REDACTED_IP].691   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fdd7c4d80 | 0102 | RGBA_8888    |    0.0    0.0  720.0 1600.0 |    0    0  720 1600 | com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880
+04-29 [REDACTED_IP].691   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fdd24e580 | 0100 | RGBA_8888    |    0.0    0.0  720.0   45.0 |    0    0  720   45 | StatusBar$_1888#96
+04-29 [REDACTED_IP].691   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fedc03080 | 0100 | RGBA_8888    |    0.0    0.0   67.0  268.0 |  653  378  720  646 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_5185#6879
+04-29 [REDACTED_IP].691   871   871 D SurfaceFlinger:      DEVICE | 0xb400007005a9d180 | 0100 | RGBA_8888    |    0.0    0.0  259.0   26.0 |  461 1574  720 1600 | SGestureOverlayWindow$_2312#6871
+04-29 [REDACTED_IP].691   871   871 D SurfaceFlinger:      DEVICE | 0xb400007005a9d300 | 0100 | RGBA_8888    |    0.0    0.0  720.0   84.0 |    0 1516  720 1600 | NavigationBar0$_1888#93
+04-29 [REDACTED_IP].691   871   871 D SurfaceFlinger:      DEVICE | 0xb40000700762a100 | 0100 | RGBA_8888    |    0.0    0.0   53.0   98.0 |  667  141  720  239 | [REDACTED_TOKEN]$_2544#104
+04-29 [REDACTED_IP].691   871   871 D SurfaceFlinger: 
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6885 removeFromCurrentState Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d - animation-leash of app_transition#6885 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6888 removeFromCurrentState Bottom Edge Extension#6888 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6889 removeFromCurrentState bbq-wrapper#6889 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6888 removeFromCurrentState Bottom Edge Extension#6888 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6889 removeFromCurrentState bbq-wrapper#6889 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6886 removeFromCurrentState Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d - animation-bounds#6886 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6883 removeFromCurrentState Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc - animation-leash of app_transition#6883 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6891 removeFromCurrentState Top Edge Extension#6891 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6892 removeFromCurrentState bbq-wrapper#6892 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6891 removeFromCurrentState Top Edge Extension#6891 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6892 removeFromCurrentState bbq-wrapper#6892 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : id=6884 removeFromCurrentState Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc - animation-bounds#6884 (116)
+04-29 [REDACTED_IP].692   871   871 I Layer   : Layer [com.example.getudiant/com.example.getudiant.ListEtudiantActivity$_13714#6874] hidden!! flag(1)
+04-29 [REDACTED_IP].693   871   871 I SurfaceFlinger: id=6892 Removed bbq-wrapper#6892 (116)
+04-29 [REDACTED_IP].693   871   871 I SurfaceFlinger: id=6889 Removed bbq-wrapper#6889 (116)
+04-29 [REDACTED_IP].693   871   871 I SurfaceFlinger: id=6885 Removed Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d - animation-leash of app_transition#6885 (116)
+04-29 [REDACTED_IP].693   871   871 I SurfaceFlinger: id=6888 Removed Bottom Edge Extension#6888 (116)
+04-29 [REDACTED_IP].693   871   871 I SurfaceFlinger: id=6886 Removed Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d - animation-bounds#6886 (116)
+04-29 [REDACTED_IP].693   871   871 I SurfaceFlinger: id=6883 Removed Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc - animation-leash of app_transition#6883 (116)
+04-29 [REDACTED_IP].693   871   871 I SurfaceFlinger: id=6891 Removed Top Edge Extension#6891 (116)
+04-29 [REDACTED_IP].693   871   871 I SurfaceFlinger: id=6884 Removed Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc - animation-bounds#6884 (116)
+04-29 [REDACTED_IP].693   871   871 I Layer   : id=6886 Destroyed Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d - animation-bounds#6886
+04-29 [REDACTED_IP].693   871   871 I Layer   : id=6885 Destroyed Surface(name=[REDACTED_NAME]{6305a7f u0 com.example.getudiant/.AddEtudiant} t54})/@0x88dc90d - animation-leash of app_transition#6885
+04-29 [REDACTED_IP].693   871   871 I Layer   : id=6888 Destroyed Bottom Edge Extension#6888
+04-29 [REDACTED_IP].693   871   871 I Layer   : id=6884 Destroyed Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc - animation-bounds#6884
+04-29 [REDACTED_IP].693   871   871 I Layer   : id=6883 Destroyed Surface(name=[REDACTED_NAME]{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54})/@0xaffcffc - animation-leash of app_transition#6883
+04-29 [REDACTED_IP].693   871   871 I Layer   : id=6891 Destroyed Top Edge Extension#6891
+04-29 [REDACTED_IP].694   871   871 I Layer   : id=6892 Destroyed bbq-wrapper#6892
+04-29 [REDACTED_IP].695   871   871 I Layer   : id=6889 Destroyed bbq-wrapper#6889
+04-29 [REDACTED_IP].700  1208  2494 V WindowManager: Relayout hash=545f52a, pid=13714, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} ty=BASE_APPLICATION wanim=0x1030309
+04-29 [REDACTED_IP].700  1208  2494 V WindowManager:   fl=81810100
+04-29 [REDACTED_IP].700  1208  2494 V WindowManager:   pfl=12020040
+04-29 [REDACTED_IP].700  1208  2494 V WindowManager:   bhv=DEFAULT
+04-29 [REDACTED_IP].700  1208  2494 V WindowManager:   fitSides= naviIconColor=0}
+04-29 [REDACTED_IP].703   871   871 D SurfaceFlinger: Display 0 HWC layers:
+04-29 [REDACTED_IP].703   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fdd7c4d80 | 0102 | RGBA_8888    |    0.0    0.0  720.0 1600.0 |    0    0  720 1600 | com.example.getudiant/com.example.getudiant.AddEtudiant$_13714#6880
+04-29 [REDACTED_IP].703   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fdd24e580 | 0100 | RGBA_8888    |    0.0    0.0  720.0   45.0 |    0    0  720   45 | StatusBar$_1888#96
+04-29 [REDACTED_IP].703   871   871 D SurfaceFlinger:      DEVICE | 0xb400006fedc03080 | 0100 | RGBA_8888    |    0.0    0.0   67.0  268.0 |  653  378  720  646 | com.samsung.android.app.cocktailbars[...]ervice.CocktailBarService$_5185#6879
+04-29 [REDACTED_IP].703   871   871 D SurfaceFlinger:      DEVICE | 0xb400007005a9d180 | 0100 | RGBA_8888    |    0.0    0.0  259.0   26.0 |  461 1574  720 1600 | SGestureOverlayWindow$_2312#6871
+04-29 [REDACTED_IP].703   871   871 D SurfaceFlinger:      DEVICE | 0xb400007005a9d300 | 0100 | RGBA_8888    |    0.0    0.0  720.0   84.0 |    0 1516  720 1600 | NavigationBar0$_1888#93
+04-29 [REDACTED_IP].703   871   871 D SurfaceFlinger:      DEVICE | 0xb40000700762a100 | 0100 | RGBA_8888    |    0.0    0.0   53.0   98.0 |  667  141  720  239 | [REDACTED_TOKEN]$_2544#104
+04-29 [REDACTED_IP].703   871   871 D SurfaceFlinger: 
+04-29 [REDACTED_IP].705 13714 13714 I ViewRootImpl@8c82755[ListEtudiantActivity]: Relayout returned: old=(0,0,720,1600) new=(0,0,720,1600) req=(720,1600)8 dur=19 res=0x2 s={false 0x0} ch=true seqId=0
+04-29 [REDACTED_IP].707 13714 13714 I ViewRootImpl@8c82755[ListEtudiantActivity]: stopped(true) old = false
+04-29 [REDACTED_IP].707 13714 13714 I ViewRootImpl@8c82755[ListEtudiantActivity]: WindowStopped on com.example.getudiant/com.example.getudiant.ListEtudiantActivity set to true
+04-29 [REDACTED_IP].710 13714 13714 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@ad7d2e2[ListEtudiantActivity]
+04-29 [REDACTED_IP].728  1208  2494 D CoreBackPreview: Window{545f52a u0 com.example.getudiant/com.example.getudiant.ListEtudiantActivity}: Setting back callback null
+04-29 [REDACTED_IP].736 13714 13714 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@ad7d2e2[ListEtudiantActivity]
+04-29 [REDACTED_IP].740 13714 13735 D OpenGLRenderer: setSurface called with nullptr
+04-29 [REDACTED_IP].742 13714 13714 I ViewRootImpl@8c82755[ListEtudiantActivity]: [REDACTED_TOKEN]
+04-29 [REDACTED_IP].744  1208  2494 D InputTransport: Input channel destroyed: '545f52a', fd=340
+04-29 [REDACTED_IP].745  1208  2494 W InputManager-JNI: Input channel object '545f52a com.example.getudiant/com.example.getudiant.ListEtudiantActivity (client)' was disposed without first being removed with the input manager!
+04-29 [REDACTED_IP].745  1208  2494 D InputTransport: Input channel destroyed: '545f52a', fd=350
+04-29 [REDACTED_IP].749  1208  2494 V WindowManager: Remove Window{545f52a u0 com.example.getudiant/com.example.getudiant.ListEtudiantActivity}: mSurfaceController=Surface(name=[REDACTED_NAME]/com.example.getudiant.ListEtudiantActivity$_13714)/@0xf0c4366 mAnimatingExit=false mRemoveOnExit=false mHasSurface=true surfaceShowing=false animating=false app-animation=false mWillReplaceWindow=false mDisplayFrozen=false callers=com.android.server.wm.WindowState.removeIfPossible:3041 com.android.server.wm.WindowManagerService.removeWindow:2289 com.android.server.wm.Session.remove:236 android.view.IWindowSession$Stub.onTransact:743 com.android.server.wm.Session.onTransact:188 android.os.Binder.execTransactInternal:1316 
+04-29 [REDACTED_IP].753  1208  2494 I WindowManager: Destroying surface Surface(name=[REDACTED_NAME]/com.example.getudiant.ListEtudiantActivity$_13714)/@0xf0c4366 called by com.android.server.wm.WindowStateAnimator.destroySurface:942 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:536 com.android.server.wm.WindowState.removeImmediately:2969 com.android.server.wm.WindowState.removeIfPossible:3228 com.android.server.wm.WindowState.removeIfPossible:3041 com.android.server.wm.WindowManagerService.removeWindow:2289 com.android.server.wm.Session.remove:236 android.view.IWindowSession$Stub.onTransact:743 
+04-29 [REDACTED_IP].754  1208  2494 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+04-29 [REDACTED_IP].756  1208  2494 V WindowManager: Nulling last startingData
+04-29 [REDACTED_IP].761 13714 13714 D InputTransport: Input channel destroyed: '545f52a', fd=113
+04-29 [REDACTED_IP].765   871   915 I SurfaceFlinger: id=6853 Removed 45751a5 ActivityRecordInputSink com.example.getudiant/.ListEtudiantActivity#6853 (108)
+04-29 [REDACTED_IP].769   871   871 I Layer   : id=6874 removeFromCurrentState com.example.getudiant/com.example.getudiant.ListEtudiantActivity$_13714#6874 (108)
+04-29 [REDACTED_IP].769   871   871 I Layer   : id=6844 removeFromCurrentState 545f52a com.example.getudiant/com.example.getudiant.ListEtudiantActivity#6844 (108)
+04-29 [REDACTED_IP].769   871   871 I SurfaceFlinger: id=6874 Removed com.example.getudiant/com.example.getudiant.ListEtudiantActivity$_13714#6874 (108)
+04-29 [REDACTED_IP].769   871   871 I SurfaceFlinger: id=6844 Removed 545f52a com.example.getudiant/com.example.getudiant.ListEtudiantActivity#6844 (108)
+04-29 [REDACTED_IP].769   871   871 I Layer   : id=6844 Destroyed 545f52a com.example.getudiant/com.example.getudiant.ListEtudiantActivity#6844
+04-29 [REDACTED_IP].770   871   871 I Layer   : id=6874 Destroyed com.example.getudiant/com.example.getudiant.ListEtudiantActivity$_13714#6874
+04-29 [REDACTED_IP].780   871   871 I Layer   : id=6843 removeFromCurrentState ActivityRecord{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54}#6843 (106)
+04-29 [REDACTED_IP].780   871   871 I Layer   : id=6853 removeFromCurrentState 45751a5 ActivityRecordInputSink com.example.getudiant/.ListEtudiantActivity#6853 (106)
+04-29 [REDACTED_IP].780   871   871 I SurfaceFlinger: id=6843 Removed ActivityRecord{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54}#6843 (106)
+04-29 [REDACTED_IP].780   871   871 I Layer   : id=6843 Destroyed ActivityRecord{eac397a u0 com.example.getudiant/.ListEtudiantActivity} t54}#6843
+04-29 [REDACTED_IP].780   871   871 I Layer   : id=6853 Destroyed 45751a5 ActivityRecordInputSink com.example.getudiant/.ListEtudiantActivity#6853
+04-29 [REDACTED_IP].236  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 5978, isSameBssidAndFreq true
+04-29 [REDACTED_IP].239  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.246 ms / 32.500 Mbps (65 / 0.000 / 2.000)
+04-29 [REDACTED_IP].240  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-29 [REDACTED_IP].241  1888  1996 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-29 [REDACTED_IP].603   391   391 D io_stats: !@ 179,0 r 12613718 172675671 w 1664776 18432644 d 500855 17484264 f 0 0 iot 3334780 0 th 0 0 0 pt 0 inp 0 0 27538.596
+04-29 [REDACTED_IP].798   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-29 [REDACTED_IP].798   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-29 [REDACTED_IP].798   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-29 [REDACTED_IP].861   871   871 I DisplayDevice: [Display 0 (internal, primary, "Primary display")] ActiveConfigToHWC, ID : 1
+04-29 [REDACTED_IP].862   871   871 I LayerHistory: StatusBar$_1888#96 voted 1, 0.00 fps
+04-29 [REDACTED_IP].862   871   871 I SurfaceFlinger: Idle - choose 60.00 Hz
+04-29 [REDACTED_IP].889   871  1028 I VSyncReactor: Current= 90, TransitioningTo= 60, Distance= 60
+04-29 [REDACTED_IP].512  1208  3909 I EDMNativeHelperService: isScreenCaptureEnabled
+04-29 [REDACTED_IP].513  1208  3909 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+04-29 [REDACTED_IP].513 18940 18940 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+04-29 [REDACTED_IP].541   354   362 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+04-29 [REDACTED_IP].750  1208  1770 I SemWifiServiceDetector: Traff. tracking started
+04-29 [REDACTED_IP].021  1208  1273 D PowerManagerService: [REDACTED_TOKEN]: 0
+04-29 [REDACTED_IP].139  1208  3909 I ActivityManager: Killing 16422:com.samsung.android.scs/u0a108 (adj 999): empty #25
+04-29 [REDACTED_IP].142  1208  1358 I UMR     : B|Compact com.google.android.gms.persistent(15658)
+04-29 [REDACTED_IP].147  1208  1251 I libprocessgroup: Successfully killed process cgroup uid 10108 pid 16422 in 5ms
+04-29 [REDACTED_IP].167   821   821 I Zygote  : Process 16422 exited due to signal 9 (Killed)
+04-29 [REDACTED_IP].252  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.036056735]
+04-29 [REDACTED_IP].252  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.15726621]
+04-29 [REDACTED_IP].252  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.8422944]
+04-29 [REDACTED_IP].252  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 0.53573 msecs
+04-29 [REDACTED_IP].253  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.840807 msecs
+04-29 [REDACTED_IP].254  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.579923 msecs
+04-29 [REDACTED_IP].343  1208  1358 I UMR     : E|Compact d_rss=-29988KB
+04-29 [REDACTED_IP].604   391   391 D io_stats: !@ 179,0 r 12613750 172676043 w 1664776 18432644 d 500855 17484264 f 0 0 iot 3334784 0 th 0 0 0 pt 0 inp 0 0 27540.597
+04-29 [REDACTED_IP].754  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.03514686]
+04-29 [REDACTED_IP].755  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.07882473]
+04-29 [REDACTED_IP].755  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.8828477]
+04-29 [REDACTED_IP].755  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 1.077231 msecs
+04-29 [REDACTED_IP].757  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.367269 msecs
+04-29 [REDACTED_IP].758  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.987038 msecs
+04-29 [REDACTED_IP].780  1208  3853 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+04-29 [REDACTED_IP].799   845 18932 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1752256
+04-29 [REDACTED_IP].255  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 5979, isSameBssidAndFreq true
+04-29 [REDACTED_IP].257  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.293 ms / 27.294 Mbps (58 / 0.000 / 2.125)
+04-29 [REDACTED_IP].258  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-29 [REDACTED_IP].260  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.04336829]
+04-29 [REDACTED_IP].260  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.06425933]
+04-29 [REDACTED_IP].260  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.9123043]
+04-29 [REDACTED_IP].260  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 0.861193 msecs
+04-29 [REDACTED_IP].260  1888  1996 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-29 [REDACTED_IP].262  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.170769 msecs
+04-29 [REDACTED_IP].263  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.988384 msecs
+04-29 [REDACTED_IP].280   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 60, Distance= 60
+04-29 [REDACTED_IP].284  1208  1236 D LocalDisplayAdapter: updateActiveModeLocked for d=0, mActiveModeId=2, mActiveSfDisplayMode=DisplayMode{id=1, width=720, height=1600, xDpi=268.941, yDpi=269.139, refreshRate=60.000004, appVsyncOffsetNanos=0, [REDACTED_TOKEN]=17666666, group=0}
+04-29 [REDACTED_IP].284  2682 16683 I MediaCodec: setCodecState state(0), called in 6
+04-29 [REDACTED_IP].284  1208  3909 V [REDACTED_TOKEN]: JNIMediaResourceHelper::notify eventType : 3, ext1 : 0, ext2 : 0
+04-29 [REDACTED_IP].284  1208  3909 V [REDACTED_TOKEN]: notify eventType : 3, ext1 : 0, ext2 : 0
+04-29 [REDACTED_IP].285  1208  1376 I SemMediaResourceHelper: onState
+04-29 [REDACTED_IP].285  4438  4452 V [REDACTED_TOKEN]: JNIMediaResourceHelper::notify eventType : 3, ext1 : 0, ext2 : 0
+04-29 [REDACTED_IP].285  3802  3802 I SemMediaResourceHelper: onState
+04-29 [REDACTED_IP].285  1208  1236 I DisplayDeviceRepository: Display device changed: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 720 x 1600, modeId 2, defaultModeId 1, supportedModes [{id=1, width=720, height=1600, fps=90.0, alternativeRefreshRates=[60.000004]}, {id=2, width=720, height=1600, fps=60.000004, alternativeRefreshRates=[90.0]}], colorMode 0, supportedColorModes [0], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, [REDACTED_TOKEN] false, density 300, 268.941 x 269.139 dpi, appVsyncOff 0, presDeadline 17666666, cutout DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, touch INTERNAL, rotation 0, type INTERNAL, address {port=0}, deviceProductInfo null, state ON, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.5019608, roundedCorners RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}, [REDACTED_TOKEN], [REDACTED_TOKEN], FLAG_SECURE, [REDACTED_TOKEN], installOrientation 0}
+04-29 [REDACTED_IP].285  4438  4452 V [REDACTED_TOKEN]: notify eventType : 3, ext1 : 0, ext2 : 0
+04-29 [REDACTED_IP].285  4438  4466 I SemMediaResourceHelper: onState
+04-29 [REDACTED_IP].285  4438  4466 I DrmMediaResourceHelper: onStateChanged size = 1
+04-29 [REDACTED_IP].285  4438  4466 I DrmMediaResourceHelper: resource type: 2,,,isSecured :  falseIsEncoder : truegetCodecState : 0getpid : 2682
+04-29 [REDACTED_IP].289  1888  1888 D DisplayLifecycle: updateDisplay id = 0
+04-29 [REDACTED_IP].295  1208  2765 D LiftUpHandler: [LTW] Stopped already.
+04-29 [REDACTED_IP].297  1208  1208 D SGM:GameManager: onDisplayChanged. displyId: 0, state: 2
+04-29 [REDACTED_IP].298  1208  1403 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_LCD_ON
+04-29 [REDACTED_IP].299  1208  1208 D AODManagerService: requestReCalToTSP IsSingleTouchMode = false / previousDisplayState = ON
+04-29 [REDACTED_IP].311   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-29 [REDACTED_IP].312   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-29 [REDACTED_IP].312   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-29 [REDACTED_IP].312  2682 16683 I MediaCodec: setCodecState state(1), called in 6
+04-29 [REDACTED_IP].313  4438  4452 V [REDACTED_TOKEN]: JNIMediaResourceHelper::notify eventType : 3, ext1 : 0, ext2 : 0
+04-29 [REDACTED_IP].313  4438  4452 V [REDACTED_TOKEN]: notify eventType : 3, ext1 : 0, ext2 : 0
+04-29 [REDACTED_IP].313  3802  3802 I SemMediaResourceHelper: onState
+04-29 [REDACTED_IP].313  4438  4466 I SemMediaResourceHelper: onState
+04-29 [REDACTED_IP].313  4438  4466 I DrmMediaResourceHelper: onStateChanged size = 1
+04-29 [REDACTED_IP].313  4438  4466 I DrmMediaResourceHelper: resource type: 2,,,isSecured :  falseIsEncoder : truegetCodecState : 1getpid : 2682
+04-29 [REDACTED_IP].313  1208  3927 V [REDACTED_TOKEN]: JNIMediaResourceHelper::notify eventType : 3, ext1 : 0, ext2 : 0
+04-29 [REDACTED_IP].313  1208  3927 V [REDACTED_TOKEN]: notify eventType : 3, ext1 : 0, ext2 : 0
+04-29 [REDACTED_IP].313  1208  1376 I SemMediaResourceHelper: onState
+04-29 [REDACTED_IP].764  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.03484317]
+04-29 [REDACTED_IP].764  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.086153015]
+04-29 [REDACTED_IP].765  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.8601142]
+04-29 [REDACTED_IP].765  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 1.023807 msecs
+04-29 [REDACTED_IP].766  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.360923 msecs
+04-29 [REDACTED_IP].767  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.089654 msecs
+04-29 [REDACTED_IP].869   804   804 E audit   : type=1400 audit(1777425296.865:23333): avc:  denied  { write } for  pid=3080 comm="PerfettoTrace" name="traced_producer" dev="tmpfs" ino=9946 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-M127F_13_0001 audit_filtered
+04-29 [REDACTED_IP].869   804   804 E audit   : type=1300 audit(1777425296.865:23333): arch=c00000b7 syscall=203 success=no exit=-13 a0=104 a1=720076e790 a2=1e a3=ffffffff960f1004 items=1 ppid=821 pid=3080 auid=4294967295 uid=10198 gid=10198 euid=10198 suid=10198 fsuid=10198 egid=10198 sgid=10198 fsgid=10198 tty=(none) ses=4294967295 comm="PerfettoTrace" exe="/system/bin/app_process64" subj=u:r:gmscore_app:s0:c512,c768 key=(null)
+04-29 [REDACTED_IP].869   804   804 E audit   : type=1306 audit(1777425296.865:23333): saddr=[REDACTED_TOKEN]
+04-29 [REDACTED_IP].869   804   804 E audit   : type=1302 audit(1777425296.865:23333): item=0 name="/dev/socket/traced_producer" inode=9946 dev=00:10 mode=0140666 ouid=0 ogid=0 rdev=00:00 obj=u:object_r:traced_producer_socket:s0 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+04-29 [REDACTED_IP].869   804   804 E audit   : type=1327 audit(1777425296.865:23333): proctitle="com.google.android.gms"
+04-29 [REDACTED_IP].268  1208  1770 D SemNscXgbMsL1: Probability - Cloud gaming: [0.026521707]
+04-29 [REDACTED_IP].269  1208  1770 D SemNscXgbMsL1: Probability - Real time: [0.25200173]
+04-29 [REDACTED_IP].269  1208  1770 D SemNscXgbMsL1: Probability - Non real time: [0.763301]
+04-29 [REDACTED_IP].269  1208  1770 D SemNscXgbMsL1: 1 sample inference time: 0.907693 msecs
+04-29 [REDACTED_IP].270  1208  1770 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 1.297461 msecs
+04-29 [REDACTED_IP].272  1208  1770 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 1.103769 msecs
+04-29 [REDACTED_IP].605   391   391 D io_stats: !@ 179,0 r 12613800 172676479 w 1664789 18432712 d 500855 17484264 f 0 0 iot 3334812 0 th 0 0 0 pt 0 inp 0 0 27542.598
+04-29 [REDACTED_IP].747  1208  1770 I SemWifiServiceDetector: Traff. tracking stopped
+04-29 [REDACTED_IP].314   845 18943 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1752256

@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+backend/.pytest_cache/
+backend/.venv/
+backend/.venv311/
+.venv/
+.venv*/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.db-journal
+
+# Generated evidence/output
+backend/data/uploads/
+backend/data/exports/
+backend/data/reports/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/

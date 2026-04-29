@@ -1,0 +1,12 @@
+﻿{
+  "java_version": "1.8.0_401",
+  "gradle_version": "not_found",
+  "android_sdk_version": "android-36",
+  "adb_version": "Android Debug Bridge version 1.0.41 (Version 36.0.2-14143358)",
+  "python_version": "Python 3.13.13",
+  "apktool_version": "not_found",
+  "jadx_version": "not_found",
+  "device_model": "SM-M127F",
+  "android_version": "13",
+  "analysis_date": "2026-04-29T01:23:48"
+}

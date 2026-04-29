@@ -1,0 +1,8 @@
+{
+  "package_name": "com.example.getudiant",
+  "version_name": "1.0",
+  "version_code": "1",
+  "min_sdk": "24",
+  "target_sdk": "36",
+  "summary": "Package com.example.getudiant targets SDK 36 and declares 2 permissions."
+}

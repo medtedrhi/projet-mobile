@@ -1,0 +1,11 @@
+{
+  "exported_components": [
+    "androidx.profileinstaller.ProfileInstallReceiver",
+    "androidx.startup.InitializationProvider",
+    "com.example.getudiant.AddEtudiant",
+    "com.example.getudiant.ListEtudiantActivity"
+  ],
+  "embedded_domains": [],
+  "network_security_config": null,
+  "cleartext_traffic_allowed": null
+}

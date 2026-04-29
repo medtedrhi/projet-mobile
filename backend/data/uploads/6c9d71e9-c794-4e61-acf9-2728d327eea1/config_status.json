@@ -1,0 +1,8 @@
+{
+  "network_security_config": "extracted:res/xml/network_security_config.xml",
+  "strings": "extracted",
+  "build_config": "extracted",
+  "firebase_config": "not_found",
+  "hardcoded_secrets": "not_detected",
+  "cleartext_traffic": "checked"
+}

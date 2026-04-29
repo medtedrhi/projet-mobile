@@ -1,0 +1,412 @@
+--------- beginning of main
+04-28 [REDACTED_IPV6].002  1208  1255 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-28 [REDACTED_IPV6].011  7634  7634 I CMHJobService: [#CMH#] onStartJob Called at Apr 28,2026 [REDACTED_IPV6] 
+04-28 [REDACTED_IPV6].014  7634  7634 I CMHJobService: [#CMH#] Battery Percentage is:  1.0, High Temp: 32768
+04-28 [REDACTED_IPV6].188  1208  1225 I system_server: Background young concurrent copying GC freed 15MB AllocSpace bytes, 142(3408KB) LOS objects, 13% free, 120MB/139MB, paused 641us,426us total 161.078ms
+04-28 [REDACTED_IPV6].200  1208  1227 W System  : A resource failed to call close. 
+04-28 [REDACTED_IPV6].202  1208  1227 W System  : A resource failed to call close. 
+04-28 [REDACTED_IPV6].203  1208  1227 W System  : A resource failed to call close. 
+04-28 [REDACTED_IPV6].204  1208  1227 W System  : A resource failed to call close. 
+04-28 [REDACTED_IPV6].353  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3184, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].355  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.154 ms / 52.000 Mbps (65 / 0.000 / 1.250)
+--------- beginning of system
+04-28 [REDACTED_IPV6].446  3802  3802 I SDHMS:LOAD: type: LoadsFreqs, value: [REDACTED_IPV6]548080:650000:546000:548080:650000:546000:[REDACTED_IPV6]
+04-28 [REDACTED_IPV6].661   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].664   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].664   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].695   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].356   391   391 D io_stats: !@ 179,0 r 8109530 111591487 w 971034 12033140 d 295693 13380532 f 0 0 iot 2076520 0 th 0 0 0 pt 0 inp 0 0 14519.855
+04-28 [REDACTED_IPV6].681   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].289  1208  1384 I EDMNativeHelperService: isScreenCaptureEnabled
+04-28 [REDACTED_IPV6].295  1208  1384 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+04-28 [REDACTED_IPV6].295  9238  9238 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+04-28 [REDACTED_IPV6].301   871  1435 W ServiceManager: Permission failure: android.permission.[REDACTED_TOKEN] from uid=2000 pid=9238
+04-28 [REDACTED_IPV6].301   871  1435 D PermissionCache: checking android.permission.[REDACTED_TOKEN] for uid=2000 => denied (686 us)
+04-28 [REDACTED_IPV6].370   354   425 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+04-28 [REDACTED_IPV6].476  2927  9233 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.[REDACTED_TOKEN](ConnectivityManager.java:3687)] [caqt.a(:com.google.android.gms@261533029@26.15.33 (190400-900762463):15)] [casx.n(:com.google.android.gms@261533029@26.15.33 (190400-900762463):6)] [casl.run(:com.google.android.gms@261533029@26.15.33 (190400-900762463):493)] [cati.run(:com.google.android.gms@261533029@26.15.33 (190400-900762463):5)] [gynr.run(:com.google.android.gms@261533029@26.15.33 (190400-900762463):23)] [biqf.c(:com.google.android.gms@261533029@26.15.33 (190400-900762463):50)] [biqf.run(:com.google.android.gms@261533029@26.15.33 (190400-900762463):66)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)] [bivx.run(:com.google.android.gms@261533029@26.15.33 (190400-900762463):8)] [java.lang.Thread.run(Thread.java:1564)]
+04-28 [REDACTED_IPV6].478  2927  9233 I AlarmManager: [REDACTED_TOKEN] [name: GCM_HB_ALARM type: 2 triggerAtMillis: 24296755]
+04-28 [REDACTED_IPV6].490  2927  9229 I AlarmManager: [REDACTED_TOKEN] [name: FcmRetry type: 2 triggerAtMillis: 23636765]
+04-28 [REDACTED_IPV6].496  2927  2927 W GCM     : broadcast intent callback: result=CANCELLED forIntent { act=com.google.android.c2dm.intent.RECEIVE pkg=com.nvidia.geforcenow (has extras) }
+04-28 [REDACTED_IPV6].501  2927  9233 I AlarmManager: [REDACTED_TOKEN] [name: GCM_HB_ALARM type: 2 triggerAtMillis: 24296778]
+04-28 [REDACTED_IPV6].660   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].662   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].662   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].264  2927  8874 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+04-28 [REDACTED_IPV6].264  2927  8874 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+04-28 [REDACTED_IPV6].357   391   391 D io_stats: !@ 179,0 r 8110684 111618451 w 971038 12033152 d 295693 13380532 f 0 0 iot 2076828 0 th 0 0 0 pt 0 inp 0 0 14521.855
+04-28 [REDACTED_IPV6].366  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3185, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].370  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.205 ms / 39.000 Mbps (65 / 0.000 / 1.667)
+04-28 [REDACTED_IPV6].488  3802  4557 I SDHMS:D : SIOP:: AP:340 BAT:298 USB:0 CHG:346 PA:342 BLK:0 SUBBAT:0 SKIN:305 SKINF:305 SKINB:304 LRP:305 LRF:305 LRB:304 
+04-28 [REDACTED_IPV6].573   850   850 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-28 [REDACTED_IPV6].705   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].176   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].177   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].178   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].679   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].682   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].683   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].213   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].388  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3186, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].391  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.205 ms / 39.000 Mbps (65 / 0.000 / 1.667)
+04-28 [REDACTED_IPV6].392  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-28 [REDACTED_IPV6].183   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].184   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].184   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].636  1828  1828 I wpa_supplicant: Heartbeat 1414
+04-28 [REDACTED_IPV6].700   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].692   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].695   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].695   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].705  1208  9245 D WifiConnectivityMonitor.DnsThread:  [|208] []
+04-28 [REDACTED_IPV6].706  1208  1793 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 208
+04-28 [REDACTED_IPV6].706  1208  1788 D OpenNetworkQos[4.00]: [REDACTED_TOKEN] - result: 0
+04-28 [REDACTED_IPV6].707  1208  1788 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+04-28 [REDACTED_IPV6].707  1208  1788 D OpenNetworkQos[4.00]: [REDACTED_TOKEN]: false
+04-28 [REDACTED_IPV6].707  1208  1788 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 26 0 
+04-28 [REDACTED_IPV6].707  1208  1788 D SettingsProvider: isChangeAllowed() : name = [REDACTED_TOKEN]
+04-28 [REDACTED_IPV6].720   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].405  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3187, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].407  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.246 ms / 32.500 Mbps (65 / 0.000 / 2.000)
+04-28 [REDACTED_IPV6].409  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-28 [REDACTED_IPV6].490   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 59
+04-28 [REDACTED_IPV6].977  2927  2927 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.[REDACTED_TOKEN] }
+04-28 [REDACTED_IPV6].555  3802  3802 I SDHMS:LOAD: type: LoadsFreqs, value: [REDACTED_IPV6]546000:546000:546000:546000:546000:546000:[REDACTED_IPV6]
+04-28 [REDACTED_IPV6].694   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].695   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].695   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].696   845  9232 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1752256
+04-28 [REDACTED_IPV6].727   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].355  2201  2282 D BtGatt.GattService: onScanResult to scannerId: 5- eventType=0x10, addressType=1, address=199FC5_A, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-94, periodicAdvInt=0x0
+04-28 [REDACTED_IPV6].360  2927  8874 I NearbyMediums: This GATT advertisement BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x50 0x49 0x53 0x52 0x11 0x32 0x71 0x7e 0x6c 0x6d 0x9d 0x84 0x91 0x61 0xa4 0xc9 0xff 0xfe 0xb1 0xb1 0x56 0x4b ], deviceToken=[ 0xb3 0x78 ], rxAdvertisement=null } is a Fast Advertisement and matched UUID [REDACTED_TOKEN] in [REDACTED_TOKEN] map with serviceID NearbySharing
+04-28 [REDACTED_IPV6].362  2927  8950 I NearbyConnections: Found BleAdvertisement [ 0x23 0x50 0x49 0x53 0x52 0x11 0x32 0x71 0x7e 0x6c 0x6d 0x9d 0x84 0x91 0x61 0xa4 0xc9 0xff 0xfe 0xb1 0xb1 0x56 0x4b ] (with EndpointId PISR and EndpointInfo [ 0x32 0x71 0x7e 0x6c 0x6d 0x9d 0x84 0x91 0x61 0xa4 0xc9 0xff 0xfe 0xb1 0xb1 0x56 0x4b ])
+04-28 [REDACTED_IPV6].363  2927  8950 I NearbyConnections: Unable to record discovered endpoint due to null currentDiscoveryPhase
+04-28 [REDACTED_IPV6].363  2927  8950 I NearbyConnections: ClientProxy(49267799 0p:com.google.android.gms.nearby.sharing) reporting onEndpointFound(PISR)
+04-28 [REDACTED_IPV6].364  2927  8950 I NearbyConnections: ClientProxy(49267799) reporting [REDACTED_TOKEN](PISR, UNKNOWN)
+04-28 [REDACTED_IPV6].368  2927  9247 I NearbySharing: NearbySharing Internal event EndpointDiscovered(endpointId=PISR)
+04-28 [REDACTED_IPV6].201   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].202   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].203   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].422  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3188, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].425  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.246 ms / 32.500 Mbps (65 / 0.000 / 2.000)
+04-28 [REDACTED_IPV6].426  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-28 [REDACTED_IPV6].511  2927  2927 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.[REDACTED_TOKEN] }
+04-28 [REDACTED_IPV6].512  1208  1241 E Watchdog: !@Sync: 478 heap: 122 / 139 FD: 1032 [2026-04-28 [REDACTED_IPV6].511]
+04-28 [REDACTED_IPV6].266  2927  8874 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+04-28 [REDACTED_IPV6].266  2927  8874 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+04-28 [REDACTED_IPV6].361   391   391 D io_stats: !@ 179,0 r 8110708 111618619 w 971043 12033172 d 295693 13380532 f 0 0 iot 2076828 0 th 0 0 0 pt 0 inp 0 0 14531.860
+04-28 [REDACTED_IPV6].615   850   850 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-28 [REDACTED_IPV6].723   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].724   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].724   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].753   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].812  3090  4364 I [REDACTED_TOKEN]: cp_s: [CONTACT con(229) dat(2290) acc({phone(1)=1, google(2)=223, com.whatsapp(12)=171, com.google.android.apps.tachyon(656)=33, google(545)=5, core(26)=9}) calls([logtype:100 cnt:474, logtype:300 cnt:500, logtype:1000 cnt:1204]) Iso(MA) uId(0) ]
+
+04-28 [REDACTED_IPV6].812  3090  4364 I [REDACTED_TOKEN]: cp_s: [ agr({[12 ,545 ,656]=1, [2 ,12 ,656]=27, [1]=1, [2]=54, [2 ,12 ,26]=6, [12 ,545]=1, [2 ,656]=2, [545 ,12]=1, [2 ,12 ,12]=1, [2 ,12 ,656 ,26]=1, [12 ,2]=1, [2 ,12]=129, [545]=2, [2 ,12 ,26 ,656]=2}) ]
+
+04-28 [REDACTED_IPV6].812  3090  4364 I [REDACTED_TOKEN]: cp_s: [ cnt({acore(3090)=1}) ]
+
+04-28 [REDACTED_IPV6].812  3090  4364 I [REDACTED_TOKEN]: cp_s: [PROFILE ] [SAPROFILE con(1) dat(1) acc({phone(1)=1}) ]
+
+04-28 [REDACTED_IPV6].812  3090  4364 I [REDACTED_TOKEN]: cp_s: [STATE R(F) ]
+04-28 [REDACTED_IPV6].743  2201  2282 D BtGatt.GattService: onScanResult to scannerId: 5- eventType=0x0, addressType=1, address=26CD4B_1, primaryPhy=1, secondaryPhy=1, advertisingSid=0x1, txPower=127, rssi=-90, periodicAdvInt=0x0
+04-28 [REDACTED_IPV6].747  2927  8874 I NearbyMediums: Replace Fast Advertisement Rx Info for service id : NearbySharing on deviceToken : [ 0xb3 0x78 ]
+04-28 [REDACTED_IPV6].748  2927  9247 I NearbyConnections: Found BleAdvertisement [ 0x23 0x50 0x49 0x53 0x52 0x11 0x32 0x71 0x7e 0x6c 0x6d 0x9d 0x84 0x91 0x61 0xa4 0xc9 0xff 0xfe 0xb1 0xb1 0x56 0x4b ] (with EndpointId PISR and EndpointInfo [ 0x32 0x71 0x7e 0x6c 0x6d 0x9d 0x84 0x91 0x61 0xa4 0xc9 0xff 0xfe 0xb1 0xb1 0x56 0x4b ])
+04-28 [REDACTED_IPV6].750  2927  9247 I NearbyConnections: ClientProxy(49267799) ignoring [REDACTED_TOKEN](PISR, UNKNOWN), because this distance has already been reported
+04-28 [REDACTED_IPV6].060  1208  1743 D UsbStatsMonitor: 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+04-28 [REDACTED_IPV6].183   804   804 E audit   : type=1400 audit(1777400444.177:17194): avc:  denied  { write } for  pid=3080 comm="ThreadPoolForeg" name="traced_producer" dev="tmpfs" ino=9946 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-M127F_13_0001 audit_filtered
+04-28 [REDACTED_IPV6].183   804   804 E audit   : type=1300 audit(1777400444.177:17194): arch=c00000b7 syscall=203 success=no exit=-13 a0=9b a1=b4000077a4b43800 a2=1e a3=ffffffff960f3e49 items=1 ppid=821 pid=3080 auid=4294967295 uid=10198 gid=10198 euid=10198 suid=10198 fsuid=10198 egid=10198 sgid=10198 fsgid=10198 tty=(none) ses=4294967295 comm="ThreadPoolForeg" exe="/system/bin/app_process64" subj=u:r:gmscore_app:s0:c512,c768 key=(null)
+04-28 [REDACTED_IPV6].183   804   804 E audit   : type=1306 audit(1777400444.177:17194): saddr=[REDACTED_TOKEN]
+04-28 [REDACTED_IPV6].183   804   804 E audit   : type=1302 audit(1777400444.177:17194): item=0 name="/dev/socket/traced_producer" inode=9946 dev=00:10 mode=0140666 ouid=0 ogid=0 rdev=00:00 obj=u:object_r:traced_producer_socket:s0 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+04-28 [REDACTED_IPV6].183   804   804 E audit   : type=1327 audit(1777400444.177:17194): proctitle="com.google.android.gms"
+04-28 [REDACTED_IPV6].228   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].229   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].229   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].362   391   391 D io_stats: !@ 179,0 r 8110709 111618623 w 971045 12033180 d 295693 13380532 f 0 0 iot 2076832 0 th 0 0 0 pt 0 inp 0 0 14533.861
+04-28 [REDACTED_IPV6].437  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3189, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].440  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.185 ms / 43.333 Mbps (65 / 0.000 / 1.500)
+04-28 [REDACTED_IPV6].440  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-28 [REDACTED_IPV6].923  1888  1996 D MobileStatusTracker(1/1): [REDACTED_TOKEN] level=2, vendorLevel=3
+04-28 [REDACTED_IPV6].926  1888  1996 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=UMTS (3G), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+04-28 [REDACTED_IPV6].927  1888  1996 D NetworkController: SignalStrength from intent slotId=1
+04-28 [REDACTED_IPV6].730   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].732   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].732   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].264   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].363   391   391 D io_stats: !@ 179,0 r 8110711 111618683 w 971046 12033184 d 295693 13380532 f 0 0 iot 2076840 0 th 0 0 0 pt 0 inp 0 0 14535.862
+04-28 [REDACTED_IPV6].442  1208  1729 W [REDACTED_TOKEN]: updateBroadcasts(/data) oldLevel:0, newLevel:0, seq:1
+04-28 [REDACTED_IPV6].444  1208  1729 D [REDACTED_TOKEN]: Available File Node Number is [13046084]
+04-28 [REDACTED_IPV6].444  1208  1729 W [REDACTED_TOKEN]: [REDACTED_TOKEN](/data) fn_oldLevel:0, fn_newLevel:0, seq:1
+04-28 [REDACTED_IPV6].645  1828  1828 I wpa_supplicant: Heartbeat 1415
+04-28 [REDACTED_IPV6].116  1208  1384 I EDMNativeHelperService: isScreenCaptureEnabled
+04-28 [REDACTED_IPV6].118  1208  1384 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+04-28 [REDACTED_IPV6].118  9252  9252 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+04-28 [REDACTED_IPV6].148   354   425 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+04-28 [REDACTED_IPV6].447  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3190, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].448  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.226 ms / 35.455 Mbps (65 / 0.000 / 1.833)
+04-28 [REDACTED_IPV6].733   845  9246 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1752256
+04-28 [REDACTED_IPV6].737   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].738   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].739   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].364   391   391 D io_stats: !@ 179,0 r 8110713 111618691 w 971046 12033184 d 295693 13380532 f 0 0 iot 2076844 0 th 0 0 0 pt 0 inp 0 0 14537.863
+04-28 [REDACTED_IPV6].755   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].238   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].239   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].239   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].483  1997  2485 D IpClient/wlan0: [REDACTED_TOKEN]: ifindex 12 up
+04-28 [REDACTED_IPV6].654  3802  3802 I SDHMS:LOAD: type: LoadsFreqs, value: [REDACTED_IPV6]546000:546000:546000:546000:546000:546000:[REDACTED_IPV6]
+04-28 [REDACTED_IPV6].775   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 59
+04-28 [REDACTED_IPV6].323  1208  1273 D PowerManagerService: UserActivityState : 1 -> 2 groupId=0
+04-28 [REDACTED_IPV6].324  1208  1273 D PowerManagerService: displayReady: false groupId=0
+04-28 [REDACTED_IPV6].324  1208  1273 D DisplayPowerController[0]: [REDACTED_TOKEN]: target=2, mLogicalDisplay.isEnabled()=true
+04-28 [REDACTED_IPV6].325  1208  1273 D DisplayPowerController[0]: Animating brightness: target=6(0.02), rate=0.706, reason=manual[103] -> dim[6]
+04-28 [REDACTED_IPV6].326  1208  1273 D DisplayManagerService: [REDACTED_TOKEN]: started=true
+04-28 [REDACTED_IPV6].326  1208  1273 D DisplayModeDirector: requestPassiveMode, passive=true, caller=com.android.server.display.DisplayManagerService.[REDACTED_TOKEN]:3749 com.android.server.display.DisplayManagerService.$r8$lambda$[REDACTED_TOKEN]:0 com.android.server.display.DisplayManagerService$$[REDACTED_TOKEN].accept:8 
+04-28 [REDACTED_IPV6].327  1208  1273 D DisplayModeDirector: [REDACTED_TOKEN], brightness=103, lux=-1.0
+04-28 [REDACTED_IPV6].327  1208  1273 D DisplayModeDirector: setPassiveMode=true, brightness=103, lux=-1.0, mRequestedPassive=true
+04-28 [REDACTED_IPV6].327  1208  1236 D SurfaceControl: notifyHFRmode, displayToken=android.os.BinderProxy@ea46e8a, hfrMode=[REDACTED_TOKEN]
+04-28 [REDACTED_IPV6].328   871  1435 I SurfaceFlinger: [Display 0 (internal, primary, "Primary display")] HFR mode : 3
+04-28 [REDACTED_IPV6].328  1208  1273 D DisplayPowerController[0]: saveBrightnessInfo: brt:0.4039216 adjBrt:0.023529412 min:0.003921569 max:1.0 hbm:0 tp:1.0 throttler:0
+04-28 [REDACTED_IPV6].328  1208  1273 V DisplayPowerController[0]: Brightness [0.023529412] reason changing to: 'manual [ dim ]', previous reason: 'manual'.
+04-28 [REDACTED_IPV6].329  1208  1273 I DisplayPowerController[0]: BrightnessEvent: disp=0, brt=0.023529412, rcmdBrt=NaN, preBrt=NaN, lux=0.0, preLux=0.0, hbmMax=1.0, hbmMode=off, thrmMax=1.0, flags=, reason=manual [ dim ]
+04-28 [REDACTED_IPV6].330  1208  1273 D PowerManagerService: displayReady: true groupId=0
+04-28 [REDACTED_IPV6].331  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 102
+04-28 [REDACTED_IPV6].332   846   846 I SehLight: lcd : 102+
+04-28 [REDACTED_IPV6].338   846   846 I SehLight: lcd : 102-
+04-28 [REDACTED_IPV6].344  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 96
+04-28 [REDACTED_IPV6].344   846   846 I SehLight: lcd : 96+
+04-28 [REDACTED_IPV6].345   846   846 I SehLight: lcd : 96-
+04-28 [REDACTED_IPV6].358  1208  1208 D BrightnessSynchronizer: onDisplayChanged() : displayId=0
+04-28 [REDACTED_IPV6].358  1208  1208 D BrightnessSynchronizer: updateScreenBrightness: type=2 mPreferredSettingValue=0.4039216(103) currentBrightnessInt=103 [REDACTED_TOKEN]=103(0.4039216)
+04-28 [REDACTED_IPV6].362  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 90
+04-28 [REDACTED_IPV6].362   846   846 I SehLight: lcd : 90+
+04-28 [REDACTED_IPV6].363  1208  1236 D DisplayModeDirector: [REDACTED_TOKEN], brightness=90, lux=-1.0
+04-28 [REDACTED_IPV6].365   846   846 I SehLight: lcd : 90-
+04-28 [REDACTED_IPV6].363  1208  1236 D DisplayModeDirector: setPassiveMode=true, brightness=90, lux=-1.0, mRequestedPassive=true
+04-28 [REDACTED_IPV6].366   391   391 D io_stats: !@ 179,0 r 8110722 111618755 w 971132 12033552 d 295701 13380900 f 0 0 iot 2076876 0 th 0 0 0 pt 0 inp 0 0 14539.865
+04-28 [REDACTED_IPV6].370  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 87
+04-28 [REDACTED_IPV6].371   846   846 I SehLight: lcd : 87+
+04-28 [REDACTED_IPV6].372   846   846 I SehLight: lcd : 87-
+04-28 [REDACTED_IPV6].387  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 81
+04-28 [REDACTED_IPV6].388   846   846 I SehLight: lcd : 81+
+04-28 [REDACTED_IPV6].388   846   846 I SehLight: lcd : 81-
+04-28 [REDACTED_IPV6].393   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60
+04-28 [REDACTED_IPV6].404  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 75
+04-28 [REDACTED_IPV6].405   846   846 I SehLight: lcd : 75+
+04-28 [REDACTED_IPV6].406   846   846 I SehLight: lcd : 75-
+04-28 [REDACTED_IPV6].411  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 72
+04-28 [REDACTED_IPV6].412   846   846 I SehLight: lcd : 72+
+04-28 [REDACTED_IPV6].413   846   846 I SehLight: lcd : 72-
+04-28 [REDACTED_IPV6].428  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 66
+04-28 [REDACTED_IPV6].428   846   846 I SehLight: lcd : 66+
+04-28 [REDACTED_IPV6].429   846   846 I SehLight: lcd : 66-
+04-28 [REDACTED_IPV6].444  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 60
+04-28 [REDACTED_IPV6].445   846   846 I SehLight: lcd : 60+
+04-28 [REDACTED_IPV6].447   846   846 I SehLight: lcd : 60-
+04-28 [REDACTED_IPV6].461  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 54
+04-28 [REDACTED_IPV6].462   846   846 I SehLight: lcd : 54+
+04-28 [REDACTED_IPV6].462  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3191, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].463   846   846 I SehLight: lcd : 54-
+04-28 [REDACTED_IPV6].466  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.222 ms / 36.111 Mbps (65 / 0.000 / 1.800)
+04-28 [REDACTED_IPV6].478  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 48
+04-28 [REDACTED_IPV6].479   846   846 I SehLight: lcd : 48+
+04-28 [REDACTED_IPV6].480   846   846 I SehLight: lcd : 48-
+04-28 [REDACTED_IPV6].495  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 42
+04-28 [REDACTED_IPV6].495   846   846 I SehLight: lcd : 42+
+04-28 [REDACTED_IPV6].496   846   846 I SehLight: lcd : 42-
+04-28 [REDACTED_IPV6].511  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 36
+04-28 [REDACTED_IPV6].512   846   846 I SehLight: lcd : 36+
+04-28 [REDACTED_IPV6].514   846   846 I SehLight: lcd : 36-
+04-28 [REDACTED_IPV6].529  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 30
+04-28 [REDACTED_IPV6].529   846   846 I SehLight: lcd : 30+
+04-28 [REDACTED_IPV6].531   846   846 I SehLight: lcd : 30-
+04-28 [REDACTED_IPV6].545  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 24
+04-28 [REDACTED_IPV6].546   846   846 I SehLight: lcd : 24+
+04-28 [REDACTED_IPV6].547   846   846 I SehLight: lcd : 24-
+04-28 [REDACTED_IPV6].562  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 18
+04-28 [REDACTED_IPV6].563   846   846 I SehLight: lcd : 18+
+04-28 [REDACTED_IPV6].564   846   846 I SehLight: lcd : 18-
+04-28 [REDACTED_IPV6].578  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 12
+04-28 [REDACTED_IPV6].578   846   846 I SehLight: lcd : 12+
+04-28 [REDACTED_IPV6].579   846   846 I SehLight: lcd : 12-
+04-28 [REDACTED_IPV6].596  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 6
+04-28 [REDACTED_IPV6].596   846   846 I SehLight: lcd : 6+
+04-28 [REDACTED_IPV6].598   846   846 I SehLight: lcd : 6-
+04-28 [REDACTED_IPV6].611  1208  1273 D DisplayPowerController[0]: [REDACTED_TOKEN]: target=2, mLogicalDisplay.isEnabled()=true
+04-28 [REDACTED_IPV6].746   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].747   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].748   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].812  1208  1273 D DisplayManagerService: [REDACTED_TOKEN]: started=false
+04-28 [REDACTED_IPV6].812  1208  1273 D DisplayModeDirector: requestPassiveMode, passive=false, caller=com.android.server.display.DisplayManagerService.[REDACTED_TOKEN]:3749 com.android.server.display.DisplayManagerService.$r8$lambda$[REDACTED_TOKEN]:0 com.android.server.display.DisplayManagerService$$[REDACTED_TOKEN].accept:8 
+04-28 [REDACTED_IPV6].812  1208  1273 D DisplayModeDirector: [REDACTED_TOKEN], brightness=6, lux=-1.0
+04-28 [REDACTED_IPV6].813  1208  1273 D DisplayModeDirector: setPassiveMode=false, brightness=6, lux=-1.0, mRequestedPassive=false
+04-28 [REDACTED_IPV6].813  1208  1236 D SurfaceControl: notifyHFRmode, displayToken=android.os.BinderProxy@ea46e8a, hfrMode=[REDACTED_TOKEN]
+04-28 [REDACTED_IPV6].814   871  1435 I SurfaceFlinger: [Display 0 (internal, primary, "Primary display")] HFR mode : 1
+04-28 [REDACTED_IPV6].879   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 59
+04-28 [REDACTED_IPV6].988  1208  1387 D InputReader: Btn_touch(4): value=1 when=14541.486524
+04-28 [REDACTED_IPV6].988  1208  1387 I InputReader: Touch event's action is 0x0 (id=4, t=0) [pCnt=1, s=0.3213 ] when=14541.486524
+04-28 [REDACTED_IPV6].989  1208  1208 D PowerManagerService: [api] userActivity : event: 0 flags: 0 (uid: 1000 pid: 1208) <- handleMotionEvent() in com.android.server.accessibility.[REDACTED_TOKEN]:481 eventTime = 14541486 displayId = 0
+04-28 [REDACTED_IPV6].990  1208  1208 D PowerManagerService: UserActivityState : 2 -> 1 groupId=0
+04-28 [REDACTED_IPV6].990  1208  1208 D PowerManagerService: displayReady: false groupId=0
+04-28 [REDACTED_IPV6].991  1208  1273 D DisplayPowerController[0]: [REDACTED_TOKEN]: target=2, mLogicalDisplay.isEnabled()=true
+04-28 [REDACTED_IPV6].991  1208  1273 D DisplayPowerController[0]: Animating brightness: target=103(0.40), rate=1.200, reason=manual[103]
+04-28 [REDACTED_IPV6].991  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 644676243 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEventInternal:199 com.android.server.accessibility.magnification.[REDACTED_TOKEN].onMotionEvent:119 
+04-28 [REDACTED_IPV6].991  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 0 id: 644676243
+04-28 [REDACTED_IPV6].991  1208  1273 D DisplayManagerService: [REDACTED_TOKEN]: started=true
+04-28 [REDACTED_IPV6].992  1208  1273 D DisplayModeDirector: requestPassiveMode, passive=true, caller=com.android.server.display.DisplayManagerService.[REDACTED_TOKEN]:3749 com.android.server.display.DisplayManagerService.$r8$lambda$[REDACTED_TOKEN]:0 com.android.server.display.DisplayManagerService$$[REDACTED_TOKEN].accept:8 
+04-28 [REDACTED_IPV6].992  1208  1273 D DisplayModeDirector: [REDACTED_TOKEN], brightness=6, lux=-1.0
+04-28 [REDACTED_IPV6].992  1208  1273 D DisplayModeDirector: setPassiveMode=true, brightness=6, lux=-1.0, mRequestedPassive=true
+04-28 [REDACTED_IPV6].992  1208  1208 I GestureDetector: obtain mCurrentDownEvent. id: 644676243 caller: com.android.server.accessibility.magnification.[REDACTED_TOKEN].handleEventWith:205 com.android.server.accessibility.magnification.[REDACTED_TOKEN].-$$Nest$mhandleEventWith:0 com.android.server.accessibility.magnification.[REDACTED_TOKEN]$DetectingState.sendDelayedMotionEvents:892 
+04-28 [REDACTED_IPV6].992  1208  1236 D SurfaceControl: notifyHFRmode, displayToken=android.os.BinderProxy@ea46e8a, hfrMode=[REDACTED_TOKEN]
+04-28 [REDACTED_IPV6].992  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x0, time=14541486524000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-28 [REDACTED_IPV6].993   871  1435 I SurfaceFlinger: [Display 0 (internal, primary, "Primary display")] HFR mode : 3
+04-28 [REDACTED_IPV6].993  1208  1386 I InputDispatcher: Delivering touch to (1888): action: 0x4, f=0x0, d=0, '3275bd ', t=1 
+04-28 [REDACTED_IPV6].993  1208  1386 I InputDispatcher: Delivering touch to (7900): action: 0x0, f=0x0, d=0, '516a832', t=1 
+04-28 [REDACTED_IPV6].993  1208  1273 D DisplayPowerController[0]: saveBrightnessInfo: brt:0.4039216 adjBrt:0.4039216 min:0.003921569 max:1.0 hbm:0 tp:1.0 throttler:0
+04-28 [REDACTED_IPV6].993  1208  1208 D PowerManagerService: [api] [REDACTED_TOKEN]: [REDACTED_TOKEN]: -1
+04-28 [REDACTED_IPV6].994  1208  1273 V DisplayPowerController[0]: Brightness [0.4039216] reason changing to: 'manual', previous reason: 'manual [ dim ]'.
+04-28 [REDACTED_IPV6].994  1208  1273 I DisplayPowerController[0]: BrightnessEvent: disp=0, brt=0.4039216, rcmdBrt=NaN, preBrt=NaN, lux=0.0, preLux=0.0, hbmMax=1.0, hbmMode=off, thrmMax=1.0, flags=, reason=manual
+04-28 [REDACTED_IPV6].994  1208  1386 D PowerManagerService: [api] userActivityFromNative :  (event: 2 flags: 0 displayId: 0) eventTime = 14541486
+04-28 [REDACTED_IPV6].995  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 644676243 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:203 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-28 [REDACTED_IPV6].995  7900  7900 I ViewRootImpl@e88b703[AddEtudiant]: ViewPostIme pointer 0
+04-28 [REDACTED_IPV6].995  1208  1386 D PowerManagerService: [REDACTED_TOKEN]: 1
+04-28 [REDACTED_IPV6].995  2312  2312 I TouchInteractionService: onInputEvent, inputConsumer = com.android.quickstep.l2@2834120
+04-28 [REDACTED_IPV6].995  1208  1234 I GestureDetector: obtain mCurrentDownEvent. id: 644676243 caller: com.android.server.wm.[REDACTED_TOKEN].onPointerEvent:89 com.android.server.wm.PointerEventDispatcher.onInputEvent:53 android.view.InputEventReceiver.dispatchInputEvent:285 
+04-28 [REDACTED_IPV6].996  1208  1273 D PowerManagerService: displayReady: true groupId=0
+04-28 [REDACTED_IPV6].002   871   871 I DisplayDevice: [Display 0 (internal, primary, "Primary display")] ActiveConfigToHWC, ID : 0
+04-28 [REDACTED_IPV6].002   837  1608 I display : Use default fps instead of 90 for setting capacity
+04-28 [REDACTED_IPV6].002   871   871 I LayerHistory: com.example.getudiant/com.example.getudiant.AddEtudiant$_7900#4464 Max (can't resolve refresh rate)
+04-28 [REDACTED_IPV6].002   871   871 I SurfaceFlinger: Touch - choose 90.00 Hz
+04-28 [REDACTED_IPV6].004   837  1608 I display : needChangeConfig, Same config change requested : 0
+04-28 [REDACTED_IPV6].005  1208  1208 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 611413409
+04-28 [REDACTED_IPV6].006  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 611413409
+04-28 [REDACTED_IPV6].006  1208  1234 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 611413409
+04-28 [REDACTED_IPV6].006  1208  1208 D BrightnessSynchronizer: onDisplayChanged() : displayId=0
+04-28 [REDACTED_IPV6].006  1208  1208 D BrightnessSynchronizer: updateScreenBrightness: type=2 mPreferredSettingValue=0.4039216(103) currentBrightnessInt=103 [REDACTED_TOKEN]=103(0.4039216)
+04-28 [REDACTED_IPV6].007  1208  1236 D DisplayModeDirector: [REDACTED_TOKEN], brightness=6, lux=-1.0
+04-28 [REDACTED_IPV6].007  1208  1236 D DisplayModeDirector: setPassiveMode=true, brightness=6, lux=-1.0, mRequestedPassive=true
+04-28 [REDACTED_IPV6].008  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 16
+04-28 [REDACTED_IPV6].009   846   846 I SehLight: lcd : 16+
+04-28 [REDACTED_IPV6].011   846   846 I SehLight: lcd : 16-
+04-28 [REDACTED_IPV6].015   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 90, Distance= 60
+04-28 [REDACTED_IPV6].025  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 26
+04-28 [REDACTED_IPV6].025   846   846 I SehLight: lcd : 26+
+04-28 [REDACTED_IPV6].026   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 90, Distance= 90
+04-28 [REDACTED_IPV6].026   846   846 I SehLight: lcd : 26-
+04-28 [REDACTED_IPV6].037   871   871 I Scheduler: DisplayModeChanged : 0
+04-28 [REDACTED_IPV6].038  1208  1236 D LocalDisplayAdapter: updateActiveModeLocked for d=0, mActiveModeId=1, mActiveSfDisplayMode=DisplayMode{id=0, width=720, height=1600, xDpi=268.941, yDpi=269.139, refreshRate=90.0, appVsyncOffsetNanos=0, [REDACTED_TOKEN]=12111111, group=0}
+04-28 [REDACTED_IPV6].040  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 34
+04-28 [REDACTED_IPV6].042  1208  1236 I DisplayDeviceRepository: Display device changed: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 720 x 1600, modeId 1, defaultModeId 1, supportedModes [{id=1, width=720, height=1600, fps=90.0, alternativeRefreshRates=[60.000004]}, {id=2, width=720, height=1600, fps=60.000004, alternativeRefreshRates=[90.0]}], colorMode 0, supportedColorModes [0], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, [REDACTED_TOKEN] false, density 300, 268.941 x 269.139 dpi, appVsyncOff 0, presDeadline 12111111, cutout DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, touch INTERNAL, rotation 0, type INTERNAL, address {port=0}, deviceProductInfo null, state ON, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.5019608, roundedCorners RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}, [REDACTED_TOKEN], [REDACTED_TOKEN], FLAG_SECURE, [REDACTED_TOKEN], installOrientation 0}
+04-28 [REDACTED_IPV6].042   846   846 I SehLight: lcd : 34+
+04-28 [REDACTED_IPV6].043   846   846 I SehLight: lcd : 34-
+04-28 [REDACTED_IPV6].046  1208  2765 D LiftUpHandler: [LTW] Stopped already.
+04-28 [REDACTED_IPV6].047  1208  1208 D SGM:GameManager: onDisplayChanged. displyId: 0, state: 2
+04-28 [REDACTED_IPV6].047  1208  1208 D AODManagerService: requestReCalToTSP IsSingleTouchMode = false / previousDisplayState = ON
+04-28 [REDACTED_IPV6].049  1208  1403 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_LCD_ON
+04-28 [REDACTED_IPV6].051  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 41
+04-28 [REDACTED_IPV6].051   846   846 I SehLight: lcd : 41+
+04-28 [REDACTED_IPV6].052  1888  1888 D DisplayLifecycle: updateDisplay id = 0
+04-28 [REDACTED_IPV6].052   846   846 I SehLight: lcd : 41-
+04-28 [REDACTED_IPV6].055  1208  1236 D DisplayModeDirector: [REDACTED_TOKEN], brightness=41, lux=-1.0
+04-28 [REDACTED_IPV6].055  1208  1236 D DisplayModeDirector: setPassiveMode=true, brightness=41, lux=-1.0, mRequestedPassive=true
+04-28 [REDACTED_IPV6].060  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 48
+04-28 [REDACTED_IPV6].061   846   846 I SehLight: lcd : 48+
+04-28 [REDACTED_IPV6].062   846   846 I SehLight: lcd : 48-
+04-28 [REDACTED_IPV6].071  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 54
+04-28 [REDACTED_IPV6].072   846   846 I SehLight: lcd : 54+
+04-28 [REDACTED_IPV6].073   846   846 I SehLight: lcd : 54-
+04-28 [REDACTED_IPV6].082  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 61
+04-28 [REDACTED_IPV6].083   846   846 I SehLight: lcd : 61+
+04-28 [REDACTED_IPV6].084   846   846 I SehLight: lcd : 61-
+04-28 [REDACTED_IPV6].094  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 68
+04-28 [REDACTED_IPV6].094   846   846 I SehLight: lcd : 68+
+04-28 [REDACTED_IPV6].095   846   846 I SehLight: lcd : 68-
+04-28 [REDACTED_IPV6].104  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 75
+04-28 [REDACTED_IPV6].105   846   846 I SehLight: lcd : 75+
+04-28 [REDACTED_IPV6].106   846   846 I SehLight: lcd : 75-
+04-28 [REDACTED_IPV6].116  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 82
+04-28 [REDACTED_IPV6].116   846   846 I SehLight: lcd : 82+
+04-28 [REDACTED_IPV6].117   846   846 I SehLight: lcd : 82-
+04-28 [REDACTED_IPV6].127  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 88
+04-28 [REDACTED_IPV6].127   846   846 I SehLight: lcd : 88+
+04-28 [REDACTED_IPV6].129   846   846 I SehLight: lcd : 88-
+04-28 [REDACTED_IPV6].138  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 95
+04-28 [REDACTED_IPV6].138   846   846 I SehLight: lcd : 95+
+04-28 [REDACTED_IPV6].140   846   846 I SehLight: lcd : 95-
+04-28 [REDACTED_IPV6].149  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 102
+04-28 [REDACTED_IPV6].150   846   846 I SehLight: lcd : 102+
+04-28 [REDACTED_IPV6].152   846   846 I SehLight: lcd : 102-
+04-28 [REDACTED_IPV6].160  1208  1273 D DisplayPowerController[0]: [REDACTED_TOKEN]: target=2, mLogicalDisplay.isEnabled()=true
+04-28 [REDACTED_IPV6].160  1208  1808 D DisplayModeDirector: [REDACTED_TOKEN], mBrignthess = 103
+04-28 [REDACTED_IPV6].160   846   846 I SehLight: lcd : 103+
+04-28 [REDACTED_IPV6].162   846   846 I SehLight: lcd : 103-
+04-28 [REDACTED_IPV6].246   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].248   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].249   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].254  1208  1387 D InputReader: Btn_touch(4): value=0 when=14541.753475
+04-28 [REDACTED_IPV6].255  1208  1387 I InputReader: Touch event's action is 0x1 (id=4, t=0) [pCnt=1, s=] when=14541.753475
+04-28 [REDACTED_IPV6].257  1208  1208 D InputDispatcher: Inject motion (0/0): action=0x1, time=14541753475000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000
+04-28 [REDACTED_IPV6].257  1208  1386 I InputDispatcher: Delivering touch to (7900): action: 0x1, f=0x0, d=0, '516a832', t=1 
+04-28 [REDACTED_IPV6].258  7900  7900 I ViewRootImpl@e88b703[AddEtudiant]: ViewPostIme pointer 1
+04-28 [REDACTED_IPV6].259  2312  2312 I TouchInteractionService: reset
+04-28 [REDACTED_IPV6].261  1888  5250 V Navbar.Store: handleEvent(0) [REDACTED_TOKEN](noArguments=true) [Module] 
+04-28 [REDACTED_IPV6].262  1888  5250 V Navbar.Store: --[Band][REDACTED_TOKEN]
+04-28 [REDACTED_IPV6].262  1888  5250 V Navbar.Store: ----apply(0) ResetHintVI
+04-28 [REDACTED_IPV6].269  2927  8874 I NearbyMediums: Found Fast Ble Advertisements :
+04-28 [REDACTED_IPV6].269  2927  8874 I NearbyMediums: BleAdvertisement { version=2, socketVersion=2, isFast=true, serviceIdHash=null, data=[ 0x23 0x50 0x49 0x53 0x52 0x11 0x32 0x71 0x7e 0x6c 0x6d 0x9d 0x84 0x91 0x61 0xa4 0xc9 0xff 0xfe 0xb1 0xb1 0x56 0x4b ], deviceToken=[ 0xb3 0x78 ], rxAdvertisement=null } : 1 times.
+04-28 [REDACTED_IPV6].269  2927  8874 I NearbyMediums: Total 1 fast advertisements from 1 unique advertisers.
+04-28 [REDACTED_IPV6].269  2927  8874 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+04-28 [REDACTED_IPV6].360  1208  1273 D DisplayManagerService: [REDACTED_TOKEN]: started=false
+04-28 [REDACTED_IPV6].360  1208  1273 D DisplayModeDirector: requestPassiveMode, passive=false, caller=com.android.server.display.DisplayManagerService.[REDACTED_TOKEN]:3749 com.android.server.display.DisplayManagerService.$r8$lambda$[REDACTED_TOKEN]:0 com.android.server.display.DisplayManagerService$$[REDACTED_TOKEN].accept:8 
+04-28 [REDACTED_IPV6].361  1208  1273 D DisplayModeDirector: [REDACTED_TOKEN], brightness=103, lux=-1.0
+04-28 [REDACTED_IPV6].361  1208  1273 D DisplayModeDirector: setPassiveMode=false, brightness=103, lux=-1.0, mRequestedPassive=false
+04-28 [REDACTED_IPV6].361  1208  1236 D SurfaceControl: notifyHFRmode, displayToken=android.os.BinderProxy@ea46e8a, hfrMode=[REDACTED_TOKEN]
+04-28 [REDACTED_IPV6].362   871  1435 I SurfaceFlinger: [Display 0 (internal, primary, "Primary display")] HFR mode : 1
+04-28 [REDACTED_IPV6].367   391   391 D io_stats: !@ 179,0 r 8110728 111618783 w 971186 12033752 d 295752 13381208 f 0 0 iot 2076908 0 th 0 0 0 pt 0 inp 0 1 14541.865
+04-28 [REDACTED_IPV6].376   837  1608 I display : Use default fps instead of 90 for setting capacity
+04-28 [REDACTED_IPV6].627   804   804 E audit   : type=1400 audit(1777400452.621:17195): avc:  denied  { write } for  pid=2927 comm="ThreadPoolForeg" name="traced_producer" dev="tmpfs" ino=9946 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-M127F_13_0001 audit_filtered
+04-28 [REDACTED_IPV6].627   804   804 E audit   : type=1300 audit(1777400452.621:17195): arch=c00000b7 syscall=203 success=no exit=-13 a0=b0 a1=b40000778f18caa0 a2=1e a3=ffffffff960f3e49 items=1 ppid=821 pid=2927 auid=4294967295 uid=10198 gid=10198 euid=10198 suid=10198 fsuid=10198 egid=10198 sgid=10198 fsgid=10198 tty=(none) ses=4294967295 comm="ThreadPoolForeg" exe="/system/bin/app_process64" subj=u:r:gmscore_app:s0:c512,c768 key=(null)
+04-28 [REDACTED_IPV6].627   804   804 E audit   : type=1306 audit(1777400452.621:17195): saddr=[REDACTED_TOKEN]
+04-28 [REDACTED_IPV6].627   804   804 E audit   : type=1302 audit(1777400452.621:17195): item=0 name="/dev/socket/traced_producer" inode=9946 dev=00:10 mode=0140666 ouid=0 ogid=0 rdev=00:00 obj=u:object_r:traced_producer_socket:s0 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+04-28 [REDACTED_IPV6].627   804   804 E audit   : type=1327 audit(1777400452.621:17195): proctitle="com.google.android.gms.persistent"
+04-28 [REDACTED_IPV6].641   850   850 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-28 [REDACTED_IPV6].230   871   871 I SurfaceFlinger: SFWD update time=14542729024791
+04-28 [REDACTED_IPV6].478  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3192, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].480  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.185 ms / 43.333 Mbps (65 / 0.000 / 1.500)
+04-28 [REDACTED_IPV6].233   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].234   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].235   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].368   391   391 D io_stats: !@ 179,0 r 8110730 111618795 w 971214 12033852 d 295755 13381252 f 0 0 iot 2076920 0 th 0 0 0 pt 0 inp 0 0 14543.866
+04-28 [REDACTED_IPV6].262  1208  1273 D PowerManagerService: [REDACTED_TOKEN]: 0
+04-28 [REDACTED_IPV6].738   871   871 I DisplayDevice: [Display 0 (internal, primary, "Primary display")] ActiveConfigToHWC, ID : 1
+04-28 [REDACTED_IPV6].739   871   871 I LayerHistory: com.example.getudiant/com.example.getudiant.AddEtudiant$_7900#4464 is infrequent
+04-28 [REDACTED_IPV6].739   871   871 I SurfaceFlinger: all layers Min - choose 60.00 Hz
+04-28 [REDACTED_IPV6].755   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].756   871   871 I Scheduler: DisplayModeChanged : 1
+04-28 [REDACTED_IPV6].756   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].756  1208  1236 D LocalDisplayAdapter: updateActiveModeLocked for d=0, mActiveModeId=2, mActiveSfDisplayMode=DisplayMode{id=1, width=720, height=1600, xDpi=268.941, yDpi=269.139, refreshRate=60.000004, appVsyncOffsetNanos=0, [REDACTED_TOKEN]=17666666, group=0}
+04-28 [REDACTED_IPV6].758  1208  1236 I DisplayDeviceRepository: Display device changed: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:0", 720 x 1600, modeId 2, defaultModeId 1, supportedModes [{id=1, width=720, height=1600, fps=90.0, alternativeRefreshRates=[60.000004]}, {id=2, width=720, height=1600, fps=60.000004, alternativeRefreshRates=[90.0]}], colorMode 0, supportedColorModes [0], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[], mMaxLuminance=500.0, mMaxAverageLuminance=500.0, mMinLuminance=0.0}, allmSupported false, [REDACTED_TOKEN] false, density 300, 268.941 x 269.139 dpi, appVsyncOff 0, presDeadline 17666666, cutout DisplayCutout{insets=Rect(0, 45 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(272, 0 - 448, 45), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=720 displayHeight=1600 physicalDisplayWidth=720 physicalDisplayHeight=1600 density={1.875} cutoutSpec={M 0,0 H -88 V 45 H 88 V 0 H 0 Z} rotation={0} scale={1.0} [REDACTED_TOKEN]={1.0}}}}, touch INTERNAL, rotation 0, type INTERNAL, address {port=0}, deviceProductInfo null, state ON, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.5019608, roundedCorners RoundedCorners{[RoundedCorner{position=TopLeft, radius=56, center=Point(56, 56)}, RoundedCorner{position=TopRight, radius=56, center=Point(664, 56)}, RoundedCorner{position=BottomRight, radius=56, center=Point(664, 1544)}, RoundedCorner{position=BottomLeft, radius=56, center=Point(56, 1544)}]}, [REDACTED_TOKEN], [REDACTED_TOKEN], FLAG_SECURE, [REDACTED_TOKEN], installOrientation 0}
+04-28 [REDACTED_IPV6].759   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].767  1208  1236 D DisplayModeDirector: [REDACTED_TOKEN], brightness=103, lux=-1.0
+04-28 [REDACTED_IPV6].767  1208  1236 D DisplayModeDirector: setPassiveMode=false, brightness=103, lux=-1.0, mRequestedPassive=false
+04-28 [REDACTED_IPV6].768  1208  1208 D SGM:GameManager: onDisplayChanged. displyId: 0, state: 2
+04-28 [REDACTED_IPV6].768  1208  2765 D LiftUpHandler: [LTW] Stopped already.
+04-28 [REDACTED_IPV6].768  1208  1208 D AODManagerService: requestReCalToTSP IsSingleTouchMode = false / previousDisplayState = ON
+04-28 [REDACTED_IPV6].769  1208  1403 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_LCD_ON
+04-28 [REDACTED_IPV6].771  1888  1888 D DisplayLifecycle: updateDisplay id = 0
+04-28 [REDACTED_IPV6].777   804   804 E audit   : type=1400 audit(1777400455.773:17197): avc:  denied  { write } for  pid=28630 comm="ThreadPoolForeg" name="traced_producer" dev="tmpfs" ino=9946 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-M127F_13_0001 audit_filtered
+04-28 [REDACTED_IPV6].777   804   804 E audit   : type=1300 audit(1777400455.773:17197): arch=c00000b7 syscall=203 success=no exit=-13 a0=6 a1=b40000787f15d880 a2=1e a3=ffffffff960f3e49 items=1 ppid=821 pid=28630 auid=4294967295 uid=9510198 gid=9510198 euid=9510198 suid=9510198 fsuid=9510198 egid=9510198 sgid=9510198 fsgid=9510198 tty=(none) ses=4294967295 comm="ThreadPoolForeg" exe="/system/bin/app_process64" subj=u:r:gmscore_app:s0:c512,c768 key=(null)
+04-28 [REDACTED_IPV6].777   804   804 E audit   : type=1306 audit(1777400455.773:17197): saddr=[REDACTED_TOKEN]
+04-28 [REDACTED_IPV6].777   804   804 E audit   : type=1302 audit(1777400455.773:17197): item=0 name="/dev/socket/traced_producer" inode=9946 dev=00:10 mode=0140666 ouid=0 ogid=0 rdev=00:00 obj=u:object_r:traced_producer_socket:s0 nametype=NORMAL cap_fp=0000000000000000 cap_fi=0000000000000000 cap_fe=0 cap_fver=0
+04-28 [REDACTED_IPV6].777   804   804 E audit   : type=1327 audit(1777400455.773:17197): proctitle="com.google.android.gms.persistent"
+04-28 [REDACTED_IPV6].781   871  1028 I VSyncReactor: Current= 90, TransitioningTo= 60, Distance= 60
+04-28 [REDACTED_IPV6].491  1208  3200 D [REDACTED_TOKEN]: onWifiUsabilityStats - seqNum 3193, isSameBssidAndFreq true
+04-28 [REDACTED_IPV6].494  1208  1772 I [REDACTED_TOKEN]: Link Qos Query: 0.185 ms / 43.333 Mbps (65 / 0.000 / 1.500)
+04-28 [REDACTED_IPV6].494  1888  1888 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, [REDACTED_TOKEN]=false
+04-28 [REDACTED_IPV6].564  2927  2927 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.libs.gmscorelogger.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.[REDACTED_TOKEN] }
+04-28 [REDACTED_IPV6].653  1828  1828 I wpa_supplicant: Heartbeat 1416
+04-28 [REDACTED_IPV6].760   845  9255 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1752256
+04-28 [REDACTED_IPV6].772   871  1437 D NativeSemDvfsManager: acquire:: timeout = 2000 mIsAcquired = 1  mTagName : SurfaceFlinger 
+04-28 [REDACTED_IPV6].773   871  1437 E [REDACTED_TOKEN]: [NativeCFMS] [REDACTED_TOKEN]::acquire()
+04-28 [REDACTED_IPV6].773   845   907 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1752256  [871 / 1000]    HINT : SF_GPU_MINLOCK    list : [TIMEOUT / 2000] 
+04-28 [REDACTED_IPV6].369   391   391 D io_stats: !@ 179,0 r 8110732 111618803 w 971216 12033864 d 295755 13381252 f 0 0 iot 2076924 0 th 0 0 0 pt 0 inp 0 0 14547.868
+04-28 [REDACTED_IPV6].791   871  1028 I VSyncReactor: Current= 60, TransitioningTo= 0, Distance= 60

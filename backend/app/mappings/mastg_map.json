@@ -1,0 +1,12 @@
+{
+  "apk_hash": ["MASTG-KNOW-0011"],
+  "manifest_summary": ["MASTG-TEST-0026"],
+  "manifest_xml": ["MASTG-TEST-0026", "MASTG-TEST-0286"],
+  "permissions": ["MASTG-TEST-0027"],
+  "components": ["MASTG-TEST-0028", "MASTG-TEST-0286"],
+  "sbom": ["MASTG-KNOW-0073"],
+  "log": ["MASTG-TEST-0001"],
+  "screenshot": ["MASTG-KNOW-0019"],
+  "mobsf": ["MASTG-TOOL-0008"],
+  "jadx": ["MASTG-TOOL-0003"]
+}

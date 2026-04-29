@@ -1,0 +1,31 @@
+﻿{
+  "exported_components": [
+    "activity:com.example.getudiant.AddEtudiant",
+    "receiver:androidx.profileinstaller.ProfileInstallReceiver"
+  ],
+  "embedded_domains": [
+    "android.intent.action.MAIN",
+    "android.intent.category.LAUNCHER",
+    "android.permission.DUMP",
+    "android.permission.INTERNET",
+    "androidx.core.app.CoreComponentFactory",
+    "androidx.emoji2.text.EmojiCompatInitializer",
+    "androidx.lifecycle.ProcessLifecycleInitializer",
+    "androidx.profileinstaller.ProfileInstallReceiver",
+    "androidx.profileinstaller.ProfileInstallerInitializer",
+    "androidx.profileinstaller.action.BENCHMARK",
+    "androidx.profileinstaller.action.INSTALL",
+    "androidx.profileinstaller.action.SAVE",
+    "androidx.profileinstaller.action.SKIP",
+    "androidx.startup",
+    "androidx.startup.InitializationProvider",
+    "com.example.getudiant",
+    "com.example.getudiant.AddEtudiant",
+    "com.example.getudiant.DYNAMIC",
+    "com.example.getudiant.ListEtudiantActivity",
+    "com.example.getudiant.androidx",
+    "schemas.android.com"
+  ],
+  "network_security_config": "@7F130006",
+  "cleartext_traffic_allowed": "true"
+}

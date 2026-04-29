@@ -1,0 +1,9 @@
+{
+  "permissions": ["MASWE-0001"],
+  "manifest_summary": ["MASWE-0058"],
+  "manifest_xml": ["MASWE-0058", "MASWE-0050"],
+  "sbom": ["MASWE-0093"],
+  "log": ["MASWE-0007"],
+  "screenshot": ["MASWE-0102"],
+  "components": ["MASWE-0064", "MASWE-0050"]
+}

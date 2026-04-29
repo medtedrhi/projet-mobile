@@ -1,0 +1,15 @@
+{
+  "apk_size_mb": 6.41,
+  "permissions_count": 2,
+  "dangerous_permissions_count": 0,
+  "activities_count": 2,
+  "services_count": 0,
+  "receivers_count": 1,
+  "providers_count": 1,
+  "exported_components_count": 2,
+  "sbom_components_count": 6,
+  "screenshots_count": 2,
+  "logs_lines_count": 923,
+  "anonymized_logs": true,
+  "evidence_completeness_percent": 100.0
+}
