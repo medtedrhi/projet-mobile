@@ -97,6 +97,16 @@ export type AndroidDevice = {
   transport_id?: string | null;
 };
 
+export type ApkMetadataPreview = {
+  app_name?: string | null;
+  package_name?: string | null;
+  version_name?: string | null;
+  version_code?: string | null;
+  min_sdk?: string | null;
+  target_sdk?: string | null;
+  permissions_count?: number;
+};
+
 export type CaseInsights = {
   collection_summary: string;
   missing_narratives: string[];
@@ -108,4 +118,23 @@ export type CaseInsights = {
   }[];
   provider_mode: string;
   provider_label: string;
+};
+
+export type FullDynamicAnalysisResult = {
+  status: string;
+  package_name?: string | null;
+  device_serial?: string | null;
+  install_ok: boolean;
+  launch_ok: boolean;
+  monkey_ok: boolean;
+  screenshots_captured: number;
+  log_file_generated: boolean;
+  crash_detected: boolean;
+  anr_detected: boolean;
+  process_present: boolean;
+  ai_summary_generated: boolean;
+  report_id?: string | null;
+  export_id?: string | null;
+  export_download_url?: string | null;
+  errors: string[];
 };

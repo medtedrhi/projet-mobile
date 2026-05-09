@@ -5,5 +5,7 @@
   "sbom": ["MASWE-0093"],
   "log": ["MASWE-0007"],
   "screenshot": ["MASWE-0102"],
-  "components": ["MASWE-0064", "MASWE-0050"]
+  "components": ["MASWE-0064", "MASWE-0050"],
+  "mobixler": ["MASWE-0050", "MASWE-0007", "MASWE-0102"],
+  "mobixler_dynamic": ["MASWE-0050", "MASWE-0007", "MASWE-0102"]
 }

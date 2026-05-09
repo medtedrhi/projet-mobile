@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "evidence_item_id": "192fec8d-fb2c-41dc-a96f-d7efde3b3176",
     "evidence_type": "apk",
@@ -44,16 +44,19 @@
     "evidence_type": "manifest_xml",
     "original_filename": "AndroidManifest.xml",
     "masvs": [
+      "MASVS-NETWORK-1",
       "MASVS-PLATFORM-1"
     ],
     "maswe": [
+      "MASWE-0050",
       "MASWE-0058"
     ],
     "mastg": [
-      "MASTG-TEST-0026"
+      "MASTG-TEST-0026",
+      "MASTG-TEST-0286"
     ],
     "status": "mapped",
-    "notes": "Concrete proof 'AndroidManifest.xml' mapped with signals [manifest-xml-present]. Raw AndroidManifest.xml was extracted, enabling direct verification of declared platform configuration."
+    "notes": "Concrete proof 'AndroidManifest.xml' mapped with signals [manifest-network-markers, manifest-xml-present]. Raw AndroidManifest.xml was extracted, enabling direct verification of declared platform configuration. Manifest XML includes network-exposure markers: cleartext traffic enabled, networkSecurityConfig declared, exported components declared."
   },
   {
     "evidence_item_id": "1f3d09ab-661a-485d-a1b3-644b152a2fdb",
@@ -76,16 +79,19 @@
     "evidence_type": "components",
     "original_filename": "components.json",
     "masvs": [
+      "MASVS-NETWORK-1",
       "MASVS-PLATFORM-2"
     ],
     "maswe": [
+      "MASWE-0050",
       "MASWE-0064"
     ],
     "mastg": [
-      "MASTG-TEST-0028"
+      "MASTG-TEST-0028",
+      "MASTG-TEST-0286"
     ],
     "status": "mapped",
-    "notes": "Concrete proof 'components.json' mapped with signals [exported-components-present]. Component evidence enumerates 4 exported component(s), which directly supports review of externally reachable app surfaces."
+    "notes": "Concrete proof 'components.json' mapped with signals [exported-components-present, network-exposure-component-signals]. Component evidence enumerates 2 exported component(s), which directly supports review of externally reachable app surfaces. Component evidence captures 21 embedded domain/end-point hint(s), networkSecurityConfig=@7F130006, cleartextTraffic=true."
   },
   {
     "evidence_item_id": "6fffc89a-9a30-4ab7-b5a1-bad0ac1455a8",
@@ -118,6 +124,120 @@
   },
   {
     "evidence_item_id": "0d11a0f3-b946-4ff2-bfa9-4767e4fd1e77",
+    "evidence_type": "log",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "masvs": [
+      "MASVS-PRIVACY-1",
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [
+      "MASWE-0007"
+    ],
+    "mastg": [
+      "MASTG-TEST-0001"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'runtime_log_RF8T602HTNA.log' mapped with signals [log-anonymized, runtime-log-excerpt]. Sanitized runtime log content is available for runtime-observation and troubleshooting review. The runtime log was anonymized before storage, which makes this proof directly relevant to privacy-preserving evidence handling."
+  },
+  {
+    "evidence_item_id": "7efb366f-129a-44a1-a773-2e1140ac3993",
+    "evidence_type": "screenshot",
+    "original_filename": "auto_screenshot_RF8T602HTNA.png",
+    "masvs": [],
+    "maswe": [],
+    "mastg": [
+      "MASTG-KNOW-0019"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'auto_screenshot_RF8T602HTNA.png' mapped with signals [ui-screenshot-present]. A UI screenshot was captured and preserved as proof of the observed application state during the audit."
+  },
+  {
+    "evidence_item_id": "adc7e115-16a6-461c-9e70-94d38d2cd292",
+    "evidence_type": "log",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "masvs": [
+      "MASVS-PRIVACY-1",
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [
+      "MASWE-0007"
+    ],
+    "mastg": [
+      "MASTG-TEST-0001"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'runtime_log_RF8T602HTNA.log' mapped with signals [log-anonymized, runtime-log-excerpt]. Sanitized runtime log content is available for runtime-observation and troubleshooting review. The runtime log was anonymized before storage, which makes this proof directly relevant to privacy-preserving evidence handling."
+  },
+  {
+    "evidence_item_id": "51a56f38-38fd-413a-a3e7-f255ccf2c609",
+    "evidence_type": "log",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "masvs": [
+      "MASVS-PRIVACY-1",
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [
+      "MASWE-0007"
+    ],
+    "mastg": [
+      "MASTG-TEST-0001"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'runtime_log_RF8T602HTNA.log' mapped with signals [log-anonymized, runtime-log-excerpt]. Sanitized runtime log content is available for runtime-observation and troubleshooting review. The runtime log was anonymized before storage, which makes this proof directly relevant to privacy-preserving evidence handling."
+  },
+  {
+    "evidence_item_id": "58c59f0b-8a3b-4002-808a-5f90a3446e08",
+    "evidence_type": "log",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "masvs": [
+      "MASVS-PRIVACY-1",
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [
+      "MASWE-0007"
+    ],
+    "mastg": [
+      "MASTG-TEST-0001"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'runtime_log_RF8T602HTNA.log' mapped with signals [log-anonymized, runtime-log-excerpt]. Sanitized runtime log content is available for runtime-observation and troubleshooting review. The runtime log was anonymized before storage, which makes this proof directly relevant to privacy-preserving evidence handling."
+  },
+  {
+    "evidence_item_id": "349695e2-76e5-4753-b63e-ac8891c1260f",
+    "evidence_type": "log",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "masvs": [
+      "MASVS-PRIVACY-1",
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [
+      "MASWE-0007"
+    ],
+    "mastg": [
+      "MASTG-TEST-0001"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'runtime_log_RF8T602HTNA.log' mapped with signals [log-anonymized, runtime-log-excerpt]. Sanitized runtime log content is available for runtime-observation and troubleshooting review. The runtime log was anonymized before storage, which makes this proof directly relevant to privacy-preserving evidence handling."
+  },
+  {
+    "evidence_item_id": "e6b772dc-b403-4210-bb0c-755f788142d0",
+    "evidence_type": "log",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "masvs": [
+      "MASVS-PRIVACY-1",
+      "MASVS-RESILIENCE-1"
+    ],
+    "maswe": [
+      "MASWE-0007"
+    ],
+    "mastg": [
+      "MASTG-TEST-0001"
+    ],
+    "status": "mapped",
+    "notes": "Concrete proof 'runtime_log_RF8T602HTNA.log' mapped with signals [log-anonymized, runtime-log-excerpt]. Sanitized runtime log content is available for runtime-observation and troubleshooting review. The runtime log was anonymized before storage, which makes this proof directly relevant to privacy-preserving evidence handling."
+  },
+  {
+    "evidence_item_id": "884adb53-8b50-48f9-ac49-5524939c9b40",
     "evidence_type": "log",
     "original_filename": "runtime_log_RF8T602HTNA.log",
     "masvs": [

@@ -8,5 +8,7 @@
   "log": ["MASTG-TEST-0001"],
   "screenshot": ["MASTG-KNOW-0019"],
   "mobsf": ["MASTG-TOOL-0008"],
+  "mobixler": ["MASTG-TOOL-0008", "MASTG-TEST-0001", "MASTG-TEST-0286"],
+  "mobixler_dynamic": ["MASTG-TOOL-0008", "MASTG-TEST-0001", "MASTG-TEST-0286"],
   "jadx": ["MASTG-TOOL-0003"]
 }

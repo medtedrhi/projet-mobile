@@ -210,6 +210,37 @@
   {% endfor %}
   {% endif %}
 
+  {% if details.imports %}
+  <h2>Imported Tool Findings</h2>
+  <table>
+    <thead><tr><th>Tool Type</th><th>Filename</th><th>Payload Status</th></tr></thead>
+    <tbody>
+      {% for imported in details.imports %}
+      <tr>
+        <td>{{ imported.type }}</td>
+        <td>{{ imported.filename or "Imported artifact" }}</td>
+        <td>{% if imported.payload %}Parsed JSON payload available{% else %}Raw imported evidence retained{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+
+  {% if details.dynamic_activity_tracking %}
+  <h2>Dynamic Activity Tracking</h2>
+  <div class="card">
+    <p><strong>Target package:</strong> {{ details.dynamic_target.package_name or "Unknown" }}</p>
+    <p><strong>Activity after launch:</strong> {{ details.dynamic_activity_tracking.target_activity_after_launch.component or "Unknown" }}</p>
+    <p><strong>Activity after Monkey:</strong> {{ details.dynamic_activity_tracking.foreground_activity_after_monkey.component or "Unknown" }}</p>
+    <p><strong>Final foreground activity:</strong> {{ details.dynamic_activity_tracking.foreground_activity_final.component or "Unknown" }}</p>
+    <p><strong>Monkey left app:</strong> {% if details.dynamic_activity_tracking.monkey_left_app %}yes{% else %}no{% endif %}</p>
+    <p><strong>Refocus success:</strong> {% if details.dynamic_activity_tracking.refocus_success %}yes{% else %}no{% endif %}</p>
+    {% if not details.dynamic_activity_tracking.was_target_foreground_final %}
+    <p><strong>Warning:</strong> Final foreground activity does not belong to the analyzed package. The app may have exited, crashed, or Monkey navigation may have moved to another app.</p>
+    {% endif %}
+  </div>
+  {% endif %}
+
   <h2>Missing Evidence and Collection Gaps</h2>
   <table>
     <thead><tr><th>Severity</th><th>Title</th><th>Why It Matters</th><th>Recommendation</th></tr></thead>

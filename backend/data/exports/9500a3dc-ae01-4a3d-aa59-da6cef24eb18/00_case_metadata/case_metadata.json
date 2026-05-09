@@ -1,64 +1,86 @@
-﻿{
-  "case": "<app.db.models.audit_case.AuditCase object at 0x000002A961321850>",
+{
+  "case": "<app.db.models.audit_case.AuditCase object at 0x000001B4CFEF1590>",
   "summary": {
-    "total_artifacts": 3,
-    "total_evidence_items": 9,
-    "total_mappings": 9,
+    "total_artifacts": 10,
+    "total_evidence_items": 16,
+    "total_mappings": 16,
     "total_missing_issues": 0,
     "completeness_score": 100.0,
     "artifact_type_counts": {
       "apk": 1,
       "apk_hash": 1,
       "components": 1,
-      "log": 1,
+      "log": 7,
       "manifest_summary": 1,
       "manifest_xml": 1,
       "permissions": 1,
       "sbom": 1,
-      "screenshot": 1
+      "screenshot": 2
     },
     "deduplication": {
-      "total_artifacts": 3,
-      "unique_artifacts": 3,
+      "total_artifacts": 10,
+      "unique_artifacts": 10,
       "duplicate_hashes": {}
     },
     "coverage": {
       "domain_counts": {
-        "MASVS-RESILIENCE": 3,
+        "MASVS-RESILIENCE": 9,
         "MASVS-PLATFORM": 4,
+        "MASVS-NETWORK": 2,
         "MASVS-CODE": 1,
-        "MASVS-PRIVACY": 1
+        "MASVS-PRIVACY": 7
       }
     },
-    "collection_summary": "9 evidence items were collected for med, covering apk, apk_hash, components, log, manifest_summary, manifest_xml, permissions, sbom, screenshot. Core audit inputs appear complete for the current evidence pack.",
+    "collection_summary": "16 evidence items were collected for med, covering apk, apk_hash, components, log, manifest_summary, manifest_xml, permissions, sbom, screenshot. Core audit inputs appear complete for the current evidence pack.",
     "missing_narratives": []
   },
   "artifacts": [
-    "<app.db.models.artifact.UploadedArtifact object at 0x000002A961320890>",
-    "<app.db.models.artifact.UploadedArtifact object at 0x000002A9613219D0>",
-    "<app.db.models.artifact.UploadedArtifact object at 0x000002A961320350>"
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA0490>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA21D0>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA15D0>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA0610>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA1610>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA1090>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA2350>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA0D90>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA35D0>",
+    "<app.db.models.artifact.UploadedArtifact object at 0x000001B4CEBA2D50>"
   ],
   "evidence_items": [
-    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D8E60>",
-    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D9310>",
-    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612DBE30>",
-    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612DB7A0>",
-    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D86E0>",
-    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612DA6C0>",
-    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D9F40>",
-    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D8230>",
-    "<app.db.models.evidence.EvidenceItem object at 0x000002A9612D9E50>"
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB95B10>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB96C50>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB95810>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB97D90>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB97950>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB96ED0>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB95E50>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB955D0>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB964D0>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB95B50>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB96D90>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB97A50>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB96E50>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB970D0>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB95A10>",
+    "<app.db.models.evidence.EvidenceItem object at 0x000001B4CEB96590>"
   ],
   "mapping_references": [
-    "<app.db.models.mapping.MappingReference object at 0x000002A961212A40>",
-    "<app.db.models.mapping.MappingReference object at 0x000002A961213540>",
-    "<app.db.models.mapping.MappingReference object at 0x000002A9612107E0>",
-    "<app.db.models.mapping.MappingReference object at 0x000002A961211D30>",
-    "<app.db.models.mapping.MappingReference object at 0x000002A961213490>",
-    "<app.db.models.mapping.MappingReference object at 0x000002A961211DE0>",
-    "<app.db.models.mapping.MappingReference object at 0x000002A961211B20>",
-    "<app.db.models.mapping.MappingReference object at 0x000002A961212FC0>",
-    "<app.db.models.mapping.MappingReference object at 0x000002A961212200>"
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D0062590>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D0062DD0>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D00618D0>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D0062A10>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D0063590>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D0062650>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D00612D0>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D0062190>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D0063390>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D0062210>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4D0063E90>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4CEA453D0>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4CEA47450>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4CEA45890>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4CEA46890>",
+    "<app.db.models.mapping.MappingReference object at 0x000001B4CEA45AD0>"
   ],
   "missing_issues": [],
   "details": {
@@ -71,11 +93,26 @@
     ],
     "manifests": [
       {
-        "package_name": "com.example.getudiant",
+        "package": "com.example.getudiant",
         "version_name": "1.0",
         "version_code": "1",
         "min_sdk": "24",
         "target_sdk": "36",
+        "activities": [
+          "com.example.getudiant.AddEtudiant",
+          "com.example.getudiant.ListEtudiantActivity"
+        ],
+        "services": [],
+        "receivers": [
+          "androidx.profileinstaller.ProfileInstallReceiver"
+        ],
+        "providers": [
+          "androidx.startup.InitializationProvider"
+        ],
+        "exported_components": [
+          "activity:com.example.getudiant.AddEtudiant",
+          "receiver:androidx.profileinstaller.ProfileInstallReceiver"
+        ],
         "summary": "Package com.example.getudiant targets SDK 36 and declares 2 permissions."
       }
     ],
@@ -91,14 +128,34 @@
     "components": [
       {
         "exported_components": [
-          "androidx.profileinstaller.ProfileInstallReceiver",
-          "androidx.startup.InitializationProvider",
-          "com.example.getudiant.AddEtudiant",
-          "com.example.getudiant.ListEtudiantActivity"
+          "activity:com.example.getudiant.AddEtudiant",
+          "receiver:androidx.profileinstaller.ProfileInstallReceiver"
         ],
-        "embedded_domains": [],
-        "network_security_config": null,
-        "cleartext_traffic_allowed": null
+        "embedded_domains": [
+          "android.intent.action.MAIN",
+          "android.intent.category.LAUNCHER",
+          "android.permission.DUMP",
+          "android.permission.INTERNET",
+          "androidx.core.app.CoreComponentFactory",
+          "androidx.emoji2.text.EmojiCompatInitializer",
+          "androidx.lifecycle.ProcessLifecycleInitializer",
+          "androidx.profileinstaller.ProfileInstallReceiver",
+          "androidx.profileinstaller.ProfileInstallerInitializer",
+          "androidx.profileinstaller.action.BENCHMARK",
+          "androidx.profileinstaller.action.INSTALL",
+          "androidx.profileinstaller.action.SAVE",
+          "androidx.profileinstaller.action.SKIP",
+          "androidx.startup",
+          "androidx.startup.InitializationProvider",
+          "com.example.getudiant",
+          "com.example.getudiant.AddEtudiant",
+          "com.example.getudiant.DYNAMIC",
+          "com.example.getudiant.ListEtudiantActivity",
+          "com.example.getudiant.androidx",
+          "schemas.android.com"
+        ],
+        "network_security_config": "@7F130006",
+        "cleartext_traffic_allowed": "true"
       }
     ],
     "sboms": [
@@ -233,22 +290,71 @@
       {
         "filename": "runtime_log_RF8T602HTNA.log",
         "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA.log",
-        "excerpt": "--------- beginning of main\n04-28 [REDACTED_IP].579  1888  3626 V Navbar.Store: --[Band][REDACTED_TOKEN]\n04-28 [REDACTED_IP].579  1888  3626 V Navbar.Store: ----apply(0) StartHintVI\n04-28 [REDACTED_IP].579  2312  2312 W [REDACTED_TOKEN]: delegateMotionEvent, action = 0\n04-28 [REDACTED_IP].583  2312  2312 W [REDACTED_TOKEN]: onDragStart\n04-28 [REDACTED_IP].583  2312  2312 W [REDACTED_TOKEN]: hintAnimationStarted\n04-28 [REDACTED_IP].585  2312  2312 W SGestureVibrationEffect: vibrate, keyCode = 4, type = 50047\n04-28 [REDACTED_IP].595  2312  2312 W DeviceState: isNoEffectEventRegion - The event region is the same as the start\n04-28 [REDACTED_IP].595  2312  2312 W [REDACTED_TOKEN]: setActive, action = 2\n04-28 [REDACTED_IP].598  2312  2312 I [REDACTED_TOKEN]: isSGestureActivated, activated = true\n04-28 [REDACTED_IP].601  2312  2312 I [REDACTED_TOKEN]: finishTouchTracking, action : 3, mPassedWindowMoveSlop = false, mInteractionHandler = null, mIsSGestureActivated : true\n04"
+        "excerpt": "\ufeff--------- beginning of main\n04-28 [REDACTED_IP].579  1888  3626 V Navbar.Store: --[Band][REDACTED_TOKEN]\n04-28 [REDACTED_IP].579  1888  3626 V Navbar.Store: ----apply(0) StartHintVI\n04-28 [REDACTED_IP].579  2312  2312 W [REDACTED_TOKEN]: delegateMotionEvent, action = 0\n04-28 [REDACTED_IP].583  2312  2312 W [REDACTED_TOKEN]: onDragStart\n04-28 [REDACTED_IP].583  2312  2312 W [REDACTED_TOKEN]: hintAnimationStarted\n04-28 [REDACTED_IP].585  2312  2312 W SGestureVibrationEffect: vibrate, keyCode = 4, type = 50047\n04-28 [REDACTED_IP].595  2312  2312 W DeviceState: isNoEffectEventRegion - The event region is the same as the start\n04-28 [REDACTED_IP].595  2312  2312 W [REDACTED_TOKEN]: setActive, action = 2\n04-28 [REDACTED_IP].598  2312  2312 I [REDACTED_TOKEN]: isSGestureActivated, activated = true\n04-28 [REDACTED_IP].601  2312  2312 I [REDACTED_TOKEN]: finishTouchTracking, action : 3, mPassedWindowMoveSlop = false, mInteractionHandler = null, mIsSGestureActivated : true\n04-28 [REDACTED_IP].6"
+      },
+      {
+        "filename": "runtime_log_RF8T602HTNA.log",
+        "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_1.log",
+        "excerpt": "--------- beginning of main\n04-29 [REDACTED_IP].704  1888  1888 D CarrierTextController: Handling (subId=2): 5 Orange\n04-29 [REDACTED_IP].704  1888  1888 D CarrierTextController: carrierTextForSimState = Orange\n04-29 [REDACTED_IP].704  1888  1888 D CarrierTextController: SIM ready and in service: subId=2, ss={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=1850, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Orange, mOperatorAlphaShort=Orange, [REDACTED_TOKEN]=false(automatic), [REDACTED_TOKEN]=14(LTE), [REDACTED_TOKEN]=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, [REDACTED_TOKEN]=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, IsVoiceCallAvailable=true, mIsEmergencyOnly=false, [REDACTED_TOKEN]=false, mArfcnRsrpBoost=0, [REDACTED_TOKEN]=[NetworkRegistrationInfo{ domain=CS tran"
+      },
+      {
+        "filename": "runtime_log_RF8T602HTNA.log",
+        "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_2.log",
+        "excerpt": "--------- beginning of main\n04-29 [REDACTED_IP].061  1872  1872 D [REDACTED_TOKEN]: Intent: com.samsung.intent.action.BIG_DATA_INFO\n04-29 [REDACTED_IP].062  1872  1872 D [REDACTED_TOKEN]: BIG_DATA insertLog slot: 0, feature: 26\n04-29 [REDACTED_IP].064  1872  1872 E [REDACTED_TOKEN]: Json parsing error: Value NULL at NR_TX_BYTE of type java.lang.String cannot be converted to long\n04-29 [REDACTED_IP].065  1888  1888 I [REDACTED_TOKEN]: getClockContainerHeight() supplier = 180, bottom margin = 0, real height = 222\n04-29 [REDACTED_IP].066  1888  1888 I [REDACTED_TOKEN]: getClockContainerHeight() supplier = 180, bottom margin = 42, real height = 222\n04-29 [REDACTED_IP].066  1888  1888 I [REDACTED_TOKEN]: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0\n04-29 [REDACTED_IP].066  1888  1888 I [REDACTED_TOKEN]: getMediaContainerHeight() supplier = 0\n04-29 [REDACTED_IP].067  1208  2018 D TelephonyManager: [R"
+      },
+      {
+        "filename": "runtime_log_RF8T602HTNA.log",
+        "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_3.log",
+        "excerpt": "--------- beginning of main\n04-29 [REDACTED_IP].487  2312  2312 I CapturePreview: sendMessageForCapture\n04-29 [REDACTED_IP].488  2312  2312 I SearchBarManager: alpha value: [1.0, 0.0, -4.0, 1.0, 1.0]\n04-29 [REDACTED_IP].488  2312  2312 I [REDACTED_TOKEN]: createAnimator: show = false\n04-29 [REDACTED_IP].488  2312  2312 I [REDACTED_TOKEN]: resetAnimatorProperty: return already toAlpha\n04-29 [REDACTED_IP].488  2312  2312 I [REDACTED_TOKEN]: cancelAnimator\n04-29 [REDACTED_IP].488  2312  2312 I HsClearAllManager: alpha value: [1.0, 0.0, -4.0, 1.0, 1.0]\n04-29 [REDACTED_IP].488  2312  2312 I FgsManager: alpha value: [1.0, 0.0, -4.0, 1.0, 1.0]\n04-29 [REDACTED_IP].489  2312  2312 I SearchBarManager: alpha value: [1.0, 0.0, 1.0, 1.0, 1.0]\n04-29 [REDACTED_IP].489  2312  2312 I SuggestedAppsManager: alpha value: [1.0, 0.0, 1.0, 1.0, 1.0]\n04-29 [REDACTED_IP].489  2312  2312 I HsClearAllManager: alpha value: [1.0, 0.0, 1.0, 1.0, 1.0]\n04-29 [REDACTED_IP].489  2312  2312 I SplitViewManager: alpha val"
+      },
+      {
+        "filename": "runtime_log_RF8T602HTNA.log",
+        "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_4.log",
+        "excerpt": "--------- beginning of main\n04-29 [REDACTED_IP].781  1208  3929 D [REDACTED_TOKEN]: mDesktopModeManager null!\n04-29 [REDACTED_IP].781  1208  3929 V [REDACTED_TOKEN]: [REDACTED_TOKEN]: displayId=0\n04-29 [REDACTED_IP].781  1208  3929 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : false\n--------- beginning of system\n04-29 [REDACTED_IP].781  1208  3929 D [REDACTED_TOKEN]: [REDACTED_TOKEN] : checking vis : 3\n04-29 [REDACTED_IP].782  1208  3929 D [REDACTED_TOKEN]: [REDACTED_TOKEN]: displayId=0, mFocusedDisplayId=0\n04-29 [REDACTED_IP].782  1208  3929 D InputTransport: Input channel constructed: 'ClientS', fd=616\n04-29 [REDACTED_IP].782  1208  3929 D InputTransport: Input channel destroyed: 'ClientS', fd=616\n04-29 [REDACTED_IP].784  4119  4119 I HBD     : HoneyBoardService onFinishInput \n04-29 [REDACTED_IP].785  4119  4119 I HBD     : a IC have been unbinding,  RemoteInputConnection{idHash=#26064b0}\n04-29 [REDACTED_IP].785  4119  4119 I HBD     : HoneyBoardService [PF_CL][onFinishInput]  1 ms \n04-29 ["
+      },
+      {
+        "filename": "runtime_log_RF8T602HTNA.log",
+        "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_5.log",
+        "excerpt": "--------- beginning of main\n04-29 [REDACTED_IP].460  1208  3929 D InputDispatcher: Inject motion (30595/2000): action=0xa, time=47955862000000, f=0x0, d=0 dsdx=1.000000 dtdx=0.000000\n04-29 [REDACTED_IP].461  1208  1386 I InputDispatcher: Delivering touch to (29311): action: 0xa, f=0x0, d=0, '597d79c', t=1 \n04-29 [REDACTED_IP].466 29311 29311 I ViewRootImpl: updatePointerIcon pointerType = 1000, calling pid = 29311\n04-29 [REDACTED_IP].467 29311 29311 D InputManager: setPointerIconType iconId = 1000, callingPid = 29311\n04-29 [REDACTED_IP].500  1208  1770 I SemWifiServiceDetector: Traff. tracking stopped\n--------- beginning of system\n04-29 [REDACTED_IP].582  1208  1273 D PowerManagerService: [REDACTED_TOKEN]: 0\n04-29 [REDACTED_IP].603  1208  3853 E TaskPersister: File error accessing recents directory (directory doesn't exist?).\n04-29 [REDACTED_IP].727 30595 30632 I MediaCodec: setCodecState state(0), called in 6\n04-29 [REDACTED_IP].728  1208  3929 V [REDACTED_TOKEN]: JNIMediaResourceHelp"
+      },
+      {
+        "filename": "runtime_log_RF8T602HTNA.log",
+        "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_6.log",
+        "excerpt": "--------- beginning of main\n04-29 [REDACTED_IP].136   871  1028 I VSyncReactor: Current= 90, TransitioningTo= 60, Distance= 60\n04-29 [REDACTED_IP].235  1888  1996 D MobileStatusTracker(1/1): [REDACTED_TOKEN] level=4, vendorLevel=4\n04-29 [REDACTED_IP].237  1888  1996 D MobileSignalController(1/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=GSM (Unknown), emergencyOnly=true, roaming=false, isDefault=false, dataActivity=, level=4, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC\n04-29 [REDACTED_IP].238  1888  1996 D NetworkController: SignalStrength from intent slotId=1\n--------- beginning of system\n04-29 [REDACTED_IP].282   391   391 D io_stats: !@ 179,0 r 22317582 330693767 w 2862906 29208624 d 813610 24577484 f 0 0 iot 5893436 0 th 0 0 0 pt 0 inp 0 0 48248.684\n04-29 [REDACTED_IP].319  1208  1208 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@8593b66\n04-29 [REDACTED_IP].673  3802  3802 I SDHMS:"
       }
     ],
     "screenshots": [
       {
         "filename": "auto_screenshot_RF8T602HTNA.png",
         "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\auto_screenshot_RF8T602HTNA.png"
+      },
+      {
+        "filename": "auto_screenshot_RF8T602HTNA.png",
+        "path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\auto_screenshot_RF8T602HTNA_1.png"
       }
     ],
     "imports": [],
     "latest_manifest": {
-      "package_name": "com.example.getudiant",
+      "package": "com.example.getudiant",
       "version_name": "1.0",
       "version_code": "1",
       "min_sdk": "24",
       "target_sdk": "36",
+      "activities": [
+        "com.example.getudiant.AddEtudiant",
+        "com.example.getudiant.ListEtudiantActivity"
+      ],
+      "services": [],
+      "receivers": [
+        "androidx.profileinstaller.ProfileInstallReceiver"
+      ],
+      "providers": [
+        "androidx.startup.InitializationProvider"
+      ],
+      "exported_components": [
+        "activity:com.example.getudiant.AddEtudiant",
+        "receiver:androidx.profileinstaller.ProfileInstallReceiver"
+      ],
       "summary": "Package com.example.getudiant targets SDK 36 and declares 2 permissions."
     },
     "latest_permissions": {
@@ -260,14 +366,34 @@
     },
     "latest_components": {
       "exported_components": [
-        "androidx.profileinstaller.ProfileInstallReceiver",
-        "androidx.startup.InitializationProvider",
-        "com.example.getudiant.AddEtudiant",
-        "com.example.getudiant.ListEtudiantActivity"
+        "activity:com.example.getudiant.AddEtudiant",
+        "receiver:androidx.profileinstaller.ProfileInstallReceiver"
       ],
-      "embedded_domains": [],
-      "network_security_config": null,
-      "cleartext_traffic_allowed": null
+      "embedded_domains": [
+        "android.intent.action.MAIN",
+        "android.intent.category.LAUNCHER",
+        "android.permission.DUMP",
+        "android.permission.INTERNET",
+        "androidx.core.app.CoreComponentFactory",
+        "androidx.emoji2.text.EmojiCompatInitializer",
+        "androidx.lifecycle.ProcessLifecycleInitializer",
+        "androidx.profileinstaller.ProfileInstallReceiver",
+        "androidx.profileinstaller.ProfileInstallerInitializer",
+        "androidx.profileinstaller.action.BENCHMARK",
+        "androidx.profileinstaller.action.INSTALL",
+        "androidx.profileinstaller.action.SAVE",
+        "androidx.profileinstaller.action.SKIP",
+        "androidx.startup",
+        "androidx.startup.InitializationProvider",
+        "com.example.getudiant",
+        "com.example.getudiant.AddEtudiant",
+        "com.example.getudiant.DYNAMIC",
+        "com.example.getudiant.ListEtudiantActivity",
+        "com.example.getudiant.androidx",
+        "schemas.android.com"
+      ],
+      "network_security_config": "@7F130006",
+      "cleartext_traffic_allowed": "true"
     },
     "latest_sbom": {
       "status": "generated",
@@ -400,6 +526,6 @@
       "sha1": "c6028bfdc818dcf42119bba2dd06a9b9821a107f",
       "md5": "187f2d97534e021336e9cfba74d1b2d9"
     },
-    "raw_manifest_xml": "<Element manifest at 0x2a9611a5900>"
+    "raw_manifest_xml": "<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:versionCode=\"1\" android:versionName=\"1.0\" android:compileSdkVersion=\"36\" android:compileSdkVersionCodename=\"16\" package=\"com.example.getudiant\" platformBuildVersionCode=\"36\" platformBuildVersionName=\"16\">\n  <uses-sdk android:minSdkVersion=\"24\" android:targetSdkVersion=\"36\"/>\n  <uses-permission android:name=\"android.permission.INTERNET\"/>\n  <permission android:name=\"com.example.getudiant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\" android:protectionLevel=\"0x00000002\"/>\n  <uses-permission android:name=\"com.example.getudiant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\"/>\n  <application android:theme=\"@7F11026C\" android:label=\"@7F10001C\" android:icon=\"@7F0E0000\" android:debuggable=\"true\" android:allowBackup=\"true\" android:supportsRtl=\"true\" android:extractNativeLibs=\"false\" android:usesCleartextTraffic=\"true\" android:networkSecurityConfig=\"@7F130006\" android:roundIcon=\"@7F0E0001\" android:appComponentFactory=\"androidx.core.app.CoreComponentFactory\">\n    <activity android:name=\"com.example.getudiant.AddEtudiant\" android:exported=\"true\">\n      <intent-filter>\n        <action android:name=\"android.intent.action.MAIN\"/>\n        <category android:name=\"android.intent.category.LAUNCHER\"/>\n      </intent-filter>\n    </activity>\n    <activity android:name=\"com.example.getudiant.ListEtudiantActivity\"/>\n    <provider android:name=\"androidx.startup.InitializationProvider\" android:exported=\"false\" android:authorities=\"com.example.getudiant.androidx-startup\">\n      <meta-data android:name=\"androidx.emoji2.text.EmojiCompatInitializer\" android:value=\"androidx.startup\"/>\n      <meta-data android:name=\"androidx.lifecycle.ProcessLifecycleInitializer\" android:value=\"androidx.startup\"/>\n      <meta-data android:name=\"androidx.profileinstaller.ProfileInstallerInitializer\" android:value=\"androidx.startup\"/>\n    </provider>\n    <receiver android:name=\"androidx.profileinstaller.ProfileInstallReceiver\" android:permission=\"android.permission.DUMP\" android:enabled=\"true\" android:exported=\"true\" android:directBootAware=\"false\">\n      <intent-filter>\n        <action android:name=\"androidx.profileinstaller.action.INSTALL_PROFILE\"/>\n      </intent-filter>\n      <intent-filter>\n        <action android:name=\"androidx.profileinstaller.action.SKIP_FILE\"/>\n      </intent-filter>\n      <intent-filter>\n        <action android:name=\"androidx.profileinstaller.action.SAVE_PROFILE\"/>\n      </intent-filter>\n      <intent-filter>\n        <action android:name=\"androidx.profileinstaller.action.BENCHMARK_OPERATION\"/>\n      </intent-filter>\n    </receiver>\n  </application>\n</manifest>"
   }
 }

@@ -22,6 +22,11 @@ class ExportService:
         "log": "06_logs",
         "screenshot": "07_screenshots",
         "mobsf": "08_findings_import",
+        "mobixler": "08_findings_import",
+        "mobixler_dynamic": "08_findings_import",
+        "runtime_state": "08_findings_import",
+        "crash_summary": "08_findings_import",
+        "dynamic_run_summary": "00_case_metadata",
         "jadx": "08_findings_import",
     }
 
@@ -76,5 +81,5 @@ class ExportService:
         with ZipFile(zip_path, "w", ZIP_DEFLATED) as archive:
             for file_path in source_dir.rglob("*"):
                 if file_path.is_file():
-                    archive.write(file_path, arcname=file_path.relative_to(source_dir))
+                    archive.write(file_path, arcname=Path("audit-evidence") / file_path.relative_to(source_dir))
         return zip_path

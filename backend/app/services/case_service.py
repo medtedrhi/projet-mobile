@@ -1,4 +1,6 @@
 import json
+import re
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -16,6 +18,7 @@ from app.db.models.report import ExportBundle, GeneratedReport
 from app.services.apk_parser import ApkParserService
 from app.services.android_capture_service import AndroidCaptureService
 from app.services.completeness_service import CompletenessService
+from app.services.dynamic_analysis_service import DynamicAnalysisResult, DynamicAnalysisService
 from app.services.evidence_collector import EvidenceCollectorService
 from app.services.evidence_index_service import EvidenceIndexService
 from app.services.export_service import ExportService
@@ -45,6 +48,7 @@ class CaseService:
             runtime_log_timeout_seconds=settings.runtime_log_capture_timeout_seconds,
             runtime_log_line_count=settings.runtime_log_capture_line_count,
         )
+        self.dynamic_analysis_service = DynamicAnalysisService(self.android_capture, LogSanitizer())
         self.completeness_service = CompletenessService()
         self.evidence_collector = EvidenceCollectorService()
         self.manifest_service = ManifestService()
@@ -71,11 +75,37 @@ class CaseService:
         self.refresh_mappings_and_issues(db, audit_case.id)
         return audit_case
 
+    def create_case_with_apk(self, db: Session, payload: dict, file: UploadFile) -> AuditCase:
+        app_name = (payload.get("app_name") or "").strip()
+        if not app_name:
+            app_name = Path(file.filename or "Android APK").stem.replace("_", " ").replace("-", " ") or "Android APK"
+        payload["app_name"] = app_name
+        audit_case = self.create_case(db, payload)
+        self.upload_artifact(
+            db=db,
+            case_id=audit_case.id,
+            file=file,
+            artifact_type="apk",
+            source="case-creation-upload",
+            description="APK uploaded during audit case creation.",
+        )
+        refreshed = self.get_case(db, audit_case.id)
+        if refreshed is None:
+            raise ValueError("Case not found after APK upload.")
+        return refreshed
+
     def list_cases(self, db: Session) -> list[AuditCase]:
         return db.query(AuditCase).order_by(AuditCase.created_at.desc()).all()
 
     def get_case(self, db: Session, case_id: str) -> AuditCase | None:
         return db.query(AuditCase).filter(AuditCase.id == case_id).first()
+
+    def delete_case(self, db: Session, case_id: str) -> None:
+        audit_case = self.get_case(db, case_id)
+        if audit_case is None:
+            raise ValueError("Case not found")
+        db.delete(audit_case)
+        db.commit()
 
     def list_connected_android_devices(self) -> list[dict[str, str | None]]:
         return self.android_capture.list_devices()
@@ -166,6 +196,173 @@ class CaseService:
             anonymized=True,
         )
 
+    def run_dynamic_apk_analysis(
+        self,
+        db: Session,
+        case_id: str,
+        device_serial: str | None = None,
+        source: str = "adb-dynamic-analysis",
+        monkey_event_count: int | None = None,
+        log_line_count: int | None = None,
+    ) -> UploadedArtifact:
+        audit_case = self.get_case(db, case_id)
+        if audit_case is None:
+            raise ValueError("Case not found")
+
+        apk_artifact = self._latest_apk_artifact(audit_case)
+        if apk_artifact is None:
+            raise ValueError("Upload an APK before running dynamic analysis.")
+
+        package_name = audit_case.package_name
+        if not package_name:
+            apk_metadata = self.apk_parser.parse(Path(apk_artifact.stored_path))
+            package_name = apk_metadata.get("package_name")
+        if not package_name:
+            raise ValueError("Package name could not be resolved from the case or APK.")
+
+        payload_bytes, metadata = self.android_capture.run_dynamic_apk_analysis(
+            Path(apk_artifact.stored_path),
+            package_name=package_name,
+            device_serial=device_serial,
+            monkey_event_count=monkey_event_count or self.settings.dynamic_analysis_monkey_event_count,
+            log_line_count=log_line_count,
+        )
+        sanitized_payload = self.log_sanitizer.sanitize(payload_bytes.decode("utf-8", errors="ignore"), self.settings.redact_ipv6).encode(
+            "utf-8"
+        )
+        description = (
+            f"Mobixler-style dynamic APK analysis for {package_name} on {metadata['device_serial']}: "
+            "install, launch, monkey exercise, logcat, screenshot, process, and runtime state capture."
+        )
+        return self._persist_artifact(
+            db=db,
+            case_id=case_id,
+            artifact_type="mobixler_dynamic",
+            source=source,
+            original_filename=metadata["filename"],
+            content=sanitized_payload,
+            mime_type=metadata["mime_type"],
+            description=description,
+            anonymized=True,
+        )
+
+    def run_full_dynamic_analysis(
+        self,
+        db: Session,
+        case_id: str,
+        file: UploadFile | None = None,
+        device_serial: str | None = None,
+        monkey_event_count: int | None = None,
+        log_line_count: int | None = None,
+        wait_after_launch_seconds: int | None = None,
+    ) -> dict[str, Any]:
+        if not self.settings.dynamic_analysis_enabled:
+            raise ValueError("Dynamic analysis is disabled. Set DYNAMIC_ANALYSIS_ENABLED=true to enable it.")
+
+        audit_case = self.get_case(db, case_id)
+        if audit_case is None:
+            raise ValueError("Case not found")
+
+        apk_artifact = None
+        if file is not None:
+            apk_artifact = self.upload_artifact(
+                db=db,
+                case_id=case_id,
+                file=file,
+                artifact_type="apk",
+                source="ui-dynamic-upload",
+                description="APK uploaded for one-click full dynamic analysis.",
+            )
+            audit_case = self.get_case(db, case_id)
+        if apk_artifact is None and audit_case is not None:
+            apk_artifact = self._latest_apk_artifact(audit_case)
+        if apk_artifact is None:
+            raise ValueError("APK file missing. Upload an APK or attach one to this request.")
+
+        apk_path = Path(apk_artifact.stored_path)
+        if not apk_path.exists():
+            raise ValueError("APK file missing on disk. Re-upload the APK before running dynamic analysis.")
+
+        apk_metadata = self.apk_parser.parse(apk_path)
+        package_name = apk_metadata.get("package_name") or (audit_case.package_name if audit_case else None)
+        if not package_name:
+            raise ValueError("Package name not found. The APK parser could not identify the target package.")
+
+        result = self.dynamic_analysis_service.run_full_dynamic_analysis(
+            apk_path=apk_path,
+            package_name=package_name,
+            case_id=case_id,
+            device_serial=device_serial,
+            monkey_event_count=monkey_event_count or self.settings.dynamic_analysis_monkey_event_count,
+            log_line_count=log_line_count or self.settings.dynamic_analysis_log_line_count,
+            wait_after_launch_seconds=wait_after_launch_seconds
+            if wait_after_launch_seconds is not None
+            else self.settings.dynamic_analysis_wait_after_launch_seconds,
+            apk_info=apk_metadata,
+        )
+
+        for artifact in result.artifacts:
+            if artifact.path.exists() and artifact.path.is_file():
+                self._persist_artifact(
+                    db=db,
+                    case_id=case_id,
+                    artifact_type=artifact.evidence_type,
+                    source="adb-dynamic-analysis",
+                    original_filename=artifact.filename,
+                    content=artifact.path.read_bytes(),
+                    mime_type=artifact.mime_type,
+                    description=artifact.description,
+                    anonymized=artifact.anonymized,
+                )
+
+        report_error = None
+        export_error = None
+        report = None
+        export = None
+        if self.settings.dynamic_analysis_auto_export:
+            try:
+                report = self.generate_report(db, case_id)
+            except ValueError as exc:
+                report_error = f"Report generation failed: {exc}"
+            try:
+                export = self.export_case_bundle(db, case_id)
+            except ValueError as exc:
+                export_error = f"Export generation failed: {exc}"
+
+        if report_error:
+            result.errors.append(report_error)
+        if export_error:
+            result.errors.append(export_error)
+
+        return self._dynamic_response_payload(result, report, export)
+
+    def _dynamic_response_payload(
+        self,
+        result: DynamicAnalysisResult,
+        report: GeneratedReport | None,
+        export: ExportBundle | None,
+    ) -> dict[str, Any]:
+        export_download_url = f"/api/exports/{export.id}/download" if export else None
+        return {
+            "status": "completed" if result.install_ok and not any("Export generation failed" in e for e in result.errors) else "completed_with_errors",
+            "package_name": result.target.get("package_name"),
+            "device_serial": result.device.get("serial"),
+            "install_ok": result.install_ok,
+            "launch_ok": result.launch_ok,
+            "monkey_ok": result.monkey_ok,
+            "screenshots_captured": result.execution.get("screenshots_captured", 0),
+            "log_file_generated": bool(result.execution.get("logs_captured")),
+            "crash_detected": bool(result.runtime.get("crash_detected")),
+            "anr_detected": bool(result.runtime.get("anr_detected")),
+            "process_present": bool(result.runtime.get("process_present")),
+            "ai_summary_generated": bool(export),
+            "report_id": report.id if report else None,
+            "export_id": export.id if export else None,
+            "export_download_url": export_download_url,
+            "summary": result.to_payload(),
+            "errors": result.errors,
+        }
+
     def _persist_artifact(
         self,
         db: Session,
@@ -221,6 +418,10 @@ class CaseService:
                 return alternate
             index += 1
 
+    def _latest_apk_artifact(self, audit_case: AuditCase) -> UploadedArtifact | None:
+        apk_artifacts = [artifact for artifact in audit_case.artifacts if artifact.artifact_type == "apk"]
+        return max(apk_artifacts, key=lambda artifact: artifact.created_at) if apk_artifacts else None
+
     def _create_evidence_from_artifact(
         self,
         db: Session,
@@ -249,6 +450,7 @@ class CaseService:
         db.flush()
 
         if artifact.artifact_type == "apk":
+            self._update_case_metadata_from_apk(db, case_id, output_path)
             extracted = self.evidence_collector.collect_from_apk(output_path)
             for item in extracted:
                 record_path = self.evidence_collector.write_payload(output_path.parent, item)
@@ -272,6 +474,29 @@ class CaseService:
 
         db.commit()
         self.refresh_mappings_and_issues(db, case_id)
+
+    def _update_case_metadata_from_apk(self, db: Session, case_id: str, apk_path: Path) -> None:
+        audit_case = self.get_case(db, case_id)
+        if audit_case is None:
+            return
+        try:
+            metadata = self.apk_parser.parse(apk_path)
+        except Exception:
+            return
+
+        package_name = metadata.get("package_name")
+        version_name = metadata.get("version_name")
+        version_code = metadata.get("version_code")
+        if package_name:
+            audit_case.package_name = str(package_name)
+        if version_name:
+            audit_case.version_name = str(version_name)
+        if version_code:
+            audit_case.version_code = str(version_code)
+        if not audit_case.app_name and package_name:
+            audit_case.app_name = str(package_name)
+        db.add(audit_case)
+        db.flush()
 
     def refresh_mappings_and_issues(self, db: Session, case_id: str) -> None:
         db.query(MappingReference).filter(MappingReference.case_id == case_id).delete()
@@ -381,16 +606,16 @@ class CaseService:
         self.evidence_index_service.write_indexes(case_export_dir, evidence_items, traceability)
         self.traceability_table_service.write_csv(case_export_dir, traceability)
         self._copy_evidence_into_pack(case_export_dir, audit_case.evidence_items)
-        self._write_pack_supporting_files(case_export_dir, report_context, traceability)
         self._write_anonymization_report(case_export_dir, audit_case.evidence_items)
         self.completeness_service.write_report(case_export_dir)
+        self._write_pack_supporting_files(case_export_dir, report_context, traceability)
 
         reports_dir = case_export_dir / "10_reports"
         reports_dir.mkdir(exist_ok=True)
         report = self.generate_report(db, case_id)
         report_path = Path(report.output_path)
         if report_path.exists():
-            (reports_dir / report_path.name).write_text(report_path.read_text(encoding="utf-8"), encoding="utf-8")
+            (reports_dir / "report.html").write_text(report_path.read_text(encoding="utf-8"), encoding="utf-8")
 
         hashes_path = case_export_dir / "11_hashes" / "hashes.json"
         hashes_payload = {
@@ -399,7 +624,7 @@ class CaseService:
             if item.get("hash_sha256")
         }
         hashes_path.write_text(json.dumps(hashes_payload, indent=2), encoding="utf-8")
-        zip_path = self.settings.exports_dir / f"{case_id}_evidence_pack.zip"
+        zip_path = self.settings.exports_dir / self._export_zip_filename(audit_case)
         self.export_service.zip_directory(case_export_dir, zip_path)
 
         bundle = ExportBundle(case_id=case_id, bundle_type="zip", output_path=str(zip_path))
@@ -408,10 +633,23 @@ class CaseService:
         db.refresh(bundle)
         return bundle
 
+    def _export_zip_filename(self, audit_case: AuditCase) -> str:
+        app_name = audit_case.app_name or audit_case.package_name or audit_case.id
+        normalized_name = re.sub(r"[^A-Za-z0-9._ -]+", "", app_name).strip()
+        normalized_name = re.sub(r"\s+", " ", normalized_name).strip(" ._-")
+        if not normalized_name:
+            normalized_name = "android-app"
+        export_date = date.today().isoformat()
+        return f"evidences collection from the {normalized_name} {export_date}.zip"
+
     def _copy_evidence_into_pack(self, case_export_dir: Path, evidence_items: list[EvidenceItem]) -> None:
         for item in evidence_items:
             source_path = Path(item.normalized_path)
             preferred_name = item.original_filename or source_path.name
+            if item.evidence_type == "apk":
+                preferred_name = "uploaded.apk"
+            elif item.evidence_type == "mobixler_dynamic":
+                preferred_name = "mobisef_dynamic.json"
             self.export_service.copy_evidence_file(case_export_dir, item.evidence_type, source_path, preferred_name)
 
     def _write_metrics(self, case_export_dir: Path, evidence_items: list[EvidenceItem], report_context: dict) -> None:
@@ -468,8 +706,16 @@ class CaseService:
         }
 
     def _write_pack_supporting_files(self, case_export_dir: Path, report_context: dict, traceability: list[dict]) -> None:
-        mapping_path = case_export_dir / "09_mas_mapping" / "mapping.json"
+        mapping_dir = case_export_dir / "09_mas_mapping"
+        mapping_path = mapping_dir / "masvs_mapping.json"
         mapping_path.write_text(json.dumps(traceability, indent=2), encoding="utf-8")
+        (mapping_dir / "mapping.json").write_text(json.dumps(traceability, indent=2), encoding="utf-8")
+        maswe_mapping = [item for item in traceability if item.get("maswe")]
+        mastg_mapping = [item for item in traceability if item.get("mastg")]
+        if maswe_mapping:
+            (mapping_dir / "maswe_mapping.json").write_text(json.dumps(maswe_mapping, indent=2), encoding="utf-8")
+        if mastg_mapping:
+            (mapping_dir / "mastg_mapping.json").write_text(json.dumps(mastg_mapping, indent=2), encoding="utf-8")
         summary_path = case_export_dir / "10_reports" / "summary.txt"
         details = report_context["details"]
         lines = [
@@ -499,6 +745,97 @@ class CaseService:
         for issue in report_context["missing_issues"]:
             lines.append(f"- {issue.title}: {issue.recommendation}")
         summary_path.write_text("\n".join(lines), encoding="utf-8")
+        ai_summary_path = case_export_dir / "10_reports" / "ai_summary.md"
+        ai_summary_path.write_text(self._build_dynamic_ai_summary(report_context, case_export_dir), encoding="utf-8")
+
+    def _build_dynamic_ai_summary(self, report_context: dict, case_export_dir: Path) -> str:
+        dynamic_payload = self._latest_import_payload(report_context, "mobixler_dynamic") or {}
+        missing_path = case_export_dir / "12_completeness" / "missing_evidence.json"
+        missing_payload = {}
+        if missing_path.exists():
+            try:
+                missing_payload = json.loads(missing_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                missing_payload = {}
+
+        context = {
+            "case": {
+                "app_name": report_context["case"].app_name,
+                "package_name": report_context["case"].package_name,
+            },
+            "dynamic": dynamic_payload,
+            "evidence_types": report_context["summary"].get("artifact_type_counts", {}),
+            "missing_evidence": missing_payload.get("missing", []),
+        }
+        llm_summary = self.summary_provider.reasoner.complete(
+            system_prompt=(
+                "Write a grounded defensive Android audit evidence summary in markdown. "
+                "Use only the supplied evidence. Include these headings exactly: "
+                "# AI Evidence Summary, ## Executive Summary, ## Dynamic Analysis Result, "
+                "## Foreground Activity Validation, ## Evidence Collected, ## Important Gaps, ## Conclusion. "
+                "Do not invent root causes."
+            ),
+            user_payload=context,
+            max_tokens=700,
+            purpose="dynamic-evidence-summary",
+        )
+        if llm_summary:
+            return llm_summary
+
+        dynamic_execution = dynamic_payload.get("execution", {}) if isinstance(dynamic_payload, dict) else {}
+        runtime = dynamic_payload.get("runtime", {}) if isinstance(dynamic_payload, dict) else {}
+        package_name = (
+            dynamic_payload.get("target", {}).get("package_name")
+            if isinstance(dynamic_payload.get("target"), dict)
+            else report_context["case"].package_name
+        ) or "the target APK"
+        evidence_types = sorted(report_context["summary"].get("artifact_type_counts", {}).keys())
+        tracking = runtime.get("activity_tracking", {}) if isinstance(runtime, dict) else {}
+        final_activity = tracking.get("foreground_activity_final", {}) if isinstance(tracking, dict) else {}
+        missing = missing_payload.get("missing", []) or []
+        gaps = "\n".join(f"- {item}" for item in missing) if missing else "No missing evidence was detected by the completeness engine."
+        return "\n".join(
+            [
+                "# AI Evidence Summary",
+                "",
+                "## Executive Summary",
+                f"{package_name} was tested with the built-in defensive Android dynamic analysis workflow.",
+                "",
+                "## Dynamic Analysis Result",
+                (
+                    f"Install: {'ok' if dynamic_execution.get('install_ok') else 'failed or unavailable'}. "
+                    f"Launch: {'ok' if dynamic_execution.get('launch_ok') else 'failed or unavailable'}. "
+                    f"Screenshots captured: {dynamic_execution.get('screenshots_captured', 0)}. "
+                    f"Logs captured: {'yes' if dynamic_execution.get('logs_captured') else 'no'}. "
+                    f"Crash detected: {'yes' if runtime.get('crash_detected') else 'no'}. "
+                    f"Process present: {'yes' if runtime.get('process_present') else 'no'}."
+                ),
+                "",
+                "## Foreground Activity Validation",
+                (
+                    f"The app was foreground after launch: {'yes' if tracking.get('was_target_foreground_after_launch') else 'no'}. "
+                    f"Monkey left the app: {'yes' if tracking.get('monkey_left_app') else 'no'}. "
+                    f"The tool re-focused the app before final evidence: {'yes' if tracking.get('refocus_attempted_after_monkey') else 'no'}. "
+                    f"Final foreground activity: {final_activity.get('component') or 'unknown'}."
+                ),
+                "",
+                "## Evidence Collected",
+                ", ".join(evidence_types) if evidence_types else "No evidence artifacts were listed.",
+                "",
+                "## Important Gaps",
+                gaps,
+                "",
+                "## Conclusion",
+                "The evidence pack is suitable for a defensive mobile audit when the listed evidence and gaps match the intended scope.",
+            ]
+        )
+
+    def _latest_import_payload(self, report_context: dict, evidence_type: str) -> dict[str, Any] | None:
+        imports = report_context.get("details", {}).get("imports", [])
+        for item in reversed(imports):
+            if item.get("type") == evidence_type and isinstance(item.get("payload"), dict):
+                return item["payload"]
+        return None
 
     def _report_context(self, audit_case: AuditCase) -> dict:
         summary = self.build_case_summary(audit_case)
@@ -639,7 +976,7 @@ class CaseService:
                 details["logs"].append(self._read_text_excerpt(item))
             elif item.evidence_type == "screenshot":
                 details["screenshots"].append({"filename": item.original_filename, "path": item.normalized_path})
-            elif item.evidence_type in {"mobsf", "jadx"}:
+            elif item.evidence_type in {"mobsf", "mobixler", "mobixler_dynamic", "jadx"}:
                 details["imports"].append({"type": item.evidence_type, "filename": item.original_filename, "payload": payload})
 
         details["latest_manifest"] = details["manifests"][-1] if details["manifests"] else {}
@@ -648,7 +985,16 @@ class CaseService:
         details["latest_sbom"] = details["sboms"][-1] if details["sboms"] else {}
         details["latest_hashes"] = details["hashes"][-1] if details["hashes"] else {}
         details["raw_manifest_xml"] = self._latest_raw_manifest(evidence_items)
+        latest_dynamic = self._latest_dynamic_import(details["imports"])
+        details["dynamic_activity_tracking"] = (latest_dynamic.get("runtime") or {}).get("activity_tracking", {}) if latest_dynamic else {}
+        details["dynamic_target"] = latest_dynamic.get("target", {}) if latest_dynamic else {}
         return details
+
+    def _latest_dynamic_import(self, imports: list[dict[str, Any]]) -> dict[str, Any] | None:
+        for item in reversed(imports):
+            if item.get("type") == "mobixler_dynamic" and isinstance(item.get("payload"), dict):
+                return item["payload"]
+        return None
 
     def _read_evidence_payload(self, item: EvidenceItem) -> Any:
         path = Path(item.normalized_path)
@@ -673,7 +1019,7 @@ class CaseService:
         path = Path(item.normalized_path)
         if not path.exists():
             return ""
-        if item.evidence_type not in {"manifest_xml", "log", "mobsf", "jadx"}:
+        if item.evidence_type not in {"manifest_xml", "log", "mobsf", "mobixler", "mobixler_dynamic", "jadx"}:
             return ""
         try:
             return path.read_text(encoding="utf-8", errors="ignore")[:6000]

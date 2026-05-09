@@ -112,3 +112,56 @@ def test_capture_screenshot_creates_screenshot_evidence(client, monkeypatch):
     evidence_resp = client.get(f"/api/cases/{case_id}/evidence")
     assert evidence_resp.status_code == 200
     assert any(item["evidence_type"] == "screenshot" for item in evidence_resp.json())
+
+
+def test_run_dynamic_analysis_creates_mobixler_dynamic_evidence(client, monkeypatch):
+    from app.api.routes import uploads as uploads_routes
+
+    case_resp = client.post(
+        "/api/cases",
+        json={
+            "app_name": "Dynamic App",
+            "package_name": "com.demo.dynamic",
+            "version_name": "1.0.0",
+            "version_code": "1",
+            "auditor": "QA Analyst",
+            "audit_date": "2026-04-06",
+            "scope": "Dynamic APK analysis",
+            "notes": None,
+        },
+    )
+    case_id = case_resp.json()["id"]
+
+    def fake_run_dynamic_apk_analysis(
+        db,
+        case_id,
+        device_serial=None,
+        source="adb-dynamic-analysis",
+        monkey_event_count=None,
+        log_line_count=None,
+    ):
+        return uploads_routes.case_service._persist_artifact(
+            db=db,
+            case_id=case_id,
+            artifact_type="mobixler_dynamic",
+            source=source,
+            original_filename="mobixler_dynamic_emulator-5554.json",
+            content=b'{"findings":[{"title":"Cleartext http request after login"}]}',
+            mime_type="application/json",
+            description="Mobixler-style dynamic APK analysis for com.demo.dynamic.",
+            anonymized=True,
+        )
+
+    monkeypatch.setattr("app.api.routes.uploads.case_service.run_dynamic_apk_analysis", fake_run_dynamic_apk_analysis)
+
+    response = client.post(
+        f"/api/cases/{case_id}/run-dynamic-analysis?device_serial=emulator-5554&monkey_event_count=20",
+    )
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["artifact_type"] == "mobixler_dynamic"
+    assert payload["mime_type"] == "application/json"
+
+    evidence_resp = client.get(f"/api/cases/{case_id}/evidence")
+    assert evidence_resp.status_code == 200
+    assert any(item["evidence_type"] == "mobixler_dynamic" for item in evidence_resp.json())

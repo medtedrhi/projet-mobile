@@ -6,7 +6,7 @@ from app.services.completeness_service import CompletenessService
 
 def _write_required_pack(export_dir: Path, manifest_xml: str = '<manifest package="com.example.app" />') -> None:
     files = {
-        "11_hashes/apk_hash.json": "{}",
+        "11_hashes/hashes.json": "{}",
         "02_manifest/manifest_summary.json": "{}",
         "02_manifest/AndroidManifest.xml": manifest_xml,
         "03_permissions/permissions.json": "{}",
@@ -16,7 +16,7 @@ def _write_required_pack(export_dir: Path, manifest_xml: str = '<manifest packag
         "07_screenshots/screen.png": "png",
         "00_case_metadata/tool_versions.json": "{}",
         "10_metrics/metrics.json": "{}",
-        "09_mas_mapping/mapping.json": "[]",
+        "09_mas_mapping/masvs_mapping.json": "[]",
     }
     for relative_path, content in files.items():
         path = export_dir / relative_path

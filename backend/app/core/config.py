@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     app_name: str = "Evidence Collector & Compliance Pack"
     app_version: str = "0.1.0"
     api_v1_prefix: str = "/api"
-    cors_origins: list[str] = ["http://localhost:5173"]
+    cors_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
     database_url: str = "sqlite:///./evidence_collector.db"
     mysql_database_url: str | None = None
     uploads_dir: Path = Field(default=Path("./data/uploads"))
@@ -25,6 +25,12 @@ class Settings(BaseSettings):
     screenshot_capture_timeout_seconds: int = 15
     runtime_log_capture_timeout_seconds: int = 20
     runtime_log_capture_line_count: int = 400
+    dynamic_analysis_enabled: bool = True
+    dynamic_analysis_monkey_event_count: int = 120
+    dynamic_analysis_log_line_count: int = 1000
+    dynamic_analysis_wait_after_launch_seconds: int = 5
+    dynamic_analysis_screenshot_count: int = 3
+    dynamic_analysis_auto_export: bool = True
     openrouter_api_key: str | None = None
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     openrouter_model: str | None = "mistralai/mistral-7b-instruct-v0.3"

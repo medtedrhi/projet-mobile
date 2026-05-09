@@ -22,7 +22,7 @@ class CompletenessService:
 
     def build_report(self, export_dir: Path) -> dict:
         required_evidence = {
-            "apk_hash": self._present(export_dir / "11_hashes" / "apk_hash.json"),
+            "apk_hash": self._present(export_dir / "11_hashes" / "hashes.json"),
             "manifest_extract": self._manifest_status(export_dir),
             "permissions_list": self._present(export_dir / "03_permissions" / "permissions.json"),
             "sbom": self._present(export_dir / "05_sbom" / "sbom.json"),
@@ -30,7 +30,7 @@ class CompletenessService:
             "logs_anonymized": self._logs_status(export_dir),
             "tool_versions": self._present(export_dir / "00_case_metadata" / "tool_versions.json"),
             "metrics": self._present(export_dir / "10_metrics" / "metrics.json"),
-            "masvs_mapping": self._present(export_dir / "09_mas_mapping" / "mapping.json"),
+            "masvs_mapping": self._present(export_dir / "09_mas_mapping" / "masvs_mapping.json"),
         }
         missing = [name for name, status in required_evidence.items() if status != "present"]
         warnings = self._warnings(export_dir, required_evidence)
@@ -46,7 +46,7 @@ class CompletenessService:
     def write_report(self, export_dir: Path) -> Path:
         output_dir = export_dir / "12_completeness"
         output_dir.mkdir(parents=True, exist_ok=True)
-        output_path = output_dir / "missing_evidence_report.json"
+        output_path = output_dir / "missing_evidence.json"
         output_path.write_text(json.dumps(self.build_report(export_dir), indent=2), encoding="utf-8")
         return output_path
 
@@ -94,4 +94,15 @@ class CompletenessService:
             warnings.append("Manifest XML is broken and must be re-extracted")
         elif required_evidence.get("manifest_extract") == "present":
             warnings.append("Manifest XML validated")
+        dynamic_path = export_dir / "08_findings_import" / "mobisef_dynamic.json"
+        if dynamic_path.exists():
+            try:
+                dynamic_payload = json.loads(dynamic_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                dynamic_payload = {}
+            tracking = (dynamic_payload.get("runtime") or {}).get("activity_tracking") or {}
+            if tracking and not tracking.get("was_target_foreground_after_launch"):
+                warnings.append("Target app was not foreground after launch")
+            if tracking and not tracking.get("was_target_foreground_final"):
+                warnings.append("Target app was not foreground at final capture")
         return warnings

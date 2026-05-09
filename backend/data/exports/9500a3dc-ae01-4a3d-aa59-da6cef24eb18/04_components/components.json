@@ -1,4 +1,4 @@
-﻿{
+{
   "exported_components": [
     "activity:com.example.getudiant.AddEtudiant",
     "receiver:androidx.profileinstaller.ProfileInstallReceiver"

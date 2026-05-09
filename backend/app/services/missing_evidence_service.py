@@ -53,9 +53,9 @@ class MissingEvidenceService:
             "category": "dynamic-analysis",
             "severity": "medium",
             "title": "No sanitized runtime logs were collected",
-            "requires": ["log"],
+            "requires": ["log", "mobixler", "mobixler_dynamic"],
             "rationale": "Dynamic evidence improves coverage for runtime behavior and control validation.",
-            "recommendation": "Upload sanitized runtime logs or capture anonymized telemetry artifacts.",
+            "recommendation": "Upload sanitized runtime logs, capture anonymized telemetry artifacts, or import Mobixler dynamic-analysis output.",
         },
         {
             "rule_id": "components",

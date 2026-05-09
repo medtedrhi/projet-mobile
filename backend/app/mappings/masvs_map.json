@@ -8,5 +8,7 @@
   "log": ["MASVS-PRIVACY-1", "MASVS-RESILIENCE-1"],
   "screenshot": ["MASVS-AUTH-1", "MASVS-PRIVACY-1"],
   "mobsf": ["MASVS-CODE-1", "MASVS-CRYPTO-1"],
+  "mobixler": ["MASVS-RESILIENCE-1", "MASVS-NETWORK-1", "MASVS-AUTH-1", "MASVS-PRIVACY-1"],
+  "mobixler_dynamic": ["MASVS-RESILIENCE-1", "MASVS-NETWORK-1", "MASVS-AUTH-1", "MASVS-PRIVACY-1"],
   "jadx": ["MASVS-CODE-1"]
 }

@@ -85,3 +85,47 @@ def test_manifest_xml_mapping_detects_network_markers():
     assert "MASTG-TEST-0286" in result["mastg"]
     assert "manifest-network-markers" in result["matched_signals"]
     assert "cleartext traffic enabled" in result["notes"]
+
+
+def test_mobixler_dynamic_mapping_uses_runtime_signals():
+    service = MappingService(Path("app/mappings"))
+    evidence_item = SimpleNamespace(
+        evidence_type="mobixler_dynamic",
+        tags="mobixler_dynamic",
+        original_filename="mobixler_dynamic.json",
+        description="Mobixler dynamic analysis export",
+        anonymized_flag=False,
+    )
+
+    result = service.map_evidence_item(
+        evidence_item,
+        payload={
+            "findings": [
+                {
+                    "severity": "medium",
+                    "title": "Cleartext HTTP request observed after login",
+                    "evidence": "Session token sent in request to http://example.test/profile",
+                },
+                {
+                    "severity": "low",
+                    "title": "SQLite database stores personal account data",
+                    "evidence": "email and phone values observed in local database",
+                },
+            ]
+        },
+    )
+
+    assert result["status"] == "mapped"
+    assert "MASVS-RESILIENCE-1" in result["masvs"]
+    assert "MASVS-NETWORK-1" in result["masvs"]
+    assert "MASVS-AUTH-1" in result["masvs"]
+    assert "MASVS-PRIVACY-1" in result["masvs"]
+    assert "MASWE-0050" in result["maswe"]
+    assert "MASWE-0007" in result["maswe"]
+    assert "MASTG-TEST-0001" in result["mastg"]
+    assert "MASTG-TEST-0286" in result["mastg"]
+    assert "mobixler-dynamic-import-present" in result["matched_signals"]
+    assert "mobixler-network-signals" in result["matched_signals"]
+    assert "mobixler-auth-signals" in result["matched_signals"]
+    assert "mobixler-privacy-storage-signals" in result["matched_signals"]
+    assert "runtime findings" in result["notes"]

@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "192fec8d-fb2c-41dc-a96f-d7efde3b3176",
     "evidence_type": "apk",
@@ -104,6 +104,90 @@
     "hash_sha256": "18fe2c05ccf3a1fcdfd3b15d2f0992e7589ea4d8a60bb93f3515f254b837ec93",
     "mime_type": "text/plain",
     "size": 74358,
+    "sensitivity_level": "restricted",
+    "status": "collected"
+  },
+  {
+    "id": "7efb366f-129a-44a1-a773-2e1140ac3993",
+    "evidence_type": "screenshot",
+    "source": "adb-capture",
+    "original_filename": "auto_screenshot_RF8T602HTNA.png",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\auto_screenshot_RF8T602HTNA_1.png",
+    "hash_sha256": "8e66b098e4202e7f5f09be3821a29fa8bb532ed6aec1a5c6212fa8ea39e06cd1",
+    "mime_type": "image/png",
+    "size": 231465,
+    "sensitivity_level": "internal",
+    "status": "collected"
+  },
+  {
+    "id": "adc7e115-16a6-461c-9e70-94d38d2cd292",
+    "evidence_type": "log",
+    "source": "adb-logcat",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_1.log",
+    "hash_sha256": "ba95e46ed1f6129284ad700edecccaf8e13261958392798c1028adf59af37cb4",
+    "mime_type": "text/plain",
+    "size": 66393,
+    "sensitivity_level": "restricted",
+    "status": "collected"
+  },
+  {
+    "id": "51a56f38-38fd-413a-a3e7-f255ccf2c609",
+    "evidence_type": "log",
+    "source": "adb-logcat",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_2.log",
+    "hash_sha256": "65e617afdeb20a5066cb080250d8e0e0af09003592eee29a7ca8d9414a81cd87",
+    "mime_type": "text/plain",
+    "size": 66419,
+    "sensitivity_level": "restricted",
+    "status": "collected"
+  },
+  {
+    "id": "58c59f0b-8a3b-4002-808a-5f90a3446e08",
+    "evidence_type": "log",
+    "source": "adb-logcat",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_3.log",
+    "hash_sha256": "d8802110c12cad2073ff8baafc51415580b5b9638e726668eded1be5d1ce06da",
+    "mime_type": "text/plain",
+    "size": 70600,
+    "sensitivity_level": "restricted",
+    "status": "collected"
+  },
+  {
+    "id": "349695e2-76e5-4753-b63e-ac8891c1260f",
+    "evidence_type": "log",
+    "source": "adb-logcat",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_4.log",
+    "hash_sha256": "a5e9f146807b8717cd4d88b03586d06fb4443be1d0a86e441e9b854daa57204f",
+    "mime_type": "text/plain",
+    "size": 67805,
+    "sensitivity_level": "restricted",
+    "status": "collected"
+  },
+  {
+    "id": "e6b772dc-b403-4210-bb0c-755f788142d0",
+    "evidence_type": "log",
+    "source": "adb-logcat",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_5.log",
+    "hash_sha256": "593e53b668d7222d0599d5354b954efd51b29bfd8debc23c98776ab8e4cbb824",
+    "mime_type": "text/plain",
+    "size": 68696,
+    "sensitivity_level": "restricted",
+    "status": "collected"
+  },
+  {
+    "id": "884adb53-8b50-48f9-ac49-5524939c9b40",
+    "evidence_type": "log",
+    "source": "adb-logcat",
+    "original_filename": "runtime_log_RF8T602HTNA.log",
+    "normalized_path": "D:\\Desktop\\projet mobile\\backend\\data\\uploads\\9500a3dc-ae01-4a3d-aa59-da6cef24eb18\\runtime_log_RF8T602HTNA_6.log",
+    "hash_sha256": "23aba222914070f5cd6d3ab2407dbf3f6b3f402fe04bf2e243131033669bab87",
+    "mime_type": "text/plain",
+    "size": 57761,
     "sensitivity_level": "restricted",
     "status": "collected"
   }

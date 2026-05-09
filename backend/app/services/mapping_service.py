@@ -10,6 +10,9 @@ class MappingService:
     PRIVACY_HINTS = ("profile", "account", "email", "phone", "personal", "privacy", "consent", "pii")
     CRYPTO_HINTS = ("crypto", "cipher", "keystore", "encrypt", "decrypt", "certificate", "tls", "ssl")
     IMPORT_HINTS = ("finding", "issue", "severity", "vulnerability", "rule", "warning")
+    MOBIXLER_TYPES = {"mobixler", "mobixler_dynamic"}
+    NETWORK_HINTS = ("http", "https", "tls", "ssl", "certificate", "proxy", "request", "response", "cleartext")
+    STORAGE_HINTS = ("sqlite", "sharedpref", "shared preference", "database", "file", "sdcard", "external storage")
 
     def __init__(self, mappings_dir: Path):
         self.mappings_dir = mappings_dir
@@ -64,6 +67,8 @@ class MappingService:
             self._map_screenshot(refs, reasons, matched_signals, evidence_item)
         elif evidence_type == "mobsf":
             self._map_mobsf(refs, reasons, matched_signals, payload, raw_text or "")
+        elif evidence_type in self.MOBIXLER_TYPES:
+            self._map_mobixler_dynamic(refs, reasons, matched_signals, payload, raw_text or "")
         elif evidence_type == "jadx":
             self._map_jadx(refs, reasons, matched_signals, payload, raw_text or "")
 
@@ -433,6 +438,63 @@ class MappingService:
                 signal="mobsf-crypto-keywords",
                 masvs=["MASVS-CRYPTO-1"],
                 mastg=["MASTG-TOOL-0008"],
+            )
+
+    def _map_mobixler_dynamic(
+        self,
+        refs: dict[str, set[str]],
+        reasons: list[str],
+        matched_signals: list[str],
+        payload: Any,
+        raw_text: str,
+    ) -> None:
+        payload_text = self._payload_text(payload, raw_text)
+        if not payload_text:
+            return
+        self._record(
+            refs,
+            reasons,
+            matched_signals,
+            reason=(
+                "Mobixler dynamic-analysis import provides tool-generated runtime findings that can be traced back "
+                "to observed app behavior."
+            ),
+            signal="mobixler-dynamic-import-present",
+            masvs=["MASVS-RESILIENCE-1"],
+            mastg=["MASTG-TOOL-0008", "MASTG-TEST-0001"],
+        )
+        if any(hint in payload_text for hint in self.NETWORK_HINTS):
+            self._record(
+                refs,
+                reasons,
+                matched_signals,
+                reason="Mobixler dynamic findings include network traffic or transport-security signals from runtime observation.",
+                signal="mobixler-network-signals",
+                masvs=["MASVS-NETWORK-1"],
+                maswe=["MASWE-0050"],
+                mastg=["MASTG-TEST-0286"],
+            )
+        if any(hint in payload_text for hint in self.AUTH_HINTS):
+            self._record(
+                refs,
+                reasons,
+                matched_signals,
+                reason="Mobixler dynamic findings include authentication or session-related runtime signals.",
+                signal="mobixler-auth-signals",
+                masvs=["MASVS-AUTH-1"],
+                maswe=["MASWE-0102"],
+                mastg=["MASTG-TEST-0001"],
+            )
+        if any(hint in payload_text for hint in self.PRIVACY_HINTS + self.STORAGE_HINTS):
+            self._record(
+                refs,
+                reasons,
+                matched_signals,
+                reason="Mobixler dynamic findings include privacy, local-storage, or personal-data handling signals.",
+                signal="mobixler-privacy-storage-signals",
+                masvs=["MASVS-PRIVACY-1"],
+                maswe=["MASWE-0007"],
+                mastg=["MASTG-TEST-0001"],
             )
 
     def _map_jadx(

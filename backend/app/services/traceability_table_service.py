@@ -17,6 +17,10 @@ class TraceabilityTableService:
         "sbom": "05_sbom/sbom.json",
         "screenshot": "07_screenshots",
         "log": "06_logs",
+        "mobsf": "08_findings_import",
+        "mobixler": "08_findings_import",
+        "mobixler_dynamic": "08_findings_import",
+        "jadx": "08_findings_import",
     }
 
     DESCRIPTION_BY_TYPE = {
@@ -29,6 +33,10 @@ class TraceabilityTableService:
         "sbom": "SBOM dependencies",
         "screenshot": "Screenshot evidence",
         "log": "Anonymized runtime logs",
+        "mobsf": "MobSF imported findings",
+        "mobixler": "Mobixler dynamic analysis",
+        "mobixler_dynamic": "Mobixler dynamic analysis",
+        "jadx": "JADX imported findings",
     }
 
     def write_csv(self, export_dir: Path, traceability: list[dict]) -> Path:

@@ -43,7 +43,7 @@ export default function App() {
 
           <DashboardOverview cases={cases} evidence={evidence} missing={missing} />
           <div className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
-            <NewCaseForm />
+            <NewCaseForm onCreated={(auditCase) => setSelectedCaseId(auditCase.id)} />
             <CasesTable cases={cases} selectedCaseId={selectedCaseId} onSelect={setSelectedCaseId} />
           </div>
 

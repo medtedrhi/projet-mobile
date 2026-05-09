@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig, type UserConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
@@ -10,4 +10,4 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
   },
-});
+} as UserConfig & { test: { environment: string; globals: boolean } });
